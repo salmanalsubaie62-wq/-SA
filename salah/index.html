@@ -75,6 +75,16 @@
   td:first-child { font-family: var(--head); font-size: 22px; width: 120px; }
 
   .verses p { margin-bottom: 18px; }
+  .watch { list-style: none; margin: 0; padding: 0; }
+  .watch li { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 22px 0; border-bottom: 1px solid var(--rule); }
+  .watch .n { font-family: var(--head); font-size: 28px; color: var(--accent); }
+  .watch h3 { font-family: var(--head); font-size: 24px; margin: 0 0 8px; }
+  .vid { position: relative; aspect-ratio: 16 / 9; border: 1px dashed var(--ink-soft); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; padding: 16px; font-size: 15px; color: var(--ink-soft); background: rgba(0,0,0,0.02); }
+  .vid iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .vid a { color: var(--accent); }
+  .mistakes { counter-reset: m; }
+  .mistakes li { padding: 14px 0 14px 0; border-bottom: 1px solid var(--rule); }
+  .mistakes li b { font-family: var(--head); font-size: 20px; color: var(--accent); margin-inline-end: 8px; }
   .closing { margin-top: 110px; padding-top: 14px; border-top: 1px solid var(--ink); font-size: 14px; color: var(--ink-soft); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-bottom: 40px; }
   :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 </style>
@@ -227,8 +237,37 @@
     </div>
   </section>
 
+  <section id="watch">
+    <div class="sec-head"><span class="num">05</span><h2>الخطوات مصوّرة</h2></div>
+    <div class="body-col">
+      <p>لكل خطوة مكان للفيديو. إن أردت أن تشاهد الحركة قبل أن تقرأ، ابدأ من هنا.</p>
+      <ol class="watch">
+        <li><div class="n">1</div><div><h3>النية والتكبير</h3><div class="vid" data-yt="" data-title="النية والتكبير"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9+%D8%AA%D9%83%D8%A8%D9%8A%D8%B1+%D8%A7%D9%84%D8%A5%D8%AD%D8%B1%D8%A7%D9%85" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">2</div><div><h3>القيام وقراءة الفاتحة</h3><div class="vid" data-yt="" data-title="القيام وقراءة الفاتحة"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9+%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%A1%D8%A9+%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">3</div><div><h3>الركوع</h3><div class="vid" data-yt="" data-title="الركوع"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B1%D9%83%D9%88%D8%B9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">4</div><div><h3>الرفع من الركوع</h3><div class="vid" data-yt="" data-title="الرفع من الركوع"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B1%D9%81%D8%B9+%D9%85%D9%86+%D8%A7%D9%84%D8%B1%D9%83%D9%88%D8%B9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">5</div><div><h3>السجود</h3><div class="vid" data-yt="" data-title="السجود"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B3%D8%AC%D9%88%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">6</div><div><h3>الجلسة بين السجدتين</h3><div class="vid" data-yt="" data-title="الجلسة بين السجدتين"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%A7%D9%84%D8%AC%D9%84%D8%B3%D8%A9+%D8%A8%D9%8A%D9%86+%D8%A7%D9%84%D8%B3%D8%AC%D8%AF%D8%AA%D9%8A%D9%86+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">7</div><div><h3>التشهد</h3><div class="vid" data-yt="" data-title="التشهد"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%A7%D9%84%D8%AA%D8%B4%D9%87%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">8</div><div><h3>التسليم</h3><div class="vid" data-yt="" data-title="التسليم"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%A7%D9%84%D8%AA%D8%B3%D9%84%D9%8A%D9%85+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="mistakes">
+    <div class="sec-head"><span class="num">06</span><h2>أخطاء شائعة</h2></div>
+    <div class="body-col">
+      <ol class="mistakes" style="list-style:none;margin:0;padding:0">
+        <li><b>أ</b>الاستعجال في الركوع والسجود. النبي ﷺ أمر المسيء في صلاته بالطمأنينة، حتى قال: «ثُمَّ ارْكَعْ حَتَّى تَطْمَئِنَّ رَاكِعًا». <span class="src">البخاري، الأذان، 793</span></li>
+        <li><b>ب</b>الكلام أو الالتفات أثناء الصلاة. وهو مما يبطلها عند الجمهور، ولا يُعذر فيه إلا لحاجة. <span class="src">لم أتحقق من نص حديث بعينه في هذه الجلسة</span></li>
+        <li><b>ج</b>ترك الجلسة بين السجدتين أو الاكتفاء بمرور سريع. الجلسة لازمة مع الطمأنينة في الأركان كلها. <span class="src">البخاري، الأذان، 793</span></li>
+        <li><b>د</b>نسيان التشهد الأخير. هو ركن عند الجمهور، ومن تركه بطلت صلاته. <span class="src">ينظر الفتاوى في المسألة</span></li>
+      </ol>
+    </div>
+  </section>
+
   <section id="times">
-    <div class="sec-head"><span class="num">05</span><h2>الأوقات والركعات</h2></div>
+    <div class="sec-head"><span class="num">07</span><h2>الأوقات والركعات</h2></div>
     <div class="body-col">
       <table>
         <thead><tr><th>الصلاة</th><th>عدد الفرض</th><th>وقتها</th></tr></thead>
@@ -245,7 +284,7 @@
   </section>
 
   <section id="sources">
-    <div class="sec-head"><span class="num">06</span><h2>المصادر</h2></div>
+    <div class="sec-head"><span class="num">08</span><h2>المصادر</h2></div>
     <div class="body-col verses">
       <p>من القرآن الكريم:</p>
       <p>﴿وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ﴾ <span class="src">البقرة: 43</span></p>
@@ -266,6 +305,22 @@
   </footer>
 
 </div>
-<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  document.querySelectorAll(".vid[data-yt]").forEach(function (box) {
+    var id = box.getAttribute("data-yt");
+    if (!id) return;
+    try {
+      var f = document.createElement("iframe");
+      f.src = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(id);
+      f.title = box.getAttribute("data-title") || "فيديو الدرس";
+      f.loading = "lazy";
+      f.allow = "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+      f.allowFullscreen = true;
+      box.innerHTML = "";
+      box.appendChild(f);
+    } catch (e) {}
+  });
+</script>
 </body>
 </html>
