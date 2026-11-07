@@ -4,118 +4,96 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>الترسّب وتكوّن الصخور الرسوبية | علوم الصف الثامن</title>
-  <meta name="description" content="درس تفاعلي يشرح كيف تتكوّن الصخور الرسوبية: التجوية والتعرية والنقل والترسيب والتصخر، مع التصحر وأثر الرياح.">
+  <meta name="description" content="درس تفاعلي يشرح كيف تتكوّن الصخور الرسوبية: التجوية والتعرية والنقل والترسيب والتصخّر، مع التصحّر وأثر الرياح.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
 
-  <div class="teacher-banner" role="note">إعداد الأستاذ ياسر محمد · الصف 8/5 · <strong>ممتاز جدا</strong></div>
+  <div class="teacher-strip">إعداد الأستاذ ياسر محمد · الصف 8/5 · <strong>ممتاز جدا</strong></div>
 
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="الصفحة الرئيسية">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>علوم · الصف الثامن</span>
-      </a>
+    <div class="wrap header-inner">
+      <a class="mark" href="#top">الدفتر · علوم ٨</a>
       <nav aria-label="أقسام الدرس">
         <ul class="nav-list">
-          <li><a href="#intro">المقدمة</a></li>
-          <li><a href="#steps">مراحل الترسّب</a></li>
-          <li><a href="#types">أنواع الصخور</a></li>
-          <li><a href="#desert">التصحر</a></li>
-          <li><a href="#practice">تدرّب</a></li>
+          <li><a href="#steps">المراحل</a></li>
+          <li><a href="#types">الأنواع</a></li>
+          <li><a href="#desert">التصحّر</a></li>
+          <li><a href="#practice">التدريب</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- ============ الهيرو ============ -->
-    <section class="hero" id="top">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">الفصل الدراسي الأول · الصفحات ١٠٠ – ١١٠</p>
-          <h1>كيف تتكوّن الصخور الرسوبية؟</h1>
-          <p class="lead">
-            تخيّل نهراً يحمل الرمل والطين إلى البحر، ثم تتراكم هذه المواد طبقة فوق طبقة لملايين السنين
-            حتى تصبح صخراً. في هذا الدرس ستتابع الرحلة كاملة، خطوة بخطوة.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#steps">ابدأ الدرس</a>
-            <a class="btn btn-ghost" href="#practice">انتقل إلى التدريب</a>
-          </div>
+    <!-- ============ الافتتاحية ============ -->
+    <section class="opener" id="top">
+      <div class="wrap">
+        <p class="label">الفصل الأول · صفحات ١٠٠ – ١١٠ من كتاب الطالب</p>
+        <h1 class="display">الصخرة<br>تبدأ <span class="ink-rust">رملاً.</span></h1>
+        <div class="opener-body">
+          <p class="lead">نهر يحمل الطين إلى البحر. الطين يستقر في القاع طبقة فوق طبقة. بعد آلاف السنين تصير الطبقات صخراً.
+            هذا الدرس يتتبع الرحلة كاملة، من الجبل إلى الصخر.</p>
         </div>
-        <figure class="hero-figure" aria-label="رسم توضيحي لطبقات صخرية متراكمة">
-          <svg viewBox="0 0 400 300" role="img" aria-labelledby="heroTitle">
-            <title id="heroTitle">طبقات رسوبية متراكمة مع حبيبات رمل وحصى</title>
-            <rect x="0" y="0" width="400" height="300" fill="var(--color-accent-soft)"/>
-            <path d="M0 90 Q100 70 200 90 T400 90 V300 H0Z" fill="#D9B98A"/>
-            <path d="M0 150 Q120 130 220 150 T400 150 V300 H0Z" fill="#B98A57"/>
-            <path d="M0 200 Q130 185 240 200 T400 200 V300 H0Z" fill="#8F6A43"/>
-            <path d="M0 245 Q140 235 260 245 T400 245 V300 H0Z" fill="#6B4E33"/>
-            <g fill="#1F4E5A" opacity="0.55">
-              <circle cx="60" cy="40" r="5"/><circle cx="110" cy="28" r="3"/><circle cx="170" cy="48" r="4"/>
-              <circle cx="240" cy="34" r="5"/><circle cx="300" cy="55" r="3"/><circle cx="350" cy="30" r="4"/>
-            </g>
-            <path d="M0 40 Q200 10 400 40" stroke="#1F4E5A" stroke-width="2" fill="none" stroke-dasharray="6 6" opacity="0.5"/>
+        <figure class="strata" aria-label="مقطع طبقي يوضح ترتيب الطبقات">
+          <svg viewBox="0 0 1200 220" preserveAspectRatio="none" role="img" aria-labelledby="strataTitle">
+            <title id="strataTitle">مقطع طبقي: الأقدم في الأسفل والأحدث في الأعلى</title>
+            <path d="M0 40 L1200 60 L1200 220 L0 220Z" fill="#E9D8B8"/>
+            <path d="M0 95 C200 80 400 110 600 92 S1000 78 1200 100 L1200 220 L0 220Z" fill="#D2B187"/>
+            <path d="M0 140 C250 128 420 150 640 136 S1000 126 1200 146 L1200 220 L0 220Z" fill="#B68A5C"/>
+            <path d="M0 180 C300 172 500 188 760 178 S1050 170 1200 184 L1200 220 L0 220Z" fill="#8A6443"/>
+            <path d="M0 40 L1200 60" stroke="#1D2326" stroke-width="1.5" fill="none" opacity="0.5"/>
           </svg>
+          <figcaption>رسم تخطيطي. الطبقة السفلى أقدم، والعليا أحدث.</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- ============ المقدمة ============ -->
-    <section class="section" id="intro" aria-labelledby="intro-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">١</p>
-          <h2 id="intro-title">ما هو الترسّب؟</h2>
-        </header>
-        <div class="card-grid">
-          <article class="card">
-            <h3>التعريف</h3>
-            <p>الترسّب هو عملية تجمّع المواد الصلبة (الرواسب) وتراكمها في مكان جديد بعد نقلها من مكان نشأتها بفعل عوامل مثل الماء والرياح والجليد.</p>
-          </article>
-          <article class="card">
-            <h3>مصدر الرواسب</h3>
-            <p>تأتي الرواسب من تفتّت صخور قديمة إلى قطع صغيرة، أو من بقايا كائنات حيّة، أو من مواد ذائبة في الماء تترسّب عند تبخّره.</p>
-          </article>
-          <article class="card">
-            <h3>لماذا تتراكم الطبقات؟</h3>
-            <p>كل حدث ترسيب يضيف طبقة جديدة فوق القديمة. لذلك تكون الطبقات الأقدم في الأسفل والأحدث في الأعلى، وهذا ما يسمى <strong>قانون التعاقب الطبقي</strong>.</p>
-          </article>
+    <!-- ============ الفكرة ============ -->
+    <section class="section" aria-labelledby="intro-title">
+      <div class="wrap two-col">
+        <div class="sec-num">01</div>
+        <div>
+          <h2 id="intro-title" class="h2">ما الترسّب؟</h2>
+          <p class="big-sentence">الترسّب هو تجمّع المواد المفتّتة بعد نقلها من مكانها، ثم استقرارها في مكان جديد.</p>
+          <p>المواد تأتي من صخور قديمة تفتّتت، أو من بقايا كائنات حيّة، أو من أملاح ذابت في الماء ثم ترسّبت مع تبخّره.
+            وكل حدث ترسيب يضيف طبقة فوق القديمة، لذلك تكون الطبقات الأقدم في الأسفل. هذا ما يسمى <strong>قانون التعاقب الطبقي</strong>.</p>
         </div>
       </div>
     </section>
 
     <!-- ============ المراحل ============ -->
-    <section class="section section-alt" id="steps" aria-labelledby="steps-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">٢</p>
-          <h2 id="steps-title">مراحل تكوّن الصخور الرسوبية</h2>
-          <p class="muted">اضغط على كل مرحلة لتعرف ما يحدث فيها.</p>
-        </header>
-
-        <div class="stepper" role="tablist" aria-label="مراحل التكوّن">
-          <button class="step-btn" role="tab" aria-selected="true" aria-controls="step-panel" id="tab-1" data-step="0">١. التجوية</button>
-          <button class="step-btn" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-2" data-step="1" tabindex="-1">٢. التعرية</button>
-          <button class="step-btn" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-3" data-step="2" tabindex="-1">٣. النقل</button>
-          <button class="step-btn" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-4" data-step="3" tabindex="-1">٤. الترسيب</button>
-          <button class="step-btn" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-5" data-step="4" tabindex="-1">٥. الدفن والانضغاط</button>
-          <button class="step-btn" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-6" data-step="5" tabindex="-1">٦. التصخّر</button>
+    <section class="section section-tint" id="steps" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="sec-num">02</div>
+          <div>
+            <h2 id="steps-title" class="h2">ست مراحل، بالترتيب</h2>
+            <p class="muted">اضغط مرحلة لتقرأها. كل مرحلة تبدأ حيث انتهت التي قبلها.</p>
+          </div>
         </div>
 
-        <div class="step-panel card" id="step-panel" role="tabpanel" aria-labelledby="tab-1">
-          <div class="step-content">
-            <h3 id="step-title">التجوية</h3>
-            <p id="step-text"></p>
-            <p class="step-example"><strong>مثال:</strong> <span id="step-example"></span></p>
-          </div>
+        <div class="stepper" role="tablist" aria-label="مراحل التكوّن">
+          <button class="step-btn" role="tab" aria-selected="true" aria-controls="step-panel" id="tab-1" data-step="0">التجوية</button>
+          <button class="step-btn" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-2" data-step="1" tabindex="-1">التعرية</button>
+          <button class="step-btn" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-3" data-step="2" tabindex="-1">النقل</button>
+          <button class="step-btn" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-4" data-step="3" tabindex="-1">الترسيب</button>
+          <button class="step-btn" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-5" data-step="4" tabindex="-1">الدفن والانضغاط</button>
+          <button class="step-btn" role="tab" aria-selected="false" aria-controls="step-panel" id="tab-6" data-step="5" tabindex="-1">التصخّر</button>
+        </div>
+
+        <div class="step-panel" id="step-panel" role="tabpanel" aria-labelledby="tab-1">
+          <h3 id="step-title" class="step-title">التجوية</h3>
+          <p id="step-text" class="step-text"></p>
+          <aside class="field-note">
+            <span class="field-note-label">من الحقل</span>
+            <p id="step-example"></p>
+          </aside>
           <div class="step-progress" aria-hidden="true"><span id="step-bar"></span></div>
         </div>
       </div>
@@ -123,120 +101,118 @@
 
     <!-- ============ الأنواع ============ -->
     <section class="section" id="types" aria-labelledby="types-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">٣</p>
-          <h2 id="types-title">أنواع الصخور الرسوبية</h2>
-        </header>
-        <div class="card-grid">
-          <article class="card type-card">
-            <span class="type-chip">فتاتية</span>
-            <h3>الصخور الفتاتية</h3>
-            <p>تتكوّن من حبيبات صخرية متماسكة، وحجم حبيباتها يدل على قوة العامل الناقل.</p>
-            <p class="muted"><strong>أمثلة:</strong> الحجر الرملي، الحجر الطيني، الكونغلوميرات.</p>
-          </article>
-          <article class="card type-card">
-            <span class="type-chip">كيميائية</span>
-            <h3>الصخور الكيميائية</h3>
-            <p>تتكوّن عندما تترسّب معادن ذائبة في الماء بعد تبخّره أو تشبعه بالمادة.</p>
-            <p class="muted"><strong>أمثلة:</strong> الحجر الجيري الكيميائي، الملح الصخري، الجبس.</p>
-          </article>
-          <article class="card type-card">
-            <span class="type-chip">عضوية</span>
-            <h3>الصخور العضوية</h3>
-            <p>تتكوّن من بقايا كائنات حيّة متراكمة، كالأصداف والهياكل العظمية والنباتات.</p>
-            <p class="muted"><strong>أمثلة:</strong> الفحم الحجري، الحجر الجيري الحيوي، الطباشير.</p>
-          </article>
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="sec-num">03</div>
+          <div>
+            <h2 id="types-title" class="h2">ثلاثة أنواع من الصخور الرسوبية</h2>
+            <p class="muted">الفرق بينها هو مصدر المادة.</p>
+          </div>
         </div>
+
+        <ol class="types">
+          <li class="type-row">
+            <span class="type-name">فتاتية</span>
+            <p class="type-desc">حبيبات صخرية متماسكة. حجم الحبيبات يدل على قوة العامل الناقل.</p>
+            <p class="type-ex"><strong>أمثلة</strong> الحجر الرملي، الحجر الطيني، الكونغلوميرات</p>
+          </li>
+          <li class="type-row">
+            <span class="type-name">كيميائية</span>
+            <p class="type-desc">معادن ذائبة في الماء ترسّبت بعد تبخّره أو تشبّعه.</p>
+            <p class="type-ex"><strong>أمثلة</strong> الملح الصخري، الجبس، الحجر الجيري الكيميائي</p>
+          </li>
+          <li class="type-row">
+            <span class="type-name">عضوية</span>
+            <p class="type-desc">بقايا كائنات حيّة تراكمت: أصداف، هياكل، نباتات.</p>
+            <p class="type-ex"><strong>أمثلة</strong> الفحم الحجري، الحجر الجيري الحيوي، الطباشير</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- ============ التصحر ============ -->
-    <section class="section section-alt" id="desert" aria-labelledby="desert-title">
-      <div class="container split">
+    <!-- ============ التصحّر ============ -->
+    <section class="section section-tint" id="desert" aria-labelledby="desert-title">
+      <div class="wrap two-col">
+        <div class="sec-num">04</div>
         <div>
-          <p class="eyebrow">٤</p>
-          <h2 id="desert-title">التصحّر وعلاقته بالترسيب</h2>
-          <p>التصحّر هو تدهور الأراضي في المناطق الجافة وشبه الجافة، فتفقد التربة خصوبتها وتتحوّل إلى أرض قاحلة.
-            من أهم أسبابه الجفاف، والرعي الجائر، وقطع الأشجار، وسوء الإدارة الزراعية.</p>
-          <p>في الصحاري، تحمل <strong>الرياح</strong> ذرات الرمل وتنقلها ثم ترسّبها، فتتكوّن الكثبان الرملية.
-            وعندما تزحف الكثبان على الأراضي الزراعية والطرق تزيد من مساحة التصحر.</p>
-          <ul class="checklist">
-            <li>الرياح تعمل كعامل تعرية ونقل وترسيب في آن واحد.</li>
-            <li>كلما قلّ الغطاء النباتي زادت التعرية وزاد الترسيب في غير موضعه.</li>
-            <li>حماية التربة بالنباتات تقلل التصحر.</li>
+          <h2 id="desert-title" class="h2">التصحّر: الرياح تكمل الدورة</h2>
+          <p>التصحّر تدهور الأرض في المناطق الجافة وشبه الجافة، فتفقد التربة خصوبتها. من أسبابه الجفاف، والرعي الجائر، وقطع الأشجار.</p>
+          <p>في الصحراء تحمل <strong>الرياح</strong> ذرات الرمل وتعمل كعامل تعرية ونقل وترسيب معاً. حين تتراكم الرمال تتكوّن الكثبان، وتزحف ببطء فوق الطرق والأراضي الزراعية.</p>
+          <ul class="notes">
+            <li>الغطاء النباتي يثبّت التربة، وغيابه يسرّع التعرية.</li>
+            <li>زحف الكثبان على الأرض الزراعية صورة واضحة للتصحّر.</li>
           </ul>
+          <figure class="sketch">
+            <svg viewBox="0 0 420 200" role="img" aria-labelledby="duneTitle">
+              <title id="duneTitle">رسم تخطيطي لكثبان رملية تتحرك بفعل الرياح</title>
+              <rect width="420" height="200" fill="#EFE2C6"/>
+              <path d="M0 130 C90 96 170 140 250 118 S360 96 420 124 V200 H0Z" fill="#D9AE72"/>
+              <path d="M0 165 C110 146 210 172 300 158 S390 150 420 162 V200 H0Z" fill="#B9823E"/>
+              <path d="M320 60 q6 -5 12 0 t12 0 M300 78 q6 -5 12 0 t12 0" stroke="#1D2326" stroke-width="1.5" fill="none" opacity="0.6"/>
+            </svg>
+            <figcaption>رسم تخطيطي، وليس صورة من الميدان.</figcaption>
+          </figure>
         </div>
-        <figure class="dune-figure" aria-label="رسم توضيحي لكثبان رملية">
-          <svg viewBox="0 0 400 260" role="img" aria-labelledby="duneTitle">
-            <title id="duneTitle">كثبان رملية تتحرك بفعل الرياح</title>
-            <rect width="400" height="260" fill="#F3E3C3"/>
-            <path d="M0 170 Q70 120 140 170 T280 170 T400 160 V260 H0Z" fill="#D9A95E"/>
-            <path d="M0 205 Q90 175 180 205 T400 200 V260 H0Z" fill="#C8862A"/>
-            <g stroke="#1E2A2F" stroke-width="2" fill="none" opacity="0.6">
-              <path d="M300 60 q8 -6 16 0 t16 0"/><path d="M240 40 q8 -6 16 0 t16 0"/><path d="M340 90 q8 -6 16 0 t16 0"/>
-            </g>
-          </svg>
-          <figcaption>الرياح تحمل الرمل وتكوّن الكثبان، وتتحرك الكثبان ببطء نحو الأمام.</figcaption>
-        </figure>
       </div>
     </section>
 
     <!-- ============ التدريب ============ -->
     <section class="section" id="practice" aria-labelledby="practice-title">
-      <div class="container">
-        <header class="section-head">
-          <p class="eyebrow">٥</p>
-          <h2 id="practice-title">تدرّب على الدرس</h2>
-        </header>
-
-        <div class="card layer-sim">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="sec-num">05</div>
           <div>
-            <h3>محاكاة: كيف تتشكّل الطبقات؟</h3>
-            <p class="muted">اضغط «أضف رسوباً» لتكوين طبقة جديدة فوق السابقة. لاحظ أن الأقدم يبقى في الأسفل.</p>
+            <h2 id="practice-title" class="h2">جرّب بنفسك</h2>
+          </div>
+        </div>
+
+        <div class="sim">
+          <div class="sim-text">
+            <h3 class="h3">محاكاة الطبقات</h3>
+            <p class="muted">كل ضغطة تضيف رسوباً جديداً فوق السابق. لاحظ أن الأقدم يبقى في الأسفل.</p>
             <div class="sim-actions">
               <button class="btn btn-primary" id="addLayer" type="button">أضف رسوباً</button>
-              <button class="btn btn-ghost" id="resetLayers" type="button">إعادة</button>
+              <button class="btn btn-ghost" id="resetLayers" type="button">ابدأ من جديد</button>
             </div>
             <p class="sim-status" id="simStatus" aria-live="polite"></p>
           </div>
           <div class="layer-stack" id="layerStack" aria-label="طبقات الرواسب"></div>
         </div>
 
-        <form class="card quiz" id="quiz" aria-labelledby="quiz-title">
-          <h3 id="quiz-title">اختبار قصير</h3>
+        <form class="worksheet" id="quiz" aria-labelledby="quiz-title">
+          <h3 id="quiz-title" class="h3">ورقة الأسئلة</h3>
 
           <fieldset class="question">
-            <legend>١. أي مرحلة تعني تفتّت الصخور إلى قطع صغيرة في مكانها؟</legend>
+            <legend><span class="qn">1</span> أي مرحلة تعني تفتّت الصخور إلى قطع صغيرة في مكانها؟</legend>
             <label><input type="radio" name="q1" value="a"> التعرية</label>
             <label><input type="radio" name="q1" value="b"> التجوية</label>
             <label><input type="radio" name="q1" value="c"> الترسيب</label>
           </fieldset>
 
           <fieldset class="question">
-            <legend>٢. أي نوع من الصخور الرسوبية يتكوّن من تبخّر الماء وترسّب الملح؟</legend>
+            <legend><span class="qn">2</span> أي نوع من الصخور الرسوبية يتكوّن من تبخّر الماء وترسّب الملح؟</legend>
             <label><input type="radio" name="q2" value="a"> الفتاتية</label>
             <label><input type="radio" name="q2" value="b"> الكيميائية</label>
             <label><input type="radio" name="q2" value="c"> العضوية</label>
           </fieldset>
 
           <fieldset class="question">
-            <legend>٣. في تعاقب الطبقات الرسوبية، أيّ الطبقات أقدم عمراً؟</legend>
+            <legend><span class="qn">3</span> في تعاقب الطبقات الرسوبية، أيّ الطبقات أقدم عمراً؟</legend>
             <label><input type="radio" name="q3" value="a"> الطبقة العليا</label>
             <label><input type="radio" name="q3" value="b"> الطبقة السفلى</label>
             <label><input type="radio" name="q3" value="c"> كلها بالعمر نفسه</label>
           </fieldset>
 
           <fieldset class="question">
-            <legend>٤. ماذا تفعل الرياح في الصحراء؟</legend>
+            <legend><span class="qn">4</span> ماذا تفعل الرياح في الصحراء؟</legend>
             <label><input type="radio" name="q4" value="a"> تنقل الرمل وترسّبه وتكوّن الكثبان</label>
-            <label><input type="radio" name="q4" value="b"> تمنع التصحر تماماً</label>
+            <label><input type="radio" name="q4" value="b"> تمنع التصحّر تماماً</label>
             <label><input type="radio" name="q4" value="c"> تحوّل الرمل إلى ماء</label>
           </fieldset>
 
           <div class="quiz-actions">
             <button class="btn btn-primary" type="submit">تحقّق من إجاباتي</button>
-            <button class="btn btn-ghost" type="reset">إعادة الاختبار</button>
+            <button class="btn btn-ghost" type="reset">امسح الأوراق</button>
           </div>
           <p class="quiz-score" id="quizScore" role="status" aria-live="polite"></p>
         </form>
@@ -245,7 +221,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="wrap footer-inner">
       <p>درس الترسّب وتكوّن الصخور الرسوبية · علوم الصف الثامن · الفصل الأول</p>
       <p class="muted">راجع المصطلحات والصفحات مع كتاب الطالب قبل الاستخدام.</p>
     </div>
