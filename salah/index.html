@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>درس الصلاة خطوة بخطوة</title>
+<meta name="description" content="درس مبسط لتعلم صفة الصلاة خطوة بخطوة، مع الأدلة من القرآن الكريم وصحيح البخاري.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf8f3;
+    --surface: #ffffff;
+    --text: #1f2a24;
+    --muted: #5d6b63;
+    --primary: #1d6b4f;
+    --primary-soft: #e3f1ea;
+    --accent: #b88a2e;
+    --border: #e4e0d4;
+    --shadow: 0 8px 24px rgba(31, 42, 36, 0.07);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #121815;
+      --surface: #1b231f;
+      --text: #e9efe9;
+      --muted: #a4b2a9;
+      --primary: #5cc29a;
+      --primary-soft: #203a2e;
+      --accent: #e2b75a;
+      --border: #2e3a34;
+      --shadow: none;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #121815;
+    --surface: #1b231f;
+    --text: #e9efe9;
+    --muted: #a4b2a9;
+    --primary: #5cc29a;
+    --primary-soft: #203a2e;
+    --accent: #e2b75a;
+    --border: #2e3a34;
+    --shadow: none;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Tajawal", system-ui, sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+  header.hero {
+    background: linear-gradient(135deg, var(--primary), #134a37);
+    color: #fff;
+    padding: 56px 0 48px;
+  }
+  .hero h1 { margin: 0 0 8px; font-size: clamp(30px, 6vw, 44px); font-weight: 800; }
+  .hero p { margin: 0; opacity: 0.92; max-width: 640px; }
+  nav.toc {
+    position: sticky; top: 0; z-index: 5;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+  }
+  nav.toc ul {
+    list-style: none; margin: 0; padding: 10px 0;
+    display: flex; gap: 6px; overflow-x: auto; white-space: nowrap;
+  }
+  nav.toc a {
+    display: inline-block; padding: 6px 12px; border-radius: 999px;
+    color: var(--muted); text-decoration: none; font-weight: 500; font-size: 16px;
+  }
+  nav.toc a:hover, nav.toc a:focus-visible { background: var(--primary-soft); color: var(--primary); }
+  section { padding: 40px 0; }
+  h2 { font-size: 28px; font-weight: 800; margin: 0 0 16px; color: var(--primary); }
+  h3 { font-size: 20px; font-weight: 700; margin: 0 0 8px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 22px; box-shadow: var(--shadow);
+  }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  ul.clean { padding-right: 20px; margin: 0; }
+  ul.clean li { margin-bottom: 6px; }
+  .muted { color: var(--muted); font-size: 16px; }
+  .ref {
+    display: inline-block; font-size: 14px; font-weight: 500;
+    background: var(--primary-soft); color: var(--primary);
+    border-radius: 8px; padding: 2px 8px; margin-top: 8px;
+  }
+  .note {
+    border-right: 4px solid var(--accent);
+    background: var(--surface); padding: 14px 18px; border-radius: 10px;
+    margin-top: 16px;
+  }
+  /* Stepper */
+  .stepper { display: grid; gap: 20px; grid-template-columns: 200px 1fr; align-items: start; }
+  @media (max-width: 680px) { .stepper { grid-template-columns: 1fr; } }
+  .fig {
+    background: var(--primary-soft); border-radius: 16px;
+    display: flex; align-items: center; justify-content: center; padding: 16px;
+    min-height: 220px;
+  }
+  .fig svg { width: 150px; height: auto; color: var(--primary); }
+  .progress { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+  .progress button {
+    width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--border);
+    background: var(--surface); color: var(--text); cursor: pointer; font-family: inherit; font-size: 15px;
+  }
+  .progress button[aria-current="step"] { background: var(--primary); color: #fff; border-color: var(--primary); }
+  .controls { display: flex; gap: 10px; margin-top: 16px; }
+  .btn {
+    font-family: inherit; font-size: 16px; padding: 10px 18px; border-radius: 10px;
+    border: 1px solid var(--primary); background: var(--primary); color: #fff; cursor: pointer;
+  }
+  .btn.ghost { background: transparent; color: var(--primary); }
+  .btn:disabled { opacity: 0.4; cursor: default; }
+  table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 12px; overflow: hidden; }
+  th, td { padding: 12px; text-align: right; border-bottom: 1px solid var(--border); }
+  th { background: var(--primary-soft); color: var(--primary); font-weight: 700; }
+  .verses { list-style: none; padding: 0; margin: 0; }
+  .verses li { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed var(--border); }
+  .verses li:last-child { border-bottom: 0; }
+  .sources li { margin-bottom: 8px; }
+  footer { border-top: 1px solid var(--border); padding: 24px 0 40px; color: var(--muted); font-size: 16px; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>درس الصلاة خطوة بخطوة</h1>
+    <p>شرح مبسط لصفة الصلاة كما وردت في القرآن الكريم وصحيح البخاري، مع رسوم توضيحية لكل وضعية.</p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="أقسام الدرس">
+  <div class="wrap">
+    <ul>
+      <li><a href="#intro">مقدمة</a></li>
+      <li><a href="#conditions">الشروط</a></li>
+      <li><a href="#pillars">الأركان</a></li>
+      <li><a href="#steps">الخطوات</a></li>
+      <li><a href="#times">أوقات وركعات</a></li>
+      <li><a href="#sources">المصادر</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section id="intro">
+    <div class="wrap">
+      <h2>مقدمة</h2>
+      <div class="card">
+        <p>الصلاة عماد الدين، وهي أول ما يُحاسب عليه العبد يوم القيامة. وقد فرضها الله تعالى على المؤمنين في أوقات محددة، قال تعالى:</p>
+        <p><strong>﴿إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا﴾</strong> <span class="ref">النساء: 103</span></p>
+        <p>وقد بيّن النبي ﷺ صفتها بقوله:</p>
+        <p><strong>«صَلُّوا كَمَا رَأَيْتُمُونِي أُصَلِّي»</strong> <span class="ref">صحيح البخاري، كتاب الأذان، حديث 631</span></p>
+        <p class="muted">لذلك يقوم هذا الدرس على الخطوات التي وصفها النبي ﷺ في الأحاديث الصحيحة.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="conditions">
+    <div class="wrap">
+      <h2>شروط الصلاة</h2>
+      <p>الشروط أمور تسبق الصلاة ولا تكون جزءاً منها، ومن دونها لا تصح الصلاة:</p>
+      <div class="grid">
+        <div class="card">
+          <h3>الطهارة من الحدث</h3>
+          <p>الوضوء أو الغسل لمن عليه جنابة، قال تعالى: <strong>﴿يَا أَيُّهَا الَّذِينَ آمَنُوا إِذَا قُمْتُمْ إِلَى الصَّلَاةِ فَاغْسِلُوا وُجُوهَكُمْ...﴾</strong></p>
+          <span class="ref">المائدة: 6</span>
+        </div>
+        <div class="card">
+          <h3>دخول الوقت</h3>
+          <p>لا تصح الصلاة قبل وقتها، وقد جاء وقتها في القرآن بقوله تعالى: <strong>﴿أَقِمِ الصَّلَاةَ لِدُلُوكِ الشَّمْسِ﴾</strong></p>
+          <span class="ref">الإسراء: 78</span>
+        </div>
+        <div class="card">
+          <h3>استقبال القبلة</h3>
+          <p>التوجه إلى الكعبة المشرفة، قال تعالى: <strong>﴿فَوَلِّ وَجْهَكَ شَطْرَ الْمَسْجِدِ الْحَرَامِ﴾</strong></p>
+          <span class="ref">البقرة: 144</span>
+        </div>
+        <div class="card">
+          <h3>ستر العورة وطهارة البدن والمكان</h3>
+          <p>ستر ما يجب ستره، وأن يكون الثوب والمكان طاهرين من النجاسات.</p>
+          <span class="ref">الأعراف: 31 — ﴿يَا بَنِي آدَمَ خُذُوا زِينَتَكُمْ عِندَ كُلِّ مَسْجِدٍ﴾</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pillars">
+    <div class="wrap">
+      <h2>أركان الصلاة</h2>
+      <p>الأركان أفعال الصلاة التي لا تصح إلا بها، ولا تسقط بالنسيان. وهي على المشهور:</p>
+      <div class="card">
+        <ol class="clean">
+          <li>النية في القلب (لا يُشترط النطق بها)</li>
+          <li>تكبيرة الإحرام: «الله أكبر»</li>
+          <li>القيام لمن يقدر عليه</li>
+          <li>قراءة الفاتحة</li>
+          <li>الركوع</li>
+          <li>الرفع من الركوع والاعتدال</li>
+          <li>السجود</li>
+          <li>الطمأنينة في الأركان كلها</li>
+          <li>الجلوس للتشهد الأخير</li>
+          <li>التسليم</li>
+        </ol>
+        <p class="muted">ملاحظة: يختلف الفقهاء في عدّ بعض الأركان، فالحنفية لا يعدّون الفاتحة ركناً بل واجباً. وفي الحديث الصحيح أن النبي ﷺ قال للرجل الذي أساء صلاته: «ارْجِعْ فَصَلِّ فَإِنَّكَ لَمْ تُصَلِّ» ثلاث مرات، فأمره بالطمأنينة في كل ركن.</p>
+        <span class="ref">صحيح البخاري، كتاب الأذان، حديث 793</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="steps">
+    <div class="wrap">
+      <h2>خطوات الصلاة</h2>
+      <p class="muted">اضغط على الأرقام أو أزرار التالي والسابق للتنقل بين الخطوات.</p>
+      <div class="progress" id="progress" role="group" aria-label="اختيار الخطوة"></div>
+      <div class="stepper card">
+        <div class="fig" id="fig" aria-hidden="true"></div>
+        <div>
+          <h3 id="stepTitle"></h3>
+          <div id="stepBody"></div>
+          <span class="ref" id="stepRef"></span>
+          <div class="controls">
+            <button class="btn ghost" id="prev">السابق</button>
+            <button class="btn" id="next">التالي</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="times">
+    <div class="wrap">
+      <h2>أوقات الصلاة وعدد ركعاتها</h2>
+      <table>
+        <thead>
+          <tr><th>الصلاة</th><th>عدد الفرض</th><th>وقتها</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>الفجر</td><td>ركعتان</td><td>من طلوع الفجر الصادق إلى طلوع الشمس</td></tr>
+          <tr><td>الظهر</td><td>أربع ركعات</td><td>من زوال الشمس إلى أن يصير ظل كل شيء مثله</td></tr>
+          <tr><td>العصر</td><td>أربع ركعات</td><td>من نهاية وقت الظهر إلى غروب الشمس</td></tr>
+          <tr><td>المغرب</td><td>ثلاث ركعات</td><td>من غروب الشمس إلى مغيب الشفق</td></tr>
+          <tr><td>العشاء</td><td>أربع ركعات</td><td>من مغيب الشفق إلى منتصف الليل</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">الأوقات تقريبية، والأدق ما تعلنه المساجد أو الهيئات الرسمية في بلدك.</p>
+    </div>
+  </section>
+
+  <section id="sources">
+    <div class="wrap">
+      <h2>المصادر</h2>
+      <div class="card">
+        <h3>من القرآن الكريم</h3>
+        <ul class="verses">
+          <li><strong>﴿وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ﴾</strong> — البقرة: 43</li>
+          <li><strong>﴿قَدْ أَفْلَحَ الْمُؤْمِنُونَ * الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ﴾</strong> — المؤمنون: 1–2</li>
+          <li><strong>﴿إِنَّ الصَّلَاةَ تَنْهَىٰ عَنِ الْفَحْشَاءِ وَالْمُنكَرِ﴾</strong> — العنكبوت: 45</li>
+          <li><strong>﴿إِنَّ الصَّلَاةَ كَانَتْ عَلَى الْمُؤْمِنِينَ كِتَابًا مَّوْقُوتًا﴾</strong> — النساء: 103</li>
+        </ul>
+      </div>
+      <div class="card" style="margin-top:16px">
+        <h3>من صحيح البخاري</h3>
+        <ul class="sources">
+          <li>«صَلُّوا كَمَا رَأَيْتُمُونِي أُصَلِّي» — كتاب الأذان، حديث 631</li>
+          <li>حديث المسيء في صلاته: «إِذَا قُمْتَ إِلَى الصَّلَاةِ فَكَبِّرْ، ثُمَّ اقْرَأْ مَا تَيَسَّرَ مَعَكَ مِنَ الْقُرْآنِ، ثُمَّ ارْكَعْ حَتَّى تَطْمَئِنَّ رَاكِعًا...» — كتاب الأذان، حديث 793</li>
+        </ul>
+      </div>
+      <div class="note">
+        <strong>تنبيه:</strong> هذا الدرس مبسط للتعليم العام. الأحكام التفصيلية، وما فيه خلاف بين المذاهب، ترجع فيه إلى أهل العلم، ويُنصح بتعلم الصلاة من إمام أو معلم موثوق.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">تم إعداد هذا الدرس لأغراض تعليمية. &copy; <span id="year"></span></div>
+</footer>
+
+<script>
+  (function () {
+    var steps = [
+      {
+        title: "١. النية والتكبير",
+        fig: "stand",
+        body: "<p>قِف مستقبلاً القبلة، ونوِ في قلبك الصلاة التي تريد أداءها. ثم ارفع يديك حذو منكبيك (أو أذنيك) وكبّر قائلاً: <strong>«الله أكبر»</strong>. ثم ضع يمناك على يسراك على صدرك.</p>",
+        ref: "البخاري: حديث 631 (صلوا كما رأيتموني أصلي)"
+      },
+      {
+        title: "٢. القيام وقراءة الفاتحة",
+        fig: "stand",
+        body: "<p>اقرأ <strong>سورة الفاتحة</strong>، ثم اقرأ ما تيسر من القرآن في الركعتين الأوليين من كل صلاة رباعية أو ثلاثية، وفي الصلاة الثنائية كالفجر.</p><p>قال النبي ﷺ: «ثُمَّ اقْرَأْ مَا تَيَسَّرَ مَعَكَ مِنَ الْقُرْآنِ».</p>",
+        ref: "البخاري: حديث 793"
+      },
+      {
+        title: "٣. الركوع",
+        fig: "bow",
+        body: "<p>كبّر «الله أكبر» وانحنِ حتى يستوي ظهرك ورأسك، وضع يديك على ركبتيك، وقل: <strong>«سبحان ربي العظيم»</strong>. واطمئن في الركوع.</p>",
+        ref: "البخاري: حديث 793 (حتى تطمئن راكعا)"
+      },
+      {
+        title: "٤. الرفع من الركوع",
+        fig: "stand",
+        body: "<p>ارفع رأسك ويديك قائلاً: <strong>«سمع الله لمن حمده»</strong>، ثم تقول وأنت قائم: <strong>«ربنا ولك الحمد»</strong>. واعتدل قائماً واطمئن قبل السجود.</p>",
+        ref: "البخاري: حديث 793 (حتى تعتدل قائما)"
+      },
+      {
+        title: "٥. السجود",
+        fig: "prostrate",
+        body: "<p>كبّر «الله أكبر» واسجد على سبعة أعضاء: الجبهة مع الأنف، واليدين، والركبتين، وأطراف القدمين. قل: <strong>«سبحان ربي الأعلى»</strong>. واطمئن في السجود.</p>",
+        ref: "البخاري: حديث 793 (حتى تطمئن ساجدا)"
+      },
+      {
+        title: "٦. الجلسة بين السجدتين",
+        fig: "sit",
+        body: "<p>ارفع رأسك مكبراً واجلس مطمئناً، وقل: <strong>«رب اغفر لي»</strong>. ثم اسجد السجدة الثانية بنفس الطريقة.</p>",
+        ref: "البخاري: حديث 793 (حتى تطمئن جالسا)"
+      },
+      {
+        title: "٧. الركعة الثانية والتشهد",
+        fig: "sit",
+        body: "<p>قم للركعة الثانية وافعل مثل الأولى، لكن بدون دعاء الاستفتاح. وبعد السجدة الثانية في الركعة الثانية، اجلس للتشهد: <strong>«التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ».</strong></p><p>في الصلاة الثلاثية والرباعية، يقوم بعد التشهد الأول للركعة الثالثة دون زيادة تشهد.</p>",
+        ref: "حديث التشهد عن ابن مسعود، متفق عليه في صحيح البخاري"
+      },
+      {
+        title: "٨. التسليم",
+        fig: "sit",
+        body: "<p>في آخر صلاتك، بعد التشهد الأخير، والصلاة على النبي ﷺ والدعاء المأثور، سلّم عن يمينك ثم عن يسارك قائلاً: <strong>«السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ»</strong>.</p>",
+        ref: "التسليم ثابت في صحيح مسلم (يُراجع رقم الحديث في الموسوعة الحديثية)"
+      }
+    ];
+
+    var idx = 0;
+    var figs = {
+      stand: '<svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" aria-hidden="true"><circle cx="60" cy="22" r="12" fill="currentColor"/><path d="M60 38 V100"/><path d="M60 52 L48 84 M60 52 L72 84"/><path d="M60 100 L50 156 M60 100 L70 156"/><path d="M20 162 H100" stroke-width="2"/></svg>',
+      bow: '<svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" aria-hidden="true"><circle cx="98" cy="60" r="11" fill="currentColor"/><path d="M88 70 L40 100"/><path d="M84 74 L80 108"/><path d="M40 100 L32 156"/><path d="M40 100 L44 156"/><path d="M20 162 H100" stroke-width="2"/></svg>',
+      prostrate: '<svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" aria-hidden="true"><circle cx="104" cy="128" r="10" fill="currentColor"/><path d="M96 130 L48 112"/><path d="M96 130 L88 150"/><path d="M48 112 L26 150"/><path d="M20 162 H100" stroke-width="2"/></svg>',
+      sit: '<svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" aria-hidden="true"><circle cx="60" cy="40" r="12" fill="currentColor"/><path d="M60 54 V100"/><path d="M60 68 L44 96 M60 68 L76 96"/><path d="M60 100 L96 130 L30 140"/><path d="M20 162 H100" stroke-width="2"/></svg>'
+    };
+
+    var $ = function (id) { return document.getElementById(id); };
+    var progress = $("progress");
+
+    steps.forEach(function (s, i) {
+      var b = document.createElement("button");
+      b.textContent = (i + 1);
+      b.setAttribute("aria-label", "الخطوة " + (i + 1));
+      b.addEventListener("click", function () { show(i); });
+      progress.appendChild(b);
+    });
+
+    function show(i) {
+      idx = i;
+      var s = steps[i];
+      $("fig").innerHTML = figs[s.fig];
+      $("stepTitle").textContent = s.title;
+      $("stepBody").innerHTML = s.body;
+      $("stepRef").textContent = s.ref;
+      Array.prototype.forEach.call(progress.children, function (btn, j) {
+        if (j === i) btn.setAttribute("aria-current", "step");
+        else btn.removeAttribute("aria-current");
+      });
+      $("prev").disabled = i === 0;
+      $("next").disabled = i === steps.length - 1;
+    }
+
+    $("prev").addEventListener("click", function () { if (idx > 0) show(idx - 1); });
+    $("next").addEventListener("click", function () { if (idx < steps.length - 1) show(idx + 1); });
+    $("year").textContent = new Date().getFullYear();
+    show(0);
+  })();
+</script>
+</body>
+</html>
