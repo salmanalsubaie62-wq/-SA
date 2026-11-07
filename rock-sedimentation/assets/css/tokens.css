@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Design tokens — هوية الموقع
+   المصدر الوحيد للألوان والخطوط والمسافات. لا تستخدم قيماً عشوائية في الملفات الأخرى.
+   ========================================================================== */
+
+:root {
+  /* ---- الألوان ---- */
+  --color-primary: #1F4E5A;        /* أزرق-سماوي داكن (طبقة الماء/الحجر الجيري) */
+  --color-primary-hover: #173C46;
+  --color-accent: #C8862A;         /* أوكر (الرمل والرواسب) */
+  --color-accent-soft: #F6E7CF;
+  --color-background: #FBF8F3;     /* ورق دافئ */
+  --color-surface: #FFFFFF;
+  --color-text: #1E2A2F;           /* تباين 13:1 تقريباً على الخلفية */
+  --color-muted: #55636B;          /* تباين 5.9:1 تقريباً على الخلفية */
+  --color-border: #E4DDD2;
+  --color-success: #2E7D57;
+  --color-error: #B3261E;
+  --color-focus: #1F4E5A;
+
+  /* ---- الخطوط ---- */
+  --font-heading: "Cairo", "Tajawal", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans Arabic", "Tajawal", system-ui, sans-serif;
+
+  /* سلّم الأحجام */
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 28px;
+  --text-2xl: 40px;
+  --text-3xl: 56px;
+  --leading-body: 1.8;
+  --leading-heading: 1.25;
+
+  /* ---- المسافات (سلّم ثابت) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ---- الزوايا والظلال (قيمتان فقط) ---- */
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgba(30, 42, 47, 0.06), 0 2px 8px rgba(30, 42, 47, 0.06);
+  --shadow-lg: 0 8px 24px rgba(30, 42, 47, 0.10);
+
+  /* ---- الحركة (مدة وإيزينج واحد) ---- */
+  --duration: 200ms;
+  --easing: cubic-bezier(0.2, 0, 0, 1);
+
+  /* ---- عرض المحتوى ---- */
+  --content-width: 1080px;
+}
+
+/* دعم الوضع المظلم عند تفضيل النظام (اختياري، بدون تغيير الهوية) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-background: #131D21;
+    --color-surface: #1A2A30;
+    --color-text: #EEF2F3;
+    --color-muted: #A9B8BE;
+    --color-border: #2C3D44;
+    --color-primary: #7FC1CF;
+    --color-primary-hover: #A3D6E0;
+    --color-accent: #E8A94F;
+    --color-accent-soft: #3A2E1B;
+    --color-focus: #7FC1CF;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-background: #131D21;
+  --color-surface: #1A2A30;
+  --color-text: #EEF2F3;
+  --color-muted: #A9B8BE;
+  --color-border: #2C3D44;
+  --color-primary: #7FC1CF;
+  --color-primary-hover: #A3D6E0;
+  --color-accent: #E8A94F;
+  --color-accent-soft: #3A2E1B;
+  --color-focus: #7FC1CF;
+}
