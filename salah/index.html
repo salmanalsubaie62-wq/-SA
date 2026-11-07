@@ -82,7 +82,7 @@
   .vid { position: relative; aspect-ratio: 16 / 9; border: 1px dashed var(--ink-soft); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; padding: 16px; font-size: 15px; color: var(--ink-soft); background: rgba(0,0,0,0.02); }
   .vid iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   .vid a { color: var(--accent); }
-  .mistakes { counter-reset: m; }
+  .mistakes.plain { list-style: none; margin: 0; padding: 0; }
   .mistakes li { padding: 14px 0 14px 0; border-bottom: 1px solid var(--rule); }
   .mistakes li b { font-family: var(--head); font-size: 20px; color: var(--accent); margin-inline-end: 8px; }
   .closing { margin-top: 110px; padding-top: 14px; border-top: 1px solid var(--ink); font-size: 14px; color: var(--ink-soft); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-bottom: 40px; }
@@ -98,7 +98,7 @@
       <span>الصلاة · الشروط · الأركان · الخطوات</span>
     </div>
     <h1 class="title">الصلاة<span>.</span></h1>
-    <p class="lede">شرح مختصر لصفة الصلاة كما وردت في القرآن الكريم وصحيح البخاري، ليتعلمها المبتدئ خطوة بخطوة، ويراجعها من يحتاج تذكيراً.</p>
+    <p class="lede">شرح مختصر لصفة الصلاة كما وردت في القرآن الكريم وفي صحيحي البخاري ومسلم، ليتعلمها المبتدئ خطوة بخطوة، ويراجعها من يحتاج تذكيراً.</p>
   </header>
 
   <section id="intro">
@@ -155,18 +155,19 @@
             <div class="step-n">1</div>
             <h3>النية والتكبير</h3>
             <p>قف مستقبلاً القبلة، ونوِ في قلبك الصلاة التي تريد أداءها. ارفع يديك حذو منكبيك وكبّر: <span class="dhikr">«الله أكبر»</span>. ثم ضع يمناك على يسراك على صدرك.</p>
-            <span class="src">البخاري: حديث 631</span>
+            <p>بعد التكبير يُستحب أن تقول دعاء الاستفتاح، ثم تبدأ القراءة.</p>
+            <span class="src">البخاري، الأذان، 631</span>
           </div>
-          <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="60" cy="22" r="11" fill="currentColor"/><path d="M60 36 V100"/><path d="M60 50 L48 82 M60 50 L72 82"/><path d="M60 100 L50 156 M60 100 L70 156"/></svg></div>
+          <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="60" cy="22" r="11" fill="currentColor"/><path d="M60 36 V100"/><path d="M60 50 L44 60 L36 34 M60 50 L76 60 L84 34"/><path d="M60 100 L50 156 M60 100 L70 156"/></svg></div>
         </li>
 
         <li class="step">
           <div>
             <div class="step-n">2</div>
             <h3>القيام وقراءة الفاتحة</h3>
-            <p>اقرأ <strong>سورة الفاتحة</strong>، ثم ما تيسر من القرآن في الركعتين الأوليين. وفي الركعة الأولى يُستفتح بالتكبير ثم الدعاء المأثور قبل القراءة.</p>
+            <p>اقرأ <strong>سورة الفاتحة</strong> في كل ركعة. وفي الركعتين الأوليين تضيف بعدها ما تيسر من القرآن.</p>
             <p class="dhikr">«ثُمَّ اقْرَأْ مَا تَيَسَّرَ مَعَكَ مِنَ الْقُرْآنِ»</p>
-            <span class="src">البخاري: حديث 793</span>
+            <span class="src">البخاري، الأذان، 793</span>
           </div>
           <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="60" cy="22" r="11" fill="currentColor"/><path d="M60 36 V100"/><path d="M60 50 L48 82 M60 50 L72 82"/><path d="M60 100 L50 156 M60 100 L70 156"/></svg></div>
         </li>
@@ -176,7 +177,7 @@
             <div class="step-n">3</div>
             <h3>الركوع</h3>
             <p>كبّر وانحنِ حتى يستوي ظهرك ورأسك، وضع يديك على ركبتيك. قل: <span class="dhikr">«سبحان ربي العظيم»</span>، واطمئن في ركوعك.</p>
-            <span class="src">البخاري: حديث 793 (حتى تطمئن راكعا)</span>
+            <span class="src">البخاري، الأذان، 793 (حتى تطمئن راكعا)</span>
           </div>
           <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="98" cy="60" r="10" fill="currentColor"/><path d="M88 70 L40 100"/><path d="M84 74 L80 108"/><path d="M40 100 L32 156 M40 100 L44 156"/></svg></div>
         </li>
@@ -186,7 +187,7 @@
             <div class="step-n">4</div>
             <h3>الرفع من الركوع</h3>
             <p>ارفع رأسك ويديك قائلاً: <span class="dhikr">«سمع الله لمن حمده»</span>، ثم وأنت قائم: <span class="dhikr">«ربنا ولك الحمد»</span>. اعتدل واطمئن قبل السجود.</p>
-            <span class="src">البخاري: حديث 793 (حتى تعتدل قائما)</span>
+            <span class="src">البخاري، الأذان، 793 (حتى تعتدل قائما)</span>
           </div>
           <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="60" cy="22" r="11" fill="currentColor"/><path d="M60 36 V100"/><path d="M60 50 L48 82 M60 50 L72 82"/><path d="M60 100 L50 156 M60 100 L70 156"/></svg></div>
         </li>
@@ -196,9 +197,9 @@
             <div class="step-n">5</div>
             <h3>السجود</h3>
             <p>كبّر واسجد على سبعة أعضاء: الجبهة مع الأنف، واليدين، والركبتين، وأطراف القدمين. قل: <span class="dhikr">«سبحان ربي الأعلى»</span>، واطمئن في سجودك.</p>
-            <span class="src">البخاري: حديث 793 (حتى تطمئن ساجدا)</span>
+            <span class="src">البخاري، الأذان، 793 (حتى تطمئن ساجدا)</span>
           </div>
-          <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="104" cy="128" r="9" fill="currentColor"/><path d="M96 130 L48 112"/><path d="M96 130 L88 150"/><path d="M48 112 L26 150"/><path d="M14 158 H106" stroke-width="1.5"/></svg></div>
+          <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="102" cy="120" r="10" fill="currentColor"/><path d="M94 124 L44 116"/><path d="M94 124 L84 146"/><path d="M44 116 L30 150"/><path d="M14 156 H106" stroke-width="1.5"/></svg></div>
         </li>
 
         <li class="step">
@@ -206,7 +207,7 @@
             <div class="step-n">6</div>
             <h3>الجلسة بين السجدتين</h3>
             <p>ارفع رأسك مكبراً واجلس مطمئناً، وقل: <span class="dhikr">«رب اغفر لي»</span>. ثم اسجد السجدة الثانية كالأولى.</p>
-            <span class="src">البخاري: حديث 793 (حتى تطمئن جالسا)</span>
+            <span class="src">البخاري، الأذان، 793 (حتى تطمئن جالسا)</span>
           </div>
           <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="60" cy="40" r="11" fill="currentColor"/><path d="M60 54 V100"/><path d="M60 68 L44 96 M60 68 L76 96"/><path d="M60 100 L96 130 L30 140"/></svg></div>
         </li>
@@ -218,9 +219,9 @@
             <p>بعد السجدة الثانية في الركعة الثانية، اجلس للتشهد:</p>
             <p class="dhikr">«التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ»</p>
             <p>الصلاة الثلاثية والرباعية تتشهد في الركعة الثانية ثم تقوم، والتشهد الأخير يكون في آخر الصلاة.</p>
-            <span class="src">حديث ابن مسعود، متفق عليه، ومرجعه صحيح البخاري</span>
+            <span class="src">حديث ابن مسعود، متفق عليه (صحيح البخاري وصحيح مسلم)</span>
           </div>
-          <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="60" cy="40" r="11" fill="currentColor"/><path d="M60 54 V100"/><path d="M60 68 L44 96 M60 68 L76 96"/><path d="M60 100 L96 130 L30 140"/></svg></div>
+          <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="60" cy="40" r="11" fill="currentColor"/><path d="M60 54 V100"/><path d="M60 68 L44 96 M60 68 L76 96"/><path d="M44 96 L42 80" stroke-width="3"/><path d="M60 100 L96 130 L30 140"/></svg></div>
         </li>
 
         <li class="step">
@@ -228,9 +229,9 @@
             <div class="step-n">8</div>
             <h3>التسليم</h3>
             <p>بعد التشهد الأخير والصلاة على النبي ﷺ والدعاء المأثور، سلّم عن يمينك ثم عن يسارك: <span class="dhikr">«السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ»</span>.</p>
-            <span class="src">ثابت في صحيح مسلم (يُراجع رقم الحديث في الموسوعة الحديثية)</span>
+            <span class="src">صحيح مسلم، كتاب الصلاة</span>
           </div>
-          <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="60" cy="40" r="11" fill="currentColor"/><path d="M60 54 V100"/><path d="M60 68 L44 96 M60 68 L76 96"/><path d="M60 100 L96 130 L30 140"/><path d="M30 62 L8 56 M90 62 L112 56" stroke-width="2.5"/></svg></div>
+          <div class="fig" aria-hidden="true"><svg viewBox="0 0 120 170" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><circle cx="60" cy="40" r="11" fill="currentColor"/><path d="M46 30 Q34 40 46 50 M74 30 Q86 40 74 50" stroke-width="2.5"/><path d="M60 54 V100"/><path d="M60 68 L44 96 M60 68 L76 96"/><path d="M60 100 L96 130 L30 140"/></svg></div>
         </li>
 
       </ol>
@@ -242,14 +243,14 @@
     <div class="body-col">
       <p>لكل خطوة مكان للفيديو. إن أردت أن تشاهد الحركة قبل أن تقرأ، ابدأ من هنا.</p>
       <ol class="watch">
-        <li><div class="n">1</div><div><h3>النية والتكبير</h3><div class="vid" data-yt="" data-title="النية والتكبير"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9+%D8%AA%D9%83%D8%A8%D9%8A%D8%B1+%D8%A7%D9%84%D8%A5%D8%AD%D8%B1%D8%A7%D9%85" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
-        <li><div class="n">2</div><div><h3>القيام وقراءة الفاتحة</h3><div class="vid" data-yt="" data-title="القيام وقراءة الفاتحة"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9+%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%A1%D8%A9+%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
-        <li><div class="n">3</div><div><h3>الركوع</h3><div class="vid" data-yt="" data-title="الركوع"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B1%D9%83%D9%88%D8%B9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
-        <li><div class="n">4</div><div><h3>الرفع من الركوع</h3><div class="vid" data-yt="" data-title="الرفع من الركوع"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B1%D9%81%D8%B9+%D9%85%D9%86+%D8%A7%D9%84%D8%B1%D9%83%D9%88%D8%B9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
-        <li><div class="n">5</div><div><h3>السجود</h3><div class="vid" data-yt="" data-title="السجود"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B3%D8%AC%D9%88%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
-        <li><div class="n">6</div><div><h3>الجلسة بين السجدتين</h3><div class="vid" data-yt="" data-title="الجلسة بين السجدتين"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%A7%D9%84%D8%AC%D9%84%D8%B3%D8%A9+%D8%A8%D9%8A%D9%86+%D8%A7%D9%84%D8%B3%D8%AC%D8%AF%D8%AA%D9%8A%D9%86+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
-        <li><div class="n">7</div><div><h3>التشهد</h3><div class="vid" data-yt="" data-title="التشهد"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%A7%D9%84%D8%AA%D8%B4%D9%87%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
-        <li><div class="n">8</div><div><h3>التسليم</h3><div class="vid" data-yt="" data-title="التسليم"><span>فيديو هذه الخطوة لم يُضف بعد</span><a href="https://www.youtube.com/results?search_query=%D8%A7%D9%84%D8%AA%D8%B3%D9%84%D9%8A%D9%85+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">1</div><div><h3>النية والتكبير</h3><div class="vid" data-yt="" data-title="النية والتكبير"><span>الفيديو قيد الإعداد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9+%D8%AA%D9%83%D8%A8%D9%8A%D8%B1+%D8%A7%D9%84%D8%A5%D8%AD%D8%B1%D8%A7%D9%85" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">2</div><div><h3>القيام وقراءة الفاتحة</h3><div class="vid" data-yt="" data-title="القيام وقراءة الفاتحة"><span>الفيديو قيد الإعداد</span><a href="https://www.youtube.com/results?search_query=%D9%82%D8%B1%D8%A7%D8%A1%D8%A9+%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD%D8%A9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">3</div><div><h3>الركوع</h3><div class="vid" data-yt="" data-title="الركوع"><span>الفيديو قيد الإعداد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B1%D9%83%D9%88%D8%B9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">4</div><div><h3>الرفع من الركوع</h3><div class="vid" data-yt="" data-title="الرفع من الركوع"><span>الفيديو قيد الإعداد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B1%D9%81%D8%B9+%D9%85%D9%86+%D8%A7%D9%84%D8%B1%D9%83%D9%88%D8%B9+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">5</div><div><h3>السجود</h3><div class="vid" data-yt="" data-title="السجود"><span>الفيديو قيد الإعداد</span><a href="https://www.youtube.com/results?search_query=%D8%B5%D9%81%D8%A9+%D8%A7%D9%84%D8%B3%D8%AC%D9%88%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">6</div><div><h3>الجلسة بين السجدتين</h3><div class="vid" data-yt="" data-title="الجلسة بين السجدتين"><span>الفيديو قيد الإعداد</span><a href="https://www.youtube.com/results?search_query=%D8%A7%D9%84%D8%AC%D9%84%D8%B3%D8%A9+%D8%A8%D9%8A%D9%86+%D8%A7%D9%84%D8%B3%D8%AC%D8%AF%D8%AA%D9%8A%D9%86+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">7</div><div><h3>التشهد</h3><div class="vid" data-yt="" data-title="التشهد"><span>الفيديو قيد الإعداد</span><a href="https://www.youtube.com/results?search_query=%D8%A7%D9%84%D8%AA%D8%B4%D9%87%D8%AF+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
+        <li><div class="n">8</div><div><h3>التسليم</h3><div class="vid" data-yt="" data-title="التسليم"><span>الفيديو قيد الإعداد</span><a href="https://www.youtube.com/results?search_query=%D8%A7%D9%84%D8%AA%D8%B3%D9%84%D9%8A%D9%85+%D9%81%D9%8A+%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9" target="_blank" rel="noopener">ابحث عنه في يوتيوب</a></div></div></li>
       </ol>
     </div>
   </section>
@@ -257,11 +258,11 @@
   <section id="mistakes">
     <div class="sec-head"><span class="num">06</span><h2>أخطاء شائعة</h2></div>
     <div class="body-col">
-      <ol class="mistakes" style="list-style:none;margin:0;padding:0">
+      <ol class="mistakes plain">
         <li><b>أ</b>الاستعجال في الركوع والسجود. النبي ﷺ أمر المسيء في صلاته بالطمأنينة، حتى قال: «ثُمَّ ارْكَعْ حَتَّى تَطْمَئِنَّ رَاكِعًا». <span class="src">البخاري، الأذان، 793</span></li>
-        <li><b>ب</b>الكلام أو الالتفات أثناء الصلاة. وهو مما يبطلها عند الجمهور، ولا يُعذر فيه إلا لحاجة. <span class="src">لم أتحقق من نص حديث بعينه في هذه الجلسة</span></li>
+        <li><b>ب</b>الكلام أو الالتفات الكثير أثناء الصلاة، وهو مما يُبطل الصلاة عند جمهور الفقهاء، ولا يُعذر فيه إلا لحاجة.</li>
         <li><b>ج</b>ترك الجلسة بين السجدتين أو الاكتفاء بمرور سريع. الجلسة لازمة مع الطمأنينة في الأركان كلها. <span class="src">البخاري، الأذان، 793</span></li>
-        <li><b>د</b>نسيان التشهد الأخير. هو ركن عند الجمهور، ومن تركه بطلت صلاته. <span class="src">ينظر الفتاوى في المسألة</span></li>
+        <li><b>د</b>نسيان التشهد الأخير. هو ركن عند الشافعية والحنابلة، وواجب عند الحنفية، فينبغي الانتباه إليه في كل صلاة.</li>
       </ol>
     </div>
   </section>
@@ -294,7 +295,8 @@
       <p style="margin-top:28px">من صحيح البخاري ومسلم:</p>
       <p>«صَلُّوا كَمَا رَأَيْتُمُونِي أُصَلِّي» <span class="src">البخاري، الأذان، 631</span></p>
       <p>حديث المسيء في صلاته <span class="src">البخاري، الأذان، 793</span></p>
-      <p>حديث التشهد عن ابن مسعود <span class="src">البخاري ومسلم</span></p>
+      <p>حديث التشهد عن ابن مسعود <span class="src">متفق عليه</span></p>
+      <p>حديث التسليم عن اليمين والشمال <span class="src">مسلم، كتاب الصلاة</span></p>
       <p class="note">هذا الدرس للتعليم العام. الأحكام التفصيلية، وما فيه خلاف بين المذاهب، ترجع فيه إلى أهل العلم، ويُنصح بتعلم الصلاة من إمام أو معلم موثوق.</p>
     </div>
   </section>
