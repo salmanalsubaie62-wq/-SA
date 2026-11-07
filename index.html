@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تعلّم الصلاة خطوة بخطوة</title>
+  <meta name="description" content="درس تفاعلي للأطفال يشرح طريقة الصلاة كما صلى النبي صلى الله عليه وسلم، على مذهب أهل السنة والجماعة.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="#top" class="brand">🕌 تعلّم الصلاة</a>
+  <nav>
+    <a href="#steps">الخطوات</a>
+    <a href="#quiz">اختبر نفسك</a>
+    <a href="#about">عن الدرس</a>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-text">
+    <h1>هيا نتعلم الصلاة!</h1>
+    <p>درس مصوّر وتفاعلي يشرح لك كل خطوة في الصلاة، بالطريقة التي صلى بها النبي ﷺ.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#steps">ابدأ الدرس</a>
+      <a class="btn ghost" href="#quiz">اختبار سريع</a>
+    </div>
+  </div>
+  <div class="hero-figure" aria-hidden="true">
+    <svg viewBox="0 0 200 260" class="hero-svg">
+      <circle cx="100" cy="40" r="22" fill="#f4c27a"/>
+      <rect x="78" y="66" width="44" height="100" rx="18" fill="#2e7d5b"/>
+      <rect x="82" y="160" width="14" height="80" rx="7" fill="#1f4e3d"/>
+      <rect x="104" y="160" width="14" height="80" rx="7" fill="#1f4e3d"/>
+      <path d="M78 90 Q62 130 88 150" stroke="#2e7d5b" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <path d="M122 90 Q138 130 112 150" stroke="#2e7d5b" stroke-width="14" fill="none" stroke-linecap="round"/>
+    </svg>
+  </div>
+</section>
+
+<section class="section" id="steps">
+  <h2>خطوات الصلاة</h2>
+  <p class="lead">اضغط على كل خطوة لتعرف ما تفعله، وشوف الحركة في الرسمة. تقدر تمشي على الخطوات بالأزرار تحت.</p>
+
+  <div class="player">
+    <div class="stage">
+      <div class="figure-box">
+        <svg id="figure" viewBox="0 0 200 260" aria-label="رسم توضيحي لوضعية المصلي"></svg>
+      </div>
+      <div class="step-info">
+        <span class="step-count" id="stepCount"></span>
+        <h3 id="stepTitle"></h3>
+        <p id="stepText"></p>
+        <p class="dhikr" id="stepDhikr"></p>
+        <div class="step-controls">
+          <button class="btn ghost" id="prevBtn">السابق</button>
+          <button class="btn ghost" id="speakBtn" title="استماع">🔊 استمع</button>
+          <button class="btn primary" id="nextBtn">التالي</button>
+        </div>
+      </div>
+    </div>
+    <div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+    <ol class="step-list" id="stepList"></ol>
+  </div>
+</section>
+
+<section class="section tint" id="rakaat">
+  <h2>كم ركعة في كل صلاة؟</h2>
+  <div class="cards">
+    <div class="card"><h4>الفجر</h4><p>ركعتان</p></div>
+    <div class="card"><h4>الظهر</h4><p>أربع ركعات</p></div>
+    <div class="card"><h4>العصر</h4><p>أربع ركعات</p></div>
+    <div class="card"><h4>المغرب</h4><p>ثلاث ركعات</p></div>
+    <div class="card"><h4>العشاء</h4><p>أربع ركعات</p></div>
+  </div>
+  <p class="note">كل ركعة تتكرر فيها الخطوات من القيام إلى السجدتين. وفي الركعة الثانية من الظهر والعصر والمغرب والعشاء نجلس للتشهد الأول، وفي آخر ركعة نجلس للتشهد الأخير ثم نسلّم.</p>
+</section>
+
+<section class="section" id="quiz">
+  <h2>اختبر نفسك</h2>
+  <div class="quiz" id="quizBox"></div>
+</section>
+
+<section class="section tint" id="about">
+  <h2>عن الدرس</h2>
+  <p>الدرس مبني على حديث النبي ﷺ: <strong>«صلّوا كما رأيتموني أصلي»</strong> (رواه البخاري). والمرجع في تفاصيل الصلاة هو ما ثبت عنه ﷺ، ولهذا يُنصح بالرجوع إلى معلّم أو مسجد لمسائل الاختلاف الفرعية بين المذاهب.</p>
+  <p class="note">المصادر: صحيح البخاري، وكتب الفقه المعتمدة عند أهل السنة والجماعة، وفتاوى علماء معتمدين مثل ابن باز وابن عثيمين رحمهما الله.</p>
+</section>
+
+<footer class="footer">
+  <p>© جميع الحقوق محفوظة. الدرس للاستخدام التعليمي.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
