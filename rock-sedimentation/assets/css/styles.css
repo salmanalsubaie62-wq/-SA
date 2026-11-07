@@ -133,7 +133,7 @@ a:hover { color: var(--color-primary-hover); }
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
 /* ---------- Hero ---------- */
-.hero { padding-block: var(--space-16) var(--space-12); }
+.hero { padding-block: var(--space-8) var(--space-6); }
 .hero-grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -146,9 +146,9 @@ a:hover { color: var(--color-primary-hover); }
 .hero-figure svg { width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); display: block; }
 
 /* ---------- Sections ---------- */
-.section { padding-block: var(--space-16); }
+.section { padding-block: var(--space-8); }
 .section-alt { background: var(--color-surface); border-block: 1px solid var(--color-border); }
-.section-head { margin-bottom: var(--space-8); }
+.section-head { margin-bottom: var(--space-4); }
 .section-head .muted { margin: 0; }
 
 .card {
@@ -189,7 +189,7 @@ a:hover { color: var(--color-primary-hover); }
   border-color: var(--color-primary);
   color: #fff;
 }
-.step-panel { min-height: 220px; display: flex; flex-direction: column; justify-content: space-between; }
+.step-panel { min-height: 0; display: flex; flex-direction: column; justify-content: space-between; }
 .step-example {
   background: var(--color-accent-soft);
   border-inline-start: 4px solid var(--color-accent);
@@ -265,7 +265,7 @@ a:hover { color: var(--color-primary-hover); }
 .layer-stack {
   display: flex;
   flex-direction: column-reverse;
-  min-height: 260px;
+  min-height: 160px;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   overflow: hidden;
@@ -311,6 +311,17 @@ a:hover { color: var(--color-primary-hover); }
 .quiz-actions { display: flex; gap: var(--space-3); flex-wrap: wrap; }
 .quiz-score { font-weight: 600; margin: 0; min-height: 1.6em; }
 
+/* ---------- Teacher banner ---------- */
+.teacher-banner {
+  background: var(--color-primary);
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: var(--text-sm);
+  padding: var(--space-2) var(--space-4);
+}
+.teacher-banner strong { color: var(--color-accent-soft); }
+
 /* ---------- Footer ---------- */
 .site-footer { border-top: 1px solid var(--color-border); padding-block: var(--space-8); background: var(--color-surface); }
 .footer-inner { display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap; font-size: var(--text-sm); }
@@ -319,8 +330,8 @@ a:hover { color: var(--color-primary-hover); }
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
   .hero-grid, .split, .layer-sim { grid-template-columns: 1fr; gap: var(--space-8); }
-  .hero { padding-block: var(--space-12) var(--space-8); }
-  .section { padding-block: var(--space-12); }
+  .hero { padding-block: var(--space-6); }
+  .section { padding-block: var(--space-6); }
 }
 @media (max-width: 480px) {
   .container { width: min(100% - 32px, var(--content-width)); }
