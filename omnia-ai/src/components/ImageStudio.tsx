@@ -209,7 +209,7 @@ export function ImageStudio() {
           role="dialog"
           aria-modal="true"
           onClick={() => setLightbox(null)}
-          style={{ position: "fixed", inset: 0, background: "rgba(3,3,8,0.86)", zIndex: 80, display: "grid", placeItems: "center", padding: 20, animation: "fade .2s" }}
+          style={{ position: "fixed", inset: 0, background: "rgba(5,5,5,0.86)", zIndex: 80, display: "grid", placeItems: "center", padding: 20, animation: "fade .2s" }}
         >
           <div onClick={(e) => e.stopPropagation()} className="card" style={{ maxWidth: 980, width: "100%", padding: 14 }}>
             <img src={lightbox.url} alt={lightbox.prompt} style={{ width: "100%", maxHeight: "70vh", objectFit: "contain", borderRadius: 14 }} />

@@ -61,7 +61,7 @@ export function MemoryManager() {
               <div className="small muted">Off by default.</div>
             </div>
             <label className="row" style={{ cursor: "pointer" }}>
-              <input type="checkbox" checked={Boolean(enabled)} disabled={enabled === null} onChange={(e) => toggleMemory(e.target.checked)} style={{ width: 18, height: 18, accentColor: "#8b5cf6" }} aria-label="Use memory" />
+              <input type="checkbox" checked={Boolean(enabled)} disabled={enabled === null} onChange={(e) => toggleMemory(e.target.checked)} style={{ width: 18, height: 18, accentColor: "#9f9f9f" }} aria-label="Use memory" />
             </label>
           </div>
           <form onSubmit={add} className="stack">
@@ -101,7 +101,7 @@ export function MemoryManager() {
                     <span className="small muted">{m.projectId ? "Project memory" : "Global memory"}</span>
                     <div className="row" style={{ gap: 6 }}>
                       <label className="row small dim" style={{ gap: 6, cursor: "pointer" }}>
-                        <input type="checkbox" checked={m.enabled} onChange={async (e) => { await api(`/api/memories/${m.id}`, { method: "PATCH", body: { enabled: e.target.checked } }); load(); }} style={{ accentColor: "#8b5cf6" }} />
+                        <input type="checkbox" checked={m.enabled} onChange={async (e) => { await api(`/api/memories/${m.id}`, { method: "PATCH", body: { enabled: e.target.checked } }); load(); }} style={{ accentColor: "#9f9f9f" }} />
                         Active
                       </label>
                       <button className="icon-btn" onClick={() => setEditing({ id: m.id, text: m.content })} aria-label="Edit memory"><Icon name="edit" size={14} /></button>

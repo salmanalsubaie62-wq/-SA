@@ -473,7 +473,7 @@ export function ChatView({ conversationId, projectId }: { conversationId?: strin
             </select>
             {busy ? (
               <button className="send-btn" disabled aria-label={t("send")} title={t("send")}>
-                <span className="spinner" style={{ borderTopColor: "#fff", width: 16, height: 16 }} />
+                <span className="spinner" style={{ borderTopColor: "#ffffff", width: 16, height: 16 }} />
               </button>
             ) : (
               <button className="send-btn" onClick={() => send(input, attachments)} disabled={noProvider || (!input.trim() && attachments.length === 0)} aria-label={t("send")} title={t("send")}>

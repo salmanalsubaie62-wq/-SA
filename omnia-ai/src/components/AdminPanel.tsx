@@ -171,7 +171,7 @@ export function AdminPanel({ meId }: { meId: string }) {
             <div key={f} className="row-between">
               <span>{f.replace(/_/g, " ")}</span>
               <label className="row" style={{ cursor: "pointer" }}>
-                <input type="checkbox" checked={featureState(f)} onChange={(e) => setFeature(f, e.target.checked)} style={{ width: 18, height: 18, accentColor: "#8b5cf6" }} aria-label={`Show ${f}`} />
+                <input type="checkbox" checked={featureState(f)} onChange={(e) => setFeature(f, e.target.checked)} style={{ width: 18, height: 18, accentColor: "#9f9f9f" }} aria-label={`Show ${f}`} />
               </label>
             </div>
           ))}

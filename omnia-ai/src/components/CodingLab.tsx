@@ -20,8 +20,8 @@ const STARTER = `<!doctype html>
   <head>
     <meta charset="utf-8" />
     <style>
-      body { font-family: system-ui; display: grid; place-items: center; height: 100vh; margin: 0; background: #0f0f1a; color: #eee; }
-      button { padding: 12px 22px; border-radius: 12px; border: 0; background: linear-gradient(135deg,#8b5cf6,#22d3ee); color: #fff; font-size: 16px; cursor: pointer; }
+      body { font-family: system-ui; display: grid; place-items: center; height: 100vh; margin: 0; background: #131313; color: #eeeeee; }
+      button { padding: 12px 22px; border-radius: 12px; border: 0; background: linear-gradient(135deg,#9f9f9f,#a1a1a1); color: #ffffff; font-size: 16px; cursor: pointer; }
     </style>
   </head>
   <body>
@@ -68,7 +68,7 @@ export function CodingLab({ connected }: { connected: boolean }) {
   const runPreview = () => {
     if (language === "html") setPreview(code);
     else if (language === "css") setPreview(`<!doctype html><html><head><style>${code}</style></head><body><h1>Heading</h1><p>Sample paragraph with <a href="#">a link</a>.</p><button>Button</button></body></html>`);
-    else setPreview(`<!doctype html><html><body style="font-family:system-ui;background:#fff;color:#111"><pre id="out"></pre><script>
+    else setPreview(`<!doctype html><html><body style="font-family:system-ui;background:#ffffff;color:#111111"><pre id="out"></pre><script>
       const log = (...a) => { document.getElementById('out').textContent += a.map(x => typeof x === 'object' ? JSON.stringify(x) : String(x)).join(' ') + '\\n'; };
       console.log = log;
       try { ${code.replace(/<\/script/gi, "<\\/script")} } catch (e) { log('Error: ' + e.message); }

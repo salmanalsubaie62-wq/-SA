@@ -150,7 +150,7 @@ export function VoiceAssistant({ connected }: { connected: boolean }) {
           </label>
           <label className="row" style={{ justifyContent: "space-between", width: "100%" }}>
             <span className="small dim">Speak replies aloud</span>
-            <input type="checkbox" checked={autoSpeak} onChange={(e) => setAutoSpeak(e.target.checked)} style={{ width: 18, height: 18, accentColor: "#8b5cf6" }} />
+            <input type="checkbox" checked={autoSpeak} onChange={(e) => setAutoSpeak(e.target.checked)} style={{ width: 18, height: 18, accentColor: "#9f9f9f" }} />
           </label>
         </div>
 
