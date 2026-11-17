@@ -429,3 +429,101 @@ th { color: var(--text-dim); font-weight: 600; font-size: 0.8rem; text-transform
   .convo-actions { opacity: 1; }
 }
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* ==========================================================================
+   Public front page (.lp): black on white, no colour, no gradients.
+   Scoped so the app's dark theme is untouched.
+   ========================================================================== */
+.lp {
+  --paper: #ffffff;
+  --ink: #000000;
+  --ink-soft: #000000;
+  --rule: #000000;
+  --serif-latin: "Fraunces", Georgia, "Times New Roman", serif;
+  --serif-arabic: "Amiri", "Traditional Arabic", serif;
+  --sans: "IBM Plex Sans", "IBM Plex Sans Arabic", system-ui, sans-serif;
+  min-height: 100dvh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+.lp::selection { background: #000; color: #fff; }
+.lp-wrap { max-width: 1200px; margin: 0 auto; padding: 26px clamp(20px, 5vw, 64px) 48px; }
+.lp-top, .lp-foot {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap;
+  font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.lp-top { border-bottom: 2px solid #000; padding-bottom: 12px; }
+.lp-mast { font-family: var(--serif-latin); font-size: 20px; letter-spacing: 0.02em; text-transform: none; font-weight: 600; }
+.lp-foot { border-top: 1px solid #000; margin-top: 90px; padding-top: 16px; text-transform: none; letter-spacing: 0; }
+
+.lp-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(300px, 1fr); gap: clamp(32px, 6vw, 88px); align-items: start; margin-top: clamp(40px, 7vw, 84px); }
+.lp-h1 {
+  font-family: var(--serif-latin); font-weight: 400; font-size: clamp(54px, 9vw, 128px);
+  line-height: 0.93; letter-spacing: -0.035em; margin: 0;
+}
+.lp-h1 em { font-style: italic; }
+.lp-ar { font-family: var(--serif-arabic); font-size: clamp(34px, 4vw, 46px); margin-top: 14px; line-height: 1.2; }
+.lp-lede { font-size: clamp(18px, 1.6vw, 21px); line-height: 1.55; max-width: 40ch; margin: 28px 0 0; }
+
+.lp-auth-slot { position: sticky; top: 24px; }
+.lp-form { background: #fff; border: 2px solid #000; padding: 26px 26px 28px; }
+.lp-form-kicker { font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 14px; font-weight: 600; }
+.lp .card { background: none; border: 0; box-shadow: none; padding: 0; }
+.lp .tabs { background: transparent; border: 0; border-bottom: 1px solid #000; border-radius: 0; padding: 0; gap: 0; }
+.lp .tabs button { border-radius: 0; color: #000; padding: 10px 6px; font-family: var(--sans); }
+.lp .tabs button[aria-selected="true"] { background: none; box-shadow: inset 0 -3px 0 #000; font-weight: 600; }
+.lp input { background: #fff; border: 1px solid #000; border-radius: 0; color: #000; padding: 11px 12px; font-family: var(--sans); }
+.lp input:focus { box-shadow: 0 0 0 2px #000; border-color: #000; }
+.lp label.field { color: #000; font-size: 13px; }
+.lp .btn-primary {
+  background: #000; color: #fff; border: 1px solid #000; border-radius: 0; box-shadow: none;
+  font-family: var(--sans); min-height: 46px;
+}
+.lp .btn-primary:hover:not(:disabled) { background: #fff; color: #000; transform: none; filter: none; }
+.lp .notice.error { background: #fff; border: 2px solid #000; color: #000; border-radius: 0; }
+.lp .login-note { color: #000; font-size: 13px; }
+.lp a { color: #000; text-decoration: underline; text-underline-offset: 3px; }
+
+.lp-sec { margin-top: clamp(64px, 9vw, 110px); }
+.lp-sec-head { display: flex; align-items: baseline; gap: 18px; border-top: 2px solid #000; padding-top: 12px; }
+.lp-sec-head h2 { font-family: var(--serif-latin); font-weight: 400; font-size: clamp(28px, 3.2vw, 40px); letter-spacing: -0.02em; margin: 0; }
+.lp-num { font-family: var(--serif-latin); font-size: 15px; font-style: italic; }
+.lp-list { list-style: none; margin: 18px 0 0; padding: 0; }
+.lp-row {
+  display: grid; grid-template-columns: 44px minmax(120px, 200px) minmax(0, 1fr); gap: 18px; align-items: baseline;
+  padding: 22px 0; border-bottom: 1px solid #000;
+}
+.lp-idx { font-size: 14px; font-family: var(--serif-latin); font-style: italic; }
+.lp-name {
+  position: relative; width: fit-content; padding-bottom: 3px;
+  font-family: var(--serif-latin); font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.01em;
+}
+.lp-name::after {
+  content: ""; position: absolute; inset-inline-start: 0; bottom: 0; height: 2px; width: 0; background: #000;
+  transition: width 0.45s var(--ease);
+}
+.lp-row:hover .lp-name::after, .lp-row:focus-within .lp-name::after { width: 100%; }
+.lp-desc { max-width: 62ch; }
+.lp-need { display: block; margin-top: 6px; font-size: 14px; }
+.lp-need::before { content: "— "; }
+
+.lp-sec-short .lp-quiet { max-width: 60ch; margin: 16px 0 0; }
+.lp-quiet { margin: 0; }
+.lp-keys { display: flex; flex-wrap: wrap; margin: 20px 0 0; border: 1px solid #000; width: fit-content; max-width: 100%; }
+.lp-keys span { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 13px; padding: 9px 14px; border-inline-end: 1px solid #000; }
+.lp-keys span:last-child { border-inline-end: 0; }
+
+@media (max-width: 900px) {
+  .lp-grid { grid-template-columns: minmax(0, 1fr); }
+  .lp-auth-slot { position: static; }
+}
+@media (max-width: 620px) {
+  .lp-row { grid-template-columns: minmax(0, 1fr); gap: 4px; padding: 18px 0; }
+  .lp-idx { display: none; }
+  .lp-top { font-size: 12px; }
+  .lp-foot { margin-top: 60px; }
+}

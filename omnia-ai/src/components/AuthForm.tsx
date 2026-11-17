@@ -33,16 +33,10 @@ export function AuthForm() {
   };
 
   return (
-    <div className="auth-wrap">
-      <div className="auth-card">
-        <div className="auth-hero">
-          <div className="brand-mark">
-            <Icon name="logo" size={26} />
-          </div>
-          <h1 className="gradient-text" style={{ marginBottom: 6 }}>OMNIA AI</h1>
-          <p className="muted" style={{ margin: 0 }}>One Platform. Infinite Intelligence.</p>
-        </div>
-        <div className="card">
+    <div className="lp-form">
+      <p className="lp-form-kicker">Sign in or open an account</p>
+      <div>
+        <div>
           <div className="tabs" role="tablist" style={{ display: "flex", width: "100%", marginBottom: 18 }}>
             <button role="tab" aria-selected={mode === "login"} style={{ flex: 1 }} onClick={() => setMode("login")}>
               Sign in
