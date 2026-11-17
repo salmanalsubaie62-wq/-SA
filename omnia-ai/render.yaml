@@ -1,0 +1,24 @@
+# Render blueprint: create a Blueprint from this repository and set the keys when asked.
+services:
+  - type: web
+    name: omnia-ai
+    runtime: docker
+    rootDir: omnia-ai
+    dockerfilePath: ./Dockerfile
+    plan: starter            # a persistent disk requires a paid plan
+    healthCheckPath: /login
+    disk:
+      name: omnia-data
+      mountPath: /app/data
+      sizeGB: 1
+    envVars:
+      - key: OMNIA_DATA_DIR
+        value: /app/data
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: BRAVE_SEARCH_API_KEY
+        sync: false
