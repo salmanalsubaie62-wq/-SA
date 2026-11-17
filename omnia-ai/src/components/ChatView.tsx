@@ -317,10 +317,7 @@ export function ChatView({ conversationId, projectId }: { conversationId?: strin
 
           {!loading && messages.length === 0 && !conversationId && (
             <div className="empty-hero">
-              <div className="brand-mark" style={{ width: 56, height: 56, borderRadius: 18 }}>
-                <Icon name="sparkle" size={26} />
-              </div>
-              <h1 className="gradient-text">{t("empty_title")}</h1>
+              <h1>{t("empty_title")}</h1>
               <p className="muted" style={{ maxWidth: "58ch", margin: 0 }}>{t("empty_sub")}</p>
               <div className="suggestions">
                 {(lang === "ar" ? SUGGESTIONS_AR : SUGGESTIONS_EN).map((s) => (
@@ -338,7 +335,6 @@ export function ChatView({ conversationId, projectId }: { conversationId?: strin
 
           {messages.map((m) => (
             <div key={m.id} className={`msg msg-${m.role}`}>
-              {m.role === "assistant" && <div className="avatar">Ω</div>}
               <div className="bubble" style={{ minWidth: 0 }}>
                 {m.role === "user" ? (
                   editing?.id === m.id ? (
@@ -396,7 +392,6 @@ export function ChatView({ conversationId, projectId }: { conversationId?: strin
 
           {busy && (
             <div className="msg msg-assistant">
-              <div className="avatar">Ω</div>
               <div className="bubble"><TypingDots /></div>
             </div>
           )}

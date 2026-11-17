@@ -65,7 +65,7 @@ export function Notice({ kind = "warning", title, children }: { kind?: "warning"
   const cls = kind === "warning" ? "notice" : `notice ${kind}`;
   return (
     <div className={cls} role={kind === "error" ? "alert" : undefined}>
-      <Icon name={kind === "error" ? "close" : kind === "success" ? "check" : "sparkle"} size={18} />
+      {kind !== "warning" && kind !== "info" && <Icon name={kind === "error" ? "close" : "check"} size={18} />}
       <div>
         {title && <strong>{title}</strong>}
         {children}

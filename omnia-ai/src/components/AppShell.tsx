@@ -69,13 +69,7 @@ export function AppShell({ user, children, hiddenFeatures = [] }: { user: ShellU
     <div className="shell">
       <aside className={`sidebar ${open ? "open" : ""}`} aria-label="Primary">
         <div className="brand">
-          <div className="brand-mark">
-            <Icon name="logo" size={20} />
-          </div>
-          <div>
-            <div className="brand-name gradient-text">{t("appName")}</div>
-            <div className="brand-tag">{t("tagline")}</div>
-          </div>
+          <div className="brand-name">{t("appName")}</div>
         </div>
 
         <Link href="/chat" className="btn btn-primary" style={{ width: "100%" }}>

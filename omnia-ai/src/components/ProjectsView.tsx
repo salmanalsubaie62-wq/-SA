@@ -15,7 +15,7 @@ const KINDS: Array<{ id: string; label: string; icon: IconName }> = [
   { id: "research", label: "Research", icon: "research" },
   { id: "film", label: "Film", icon: "video" },
   { id: "education", label: "Educational", icon: "chat" },
-  { id: "marketing", label: "Marketing campaign", icon: "sparkle" },
+  { id: "marketing", label: "Marketing campaign", icon: "team" },
 ];
 
 interface ProjectRow {

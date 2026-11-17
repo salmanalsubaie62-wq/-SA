@@ -120,7 +120,7 @@ export function VideoStudio() {
             </label>
             <ErrorText message={error} />
             <button className="btn btn-primary" style={{ minHeight: 44 }} onClick={plan} disabled={busy || idea.trim().length < 10}>
-              {busy ? <Spinner label="Writing the script…" /> : (<><Icon name="sparkle" size={16} /> Create script & storyboard</>)}
+              {busy ? <Spinner label="Writing the script…" /> : "Create script & storyboard"}
             </button>
           </div>
 

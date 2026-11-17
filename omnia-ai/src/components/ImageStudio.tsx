@@ -144,7 +144,7 @@ export function ImageStudio() {
             </div>
             <ErrorText message={error} />
             <button className="btn btn-primary" onClick={() => generate()} disabled={busy || connected === false} style={{ minHeight: 44 }}>
-              {busy ? <Spinner label="Generating…" /> : (<><Icon name="sparkle" size={16} /> Generate</>)}
+              {busy ? <Spinner label="Generating…" /> : "Generate"}
             </button>
           </div>
 

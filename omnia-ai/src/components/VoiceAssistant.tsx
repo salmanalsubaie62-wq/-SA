@@ -170,13 +170,12 @@ export function VoiceAssistant({ connected }: { connected: boolean }) {
           <div className="stack" style={{ gap: 14, overflowY: "auto", maxHeight: 520 }}>
             {turns.map((t, i) => (
               <div key={i} className={`msg msg-${t.role}`}>
-                {t.role === "assistant" && <div className="avatar">Ω</div>}
                 <div className="bubble">
                   {t.role === "user" ? <div>{t.text}</div> : <div className="md"><p style={{ whiteSpace: "pre-wrap" }}>{t.text}</p></div>}
                 </div>
               </div>
             ))}
-            {thinking && <div className="msg msg-assistant"><div className="avatar">Ω</div><div className="bubble"><span className="typing"><span /><span /><span /></span></div></div>}
+            {thinking && <div className="msg msg-assistant"><div className="bubble"><span className="typing"><span /><span /><span /></span></div></div>}
             <div ref={bottom} />
           </div>
           <form

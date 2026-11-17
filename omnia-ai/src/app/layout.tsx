@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "OMNIA AI — One Platform. Infinite Intelligence.",
-  description: "OMNIA AI: chat, images, video planning, research, documents, coding, voice, memory and AI agents in one platform.",
+  title: "OMNIA AI",
+  description: "OMNIA AI: chat, images, research, documents, code and agents in one workspace.",
 };
 
 export const viewport: Viewport = {
