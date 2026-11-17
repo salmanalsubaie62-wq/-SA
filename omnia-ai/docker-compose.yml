@@ -1,0 +1,12 @@
+services:
+  omnia:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env.local
+    volumes:
+      - omnia-data:/app/data
+    restart: unless-stopped
+volumes:
+  omnia-data:
