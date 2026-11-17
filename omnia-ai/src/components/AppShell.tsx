@@ -37,6 +37,13 @@ interface ConvoRow {
   updatedAt: number;
 }
 
+const TABS: Array<{ href: string; key: StringKey; icon: IconName }> = [
+  { href: "/chat", key: "nav_chat", icon: "chat" },
+  { href: "/projects", key: "nav_projects", icon: "projects" },
+  { href: "/coding", key: "nav_coding", icon: "code" },
+  { href: "/documents", key: "nav_documents", icon: "docs" },
+];
+
 const FEATURE_BY_HREF: Record<string, string> = {
   "/images": "image_studio",
   "/video": "video_studio",
@@ -128,6 +135,17 @@ export function AppShell({ user, children, hiddenFeatures = [] }: { user: ShellU
         </header>
         <div className={pathname.startsWith("/chat") ? "chat-area" : "content"}>{children}</div>
       </div>
+      <nav className="tabbar" aria-label="Quick sections">
+        {TABS.map((tab) => {
+          const active = pathname.startsWith(tab.href);
+          return (
+            <Link key={tab.href} href={tab.href} aria-current={active ? "page" : undefined} className={active ? "tab on" : "tab"}>
+              <Icon name={tab.icon} size={20} />
+              <span>{t(tab.key)}</span>
+            </Link>
+          );
+        })}
+      </nav>
       <Toaster />
     </div>
   );
