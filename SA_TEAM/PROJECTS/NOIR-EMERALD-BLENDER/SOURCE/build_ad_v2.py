@@ -85,7 +85,7 @@ t2.rotation_euler = (math.pi / 2, 0, 0); t2.data.materials.append(gold); child(t
 import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 BD_PATH = os.path.join(HERE, '..', 'ASSETS', 'backdrop_9x16.png')
-S = 4.2                      # مقياس الزجاجة
+S = 5.2                      # مقياس الزجاجة
 BY = -9.0                    # مكان الزجاجة على محور y
 ZOOM = 1.6                   # تكبير الصورة خلف الزجاجة
 CAMY0 = -14.0                # مرجع بعد الكاميرا عن الخلفية (الخلفية عند y=0)
@@ -136,14 +136,14 @@ def glow_mat(name, col, st):
     e = n.new('ShaderNodeEmission'); e.inputs['Color'].default_value = col; e.inputs['Strength'].default_value = st
     o = n.new('ShaderNodeOutputMaterial'); m.node_tree.links.new(e.outputs[0], o.inputs['Surface']); return m
 bpy.ops.mesh.primitive_uv_sphere_add(radius=0.5, segments=24, ring_count=12)
-flare = bpy.context.object; flare.name = 'Flare'; flare.data.materials.append(glow_mat('FlareM', (1, .75, .3, 1), 25))
+flare = bpy.context.object; flare.name = 'Flare'; flare.data.materials.append(glow_mat('FlareM', (1, .75, .3, 1), 6))
 flare.location = (0, BY, 0.2); flare.scale = (0.001, 0.001, 0.001)
-for t_, s_ in [(0, 0.001), (0.7, 0.01), (1.3, 1.4), (2.2, 0.001)]:
+for t_, s_ in [(0, 0.001), (0.7, 0.01), (1.3, 0.5), (2.2, 0.001)]:
     flare.scale = (s_, s_, s_); flare.keyframe_insert('scale', frame=F_(t_) if False else int(round(t_ * FPS)) + 1)
 SPK = []
-spm = glow_mat('Spark', (1, .8, .35, 1), 30); rnd = random.Random(5)
+spm = glow_mat('Spark', (1, .8, .35, 1), 12); rnd = random.Random(5)
 for i in range(70):
-    bpy.ops.mesh.primitive_uv_sphere_add(radius=0.018, segments=8, ring_count=6)
+    bpy.ops.mesh.primitive_uv_sphere_add(radius=0.007, segments=8, ring_count=6)
     o = bpy.context.object; o.data.materials.append(spm); SPK.append((o, rnd.uniform(.5, 2.4), rnd.uniform(0, 6.28), rnd.uniform(.3, .9), rnd.uniform(-.2, 1.9)))
 def fr(t): return int(round(t * FPS)) + 1
 
@@ -189,10 +189,10 @@ camB, _, tB = make_cam('CamB', 40, 8, BC)
 camC, cdC, tC = make_cam('CamC', 85, 3.2, BLb)
 camD, _, tD = make_cam('CamD', 34, 9, BC)
 zc = 0.55   # مركز الزجاجة تقريباً
-key_cam(camA, tA, [(0.0, (-0.9, BY - 8.2, 0.35), (0, BY, zc)), (4.95, (0.25, BY - 5.4, 0.25), (0, BY, zc + .05))])
-key_cam(camB, tB, [(4.95, (-2.3, BY - 4.9, 0.2), (0, BY, zc + .1)), (8.8, (2.3, BY - 4.6, 0.3), (0, BY, zc + .1))])
+key_cam(camA, tA, [(0.0, (-0.9, BY - 6.8, 0.35), (0, BY, zc)), (4.95, (0.25, BY - 4.8, 0.25), (0, BY, zc + .05))])
+key_cam(camB, tB, [(4.95, (-2.1, BY - 4.4, 0.2), (0, BY, zc + .1)), (8.8, (2.1, BY - 4.2, 0.3), (0, BY, zc + .1))])
 key_cam(camC, tC, [(8.85, (-0.7, BY - 2.9, 0.75), (0, BY, zc)), (10.6, (0.55, BY - 2.6, 0.5), (0, BY, zc + .5))])
-key_cam(camD, tD, [(10.65, (0.0, BY - 4.0, 0.35), (0, BY, zc + .1)), (12.0, (0.0, BY - 7.5, 0.55), (0, BY, zc + .15))])
+key_cam(camD, tD, [(10.65, (0.0, BY - 3.6, 0.35), (0, BY, zc + .1)), (12.0, (0.0, BY - 6.2, 0.55), (0, BY, zc + .15))])
 for name, f_, cam_ in [('A', 1, camA), ('B', fr(4.95), camB), ('C', fr(8.85), camC), ('D', fr(10.65), camD)]:
     m = sc.timeline_markers.new(name, frame=f_); m.camera = cam_
 sc.camera = camA
