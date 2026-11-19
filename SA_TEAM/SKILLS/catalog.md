@@ -161,3 +161,19 @@
 | Cloudflare MCP | خادم MCP | إدارة Workers وR2 وD1 وKV | ٥ | https://render.com/articles/essential-mcp-servers-for-developers | مضاف، غير مفعّل (يحتاج مفتاح API) |
 | Vercel MCP | خادم MCP | نشرات وسجلات وبيئات | ٥ | https://render.com/articles/essential-mcp-servers-for-developers | مضاف، غير مفعّل (OAuth) |
 | Supabase MCP | خادم MCP | قاعدة بيانات ومشاريع، مع وضع قراءة فقط | ٦ | https://www.descope.com/blog/post/best-mcp-servers-developers | مضاف، غير مفعّل (يحتاج دخول) |
+
+## دفعة بحث الساعة ٠١:٣٦ (الكويت) · Google وتصميم وتحليل بيانات
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| google-workspace-ops (everything-claude-code) | مهارة | Drive نقطة دخول ويوجّه لـ Docs وSheets وSlides | ٧ | https://claudemarketplaces.com/skills/affaan-m/everything-claude-code/google-workspace-ops | مضاف، غير مفعّل |
+| takiguchi-yu google-workspace-mcp-server | خادم MCP | Gmail وDrive وCalendar وDocs وSheets وSlides وApps Script (١٢ خدمة) | ٦ | https://claudemarketplaces.com/mcp/takiguchi-yu/google-workspace-mcp-server | مضاف، غير مفعّل (OAuth) |
+| google-apps-script (wookstar) | مهارة | كتابة وتشغيل Apps Script لأتمتة Sheets وDocs | ٦ | https://www.skills.sh/henkisdabro/wookstar-claude-code-plugins/google-apps-script | مضاف، غير مفعّل |
+| canva-sdks/canva-skills (الرسمي) | مهارات تصميم | عروض بالعلامة وترجمة وتغيير مقاسات لمنصات التواصل | ٨ | https://skillselion.com/skills/canva-sdks/canva-claude-skills/plugins/canva | مضاف، غير مفعّل (موصّل Canva متاح أصلاً) |
+| canva-creator (knowledge-work-plugins) | مهارة | تصميم Canva مع كابشن ونشر مجدول | ٦ | https://www.claudemarket.ai/skills/anthropics/knowledge-work-plugins/canva-creator | مضاف، غير مفعّل |
+| creating-graphics (skill-registry) | مهارة | قوالب برومبتات صور تسويقية مع أدوات Google Labs | ٤ | https://openskillindex.com/skills/majiayu000-claude-skill-registry-creating-graphics | مضاف، غير مفعّل |
+| google/skills BigQuery data analytics | إضافة رسمية | تحليل بيانات BigQuery | ٦ | https://claudemarketplaces.com/plugins/google-skills/bigquery | مضاف، غير مفعّل (يحتاج مشروع Google Cloud) |
+| lucashild/mcp-server-bigquery | خادم MCP | استعلامات SQL على BigQuery | ٥ | https://claudemarketplaces.com/mcp/lucashild/mcp-server-bigquery | مضاف، غير مفعّل |
+| ergut/mcp-bigquery-server | خادم MCP | استعلام BigQuery بعدة طرق مصادقة | ٥ | https://www.mdskills.ai/mcp-servers/mcp-bigquery-server?tab=source | مضاف، غير مفعّل |
+| Metabase MCP (الرسمي) | خادم MCP | استكشاف بيانات وبناء لوحات وكتابة SQL | ٦ | https://claudemarketplaces.com/mcp/io.github.metabase/mcp | مضاف، غير مفعّل (يحتاج مفتاح) |
+| hluaguo/metabase-mcp | خادم MCP | استعلامات ولوحات Metabase (بايثون ٣.١٢+) | ٥ | https://agent-skills.cc/skills/hluaguo-metabase-mcp | مضاف، غير مفعّل |
+| data-query (aiden-runtime) | مهارة | أسئلة تحليل بلغة عادية على قواعد بيانات متعددة | ٥ | https://cdn.jsdelivr.net/npm/aiden-runtime@4.10.0/skills/installed/data-query/SKILL.md | مضاف، غير مفعّل |
