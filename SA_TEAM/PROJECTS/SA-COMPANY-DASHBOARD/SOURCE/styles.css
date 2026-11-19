@@ -145,3 +145,6 @@ tr:last-child td { border-bottom: 0; }
 }
 
 .foot { text-align: center; padding: 24px var(--gutter) 40px; }
+
+/* حالة الموظف: نص عادي يلتف داخل الخلية، بدون شارة طويلة */
+td.wrap { white-space: normal; overflow-wrap: anywhere; min-width: 180px; max-width: 280px; font-size: 11px; color: var(--muted); }

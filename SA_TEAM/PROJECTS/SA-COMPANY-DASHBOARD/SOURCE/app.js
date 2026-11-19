@@ -200,7 +200,7 @@
         el("td", { text: e.name }),
         el("td", { text: e.title }),
         el("td", { text: e.supervisor }),
-        el("td", null, [badge(e.status, statusKind(e.status))])
+        el("td", { class: "wrap", text: e.status })
       ]));
     });
   }
