@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سَمَر — ماء عطر</title>
+<meta name="description" content="سَمَر: ماء عطر بالعود والعنبر والزعفران، مخلوط في الكويت.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='11' y='2' width='10' height='9' fill='%231F1A15'/%3E%3Cpath d='M8 13h16l2 4v12H6V17z' fill='%23C66F2A'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#EFE6D6; --ink:#1F1A15; --muted:#6E6255; --line:rgba(31,26,21,.18);
+    --cta:#B0471E; --cta-ink:#FBF4E8;
+    --display:'Aref Ruqaa', serif; --body:'IBM Plex Sans Arabic', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.75;transition:background .8s ease, color .5s ease;overflow-x:hidden}
+  #scene{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:block}
+  .grain{position:fixed;inset:0;z-index:50;pointer-events:none;opacity:.07;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  main{position:relative;z-index:1}
+
+  /* nav */
+  .nav{position:fixed;top:0;inset-inline:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:18px clamp(20px,4vw,56px);transition:color .5s}
+  .logo{font-family:var(--display);font-size:34px;line-height:1;text-decoration:none;color:inherit}
+  .logo small{font-family:var(--body);font-size:12px;letter-spacing:.04em;color:var(--muted);margin-inline-start:10px;vertical-align:middle}
+  body.is-dark .nav{color:#EFE6D6} body.is-dark .logo small{color:#bfae96}
+
+  .cta{font-family:var(--body);font-weight:600;font-size:16px;background:var(--cta);color:var(--cta-ink);border:0;padding:14px 26px;cursor:pointer;border-radius:2px;box-shadow:4px 4px 0 var(--ink);transition:transform .15s, box-shadow .15s}
+  .cta:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+  .cta:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+  .cta.sm{padding:9px 16px;font-size:14px;box-shadow:3px 3px 0 var(--ink)}
+  body.is-dark .cta{box-shadow:4px 4px 0 #EFE6D6}
+
+  .wrap{padding:0 clamp(20px,6vw,96px)}
+  .sec{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:90px;padding-bottom:60px}
+  .col{max-width:520px;width:100%}
+  .text-right .col{margin-left:auto;margin-right:0}
+  .text-left .col{margin-right:auto;margin-left:0}
+
+  .label{font-size:13px;letter-spacing:.06em;color:var(--muted);display:flex;gap:12px;align-items:center}
+  .label::before{content:"";width:28px;height:1px;background:currentColor}
+
+  /* hero */
+  .hero .col{max-width:640px}
+  .hero h1{font-family:var(--display);font-weight:700;font-size:clamp(60px,8vw,116px);line-height:1.08;margin:14px 0 18px;letter-spacing:-.01em}
+  .hero h1 em{font-style:normal;color:var(--cta)}
+  .hero p.lead{font-size:clamp(17px,1.4vw,20px);color:var(--muted);max-width:430px;margin-bottom:30px}
+  .hero .row{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+  .hero .note{font-size:14px;color:var(--muted)}
+  .specs{display:flex;gap:0;margin-top:36px;border-top:1px solid var(--line);max-width:460px}
+  .specs div{flex:1;padding:14px 0 0;font-size:13px;color:var(--muted)}
+  .specs div+div{border-inline-start:1px solid var(--line);padding-inline-start:16px}
+  .specs b{display:block;font-family:var(--display);font-size:30px;color:var(--ink);font-weight:700;line-height:1.2}
+  .scroll-cue{position:absolute;bottom:28px;left:clamp(20px,6vw,96px);font-size:13px;color:var(--muted);display:flex;gap:10px;align-items:center}
+  .scroll-cue span{display:inline-block;animation:bob 1.8s ease-in-out infinite}
+  @keyframes bob{50%{transform:translateY(6px)}}
+
+  /* notes */
+  .note-sec .num{font-family:var(--body);font-weight:300;font-size:15px;letter-spacing:.2em;color:var(--muted)}
+  .note-sec h2{font-family:var(--display);font-weight:700;font-size:clamp(52px,7vw,96px);line-height:1.05;margin:14px 0 18px}
+  .note-sec p{font-size:18px;max-width:440px}
+  .ingredients{list-style:none;margin-top:30px;border-top:1px solid var(--line);max-width:440px}
+  .ingredients li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+  .ingredients li span:last-child{color:var(--muted)}
+  .sec-base{color:#EFE6D6}
+  .sec-base .num,.sec-base .label,.sec-base .ingredients li span:last-child{color:#bfae96}
+  .sec-base .ingredients,.sec-base .ingredients li{border-color:rgba(239,230,214,.2)}
+
+  /* interlude */
+  .quiet{min-height:80vh}
+  .quiet blockquote{font-family:var(--display);font-size:clamp(34px,4.6vw,64px);line-height:1.35;max-width:880px}
+  .quiet blockquote span{border-bottom:3px solid var(--ink)}
+
+  /* steps */
+  .steps .grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(30px,6vw,90px);width:100%;align-items:start}
+  .steps h2{font-family:var(--display);font-size:clamp(48px,6vw,84px);line-height:1.05;margin-top:12px}
+  .steps ol{list-style:none;counter-reset:s}
+  .steps li{counter-increment:s;display:grid;grid-template-columns:70px 1fr;gap:10px;padding:26px 0;border-top:1px solid var(--line);font-size:18px}
+  .steps li:last-child{border-bottom:1px solid var(--line)}
+  .steps li::before{content:counter(s, arabic-indic);font-family:var(--display);font-size:46px;line-height:1}
+  .steps li small{display:block;color:var(--muted);font-size:15px;margin-top:4px}
+
+  /* pricing */
+  .buy{padding-block:120px}
+  .buy .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:40px}
+  .buy h2{font-family:var(--display);font-size:clamp(48px,6vw,84px);line-height:1.05;margin-top:12px}
+  .buy .head p{color:var(--muted);max-width:340px}
+  .tiers{border-top:2px solid var(--ink)}
+  .tier{display:grid;grid-template-columns:1.2fr 2fr .9fr auto;gap:24px;align-items:center;padding:28px 20px;border-bottom:1px solid var(--line);background:rgba(239,230,214,.82)}
+  .tier h3{font-family:var(--display);font-size:38px;font-weight:700;line-height:1.1}
+  .tier h3 small{display:block;font-family:var(--body);font-size:13px;font-weight:400;color:var(--muted);margin-top:6px}
+  .tier p{color:var(--muted);font-size:15px}
+  .tier .price{font-family:var(--display);font-size:42px;font-weight:700;white-space:nowrap}
+  .tier .price small{font-family:var(--body);font-size:14px;font-weight:400;margin-inline-start:4px}
+  .tier.pick{background:var(--ink);color:#EFE6D6;border-bottom-color:var(--ink)}
+  .tier.pick p,.tier.pick h3 small{color:#bfae96}
+  .tier.pick .cta{box-shadow:4px 4px 0 #EFE6D6}
+  .tag{display:inline-block;font-family:var(--body);font-size:12px;border:1px solid currentColor;padding:1px 8px;margin-inline-start:8px;vertical-align:middle;font-weight:500}
+
+  /* faq */
+  .faq{padding-block:60px 120px}
+  .faq .grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:clamp(30px,6vw,90px)}
+  .faq h2{font-family:var(--display);font-size:clamp(44px,5vw,72px);line-height:1.1;margin-top:12px}
+  details{border-top:1px solid var(--line);background:rgba(239,230,214,.82)}
+  details:last-child{border-bottom:1px solid var(--line)}
+  summary{list-style:none;cursor:pointer;padding:22px 4px;font-size:19px;font-weight:500;display:flex;justify-content:space-between;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:26px;line-height:1;transition:transform .25s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{padding:0 4px 24px;color:var(--muted);max-width:620px}
+
+  /* final */
+  .final h2{font-family:var(--display);font-size:clamp(52px,7.5vw,108px);line-height:1.08;margin:16px 0 30px}
+  footer{position:relative;z-index:1;padding:40px clamp(20px,6vw,96px) 34px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;background:var(--bg)}
+  footer .big{font-family:var(--display);font-size:72px;line-height:1}
+  footer p{font-size:13px;color:var(--muted)}
+  footer .demo{border:1px dashed var(--muted);padding:6px 12px;font-size:12px;color:var(--muted)}
+
+  /* order sheet */
+  .sheet{position:fixed;inset:0;z-index:60;background:rgba(31,26,21,.55);display:flex;align-items:center;justify-content:center;padding:20px}
+  .sheet[hidden]{display:none}
+  .sheet .box{background:#F6EFE2;color:var(--ink);width:min(460px,100%);padding:32px;border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink);position:relative;max-height:92vh;overflow:auto}
+  .sheet h3{font-family:var(--display);font-size:42px;line-height:1.1;margin-bottom:6px}
+  .sheet .x{position:absolute;top:12px;left:14px;background:none;border:0;font-size:28px;cursor:pointer;color:var(--ink)}
+  .sheet fieldset{border:0;margin:18px 0}
+  .sheet legend{font-size:13px;color:var(--muted);margin-bottom:8px}
+  .opt{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);padding:12px 14px;margin-bottom:8px;cursor:pointer}
+  .opt:has(input:checked){border-color:var(--ink);background:#EFE6D6;box-shadow:inset 3px 0 0 var(--ink)}
+  .opt input{accent-color:var(--ink);margin-inline-end:10px}
+  .sheet label.f{display:block;font-size:13px;color:var(--muted);margin-top:12px}
+  .sheet input[type=text],.sheet select{width:100%;margin-top:6px;padding:12px;font:inherit;font-size:16px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:0}
+  .sheet .cta{width:100%;margin-top:22px}
+  .done{text-align:center;padding:20px 0}
+  .done .mark{font-family:var(--display);font-size:64px;line-height:1}
+  .done p{color:var(--muted);margin-top:10px}
+
+  /* fallback bottle (no WebGL) */
+  .fallback{display:none}
+  .no3d #scene{display:none}
+  .no3d .fallback{display:block;position:absolute;left:clamp(30px,12vw,220px);top:50%;transform:translateY(-50%);width:clamp(180px,22vw,300px)}
+
+  :focus-visible{outline:2px solid var(--cta);outline-offset:3px}
+
+  @media (max-width:820px){
+    body{font-size:16px}
+    .nav{padding:14px 18px}
+    .logo{font-size:28px} .logo small{display:none}
+    .sec{align-items:flex-end;padding-bottom:56px}
+    .hero{padding-top:48vh}
+    .hero h1{font-size:58px;margin:10px 0 12px}
+    .hero p.lead{margin-bottom:20px;font-size:16px}
+    .specs{margin-top:26px}
+    .specs b{font-size:24px}
+    .scroll-cue{display:none}
+    .note-sec{padding-top:50vh}
+    .note-sec h2{font-size:52px}
+    .text-left .col,.text-right .col{margin:0}
+    .quiet{min-height:auto;padding-block:110px}
+    .steps{min-height:auto;padding-block:90px}
+    .steps .grid,.faq .grid{grid-template-columns:1fr}
+    .tier{grid-template-columns:1fr auto;gap:10px 16px;padding:22px 14px}
+    .tier p{grid-column:1/-1;grid-row:2}
+    .tier .cta{grid-column:1/-1}
+    .final{padding-top:50vh}
+    .no3d .fallback{left:50%;top:22vh;transform:translateX(-50%);width:150px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.scroll-cue span{animation:none}}
+</style>
+</head>
+<body>
+<canvas id="scene" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="logo" href="#top">سَمَر<small>دار عطور · الكويت</small></a>
+  <button class="cta sm" data-order>اطلب سمر</button>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="sec hero wrap text-right" data-pose="hero">
+    <svg class="fallback" viewBox="0 0 200 320" aria-hidden="true">
+      <rect x="66" y="6" width="68" height="74" fill="#2a1a12"/><rect x="62" y="74" width="76" height="8" fill="#c89b4a"/>
+      <rect x="82" y="82" width="36" height="22" fill="#c89b4a"/>
+      <path d="M40 116 Q100 92 160 116 L176 150 V290 Q176 312 150 312 H50 Q24 312 24 290 V150 Z" fill="#c66f2a" opacity=".9"/>
+      <path d="M40 116 Q100 92 160 116 L176 150 V290 Q176 312 150 312 H50 Q24 312 24 290 V150 Z" fill="none" stroke="#1F1A15" stroke-width="2"/>
+      <path d="M44 150 V284" stroke="#fff" stroke-opacity=".45" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+    <div class="col">
+      <div class="label">ماء عطر · ٥٠ مل</div>
+      <h1>ريحة المغرب<br>على <em>البحر</em></h1>
+      <p class="lead">عود وعنبر وزعفران، مخلوطة على مهل في الكويت. ريحة تقعد معاك من الصبح لين آخر السهرة.</p>
+      <div class="row">
+        <button class="cta" data-order>اطلب سمر</button>
+        <span class="note">التوصيل داخل الكويت خلال يوم</span>
+      </div>
+      <div class="specs">
+        <div><b>١٢ ساعة</b>ثبات على الجلد</div>
+        <div><b>٢٢٪</b>تركيز الزيت</div>
+        <div><b>يدوي</b>تعبئة وتغليف</div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span>↓</span> انزل وشوف كيف تتغير الريحة</div>
+  </section>
+
+  <!-- NOTES -->
+  <section class="sec note-sec wrap text-left" data-pose="top">
+    <div class="col">
+      <div class="num">01 — الافتتاحية</div>
+      <h2>أول ما ترشّه</h2>
+      <p>برغموت وحبة هيل. ريحة حادة ومنعشة، مثل أول نسمة تجي من البحر بعد حر الظهر.</p>
+      <ul class="ingredients">
+        <li><span>برغموت</span><span>كالابريا، إيطاليا</span></li>
+        <li><span>هيل أخضر</span><span>كيرالا، الهند</span></li>
+        <li><span>المدة</span><span>أول ١٥ دقيقة</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec note-sec wrap text-right" data-pose="heart">
+    <div class="col">
+      <div class="num">02 — القلب</div>
+      <h2>بعد ساعة</h2>
+      <p>الورد الطائفي والزعفران يطلعون بهدوء. هني يبدأ العطر يصير ريحتك انت، مو ريحة الزجاجة.</p>
+      <ul class="ingredients">
+        <li><span>ورد طائفي</span><span>الطائف</span></li>
+        <li><span>زعفران</span><span>قاينات، إيران</span></li>
+        <li><span>المدة</span><span>من ساعة إلى ٤ ساعات</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec note-sec sec-base wrap text-left" data-pose="base">
+    <div class="col">
+      <div class="num">03 — القاعدة</div>
+      <h2>آخر الليل</h2>
+      <p>عود كمبودي وعنبر ومسك أبيض. هذا اللي يبقى على ثوبك لين باجر الصبح.</p>
+      <ul class="ingredients">
+        <li><span>عود</span><span>كمبوديا</span></li>
+        <li><span>عنبر ومسك أبيض</span><span>—</span></li>
+        <li><span>المدة</span><span>٤ ساعات وأكثر</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- INTERLUDE -->
+  <section class="sec quiet wrap text-right" data-pose="quiet">
+    <blockquote>ما سوّيناه عشان يعجب الكل.<br>سوّيناه عشان اللي يمر جنبك <span>يلتفت.</span></blockquote>
+  </section>
+
+  <!-- HOW TO WEAR -->
+  <section class="sec steps wrap" data-pose="steps">
+    <div class="grid">
+      <div>
+        <div class="label">طريقة اللبس</div>
+        <h2>ثلاث رشّات،<br>بس صح</h2>
+      </div>
+      <ol>
+        <li><div>رشّتين على الرقبة ورشّة على المعصم.<small>لا تفرك المعصمين ببعض، الفرك يكسر الافتتاحية.</small></div></li>
+        <li><div>رشّة على الشماغ أو الشيلة.<small>القماش يمسك العود أطول من الجلد.</small></div></li>
+        <li><div>إذا تبيه يثبت أكثر، رشّه بعد الشاور.<small>الجلد الرطب يحبس الريحة.</small></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="buy wrap" id="buy" data-pose="buy">
+    <div class="head">
+      <div>
+        <div class="label">الأحجام</div>
+        <h2>اختار حجمك</h2>
+      </div>
+      <p>كل الطلبات تنلف بورق كرافت وتنختم باليد. والعيّنة تنخصم من سعر الزجاجة إذا رجعت لنا.</p>
+    </div>
+    <div class="tiers">
+      <div class="tier">
+        <h3>العيّنة<small>١٠ مل</small></h3>
+        <p>تكفيك تقريباً أسبوعين. جرّبها على جلدك قبل لا تقرر.</p>
+        <div class="price">٨<small>د.ك</small></div>
+        <button class="cta" data-order="sample">اطلب سمر</button>
+      </div>
+      <div class="tier pick">
+        <h3>الزجاجة<span class="tag">اختيارنا</span><small>٥٠ مل</small></h3>
+        <p>الزجاجة الكاملة مع غطاء خشب. تكفي من ٤ إلى ٥ شهور استخدام يومي.</p>
+        <div class="price">٢٨<small>د.ك</small></div>
+        <button class="cta" data-order="bottle">اطلب سمر</button>
+      </div>
+      <div class="tier">
+        <h3>طقم الهدية<small>٥٠ مل + ١٠ مل</small></h3>
+        <p>الزجاجة والعيّنة مع مبخرة صغيرة وكرت تكتب فيه إهداءك.</p>
+        <div class="price">٤٢<small>د.ك</small></div>
+        <button class="cta" data-order="gift">اطلب سمر</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq wrap" data-pose="faq">
+    <div class="grid">
+      <div>
+        <div class="label">قبل لا تطلب</div>
+        <h2>أسئلة توصلنا كثير</h2>
+      </div>
+      <div>
+        <details><summary>يثبت صدق؟</summary><p>على الجلد من ٨ إلى ١٢ ساعة، وعلى القماش أكثر. يختلف شوي حسب نوع البشرة والجو.</p></details>
+        <details><summary>توصلون لكل مناطق الكويت؟</summary><p>إي، خلال يوم عمل. ودول الخليج من ٣ إلى ٥ أيام.</p></details>
+        <details><summary>أقدر أجرب قبل لا آخذ الزجاجة؟</summary><p>خذ العيّنة ١٠ مل. إذا عجبتك وطلبت الزجاجة، نخصم سعر العيّنة.</p></details>
+        <details><summary>للرجال ولا للحريم؟</summary><p>للاثنين. العود يطلع أقوى على الرجال، والورد يبين أكثر على الحريم.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="sec final wrap text-right" data-pose="final">
+    <div class="col">
+      <div class="label">سَمَر</div>
+      <h2>جرّبه مرة،<br>وبتعرف ليش<br>اسمه سمر.</h2>
+      <button class="cta" data-order>اطلب سمر</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>
+    <div class="big">سَمَر</div>
+    <p>دار عطور صغيرة · الكويت</p>
+  </div>
+  <div class="demo">نموذج تجريبي من أعمال SA team · العلامة والأسعار خيالية</div>
+</footer>
+
+<!-- ORDER SHEET -->
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+  <div class="box">
+    <button class="x" aria-label="إغلاق" data-close>×</button>
+    <form id="order-form">
+      <h3 id="sheet-title">طلبك</h3>
+      <fieldset>
+        <legend>الحجم</legend>
+        <label class="opt"><span><input type="radio" name="size" value="sample">العيّنة · ١٠ مل</span><b>٨ د.ك</b></label>
+        <label class="opt"><span><input type="radio" name="size" value="bottle" checked>الزجاجة · ٥٠ مل</span><b>٢٨ د.ك</b></label>
+        <label class="opt"><span><input type="radio" name="size" value="gift">طقم الهدية</span><b>٤٢ د.ك</b></label>
+      </fieldset>
+      <label class="f">الاسم<input type="text" name="name" required autocomplete="name"></label>
+      <label class="f">المحافظة
+        <select name="area">
+          <option>العاصمة</option><option>حولي</option><option>الفروانية</option>
+          <option>الأحمدي</option><option>الجهراء</option><option>مبارك الكبير</option>
+        </select>
+      </label>
+      <button class="cta" type="submit">اطلب سمر</button>
+    </form>
+    <div class="done" id="done" hidden>
+      <div class="mark">تم</div>
+      <p id="done-text"></p>
+      <p style="font-size:13px;margin-top:14px">هذا نموذج تجريبي. في الموقع الحقيقي الطلب يوصل واتساب المحل على طول.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+/* section → pose, background colour, order sheet (works with or without WebGL) */
+(function(){
+  const BG = {hero:'#EFE6D6',top:'#F2E8CC',heart:'#EFDCD3',base:'#231913',quiet:'#EFE6D6',steps:'#EFE6D6',buy:'#EFE6D6',faq:'#EFE6D6',final:'#EFE6D6'};
+  window.__pose = 'hero';
+  const secs = [...document.querySelectorAll('[data-pose]')];
+  function update(){
+    const mid = innerHeight * 0.5;
+    let cur = secs[0];
+    for (const s of secs){ const r = s.getBoundingClientRect(); if (r.top <= mid && r.bottom >= mid){ cur = s; break; } }
+    const p = cur.dataset.pose;
+    if (p !== window.__pose){
+      window.__pose = p;
+      document.body.style.background = BG[p];
+      document.body.classList.toggle('is-dark', p === 'base');
+    }
+  }
+  addEventListener('scroll', update, {passive:true});
+  addEventListener('resize', update);
+  update();
+
+  setTimeout(()=>{ if(!window.__3dok) document.documentElement.classList.add('no3d'); }, 5000);
+
+  const sheet = document.getElementById('sheet'), form = document.getElementById('order-form'), done = document.getElementById('done');
+  const names = {sample:'العيّنة ١٠ مل', bottle:'الزجاجة ٥٠ مل', gift:'طقم الهدية'};
+  let lastFocus = null;
+  document.querySelectorAll('[data-order]').forEach(b => b.addEventListener('click', () => {
+    lastFocus = b;
+    const v = b.dataset.order;
+    if (v) form.querySelector(`input[value="${v}"]`).checked = true;
+    form.hidden = false; done.hidden = true; sheet.hidden = false;
+    form.querySelector('input[name=name]').focus();
+  }));
+  function close(){ sheet.hidden = true; if (lastFocus) lastFocus.focus(); }
+  sheet.addEventListener('click', e => { if (e.target === sheet || e.target.closest('[data-close]')) close(); });
+  addEventListener('keydown', e => { if (e.key === 'Escape' && !sheet.hidden) close(); });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const d = new FormData(form);
+    document.getElementById('done-text').textContent = `شكراً ${d.get('name')}، طلبك (${names[d.get('size')]}) بيوصلك ${d.get('area')} خلال يوم.`;
+    form.hidden = true; done.hidden = false;
+  });
+})();
+</script>
+
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+const canvas = document.getElementById('scene');
+let renderer;
+try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true }); }
+catch (e) { document.documentElement.classList.add('no3d'); throw e; }
+
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.05;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#EFE6D6');
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
+const camera = new THREE.PerspectiveCamera(35, innerWidth / innerHeight, 0.1, 100);
+camera.position.set(0, 0, 8);
+
+const key = new THREE.DirectionalLight(0xfff1dc, 2.4); key.position.set(3, 4, 5); scene.add(key);
+const rim = new THREE.DirectionalLight(0xffc48a, 1.6); rim.position.set(-4, 1, -3); scene.add(rim);
+
+/* ---------- bottle ---------- */
+const bottle = new THREE.Group(); scene.add(bottle);
+const body = new THREE.Group(); body.position.y = -0.5; bottle.add(body);
+
+const V = (x, y) => new THREE.Vector2(x, y);
+const glassProfile = [V(0,-1.0),V(0.72,-1.0),V(0.86,-0.95),V(0.93,-0.82),V(0.95,-0.5),V(0.95,0.5),V(0.9,0.72),V(0.72,0.9),V(0.42,1.0),V(0.3,1.04),V(0.3,1.12),V(0,1.12)];
+const glass = new THREE.Mesh(
+  new THREE.LatheGeometry(glassProfile, 96),
+  new THREE.MeshPhysicalMaterial({ color: 0xfff8ee, roughness: 0.03, transmission: 1, thickness: 0.7, ior: 1.5, clearcoat: 1, clearcoatRoughness: 0.04, envMapIntensity: 1.3, specularIntensity: 1 })
+);
+body.add(glass);
+
+const liquidProfile = [V(0,-0.86),V(0.7,-0.86),V(0.8,-0.8),V(0.85,-0.65),V(0.85,0.38),V(0,0.38)];
+const liquidMat = new THREE.MeshStandardMaterial({ color: '#c66f2a', roughness: 0.28, metalness: 0.05, emissive: '#c66f2a', emissiveIntensity: 0.12 });
+const liquid = new THREE.Mesh(new THREE.LatheGeometry(liquidProfile, 96), liquidMat);
+body.add(liquid);
+/* meniscus */
+const surf = new THREE.Mesh(new THREE.CircleGeometry(0.85, 96), liquidMat);
+surf.rotation.x = -Math.PI / 2; surf.position.y = 0.38; body.add(surf);
+
+const gold = new THREE.MeshStandardMaterial({ color: 0xc89b4a, metalness: 1, roughness: 0.22 });
+const wood = new THREE.MeshStandardMaterial({ color: 0x2a1a12, metalness: 0.15, roughness: 0.38, flatShading: true });
+const collar = new THREE.Mesh(new THREE.CylinderGeometry(0.34, 0.34, 0.16, 48), gold); collar.position.y = 1.2; body.add(collar);
+const cap = new THREE.Mesh(new THREE.CylinderGeometry(0.44, 0.44, 0.96, 8), wood); cap.position.y = 1.76; body.add(cap);
+const band1 = new THREE.Mesh(new THREE.CylinderGeometry(0.455, 0.455, 0.06, 8), gold); band1.position.y = 1.31; body.add(band1);
+const band2 = new THREE.Mesh(new THREE.CylinderGeometry(0.455, 0.455, 0.06, 8), gold); band2.position.y = 2.21; body.add(band2);
+
+/* ---------- smoke particles ---------- */
+const isMobile = () => innerWidth <= 820;
+const N = isMobile() ? 170 : 340;
+const pos = new Float32Array(N * 3), spd = new Float32Array(N), ph = new Float32Array(N);
+for (let i = 0; i < N; i++) {
+  pos[i*3] = (Math.random() - 0.5) * 11; pos[i*3+1] = (Math.random() - 0.5) * 7; pos[i*3+2] = -2.5 + Math.random() * 3;
+  spd[i] = 0.08 + Math.random() * 0.22; ph[i] = Math.random() * 6.28;
+}
+const pGeo = new THREE.BufferGeometry(); pGeo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+const sc = document.createElement('canvas'); sc.width = sc.height = 64;
+const g = sc.getContext('2d'); const gr = g.createRadialGradient(32,32,0,32,32,32);
+gr.addColorStop(0,'rgba(255,255,255,1)'); gr.addColorStop(.4,'rgba(255,255,255,.35)'); gr.addColorStop(1,'rgba(255,255,255,0)');
+g.fillStyle = gr; g.fillRect(0,0,64,64);
+const pMat = new THREE.PointsMaterial({ size: 0.22, map: new THREE.CanvasTexture(sc), transparent: true, depthWrite: false, opacity: 0.4, color: '#8a5a3a' });
+scene.add(new THREE.Points(pGeo, pMat));
+
+/* ---------- poses per section ---------- */
+const D = {
+  hero:  { x:-1.75, y:-0.05, s:1.00, liq:'#c66f2a', bg:'#EFE6D6', smoke:'#8a5a3a', tilt:0 },
+  top:   { x: 1.85, y: 0.00, s:0.95, liq:'#e2a838', bg:'#F2E8CC', smoke:'#a8862f', tilt:0.16 },
+  heart: { x:-1.85, y: 0.00, s:0.95, liq:'#b8432f', bg:'#EFDCD3', smoke:'#9c4a40', tilt:-0.16 },
+  base:  { x: 1.85, y: 0.00, s:1.00, liq:'#8a4220', bg:'#231913', smoke:'#d6b48a', tilt:0.08 },
+  quiet: { x:-3.30, y:-0.90, s:0.55, liq:'#c66f2a', bg:'#EFE6D6', smoke:'#8a5a3a', tilt:0.25 },
+  steps: { x: 3.60, y:-1.30, s:0.55, liq:'#c66f2a', bg:'#EFE6D6', smoke:'#8a5a3a', tilt:-0.2 },
+  buy:   { x: 3.60, y:-5.50, s:0.55, liq:'#c66f2a', bg:'#EFE6D6', smoke:'#8a5a3a', tilt:0 },
+  faq:   { x: 3.60, y:-5.50, s:0.55, liq:'#c66f2a', bg:'#EFE6D6', smoke:'#8a5a3a', tilt:0 },
+  final: { x:-1.75, y: 0.00, s:1.05, liq:'#c66f2a', bg:'#EFE6D6', smoke:'#8a5a3a', tilt:0 },
+};
+const M = {
+  hero:{x:0,y:1.3,s:0.62}, top:{x:0,y:1.35,s:0.6}, heart:{x:0,y:1.35,s:0.6}, base:{x:0,y:1.35,s:0.6},
+  quiet:{x:0,y:-5.5,s:0.5}, steps:{x:0,y:-5.5,s:0.5}, buy:{x:0,y:-5.5,s:0.5}, faq:{x:0,y:-5.5,s:0.5}, final:{x:0,y:1.35,s:0.62},
+};
+function pose() {
+  const p = window.__pose in D ? window.__pose : 'hero';
+  return isMobile() ? { ...D[p], ...M[p] } : D[p];
+}
+const cur = { x:-1.75, y:-0.05, s:1, tilt:0 };
+const cLiq = new THREE.Color('#c66f2a'), cBg = new THREE.Color('#EFE6D6'), cSmoke = new THREE.Color('#8a5a3a');
+const tLiq = new THREE.Color(), tBg = new THREE.Color(), tSmoke = new THREE.Color();
+if (isMobile()) Object.assign(cur, { x:0, y:1.3, s:0.62 });
+
+const ptr = { x:0, y:0 }, ptrS = { x:0, y:0 };
+addEventListener('pointermove', e => { ptr.x = e.clientX / innerWidth - 0.5; ptr.y = e.clientY / innerHeight - 0.5; }, { passive:true });
+
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+
+const clock = new THREE.Clock();
+let t = 0;
+function frame() {
+  const dt = Math.min(clock.getDelta(), 0.05);
+  t += dt * (reduce ? 0.3 : 1);
+  const P = pose(), k = 1 - Math.pow(0.04, dt);
+  cur.x += (P.x - cur.x) * k; cur.y += (P.y - cur.y) * k; cur.s += (P.s - cur.s) * k; cur.tilt += (P.tilt - cur.tilt) * k;
+  cLiq.lerp(tLiq.set(P.liq), k); cBg.lerp(tBg.set(P.bg), k); cSmoke.lerp(tSmoke.set(P.smoke), k);
+  liquidMat.color.copy(cLiq); liquidMat.emissive.copy(cLiq);
+  scene.background.copy(cBg); pMat.color.copy(cSmoke);
+  pMat.opacity = P.bg === '#231913' ? 0.3 : 0.4;
+
+  ptrS.x += (ptr.x - ptrS.x) * k; ptrS.y += (ptr.y - ptrS.y) * k;
+  bottle.position.set(cur.x, cur.y + Math.sin(t * 1.2) * 0.06, 0);
+  bottle.scale.setScalar(cur.s);
+  bottle.rotation.y = t * 0.35 + scrollY * 0.0022 + ptrS.x * 0.6;
+  bottle.rotation.z = cur.tilt + ptrS.x * -0.12;
+  bottle.rotation.x = ptrS.y * 0.25;
+
+  for (let i = 0; i < N; i++) {
+    pos[i*3+1] += spd[i] * dt * (reduce ? 0.3 : 1);
+    pos[i*3] += Math.sin(t * 0.6 + ph[i]) * 0.002;
+    if (pos[i*3+1] > 3.6) { pos[i*3+1] = -3.6; pos[i*3] = (Math.random() - 0.5) * 11; }
+  }
+  pGeo.attributes.position.needsUpdate = true;
+
+  renderer.render(scene, camera);
+  window.__3dok = true;
+  requestAnimationFrame(frame);
+}
+frame();
+</script>
+</body>
+</html>
