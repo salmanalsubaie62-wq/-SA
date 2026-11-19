@@ -39,3 +39,18 @@
 - [الأتمتة](library/04-automation.md)
 - [المبيعات وخدمة العملاء](library/05-sales.md)
 - [الإدارة وتطوير الفريق](library/06-management.md)
+
+## بحث GitHub: مهارات الإعلانات والتسويق (٢٠٢٦-١١-١٩)
+ملاحظة: عدد النجوم قليل في أغلب النتائج، وما فيه مراجعة أمنية. كل عنصر يُقرأ قبل التفعيل. وما قدرت أفتح محتوى المستودعات الخارجية، لأن الجلسة مقيدة بالوصول لمستودع المؤسسة فقط، فالمعلومات هنا من بيانات البحث والوصف بس.
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| adkit/ads-skills | إعلانات | استراتيجية الإعلانات والحملات والاستهداف | ٧ | https://github.com/adkit/ads-skills | مضاف، غير مفعّل (يحتاج قراءة) |
+| yahav123147/paid-ads-cro-skills | إعلانات مدفوعة | إعلانات مدفوعة وCRO وكتابة إعلانية | ٦ | https://github.com/yahav123147/paid-ads-cro-skills | مضاف، غير مفعّل (٠ نجوم) |
+| Dhananjay-alt/product-ad-video-skill | فيديو إعلاني ثلاثي الأبعاد | فيديو إطلاق منتج، شعار ثلاثي الأبعاد في Blender | ٦ | https://github.com/Dhananjay-alt/product-ad-video-skill | مضاف، غير مفعّل (نجمة واحدة، يحتاج تجربة) |
+| kaihere14/skills | تسويق المنتجات | صور إطلاق المنتج | ٥ | https://github.com/kaihere14/skills | مضاف، غير مفعّل |
+| Littlpinguin/marketing-cockpit-template | قسم تسويق | قسم تسويق كامل على هوية البراند | ٦ | https://github.com/Littlpinguin/marketing-cockpit-template | مضاف، غير مفعّل |
+| marynacleo/marketing-agent-skills | تسويق | صفحات هبوط وSEO وأسئلة شائعة | ٥ | https://github.com/marynacleo/marketing-agent-skills | مضاف، غير مفعّل |
+| duggguuu/ladder_and_leap_skill | علامة تجارية | تموضع البراند وكتابة الإعلانات | ٦ | https://github.com/duggguuu/ladder_and_leap_skill | مضاف، غير مفعّل (٠ نجوم) |
+
+**ملاحظة:** ما لقيت مهارات رسمية من شركات عالمية كبيرة للإعلانات في نتائج GitHub. النتائج أغلبها من مطورين أفراد.
