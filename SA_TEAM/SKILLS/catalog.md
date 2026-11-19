@@ -177,3 +177,20 @@
 | Metabase MCP (الرسمي) | خادم MCP | استكشاف بيانات وبناء لوحات وكتابة SQL | ٦ | https://claudemarketplaces.com/mcp/io.github.metabase/mcp | مضاف، غير مفعّل (يحتاج مفتاح) |
 | hluaguo/metabase-mcp | خادم MCP | استعلامات ولوحات Metabase (بايثون ٣.١٢+) | ٥ | https://agent-skills.cc/skills/hluaguo-metabase-mcp | مضاف، غير مفعّل |
 | data-query (aiden-runtime) | مهارة | أسئلة تحليل بلغة عادية على قواعد بيانات متعددة | ٥ | https://cdn.jsdelivr.net/npm/aiden-runtime@4.10.0/skills/installed/data-query/SKILL.md | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٢:٣٦ (الكويت) · موارد بشرية وقانون وصوت وتجارة إلكترونية
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| anthropics/knowledge-work-plugins | مستودع رسمي | ١٠٨ مهارة: موارد بشرية وقانون ومبيعات وعمليات وبيانات | ٧ | https://www.layer3labs.io/guides/claude-skills-examples-for-business | مضاف، غير مفعّل |
+| w95/awesome-claude-corporate-skills | مجموعة | حوالي ١٣٣ مهارة شركات (إجراءات تشغيل وامتثال) | ٥ | https://www.skills.sh/w95/awesome-claude-corporate-skills | مضاف، غير مفعّل (الأعداد تختلف) |
+| recruiting-skills-for-claude | مجموعة توظيف | أوصاف وظيفية وفرز سير ذاتية وأسئلة مقابلات | ٥ | https://github.com/GetBindu/awesome-claude-code-and-skills | مضاف، غير مفعّل (مصدر ثانوي) |
+| master-claude-for-legal | مجموعة قانونية | فرز NDA ومقارنة نسخ ومراجعة عقود | ٥ | https://skillmd.pages.dev/blog/best-free-claude-skills-github | مضاف، غير مفعّل (ليست استشارة قانونية) |
+| adjit/claude-voice | إضافة صوت | قراءة ردود Claude بصوت Kokoro محلي (بلا مفتاح) | ٥ | https://github.com/adjit/claude-voice | مضاف، غير مفعّل |
+| mbailey/voicemode | إضافة صوت | محادثة صوتية بـ Whisper وKokoro | ٦ | https://glama.ai/mcp/servers/@mbailey/voicemode/blob/279077362f9731b91e2db8361dcad53cdcaf4459/docs/guides/claude-code-plugin.md | مضاف، غير مفعّل |
+| csoai-org/voice-audio-mcp | خادم MCP | تحويل نص لصوت وصوت لنص (Kokoro وWhisper) | ٥ | https://claudemarketplaces.com/mcp/csoai-org/voice-audio-mcp | مضاف، غير مفعّل |
+| whisper-transcription (clawfu-skills) | مهارة | تفريغ صوت وملفات ترجمة SRT وVTT للفيديو | ٦ | https://claudemarketplaces.com/skills/guia-matthieu/clawfu-skills/whisper-transcription | مضاف، غير مفعّل |
+| jwulff/whisper-mcp | خادم MCP | تفريغ محلي بـ whisper.cpp | ٤ | https://www.vibeindex.ai/search?tag=audio | مضاف، غير مفعّل |
+| mohitagw15856/pm-claude-skills (product-description) | مهارة | وصف منتجات وقوائم تجارة إلكترونية بمراعاة حدود Amazon | ٥ | https://claudeskills.info/skills/mohitagw15856/pm-claude-skills/product-description/ | مضاف، غير مفعّل |
+| nexscope-ai/ecommerce-skills | مهارات | قوائم منتجات لـ ٨ منصات مع تحليل منافسين | ٥ | https://claudemarketplaces.com/skills/nexscope-ai/ecommerce-skills/product-description-generator | مضاف، غير مفعّل |
+| kostja94/marketing-skills | مجموعة تسويق | صفحات منتجات وسيو | ٥ | https://claudemarketplaces.com/skills/kostja94/marketing-skills/products-page-generator | مضاف، غير مفعّل |
+| arabicskill (claudskills) | مهارة عربي | نصوص منتجات ونصوص واجهات بالعربي (مو قوائم أسواق) | ٦ | https://claudskills.com/skills/arabicskill/ | مضاف، غير مفعّل |
