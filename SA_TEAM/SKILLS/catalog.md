@@ -125,3 +125,8 @@
 | dguido google-workspace-mcp | خادم MCP | Drive وDocs وSheets وSlides وCalendar وGmail وContacts | ٦ | https://awesome.ecosyste.ms/projects/github.com%2Fdguido%2Fgoogle-workspace-mcp | مضاف، غير مفعّل (يحتاج OAuth) |
 | Images MCP (Gemini) | خادم MCP | توليد وتعديل صور بـ Gemini | ٥ | https://glama.ai/mcp/servers/itayshmool/images-mcp | مضاف، غير مفعّل (يحتاج مفتاح) |
 | StudioMeyer Personal Suite | خادم MCP | ٤٩ أداة: إيميل وتقويم وصور | ٤ | https://claudemarketplaces.com/mcp/io.studiomeyer/personal-suite | مضاف، غير مفعّل (يحتاج دخول) |
+
+## مربوطة بطلب المؤسس
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| Blender Skills Pack (arjun988) | ٩٤ مهارة Blender | نمذجة وإضاءة ورندر وتحريك وتصدير، تنفيذ عبر BlenderMCP | ٨ | https://github.com/arjun988/blender-skills | منسوخة إلى SKILLS/installed/blender-skills، غير مفعّلة كمهارات (تحتاج Blender وBlenderMCP على جهازك) |
