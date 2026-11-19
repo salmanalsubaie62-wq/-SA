@@ -209,6 +209,9 @@ def build_news():
         for s_ in it["sources"]:
             if not str(s_.get("url", "")).startswith("https://"):
                 sys.exit("news-input.json: روابط المصادر لازم تبدأ بـ https://")
+    # «مؤكد» فقط إذا ورد الخبر في القنوات الثلاث
+    for it in items:
+        it["confirmed"] = bool(it.get("confirmed")) and len(it.get("channels", [])) >= 3
     return {"updated": data.get("updated", ""), "note": data.get("note", ""), "channels": data.get("channels", []), "items": items}
 
 
