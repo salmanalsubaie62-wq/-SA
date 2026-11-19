@@ -114,9 +114,58 @@ for name, f_, cam_ in [('A', 1, camA), ('B', fr(4.95), camB), ('C', fr(8.85), ca
     m = sc.timeline_markers.new(name, frame=f_); m.camera = cam_
 sc.camera = camA
 
-import os as _os
-_os.makedirs(_os.path.dirname(OUT), exist_ok=True)
-for f in range(F0, F1 + 1, STEP):
-    sc.frame_set(f); sc.render.filepath = f'{OUT}{f:04d}.png'
-    bpy.ops.render.render(write_still=True)
-    print('RENDERED', f, flush=True)
+
+# --- مشهد الانتقال: شريط ضوء ذهبي يعبر الشاشة عند القطع (مبني داخل Blender)
+def sweep(cam, t0, t1, x0, x1, name):
+    bpy.ops.mesh.primitive_plane_add(size=1)
+    p = bpy.context.object; p.name = name; p.parent = cam
+    p.location = (x0, 0, -1.2); p.scale = (2.6, 4.0, 1); p.rotation_euler = (0, 0, math.radians(-12))
+    m = bpy.data.materials.new(name + 'M'); m.use_nodes = True; n = m.node_tree.nodes; l = m.node_tree.links
+    for x in list(n): n.remove(x)
+    tc = n.new('ShaderNodeTexCoord'); mp = n.new('ShaderNodeMapping'); mp.inputs['Location'].default_value = (0.5, 0, 0)
+    gr = n.new('ShaderNodeTexGradient'); cr = n.new('ShaderNodeValToRGB')
+    cr.color_ramp.elements[0].position = 0.0; cr.color_ramp.elements[0].color = (0, 0, 0, 1)
+    cr.color_ramp.elements[1].position = 0.5; cr.color_ramp.elements[1].color = (1, 1, 1, 1)
+    e3 = cr.color_ramp.elements.new(1.0); e3.color = (0, 0, 0, 1)
+    em = n.new('ShaderNodeEmission'); em.inputs['Color'].default_value = (1, .78, .35, 1); em.inputs['Strength'].default_value = 9
+    tr = n.new('ShaderNodeBsdfTransparent'); mx = n.new('ShaderNodeMixShader'); o = n.new('ShaderNodeOutputMaterial')
+    l.new(tc.outputs['Object'], mp.inputs['Vector']); l.new(mp.outputs[0], gr.inputs['Vector']); l.new(gr.outputs['Fac'], cr.inputs['Fac'])
+    l.new(cr.outputs['Color'], mx.inputs['Fac']); l.new(tr.outputs[0], mx.inputs[1]); l.new(em.outputs[0], mx.inputs[2]); l.new(mx.outputs[0], o.inputs['Surface'])
+    p.data.materials.append(m)
+    p.hide_render = True; p.keyframe_insert('hide_render', frame=1)
+    for f_, hr in [(fr(t0) - 1, True), (fr(t0), False), (fr(t1), False), (fr(t1) + 1, True)]:
+        p.hide_render = hr; p.keyframe_insert('hide_render', frame=f_)
+    p.location.x = x0; p.keyframe_insert('location', frame=fr(t0))
+    p.location.x = x1; p.keyframe_insert('location', frame=fr(t1))
+    return p
+for cut, ca, cb, nm in [(4.95, camA, camB, 'S1'), (8.85, camB, camC, 'S2')]:
+    sweep(ca, cut - 0.42, cut, 3.0, 0.0, nm + 'a')
+    sweep(cb, cut, cut + 0.42, 0.0, -3.0, nm + 'b')
+
+# --- العنوان داخل Blender (أبناء للكاميرا D)
+def title(body, size, ly, t0, name):
+    bpy.ops.object.text_add(location=(0, ly, -3.0)); o = bpy.context.object; o.name = name
+    o.data.body = body; o.data.size = size; o.data.align_x = 'CENTER'; o.data.extrude = 0.004; o.parent = camD
+    m = bpy.data.materials.new(name + 'M'); m.use_nodes = True; nn = m.node_tree.nodes
+    for x in list(nn): nn.remove(x)
+    e = nn.new('ShaderNodeEmission'); e.inputs['Color'].default_value = (1, .88, .6, 1)
+    oo = nn.new('ShaderNodeOutputMaterial'); m.node_tree.links.new(e.outputs[0], oo.inputs['Surface'])
+    o.data.materials.append(m)
+    for f_, v in [(1, 0.0), (fr(t0), 0.0), (fr(t0) + 14, 3.0)]:
+        e.inputs['Strength'].default_value = v; e.inputs['Strength'].keyframe_insert('default_value', frame=f_)
+title('N O I R   E M E R A L D', 0.15, -1.2, 10.9, 'TitleA')
+title('THE ART OF PRESENCE', 0.055, -1.42, 11.2, 'TitleB')
+
+# --- الإخراج: فيديو مباشرة من Blender بجودة شبه غير مضغوطة
+sc.frame_start = 1; sc.frame_end = int(FPS * DUR); sc.frame_step = 1
+sc.render.image_settings.file_format = 'FFMPEG'
+sc.render.ffmpeg.format = 'MPEG4'; sc.render.ffmpeg.codec = 'H264'
+sc.render.ffmpeg.constant_rate_factor = 'PERC_LOSSLESS'; sc.render.ffmpeg.ffmpeg_preset = 'GOOD'
+if opt.get('still'):
+    for fs in opt['still'].split(','):
+        sc.frame_set(int(fs)); sc.render.image_settings.file_format = 'PNG'; sc.render.filepath = f'{OUT}{int(fs):04d}.png'
+        bpy.ops.render.render(write_still=True)
+else:
+    sc.render.filepath = OUT
+    bpy.ops.render.render(animation=True)
+print('DONE', flush=True)
