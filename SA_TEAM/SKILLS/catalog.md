@@ -144,3 +144,20 @@
 | Shopify Dev MCP | خادم MCP | مساعد تطوير Shopify بدون مصادقة ولا يلمس متجراً | ٤ | https://contextbolt.com/blog/business-apps-with-mcp-servers/ | مضاف، غير مفعّل |
 | Shopify connector لـ Claude | موصّل | إنشاء وتحديث منتجات دفعة واحدة وقراءة الطلبات | ٥ | https://contextbolt.com/blog/business-apps-with-mcp-servers/ | مضاف، غير مفعّل (يحتاج متجر) |
 | Cube MCP (الرسمي) | خادم MCP | تحليلات ومقاييس موحّدة | ٥ | https://contextbolt.com/blog/business-apps-with-mcp-servers/ | مضاف، غير مفعّل (يحتاج Cube) |
+
+## دفعة بحث الساعة ٠٠:٣٦ (الكويت) · ثلاثي الأبعاد وتسويق وأتمتة
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| kevinbadi/blender-skills | مهارات Blender | أتمتة منتجات ثلاثية الأبعاد وحركة كاميرا عبر MCP (تحتاج مفتاح Meshy للتوليد وffmpeg) | ٦ | https://github.com/kevinbadi/blender-skills | مضاف، غير مفعّل |
+| CloudAI-X/threejs-skills | مهارات Three.js | أساسيات وتحميل وحركة وشيدرز وفيزياء للويب | ٧ | https://docsearch.algolia.com/mcp/docs/repo/cloudai-x/threejs-skills | مضاف، غير مفعّل |
+| freshtechbro/claudedesignskills (threejs-webgl) | مهارة | مشاهد 3D تفاعلية ومنتجات قابلة للتخصيص | ٦ | https://claudemarketplaces.com/skills/freshtechbro/claudedesignskills/threejs-webgl | مضاف، غير مفعّل |
+| 3d-web-experience (sickn33) | مهارة | تجارب 3D للويب مع React Three Fiber وSpline | ٥ | https://claudemarketplaces.com/skills/sickn33/antigravity-awesome-skills/3d-web-experience | مضاف، غير مفعّل |
+| seedance-forge | مجموعة برومبتات | ٢٣٦٦ برومبت لتوليد فيديو Seedance (برومبتات فقط، بلا رندر) | ٤ | https://engineered.at/articles/agentic-skills | مضاف، غير مفعّل |
+| OpenClaudia/openclaudia-skills | مجموعة تسويق | ٦٩+ مهارة تسويق وسيو ومحتوى | ٦ | https://github.com/OpenClaudia/openclaudia-skills/wiki | مضاف، غير مفعّل |
+| alirezarezvani/claude-skills | مجموعة | ٢٣٢+ مهارة تسويق ومالية وRevOps ومنتج | ٥ | https://steepworks-website.vercel.app/best-claude-code-skills-non-engineers | مضاف، غير مفعّل (الأعداد تختلف بين المصادر) |
+| infrasity-labs/dev-gtm-claude-skills | مجموعة محتوى | محرك مدونات وسيو شامل | ٥ | https://github.com/infrasity-labs/dev-gtm-claude-skills | مضاف، غير مفعّل |
+| n8n MCP المدمج | خادم MCP | بحث وتشغيل وإنشاء مسارات n8n من Claude | ٧ | https://blog.n8n.io/best-mcp-servers | مضاف، غير مفعّل (يحتاج حساب) |
+| Make MCP | خادم MCP | تشغيل سيناريوهات Make كأدوات | ٦ | https://blog.n8n.io/best-mcp-servers | مضاف، غير مفعّل (يحتاج حساب) |
+| Cloudflare MCP | خادم MCP | إدارة Workers وR2 وD1 وKV | ٥ | https://render.com/articles/essential-mcp-servers-for-developers | مضاف، غير مفعّل (يحتاج مفتاح API) |
+| Vercel MCP | خادم MCP | نشرات وسجلات وبيئات | ٥ | https://render.com/articles/essential-mcp-servers-for-developers | مضاف، غير مفعّل (OAuth) |
+| Supabase MCP | خادم MCP | قاعدة بيانات ومشاريع، مع وضع قراءة فقط | ٦ | https://www.descope.com/blog/post/best-mcp-servers-developers | مضاف، غير مفعّل (يحتاج دخول) |
