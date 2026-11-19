@@ -75,3 +75,19 @@
 | SE Ranking seo-skills | مهارة SEO | ملخصات محتوى وتحليل صفحات | ٦ | https://github.com/seranking/seo-skills | مضاف، غير مفعّل |
 | SuperSEO Skills (inhouseseo) | مهارة SEO | ١١ مهارة منها تدقيق صفحات | ٥ | https://sharedcontext.ai/plugins/external/inhouseseo/superseo-skills-opinionated-claude-skills-for-seo | مضاف، غير مفعّل |
 | seo-geo-claude-skills (Aaron He Zhu) | مهارة SEO | بحث كلمات مفتاحية وخريطة نوايا وفجوات منافسة | ٦ | https://skillselion.com/guides/seo-skills-claude-code | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٩:٣٦ (الكويت) · Google Workspace وتسويق ومراجع
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| sputnicyoji google-docs-mcp | خادم MCP | ٤٩ أداة لـ Docs وSheets وDrive مع Apps Script | ٧ | https://lobehub.com/ar/mcp/sputnicyoji-google-docs-mcp-for-claudecode | مضاف، غير مفعّل (يحتاج OAuth) |
+| MarkusPfundstein/mcp-gsuite | خادم MCP | Docs وSheets وDrive وGmail وCalendar | ٦ | https://skillselion.com/ja/best/google-mcp-servers | مضاف، غير مفعّل (يحتاج OAuth) |
+| Freema mcp-gsheets | خادم MCP | قراءة وكتابة وتنسيق Google Sheets | ٦ | https://skillselion.com/ja/best/google-mcp-servers | مضاف، غير مفعّل (يحتاج OAuth) |
+| gog (steipete/clawdis) | مهارة CLI | Gmail وCalendar وDrive وSheets وDocs من الطرفية | ٦ | https://claudemarketplaces.com/skills/steipete/clawdis/gog | مضاف، غير مفعّل |
+| jezweb google-workspace | مهارة | توثيق واجهات Sheets وDocs بصيغة جاهزة | ٥ | https://skills.sh/jezweb/claude-skills/google-workspace | مضاف، غير مفعّل |
+| coreyhaines31/marketingskills | مهارات تسويق | CRO وكتابة إعلانية وSEO وتحليلات وإيميلات | ٨ | https://hn.jakechampion.name/reader/https://github.com/coreyhaines31/marketingskills | مضاف، غير مفعّل |
+| kkoppenhaver/cc-skills | مهارة محتوى | محتوى وجدولة منشورات لعدة منصات | ٦ | https://github.com/kkoppenhaver/cc-skills | مضاف، غير مفعّل |
+| thatrebeccarae/claude-marketing | مجموعة مهارات | ٥٦ مهارة تسويق وأطر كتابة (AIDA وPAS) | ٧ | https://thatrebeccarae.github.io/claude-marketing/ | مضاف، غير مفعّل |
+| harrymunro/claude-content-skills | مهارات محتوى | إيميلات ونشرات بصوت العلامة | ٥ | https://skillselion.com/skills/harrymunro/claude-content-skills | مضاف، غير مفعّل |
+| anthropics/knowledge-work-plugins (draft-content) | مهارة رسمية | مقالات ومنشورات وبيانات صحفية | ٧ | https://claudemarketplaces.com/skills/anthropics/knowledge-work-plugins/draft-content | مضاف، غير مفعّل |
+| VoltAgent/awesome-design-md | مرجع تصميم | قوائم DESIGN.md للتصميم | ٦ | https://skillmd.pages.dev/blog/awesome-claude-skills | مضاف، غير مفعّل |
+| ComposioHQ/awesome-claude-skills | مرجع | أكبر قائمة مهارات مجتمعية بتصنيفات | ٦ | https://designrevision.com/blog/awesome-claude-code-skills | مضاف، غير مفعّل |
