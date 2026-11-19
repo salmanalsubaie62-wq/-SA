@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>راصد الأخبار صوتي</title>
+<style>
+  :root { --bg:#0f1216; --surface:#171b21; --text:#e8ebef; --muted:#9aa3ae; --line:#2a3038; --accent:#60a5fa; --ok:#4ade80; --warn:#fbbf24; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { background: var(--bg); color: var(--text); font-family: "Cairo","Segoe UI",Tahoma,sans-serif; font-size: 14px; line-height: 1.7; display: flex; flex-direction: column; padding-left: max(14px, env(safe-area-inset-left)); padding-right: max(14px, env(safe-area-inset-right)); padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); }
+  header { padding: 10px 0; border-bottom: 1px solid var(--line); display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  header h1 { margin: 0; font-size: 16px; }
+  header span { color: var(--muted); font-size: 11px; }
+  #setup { border: 1px solid var(--line); border-radius: 12px; padding: 12px; margin: 12px 0; background: var(--surface); }
+  #setup p { margin: 0 0 8px; font-size: 12px; color: var(--muted); }
+  #setup input { width: 100%; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; direction: ltr; }
+  #setup button { margin-top: 8px; font: inherit; border: 0; border-radius: 999px; padding: 6px 16px; background: var(--text); color: var(--bg); cursor: pointer; }
+  #chat { flex: 1; min-height: 0; overflow-y: auto; padding: 12px 0; display: flex; flex-direction: column; gap: 16px; }
+  .msg { max-width: 100%; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .msg.user { align-self: flex-end; max-width: 85%; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 8px 14px; }
+  .msg.bot { align-self: stretch; }
+  .msg.muted { color: var(--muted); }
+  .msg img { display: block; max-width: 100%; max-height: 200px; border-radius: 10px; margin-bottom: 6px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; white-space: normal; }
+  .card h4 { margin: 4px 0; font-size: 13px; }
+  .tag { display: inline-block; font-size: 10px; padding: 0 7px; border-radius: 6px; border: 1px solid var(--line); margin-inline-end: 6px; color: var(--muted); }
+  .tag.ok { color: var(--ok); border-color: var(--ok); } .tag.warn { color: var(--warn); border-color: var(--warn); }
+  .meta { font-size: 10px; color: var(--muted); margin-top: 4px; }
+  .srcs { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 10px; }
+  .srcs a { color: var(--accent); }
+  #preview { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--muted); padding: 4px 0; }
+  #preview img { height: 36px; width: 36px; object-fit: cover; border-radius: 8px; }
+  #bar { display: flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 28px; padding: 6px 8px; background: var(--surface); margin-bottom: 10px; }
+  #bar:focus-within { border-color: var(--accent); }
+  #q { flex: 1; min-width: 0; font: inherit; color: var(--text); background: transparent; border: 0; outline: none; padding: 6px 8px; }
+  .round { flex: 0 0 auto; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: transparent; color: var(--text); font: inherit; font-size: 12px; cursor: pointer; }
+  #mic.on { background: #b91c1c; border-color: #b91c1c; color: #fff; }
+  #send { background: var(--text); color: var(--bg); border: 0; font-size: 18px; }
+  #send:disabled { opacity: .35; }
+  .opts { display: flex; gap: 12px; align-items: center; font-size: 11px; color: var(--muted); padding-bottom: 6px; flex-wrap: wrap; }
+  .opts button { font: inherit; font-size: 11px; color: var(--text); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; cursor: pointer; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header><h1>راصد الأخبار</h1><span>محلل سياسي (ذكاء اصطناعي) · إيران وأمريكا والحوثيون والخليج · مصادر: الجزيرة والعربية والعربي</span></header>
+
+<section id="setup">
+  <p>الصفحة تحتاج مفتاح Anthropic API الخاص فيك. يتحفظ في هذا المتصفح فقط ولا ينرسل لأي مكان غير Anthropic. الاستهلاك يُحسب على حسابك في console.anthropic.com وهو منفصل عن اشتراك Claude.</p>
+  <input id="key" type="password" placeholder="sk-ant-..." autocomplete="off" spellcheck="false">
+  <button id="saveKey" type="button">حفظ المفتاح</button>
+</section>
+
+<main id="chat" aria-live="polite"></main>
+
+<div id="preview" hidden></div>
+<div class="opts">
+  <label><input type="checkbox" id="autoRead" checked> قراءة الرد صوتياً</label>
+  <button id="stopSpeak" type="button" hidden>إيقاف القراءة</button>
+  <button id="changeKey" type="button">تغيير المفتاح</button>
+  <span id="voiceNote"></span>
+</div>
+<form id="bar">
+  <button type="button" id="mic" class="round" aria-label="تحدث" title="تحدث" hidden>تحدث</button>
+  <button type="button" id="attach" class="round" aria-label="إرفاق صورة" title="إرفاق صورة">+</button>
+  <input id="file" type="file" accept="image/jpeg,image/png,image/webp,image/gif" hidden>
+  <input id="q" type="text" placeholder="اسأل عن الحرب أو اطلب تحليل..." autocomplete="off" aria-label="رسالتك">
+  <button type="submit" id="send" class="round" aria-label="إرسال">↑</button>
+</form>
+
+<script>window.NEWS = {"updated": "2026-11-19", "note": "النطاق: أخبار الحرب فقط (ضربات، هجمات، اعتراضات، هدنة ومفاوضات الحرب) في إيران وأمريكا، والحوثيين، ودول الخليج. القنوات: الجزيرة والعربية والتلفزيون العربي، من مواقعها عبر بحث الويب (مو البث المباشر ولا تويتر). «مؤكد» = ورد في القنوات الثلاث. شلت الأخبار العادية والاجتماعات الروتينية.", "channels": ["الجزيرة", "العربية", "العربي"], "items": [{"id": "qeshm-gulf", "topic": "إيران والخليج", "title": "ضربة أمريكية على جزيرة قشم، وهجمات إيرانية على الكويت والبحرين، وانفجارات ناقلات في هرمز", "summary": "الجزيرة (١٧ و١٨ نوفمبر): ضربة أمريكية في جزيرة قشم وانفجارات في ٥ ناقلات في مضيق هرمز، وإسرائيل تضغط على واشنطن لهجوم مشترك وطهران تهدد باستهداف «روزفلت». العربي الجديد: إيران استهدفت الكويت والبحرين بعد القصف الأمريكي، والدفاعات الجوية تصدّت. العربية: الحرس الثوري أعلن استهداف رادار أمريكي في البحرين، والقيادة المركزية قالت إنها اعترضت مسيّرات. حجم الأضرار والروايات متضاربة بين الأطراف.", "date_note": "١٧–١٩ نوفمبر ٢٠٢٦ (بعض التقارير لا يظهر فيها تاريخ دقيق)", "channels": ["الجزيرة", "العربية", "العربي"], "confirmed": true, "confirmation_note": "الضربة والهجمات ورد في القنوات الثلاث. الأضرار وتفاصيل الاستهداف ادعاءات أطراف ولم تُتحقق مستقلاً.", "sources": [{"name": "الجزيرة نت - إيران مباشر (١٧ نوفمبر)", "url": "https://aljazeera.net/news/liveblog/2026/11/17/%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-%D8%B1%D9%88%D8%B2%D9%81%D9%84%D8%AA-%D8%AA%D9%86%D8%B6%D9%85-%D9%84%D8%AD%D8%A7%D9%85%D9%84%D8%AA%D9%8A"}, {"name": "الجزيرة نت - إيران مباشر (١٨ نوفمبر)", "url": "https://aljazeera.net/news/liveblog/2026/11/18/%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-%D9%82%D8%B5%D9%81-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A-%D9%81%D9%8A-%D8%AC%D8%B2%D9%8A%D8%B1%D8%A9-%D9%82%D8%B4%D9%85"}, {"name": "العربية (الإنجليزية) - الشرق الأوسط", "url": "https://english.alarabiya.net/News/middle-east"}, {"name": "العربي الجديد", "url": "https://alaraby.co.uk/politics/%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%AA%D8%B3%D8%AA%D9%87%D8%AF%D9%81-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA-%D9%88%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A%D9%86-%D8%A8%D8%B9%D8%AF-%D9%87%D8%AC%D9%85%D8%A7%D8%AA-%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D9%82%D8%B4%D9%85"}]}, {"id": "houthi-saudi", "topic": "الحوثيون والسعودية", "title": "هجمات حوثية على السعودية واعتراض صواريخ ومسيّرات، وأضرار في الرياض", "summary": "الجزيرة (١٨ نوفمبر): التحالف اعترض صاروخاً باتجاه الرياض، والحوثيون أعلنوا استهداف الرياض وجازان. العربي الجديد: أضرار في برج صندوق الاستثمارات العامة بالرياض جراء هجوم صاروخي حسب التقارير. العربية: إدانات خليجية وعربية لتكرار الهجمات الحوثية على السعودية، ومجلس التعاون اعتبرها أعمالاً إرهابية. العربي الجديد يعرض تحليلاً بأن الحوثيين ورقة ضغط إيرانية، ونقلت العربية عن رويترز أن إيران دعمتهم بقيادات من الحرس الثوري وعتاد (وهذا ادعاء منسوب لرويترز).", "date_note": "٨–١٨ نوفمبر ٢٠٢٦", "channels": ["الجزيرة", "العربية", "العربي"], "confirmed": true, "confirmation_note": "الهجمات والاعتراضات ورد في القنوات الثلاث. تفاصيل الأضرار من أطراف النزاع، والدعم الإيراني منقول عن رويترز وليس مؤكداً.", "sources": [{"name": "الجزيرة نت - اليمن مباشر", "url": "https://www.aljazeera.net/news/liveblog/2026/11/18/%D8%A7%D9%84%D9%8A%D9%85%D9%86-%D9%85%D8%A8%D8%A7%D8%B4%D8%B1-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AA%D9%87%D8%B2-%D8%B5%D9%86%D8%B9%D8%A7%D8%A1"}, {"name": "العربية - إدانات خليجية (٨ نوفمبر)", "url": "https://www.alarabiya.net/saudi-today/2026/11/08/%D8%A7%D8%AF%D8%A7%D9%86%D8%A7%D8%AA-%D8%AE%D9%84%D9%8A%D8%AC%D9%8A%D8%A9-%D9%88%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AA%D8%AC%D8%A7%D9%87-%D8%AA%D9%83%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A-%D9%85%D8%AD%D8%A7%D9%88%D9%84%D8%A7%D8%AA%D9%87-%D8%A7%D9%84%D8%B9%D8%AF%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A8%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9"}, {"name": "العربي الجديد - برج صندوق الاستثمارات", "url": "https://www.alaraby.co.uk/economy/%D8%AB%D8%A7%D9%86%D9%8A-%D9%87%D8%AC%D9%88%D9%85-%D9%81%D9%8A-%D9%82%D9%84%D8%A8-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A-%D8%A3%D8%B6%D8%B1%D8%A7%D8%B1-%D8%A8%D8%A8%D8%B1%D8%AC-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9"}]}, {"id": "iran-us-talks", "topic": "إيران وأمريكا", "title": "مذكرة تفاهم وانتظار رد أمريكي، مع تضارب الروايات عن المفاوضات", "summary": "الجزيرة (١٢ نوفمبر): طهران تنتظر رداً أمريكياً على مقترحها، و«سنتكوم» تعمل على إبقاء هرمز مفتوحاً. العربية نقلت عن بزشكيان الحديث عن مذكرة تفاهم. العربي الجديد (تقرير أقدم): طهران علّقت المحادثات بسبب التصعيد على لبنان، وعراقجي قال إن وقف النار يشمل كل الجبهات. التقارير تختلف في التواريخ والتفاصيل، ولا يمكن ترتيبها بدقة.", "date_note": "١٢–١٩ نوفمبر ٢٠٢٦ (تواريخ متفاوتة)", "channels": ["الجزيرة", "العربية", "العربي"], "confirmed": false, "confirmation_note": "القنوات الثلاث تتناول الملف لكن بروايات متضاربة (انتظار رد أمريكي، مذكرة تفاهم، تعليق المحادثات) وبتواريخ غير موحدة، فما أعتبره مؤكداً رغم إنه في الثلاث.", "sources": [{"name": "الجزيرة نت - إيران مباشر (١٢ نوفمبر)", "url": "https://www.aljazeera.net/news/liveblog/2026/11/12/%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%B7%D9%87%D8%B1%D8%A7%D9%86-%D8%AA%D9%86%D8%AA%D8%B8%D8%B1-%D8%B1%D8%AF%D8%A7-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A7-%D8%B9%D9%84%D9%89?update=10079828"}, {"name": "العربية (الإنجليزية) - الشرق الأوسط", "url": "https://english.alarabiya.net/News/middle-east"}, {"name": "العربي الجديد - الحرب في المنطقة", "url": "https://www.alaraby.co.uk/politics/%D8%A7%D9%84%D8%AD%D8%B1%D8%A8-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%AA%D8%B9%D9%84%D9%82-%D8%A7%D9%84%D9%85%D9%81%D8%A7%D9%88%D8%B6%D8%A7%D8%AA-%D8%A5%D9%84%D9%89-%D8%AD%D9%8A%D9%86-%D8%AA%D9%88%D9%82%D9%81-%D9%82%D8%B5%D9%81-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%88%D8%BA%D8%B2%D8%A9"}]}]};</script>
+<script>
+(function () {
+  "use strict";
+  var NEWS = window.NEWS || { items: [], updated: "", note: "" };
+  var MODEL = "claude-sonnet-5-5";
+  var KEY_NAME = "sa_voice_anthropic_key";
+  var chat = document.getElementById("chat");
+  var q = document.getElementById("q");
+  var sendBtn = document.getElementById("send");
+  var micBtn = document.getElementById("mic");
+  var attachBtn = document.getElementById("attach");
+  var fileInput = document.getElementById("file");
+  var preview = document.getElementById("preview");
+  var setup = document.getElementById("setup");
+  var keyInput = document.getElementById("key");
+  var autoRead = document.getElementById("autoRead");
+  var stopSpeak = document.getElementById("stopSpeak");
+  var voiceNote = document.getElementById("voiceNote");
+
+  function el(tag, attrs, kids) {
+    var n = document.createElement(tag);
+    Object.keys(attrs || {}).forEach(function (k) { if (k === "class") n.className = attrs[k]; else if (k === "text") n.textContent = attrs[k]; else n.setAttribute(k, attrs[k]); });
+    (kids || []).forEach(function (c) { if (c) n.appendChild(typeof c === "string" ? document.createTextNode(c) : c); });
+    return n;
+  }
+  function getKey() { try { return localStorage.getItem(KEY_NAME) || ""; } catch (e) { return ""; } }
+  function setKey(v) { try { if (v) localStorage.setItem(KEY_NAME, v); else localStorage.removeItem(KEY_NAME); } catch (e) {} }
+  function add(cls, nodes) { var m = el("div", { class: "msg " + cls }, nodes); chat.appendChild(m); chat.scrollTop = chat.scrollHeight; return m; }
+
+  // ---------- الأخبار ----------
+  function safeHref(u) { return /^https:\/\//.test(String(u || "")) ? u : null; }
+  function newsCard(it) {
+    var n = (it.channels || []).length;
+    var srcs = el("div", { class: "srcs" });
+    (it.sources || []).forEach(function (s, i) { var h = safeHref(s.url); if (h) srcs.appendChild(el("a", { href: h, target: "_blank", rel: "noopener noreferrer", text: "[" + (i + 1) + "] " + (s.name || "مصدر") })); });
+    return el("div", { class: "msg bot card" }, [
+      el("div", null, [el("span", { class: "tag " + (it.confirmed ? "ok" : "warn"), text: (it.confirmed ? "مؤكد" : "غير مؤكد") + " (" + n + "/3)" }), el("span", { text: it.topic || "" })]),
+      el("h4", { text: it.title }), el("div", { text: it.summary }),
+      el("div", { class: "meta", text: (it.date_note || "") + " · القنوات: " + ((it.channels || []).join("، ") || "-") + (it.confirmation_note ? " · " + it.confirmation_note : "") }), srcs
+    ]);
+  }
+  function digest() {
+    return (NEWS.items || []).map(function (it, n) {
+      var src = (it.sources || []).map(function (s, i) { return "  [" + (n + 1) + "." + (i + 1) + "] " + s.name + " — " + s.url; }).join("\n");
+      return (n + 1) + ". [" + (it.confirmed ? "مؤكد" : "غير مؤكد") + " " + (it.channels || []).length + "/3] " + it.topic + ": " + it.title + "\n   " + it.summary + "\n   التاريخ: " + (it.date_note || "غير محدد") + "\n   القنوات: " + ((it.channels || []).join("، ") || "-") + "\n   ملاحظة التأكيد: " + (it.confirmation_note || "-") + "\n" + src;
+    }).join("\n\n");
+  }
+  var SYSTEM = [
+    "أنت «راصد الأخبار»، وكيل ذكاء اصطناعي بدور محلل سياسي خبير ودارس للعلوم السياسية والعلاقات الدولية (الواقعية والليبرالية والبنائية، توازن القوى، الردع، الدبلوماسية القسرية، الأمن الإقليمي، القانون الدولي). أنت ذكاء اصطناعي ولست شخصاً حقيقياً، وتتكلم بثقة وعمق لكن بتواضع علمي.",
+    "نطاقك أخبار الحرب فقط (ضربات، هجمات، اعتراضات، هدنة ومفاوضات الحرب) في: إيران وأمريكا، والحوثيين، ودول الخليج (الكويت، السعودية، البحرين، قطر، الإمارات، عُمان). لا تتناول غزة أو لبنان أو غيرها إلا إذا سألك المستخدم صراحة، وقل إنها خارج متابعتك الحالية.",
+    "تتابع الجزيرة والعربية والتلفزيون العربي. لا تنزّل خبراً كمؤكد إلا إذا ورد في القنوات الثلاث كلها وتوافقت رواياتها، وإذا تضاربت فهو غير مؤكد. لاحظ اختلاف الخط التحريري بين القنوات عند التضارب دون اتهام أحد.",
+    "قواعد صارمة:",
+    "١) لأي واقعة حديثة اعتمد فقط على الأخبار المرفقة، واذكر رقم المصدر مثل [1.2]. إذا السؤال عن واقعة غير موجودة قل: «ما عندي مصدر مؤكد لهذا»، ولا تخترع أخباراً أو أرقاماً أو أسماء أو تواريخ.",
+    "٢) للأسئلة العامة (مفاهيم، تاريخ، نظريات) أجب من معرفتك وعلّمها «معلومة خلفية»، وانتبه إن معرفتك قد لا تشمل أحدث التطورات.",
+    "٣) فرّق دائماً بين المؤكد وغير المؤكد، وانسب الادعاءات لأصحابها.",
+    "٤) اربط الأحداث وحلّلها (من المستفيد؟ الدوافع والقيود؟ رسائل الردع؟) لكن علّم التحليل كتقدير («أرجّح»، «ممكن»)، واذكر سيناريوهين على الأكثر وما يغيّر كل واحد وما يثبت خطأك.",
+    "٥) إذا أُرفقت صورة: صف ما تراه بدقة، واقرأ أي نص ظاهر، وقارن مضمونها بالأخبار المرفقة. لا تؤكد صحة الصورة نفسها: ما تقدر على البحث العكسي ولا معرفة مصدرها الأول أو تاريخها أو إن تم تعديلها. قل ذلك، واقترح خطوات التحقق.",
+    "٦) لا تتبنى موقفاً سياسياً ولا تحرّض ولا تبرر العنف. اعرض موقف كل طرف منسوباً له.",
+    "٧) اكتب بعربية مبسطة بلهجة خليجية مهذبة، بجمل قصيرة تناسب القراءة بصوت عالٍ، وبدون رموز أو جداول أو قوائم طويلة. ابدأ بالجواب مباشرة.",
+    "",
+    "الأخبار المتاحة (آخر تحديث: " + (NEWS.updated || "غير محدد") + "):",
+    "",
+    digest()
+  ].join("\n");
+
+  // ---------- الواجهة الأولية ----------
+  function intro() {
+    add("bot muted", [el("div", { text: "هلا. اسألني أو اضغط «تحدث» وتكلم. أتابع الحرب في الخليج وإيران وأمريكا والحوثيين، وما أنزّل الخبر مؤكداً إلا إذا ورد في القنوات الثلاث." })]);
+    (NEWS.items || []).forEach(function (it) { chat.appendChild(newsCard(it)); });
+    chat.scrollTop = chat.scrollHeight;
+  }
+  function refreshSetup() { setup.hidden = !!getKey(); }
+  document.getElementById("saveKey").addEventListener("click", function () {
+    var v = keyInput.value.trim();
+    if (!/^sk-ant-/.test(v)) { alert("المفتاح لازم يبدأ بـ sk-ant-"); return; }
+    setKey(v); keyInput.value = ""; refreshSetup();
+  });
+  document.getElementById("changeKey").addEventListener("click", function () { setKey(""); refreshSetup(); });
+
+  // ---------- الصورة ----------
+  var image = null, imageUrl = null;
+  function setImage(f) {
+    if (imageUrl) { URL.revokeObjectURL(imageUrl); imageUrl = null; }
+    image = f || null;
+    while (preview.firstChild) preview.removeChild(preview.firstChild);
+    if (!f) { preview.hidden = true; return; }
+    imageUrl = URL.createObjectURL(f);
+    var rm = el("button", { type: "button", class: "round", text: "x", style: "width:24px;height:24px;font-size:11px" });
+    rm.addEventListener("click", function () { fileInput.value = ""; setImage(null); });
+    [el("img", { src: imageUrl, alt: "" }), el("span", { text: f.name }), rm].forEach(function (n) { preview.appendChild(n); });
+    preview.hidden = false;
+  }
+  attachBtn.addEventListener("click", function () { fileInput.click(); });
+  fileInput.addEventListener("change", function () {
+    var f = fileInput.files && fileInput.files[0];
+    if (!f) return setImage(null);
+    if (!/^image\/(jpeg|png|webp|gif)$/.test(f.type) || f.size > 4.5 * 1024 * 1024) { fileInput.value = ""; add("bot muted", [el("div", { text: "الصورة لازم تكون JPEG أو PNG أو WebP أو GIF وأقل من ٤٫٥ ميغابايت." })]); return setImage(null); }
+    setImage(f);
+  });
+  function toBase64(file) {
+    return new Promise(function (res, rej) {
+      var r = new FileReader();
+      r.onload = function () { res(String(r.result).split(",")[1]); };
+      r.onerror = function () { rej(r.error); };
+      r.readAsDataURL(file);
+    });
+  }
+
+  // ---------- القراءة الصوتية ----------
+  var synth = window.speechSynthesis || null;
+  function cleanForSpeech(t) { return String(t || "").replace(/\[\d+(?:\.\d+)?\]/g, "").replace(/[*_#>`]/g, "").replace(/https?:\/\/\S+/g, "").replace(/\s{2,}/g, " ").trim(); }
+  function speak(text) {
+    if (!synth || !autoRead.checked) return;
+    synth.cancel();
+    var u = new SpeechSynthesisUtterance(cleanForSpeech(text));
+    u.lang = "ar-SA";
+    var vs = synth.getVoices ? synth.getVoices() : [];
+    var ar = vs.filter(function (v) { return /^ar/i.test(v.lang); })[0];
+    if (ar) u.voice = ar;
+    u.onstart = function () { stopSpeak.hidden = false; };
+    u.onend = u.onerror = function () { stopSpeak.hidden = true; };
+    synth.speak(u);
+  }
+  stopSpeak.addEventListener("click", function () { if (synth) synth.cancel(); stopSpeak.hidden = true; });
+  if (!synth) { autoRead.parentNode.hidden = true; }
+
+  // ---------- الاستماع ----------
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var rec = null, listening = false, heard = "";
+  if (SR) {
+    micBtn.hidden = false;
+    micBtn.addEventListener("click", function () {
+      if (listening) { try { rec.stop(); } catch (e) {} return; }
+      if (synth) synth.cancel();
+      rec = new SR();
+      rec.lang = "ar-SA"; rec.interimResults = true; rec.continuous = false;
+      heard = "";
+      rec.onstart = function () { listening = true; micBtn.classList.add("on"); micBtn.textContent = "إيقاف"; };
+      rec.onresult = function (e) {
+        var t = "";
+        for (var i = 0; i < e.results.length; i++) t += e.results[i][0].transcript;
+        heard = t; q.value = t;
+      };
+      rec.onerror = function (e) {
+        var c = e && e.error;
+        if (c === "not-allowed" || c === "service-not-allowed") voiceNote.textContent = "الميكروفون مرفوض. اسمح له من إعدادات المتصفح.";
+        else if (c === "no-speech") voiceNote.textContent = "ما سمعت شي.";
+        else if (c && c !== "aborted") voiceNote.textContent = "تعذر الاستماع.";
+      };
+      rec.onend = function () {
+        listening = false; micBtn.classList.remove("on"); micBtn.textContent = "تحدث";
+        if (heard.trim()) { ask(heard); heard = ""; }
+      };
+      try { rec.start(); } catch (e) { voiceNote.textContent = "تعذر تشغيل الميكروفون."; }
+    });
+  } else {
+    voiceNote.textContent = "هذا المتصفح ما يدعم الاستماع الصوتي. استخدم ميكروفون لوحة المفاتيح.";
+  }
+
+  // ---------- المحادثة مع Claude ----------
+  var turns = [];
+  var busy = false;
+  async function ask(text) {
+    text = String(text || "").trim();
+    var img = image;
+    if ((!text && !img) || busy) return;
+    var key = getKey();
+    if (!key) { refreshSetup(); return; }
+    if (!text) text = "هل هذا الخبر في الصورة صحيح؟ حلله وقارنه بالأخبار المتاحة.";
+    var um = add("user", [img ? el("img", { src: URL.createObjectURL(img), alt: "الصورة المرفقة" }) : null, el("div", { text: text })]);
+    q.value = ""; fileInput.value = ""; setImage(null);
+    busy = true; sendBtn.disabled = true;
+    var wait = add("bot muted", [el("div", { text: "يفكر..." })]);
+    var content = text;
+    if (img) {
+      try {
+        var b64 = await toBase64(img);
+        content = [{ type: "image", source: { type: "base64", media_type: img.type, data: b64 } }, { type: "text", text: text }];
+      } catch (e) { content = text; }
+    }
+    var history = turns.slice(-8).concat([{ role: "user", content: content }]);
+    try {
+      var resp = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "content-type": "application/json", "x-api-key": key, "anthropic-version": "2023-06-01", "anthropic-dangerous-direct-browser-access": "true" },
+        body: JSON.stringify({ model: MODEL, max_tokens: 1500, system: SYSTEM, messages: history })
+      });
+      var data = await resp.json().catch(function () { return {}; });
+      if (!resp.ok) {
+        var msg = (data && data.error && data.error.message) || ("خطأ " + resp.status);
+        if (resp.status === 401) { msg = "المفتاح غير صحيح. غيّره من «تغيير المفتاح»."; }
+        else if (resp.status === 429) { msg = "كثرت الطلبات أو انتهى الرصيد. جرّب بعد شوي."; }
+        throw new Error(msg);
+      }
+      var reply = (data.content || []).filter(function (b) { return b.type === "text"; }).map(function (b) { return b.text; }).join("\n").trim();
+      if (!reply) throw new Error("ما وصل رد.");
+      turns.push({ role: "user", content: typeof content === "string" ? content : text + " [صورة]" });
+      turns.push({ role: "assistant", content: reply });
+      wait.className = "msg bot"; wait.textContent = reply;
+      try { speak(reply); } catch (e) { voiceNote.textContent = "تعذر قراءة الرد صوتياً."; }
+    } catch (e) {
+      wait.className = "msg bot muted"; wait.textContent = "تعذر الرد: " + (e && e.message ? e.message : "خطأ غير معروف");
+    } finally {
+      busy = false; sendBtn.disabled = false; chat.scrollTop = chat.scrollHeight;
+    }
+  }
+  document.getElementById("bar").addEventListener("submit", function (ev) { ev.preventDefault(); ask(q.value); });
+
+  intro();
+  refreshSetup();
+})();
+</script>
+</body>
+</html>
