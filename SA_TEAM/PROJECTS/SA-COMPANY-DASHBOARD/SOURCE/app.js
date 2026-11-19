@@ -249,6 +249,11 @@
     document.getElementById("wa-note").textContent =
       (news.note || "المصادر من بحث الويب.") + (news.updated ? " · آخر تحديث للأخبار: " + news.updated : "");
 
+    var C = (window.claude && window.claude.use) ? window.claude : { use: function () { return Promise.resolve(null); } };
+    var micBtn = document.getElementById("wa-mic");
+    var autoWrap = document.getElementById("wa-auto-wrap");
+    var autoBox = document.getElementById("wa-auto");
+    var dict = null, tts = null, ttsArabic = false, spoken = null, finalText = "";
     var pendingImage = null;
     var pendingUrl = null;
 
@@ -311,6 +316,70 @@
       ""
     ].join("\n");
 
+
+    // ---------- الصوت: dictation (كلامك لنص) و tts (قراءة الرد) ----------
+    function paragraphs(text) {
+      var parts = String(text || "").split(/\n{2,}/).map(function (x) { return x.trim(); }).filter(Boolean);
+      var lines = [];
+      parts.forEach(function (x) { while (x.length > 1900) { lines.push(x.slice(0, 1900)); x = x.slice(1900); } if (x) lines.push(x); });
+      return lines.slice(0, 100).map(function (t) { var l = { text: t }; if (ttsArabic) l.language = "ar"; return l; });
+    }
+    function setSay(btn, on) { if (!btn) return; btn.classList.toggle("on", on); btn.textContent = on ? "إيقاف" : "استمع"; }
+    function speakText(text, btn) {
+      if (!tts) return;
+      if (spoken) { setSay(spoken, false); spoken = null; }
+      var lines = paragraphs(text);
+      if (!lines.length) return;
+      spoken = btn; setSay(btn, true);
+      tts.speak(lines).catch(function () {}).then(function () { if (spoken === btn) { setSay(btn, false); spoken = null; } });
+    }
+    function addSay(bubble, text) {
+      if (!tts) return;
+      var b = el("button", { class: "say", type: "button", text: "استمع" });
+      b.addEventListener("click", function () {
+        if (spoken === b) { tts.stop().catch(function () {}); setSay(b, false); spoken = null; return; }
+        speakText(text, b);
+      });
+      bubble.appendChild(document.createElement("br"));
+      bubble.appendChild(b);
+    }
+    C.use("tts").then(function (t) {
+      if (!t) return;
+      tts = t;
+      autoWrap.hidden = false;
+      if (t.languages) t.languages().then(function (l) { ttsArabic = (l || []).indexOf("ar") !== -1; }).catch(function () {});
+    }).catch(function () {});
+    C.use("dictation").then(function (d) {
+      if (!d) return;
+      dict = d;
+      micBtn.hidden = false;
+      d.onPartial(function (e) { input.value = (finalText + (e.text ? " " + e.text : "")).trim(); });
+      d.onFinal(function (e) { finalText = finalText + e.text; input.value = finalText.trim(); });
+      d.onState(function (e) {
+        var on = e.state === "listening" || e.state === "starting";
+        micBtn.classList.toggle("on", on);
+        micBtn.textContent = on ? "إيقاف" : "تحدث";
+        if (e.state === "idle" && e.reason === "unavailable") micBtn.hidden = true;
+      });
+    }).catch(function () {});
+    micBtn.addEventListener("click", function () {
+      if (!dict) return;
+      if (dict.active()) {
+        dict.stop().then(function () { if (input.value.trim()) ask(input.value); }).catch(function () {});
+        return;
+      }
+      if (tts && tts.active()) tts.stop().catch(function () {});
+      finalText = input.value ? input.value + " " : "";
+      dict.start().catch(function (e) {
+        var code = e && e.code, msg = "";
+        if (code === "not_granted") msg = "ما انسمح باستخدام الميكروفون لهذي الصفحة. غيّر الإذن من قائمة الصلاحيات.";
+        else if (code === "rate_limited") msg = "كثرت المحاولات. جرّب بعد شوي.";
+        else if (code === "unavailable") { micBtn.hidden = true; msg = "الإملاء الصوتي غير متاح لحسابك أو للغتك."; }
+        else if (code !== "dismissed" && code !== "stopped") msg = "تعذر تشغيل الميكروفون.";
+        if (msg) addBubble("in", [el("div", { text: msg })]);
+      });
+    });
+
     var turns = [];
     var ctl = null;
 
@@ -330,7 +399,7 @@
     }
 
     // الصورة تظهر فقط لو هذا العرض يدعمها
-    claude.use("sample").then(function (sample) {
+    C.use("sample").then(function (sample) {
       if (!sample || !sample.limits) return;
       return sample.limits().then(function (l) { if (l && l.images) attachBtn.hidden = false; });
     }).catch(function () {});
@@ -364,7 +433,7 @@
       turns.push({ role: "user", content: (img ? "[أرفقت صورة] " : "") + q });
       var history = turns.slice(-8);
       var payload = [{ role: "user", content: RULES + digest() }].concat(history);
-      claude.use("sample").then(function (sample) {
+      C.use("sample").then(function (sample) {
         if (!sample) {
           thinking.className = "bub in";
           thinking.textContent = "الدردشة الحية غير متاحة هنا. افتح الصفحة من claude.ai وسجّل دخول.";
@@ -381,6 +450,8 @@
         return sample(payload, opts).then(function (r) {
           turns.push({ role: "assistant", content: r.text });
           thinking.textContent = r.text + (r.truncated ? "\n(انقطع الرد، اسأل سؤال أقصر)" : "");
+          addSay(thinking, r.text);
+          if (tts && autoBox.checked) speakText(r.text, thinking.querySelector(".say"));
         });
       }).catch(function (e) {
         var code = e && e.code;
