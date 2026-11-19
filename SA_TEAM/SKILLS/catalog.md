@@ -130,3 +130,17 @@
 | الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
 |---|---|---|---|---|---|
 | Blender Skills Pack (arjun988) | ٩٤ مهارة Blender | نمذجة وإضاءة ورندر وتحريك وتصدير، تنفيذ عبر BlenderMCP | ٨ | https://github.com/arjun988/blender-skills | منسوخة إلى SKILLS/installed/blender-skills، غير مفعّلة كمهارات (تحتاج Blender وBlenderMCP على جهازك) |
+
+## دفعة بحث الساعة ٢٣:٣٦ (الكويت) · مستندات وعلامة وخوادم أعمال
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| anthropics/skills brand-guidelines | مهارة رسمية | تطبيق ألوان وخطوط العلامة على العروض والمستندات | ٦ | https://www.mintlify.com/anthropics/skills/reference/brand-guidelines | مضاف، غير مفعّل |
+| anthropics/skills pptx | مهارة رسمية | إنشاء وتعديل عروض PowerPoint | ٧ | https://mcpservers.org/agent-skills/anthropic/brand-guidelines | مضاف، غير مفعّل (تحقق من الترخيص) |
+| anthropics/skills docx | مهارة رسمية | إنشاء وتعديل مستندات Word | ٧ | https://mcpservers.org/agent-skills/anthropic/brand-guidelines | مضاف، غير مفعّل (بعض الأدلة تذكر ترخيصاً خاصاً) |
+| anthropics/skills pdf | مهارة رسمية | قراءة وإنشاء PDF | ٦ | https://mcpservers.org/agent-skills/anthropic/brand-guidelines | مضاف، غير مفعّل |
+| anthropics/skills xlsx | مهارة رسمية | جداول Excel وصيغ وتقارير | ٧ | https://mcpservers.org/agent-skills/anthropic/brand-guidelines | مضاف، غير مفعّل |
+| Airtable MCP (الرسمي) | خادم MCP | بحث وقراءة وكتابة سجلات وتعديل المخطط | ٦ | https://dev.to/alfredolab/15-production-ready-mcp-servers-for-claude-notion-stripe-hubspot-slack-supabase-and-10-more-52do | مضاف، غير مفعّل (يحتاج دخول) |
+| Stripe MCP (الرسمي) | خادم MCP | عملاء ومنتجات ومدفوعات وتتبع إيرادات (٣١ أداة) | ٦ | https://mcp.so/blog/best-mcp-servers-for-sales-marketing | مضاف، غير مفعّل (يلمس مدفوعات: قرارك فقط) |
+| Shopify Dev MCP | خادم MCP | مساعد تطوير Shopify بدون مصادقة ولا يلمس متجراً | ٤ | https://contextbolt.com/blog/business-apps-with-mcp-servers/ | مضاف، غير مفعّل |
+| Shopify connector لـ Claude | موصّل | إنشاء وتحديث منتجات دفعة واحدة وقراءة الطلبات | ٥ | https://contextbolt.com/blog/business-apps-with-mcp-servers/ | مضاف، غير مفعّل (يحتاج متجر) |
+| Cube MCP (الرسمي) | خادم MCP | تحليلات ومقاييس موحّدة | ٥ | https://contextbolt.com/blog/business-apps-with-mcp-servers/ | مضاف، غير مفعّل (يحتاج Cube) |
