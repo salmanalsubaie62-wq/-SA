@@ -23,3 +23,19 @@
 | Google Analytics 4 MCP | خادم MCP | تحليل بيانات الموقع | ٥ | https://mcpservers.org/servers/google/mcp | مضاف، غير مفعّل (يحتاج دخول Google) |
 
 **ملاحظة:** كل إضافة من طرف ثالث لازم نقرأ كودها قبل التفعيل، والمؤسس هو اللي يفعّل.
+
+## أولوية التفعيل (بعد موافقة المؤسس)
+المؤسس اختار قسم **التصميم** أول. الحالة الحالية: موافق عليها للتفعيل، وتنتظر التثبيت، وما انفعّلت بعد.
+
+1. frontend-design: قسم التصميم، درجة ٩
+2. Taste Skill: قسم التصميم، درجة ٨
+3. web-design-engineer: قسم التصميم، درجة ٧
+4. Impeccable + Emil Kowalski: قسم التصميم، درجة ٧
+
+## مكتبة الأدلة (داخلية، جاهزة للاستخدام)
+- [التصميم](library/01-design.md)
+- [المحتوى والتسويق](library/02-content-marketing.md)
+- [التحليل والأرقام](library/03-analytics.md)
+- [الأتمتة](library/04-automation.md)
+- [المبيعات وخدمة العملاء](library/05-sales.md)
+- [الإدارة وتطوير الفريق](library/06-management.md)
