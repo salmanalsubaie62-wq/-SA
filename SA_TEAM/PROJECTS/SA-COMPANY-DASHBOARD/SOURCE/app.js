@@ -75,16 +75,6 @@
       ]));
     });
 
-    var hi = document.getElementById("highlights");
-    clear(hi);
-    if (!workToday.length) {
-      hi.appendChild(el("li", { class: "sub", text: "ما فيه شغل منجز مسجل لهذا اليوم." }));
-    } else {
-      workToday.forEach(function (r) {
-        hi.appendChild(el("li", null, [el("strong", { text: r.employee + ": " }), r.today[0] || ""]));
-      });
-    }
-
     var nd = document.getElementById("needs-decision");
     clear(nd);
     var items = [];
