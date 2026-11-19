@@ -209,7 +209,7 @@ def build_news():
         for s_ in it["sources"]:
             if not str(s_.get("url", "")).startswith("https://"):
                 sys.exit("news-input.json: روابط المصادر لازم تبدأ بـ https://")
-    return {"updated": data.get("updated", ""), "note": data.get("note", ""), "items": items}
+    return {"updated": data.get("updated", ""), "note": data.get("note", ""), "channels": data.get("channels", []), "items": items}
 
 
 def write(name, obj):

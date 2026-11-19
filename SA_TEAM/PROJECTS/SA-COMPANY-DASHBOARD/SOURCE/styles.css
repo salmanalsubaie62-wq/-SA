@@ -180,3 +180,9 @@ td.wrap.warn { color: var(--warn); }
 .wa-send, .wa-stop { font: inherit; font-size: 12px; border: 0; border-radius: 999px; padding: 8px 14px; cursor: pointer; background: #1f8f69; color: #04130d; }
 .wa-stop { background: #b45309; color: #fff; }
 .wa-send:disabled { opacity: .5; cursor: default; }
+
+.wa-attach { font: inherit; font-size: 12px; border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; background: var(--bg); color: var(--text); cursor: pointer; }
+.wa-preview { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-top: 1px solid var(--line); font-size: 11px; color: var(--muted); background: #0f1d17; }
+.wa-preview img { height: 36px; width: 36px; object-fit: cover; border-radius: 6px; }
+.wa-preview button { margin-inline-start: auto; font: inherit; font-size: 11px; background: none; border: 1px solid var(--line); color: var(--text); border-radius: 999px; padding: 2px 10px; cursor: pointer; }
+.bub img.shot { display: block; max-width: 100%; max-height: 220px; border-radius: 8px; margin-bottom: 6px; }

@@ -234,17 +234,23 @@
   }
 
 
-  // ---------- أخبار تويتر: شات بأسلوب واتساب (بالذكاء الاصطناعي) ----------
+  // ---------- أخبار تويتر: شات بأسلوب واتساب (وكيل ذكاء اصطناعي) ----------
   function renderNews() {
-    var news = DATA.news || { items: [], updated: "", note: "" };
+    var news = DATA.news || { items: [], updated: "", note: "", channels: [] };
     var body = document.getElementById("wa-body");
     var form = document.getElementById("wa-form");
     var input = document.getElementById("wa-input");
     var sendBtn = document.getElementById("wa-send");
     var stopBtn = document.getElementById("wa-stop");
     var chips = document.getElementById("wa-chips");
+    var attachBtn = document.getElementById("wa-attach");
+    var fileInput = document.getElementById("wa-file");
+    var preview = document.getElementById("wa-preview");
     document.getElementById("wa-note").textContent =
       (news.note || "المصادر من بحث الويب.") + (news.updated ? " · آخر تحديث للأخبار: " + news.updated : "");
+
+    var pendingImage = null;
+    var pendingUrl = null;
 
     function safeHref(u) { return /^https:\/\//.test(String(u || "")) ? u : null; }
     function addBubble(kind, nodes) {
@@ -254,7 +260,8 @@
       return b;
     }
     function newsBubble(it) {
-      var tag = el("span", { class: "tag " + (it.confirmed ? "ok" : "warn"), text: it.confirmed ? "مؤكد" : "غير مؤكد" });
+      var n = (it.channels || []).length;
+      var tag = el("span", { class: "tag " + (it.confirmed ? "ok" : "warn"), text: (it.confirmed ? "مؤكد" : "غير مؤكد") + " (" + n + "/3)" });
       var srcs = el("div", { class: "srcs" });
       (it.sources || []).forEach(function (s, i) {
         var h = safeHref(s.url);
@@ -265,7 +272,7 @@
         el("div", null, [tag, el("span", { text: it.topic || "" })]),
         el("h4", { text: it.title }),
         el("div", { text: it.summary }),
-        el("div", { class: "meta", text: (it.date_note || "") + (it.confirmation_note ? " · " + it.confirmation_note : "") }),
+        el("div", { class: "meta", text: (it.date_note || "") + " · القنوات: " + ((it.channels || []).join("، ") || "-") + (it.confirmation_note ? " · " + it.confirmation_note : "") }),
         srcs
       ]);
     }
@@ -275,27 +282,29 @@
       addBubble("in", [el("div", { text: "ما فيه أخبار محفوظة بعد." })]);
     } else {
       body.appendChild(el("div", { class: "wa-day", text: news.updated || "اليوم" }));
-      addBubble("in", [el("div", { text: "هلا. هذي أبرز أخبار الشرق الأوسط اللي تأكدت منها من المصادر. اسألني أو اطلب تحليل." })]);
+      addBubble("in", [el("div", { text: "هلا. أتابع الجزيرة والعربية والعربي، وما أنزل الخبر مؤكداً إلا إذا ورد في قناتين فأكثر. اسألني أو اطلب تحليل أو ارفق صورة أتحقق منها." })]);
       news.items.forEach(newsBubble);
     }
 
-    // نص الأخبار اللي يعتمد عليه الذكاء الاصطناعي (بأرقام المصادر)
     function digest() {
       return news.items.map(function (it, n) {
         var src = (it.sources || []).map(function (s, i) { return "  [" + (n + 1) + "." + (i + 1) + "] " + s.name + " — " + s.url; }).join("\n");
-        return (n + 1) + ". [" + (it.confirmed ? "مؤكد" : "غير مؤكد") + "] " + it.topic + ": " + it.title + "\n   " + it.summary +
-          "\n   التاريخ: " + (it.date_note || "غير محدد") + "\n   ملاحظة التأكيد: " + (it.confirmation_note || "-") + "\n" + src;
+        return (n + 1) + ". [" + (it.confirmed ? "مؤكد" : "غير مؤكد") + " " + (it.channels || []).length + "/3] " + it.topic + ": " + it.title +
+          "\n   " + it.summary + "\n   التاريخ: " + (it.date_note || "غير محدد") + "\n   القنوات: " + ((it.channels || []).join("، ") || "-") +
+          "\n   ملاحظة التأكيد: " + (it.confirmation_note || "-") + "\n" + src;
       }).join("\n\n");
     }
     var RULES = [
-      "أنت «راصد الأخبار»، محلل سياسي هادئ وخبير في شؤون الشرق الأوسط، وأنت ذكاء اصطناعي ولست شخصاً حقيقياً.",
+      "أنت «راصد الأخبار»، وكيل ذكاء اصطناعي بدور محلل سياسي خبير ودارس للعلوم السياسية والعلاقات الدولية (مدارس الواقعية والليبرالية والبنائية، توازن القوى، الردع، الدبلوماسية القسرية، الأمن الإقليمي، القانون الدولي). أنت ذكاء اصطناعي ولست شخصاً حقيقياً، وتتكلم بثقة وعمق لكن بتواضع علمي.",
+      "تتابع ثلاث قنوات: الجزيرة (عاجل)، العربية (عاجل)، والتلفزيون العربي. لا تنزّل خبراً كمؤكد إلا إذا ورد في قناتين فأكثر. ولاحظ اختلاف الخط التحريري بين القنوات عند تضارب الروايات، دون اتهام أحد.",
       "قواعد صارمة:",
-      "١) اعتمد فقط على الأخبار المرفقة أدناه. إذا السؤال خارجها قل صراحة إنه ما عندك مصدر، ولا تخترع أخبار أو أرقام أو أسماء أو تواريخ.",
-      "٢) اذكر رقم المصدر بين قوسين مربعين بجانب كل معلومة، مثل [1.2].",
-      "٣) فرّق بين الخبر المؤكد (أكثر من مصدر مستقل) وغير المؤكد، وانسب الادعاءات لأصحابها (مثل: الحوثيون قالوا).",
-      "٤) اربط الأحداث ببعضها وأعطِ تحليلاً سياسياً، لكن علّمه بوضوح كتقدير (مثل «أرجّح» أو «ممكن»)، وما تقدمه كحقيقة. اذكر سيناريوهين محتملين على الأكثر، وما يغيّر كل سيناريو.",
-      "٥) لا تتبنى موقفاً سياسياً ولا تحرّض. اعرض موقف كل طرف منسوباً له.",
-      "٦) اكتب بعربية مبسطة بلهجة خليجية مهذبة، بفقرات قصيرة، وبدون مبالغة.",
+      "١) لأي خبر أو واقعة حديثة: اعتمد فقط على الأخبار المرفقة أدناه، واذكر رقم المصدر مثل [1.2]. إذا السؤال عن واقعة غير موجودة فيها قل صراحة: «ما عندي مصدر مؤكد لهذا»، ولا تخترع أخباراً أو أرقاماً أو أسماء أو تواريخ.",
+      "٢) للأسئلة العامة (مفاهيم، تاريخ، نظريات، سيناريوهات): أجب من معرفتك الواسعة بوضوح، وعلّمها «معلومة خلفية» وليست خبراً حديثاً، وانتبه إن معرفتك قد لا تشمل أحدث التطورات.",
+      "٣) فرّق دائماً بين المؤكد وغير المؤكد، وانسب الادعاءات لأصحابها (الحوثيون قالوا، الجيش الإسرائيلي أعلن...).",
+      "٤) اربط الأحداث ببعضها وحلّلها: من المستفيد؟ ما الدوافع والقيود؟ ما رسائل الردع؟ لكن علّم التحليل كتقدير («أرجّح»، «ممكن») وليس حقيقة، واذكر سيناريوهين على الأكثر وما الذي يغيّر كل واحد، وما الذي يثبت أنك مخطئ.",
+      "٥) إذا أُرفقت صورة: صف ما تراه بدقة، واقرأ أي نص ظاهر، وقارن مضمونها بالأخبار المرفقة وقل هل يطابق خبراً موجوداً. لا تؤكد صحة الصورة نفسها أبداً: أنت لا تستطيع البحث العكسي ولا معرفة مصدرها الأول أو تاريخها أو إن تم تعديلها. قل ذلك بوضوح، واقترح خطوات التحقق (البحث العكسي بالصورة، مصدر النشر الأول، الموقع والظروف الظاهرة، مقارنتها بتغطية القنوات). علامات مثل الإضاءة أو النص أو التناقض مع الخبر ممكن تذكرها كدلائل ضعيفة لا كإثبات.",
+      "٦) لا تتبنى موقفاً سياسياً ولا تحرّض ولا تبرر العنف. اعرض موقف كل طرف منسوباً له.",
+      "٧) اكتب بعربية مبسطة بلهجة خليجية مهذبة، بفقرات قصيرة، وبدون مبالغة. ابدأ بالجواب مباشرة.",
       "",
       "الأخبار المتاحة (آخر تحديث: " + (news.updated || "غير محدد") + "):",
       ""
@@ -304,18 +313,56 @@
     var turns = [];
     var ctl = null;
 
+    function setPreview(file) {
+      if (pendingUrl) { URL.revokeObjectURL(pendingUrl); pendingUrl = null; }
+      pendingImage = file || null;
+      clear(preview);
+      if (!file) { preview.hidden = true; return; }
+      pendingUrl = URL.createObjectURL(file);
+      var img = el("img", { src: pendingUrl, alt: "" });
+      var rm = el("button", { type: "button", text: "إزالة" });
+      rm.addEventListener("click", function () { fileInput.value = ""; setPreview(null); });
+      preview.appendChild(img);
+      preview.appendChild(el("span", { text: file.name }));
+      preview.appendChild(rm);
+      preview.hidden = false;
+    }
+
+    // الصورة تظهر فقط لو هذا العرض يدعمها
+    claude.use("sample").then(function (sample) {
+      if (!sample || !sample.limits) return;
+      return sample.limits().then(function (l) { if (l && l.images) attachBtn.hidden = false; });
+    }).catch(function () {});
+    attachBtn.addEventListener("click", function () { fileInput.click(); });
+    fileInput.addEventListener("change", function () {
+      var f = fileInput.files && fileInput.files[0];
+      if (!f) return setPreview(null);
+      if (!/^image\/(jpeg|png|webp|gif)$/.test(f.type) || f.size > 15 * 1024 * 1024) {
+        fileInput.value = "";
+        addBubble("in", [el("div", { text: "الصورة لازم تكون JPEG أو PNG أو WebP أو GIF وأقل من ١٥ ميغابايت." })]);
+        return setPreview(null);
+      }
+      setPreview(f);
+    });
+
     function ask(q) {
       q = String(q || "").trim();
-      if (!q) return;
-      addBubble("out", [el("div", { text: q })]);
+      var img = pendingImage;
+      if (!q && !img) return;
+      if (!q && img) q = "هل هذا الخبر في الصورة صحيح؟ حلله وقارنه بالأخبار المتاحة.";
+      var nodes = [];
+      if (img) nodes.push(el("img", { class: "shot", src: URL.createObjectURL(img), alt: "الصورة المرفقة" }));
+      nodes.push(el("div", { text: q }));
+      addBubble("out", nodes);
       input.value = "";
+      fileInput.value = "";
+      setPreview(null);
       sendBtn.disabled = true;
       stopBtn.hidden = false;
-      var thinking = addBubble("in thinking", [el("div", { text: "يكتب..." })]);
-      turns.push({ role: "user", content: q });
+      var thinking = addBubble("in thinking", [el("div", { text: "يفكر..." })]);
+      turns.push({ role: "user", content: (img ? "[أرفقت صورة] " : "") + q });
       var history = turns.slice(-8);
       var payload = [{ role: "user", content: RULES + digest() }].concat(history);
-      // يتأكد إن الدور الأخير مستخدم والأول مستخدم
       claude.use("sample").then(function (sample) {
         if (!sample) {
           thinking.className = "bub in";
@@ -323,11 +370,14 @@
           return null;
         }
         ctl = new AbortController();
-        return sample(payload, {
+        var opts = {
           cache: false,
+          modelTier: "complex",
           signal: ctl.signal,
           onText: function (u) { thinking.className = "bub in"; thinking.textContent = u.text; body.scrollTop = body.scrollHeight; }
-        }).then(function (r) {
+        };
+        if (img) opts.images = img;
+        return sample(payload, opts).then(function (r) {
           turns.push({ role: "assistant", content: r.text });
           thinking.textContent = r.text + (r.truncated ? "\n(انقطع الرد، اسأل سؤال أقصر)" : "");
         });
@@ -338,6 +388,7 @@
         if (code === "not_granted") msg = "ما انسمح للصفحة تستخدم Claude. اسمح لها من نافذة الموافقة.";
         else if (code === "rate_limited") msg = "كثرت الطلبات. جرّب بعد شوي.";
         else if (code === "sampling_disabled") msg = "Claude غير متاح لحسابك.";
+        else if (code === "images_unavailable" || code === "image_rejected") msg = "تعذر إرسال الصورة. جرّب صورة ثانية أو اسأل بدونها.";
         thinking.className = "bub in";
         thinking.textContent = (e && e.text ? e.text + "\n" : "") + msg;
       }).then(function () {
@@ -350,7 +401,7 @@
     form.addEventListener("submit", function (ev) { ev.preventDefault(); ask(input.value); });
     stopBtn.addEventListener("click", function () { if (ctl) ctl.abort(); });
     clear(chips);
-    ["حلل لي الوضع بين إيران وأمريكا", "وش احتمالات تهدئة غزة؟", "اربط الأحداث ببعضها", "وش المؤكد وغير المؤكد؟"].forEach(function (q) {
+    ["حلل لي الوضع بين إيران وأمريكا", "وش احتمالات تهدئة غزة؟", "اربط الأحداث ببعضها", "وش المؤكد وغير المؤكد؟", "اشرح لي مفهوم الردع"].forEach(function (q) {
       var c = el("button", { class: "wa-chip", type: "button", text: q });
       c.addEventListener("click", function () { ask(q); });
       chips.appendChild(c);
