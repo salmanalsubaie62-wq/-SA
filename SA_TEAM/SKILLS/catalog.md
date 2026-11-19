@@ -91,3 +91,20 @@
 | anthropics/knowledge-work-plugins (draft-content) | مهارة رسمية | مقالات ومنشورات وبيانات صحفية | ٧ | https://claudemarketplaces.com/skills/anthropics/knowledge-work-plugins/draft-content | مضاف، غير مفعّل |
 | VoltAgent/awesome-design-md | مرجع تصميم | قوائم DESIGN.md للتصميم | ٦ | https://skillmd.pages.dev/blog/awesome-claude-skills | مضاف، غير مفعّل |
 | ComposioHQ/awesome-claude-skills | مرجع | أكبر قائمة مهارات مجتمعية بتصنيفات | ٦ | https://designrevision.com/blog/awesome-claude-code-skills | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٢١:٣٦ (الكويت) · تحليل وأتمتة وعربي
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| claude-office-skills (data-analysis، report-generator) | مهارات تحليل | تحليل Excel/CSV وتقارير بجداول ومؤشرات | ٧ | https://claudemarketplaces.com/skills/claude-office-skills/skills/report-generator | مضاف، غير مفعّل |
+| LeoYeAI data-analyst | مهارة تحليل | تصور بيانات وتقارير وSQL وأتمتة جداول | ٦ | https://vibehackers.io/claude-code/skills/data-analyst-leoyeai | مضاف، غير مفعّل |
+| excel-analysis (aiskillstore) | مهارة | جداول محورية ورسوم وتحليل ملفات Excel | ٦ | https://claudeskills.info/skill/excel-analysis/ | مضاف، غير مفعّل |
+| skywork-excel | مهارة | ملفات Excel وتقارير تحليل (تعتمد خدمة خارجية ومفتاح) | ٥ | https://claudemarketplaces.com/skills/skyworkai/skywork-skills/skywork-excel | مضاف، غير مفعّل (يحتاج مفتاح) |
+| Analyzing Spreadsheets (majiayu000) | مهارة | ملخصات مؤشرات واكتشاف شذوذ في CSV/XLSX | ٥ | https://openskillindex.com/skills/majiayu000-claude-skill-registry-analyzing-spreadsheets | مضاف، غير مفعّل |
+| Zapier MCP | خادم MCP | ربط آلاف التطبيقات بتوصيلة واحدة (كل نداء يستهلك مهمتين) | ٧ | https://zapier.com/blog/best-mcp-servers/ | مضاف، غير مفعّل (يحتاج حساب وتسجيل دخول) |
+| Notion MCP | خادم MCP | قراءة وكتابة محتوى مساحة العمل | ٦ | https://composio.dev/blog/best-mcp-servers-claude-code-codex | مضاف، غير مفعّل (يحتاج تسجيل دخول) |
+| Slack MCP | خادم MCP | قنوات ورسائل للفريق | ٥ | https://composio.dev/blog/best-mcp-servers-claude-code-codex | مضاف، غير مفعّل (يحتاج موافقة أدمن) |
+| Google Drive MCP (الرسمي، معاينة مطورين) | خادم MCP | ملفات Drive، يحتاج OAuth من Google Cloud | ٦ | https://composio.dev/blog/best-mcp-servers-claude-code-codex | مضاف، غير مفعّل (المصادر تتضارب في حالته) |
+| Composio (موجّه تطبيقات) | منصة MCP | بديل لـ Zapier لربط عدة تطبيقات | ٥ | https://composio.dev/blog/best-mcp-servers-claude-code-codex | مضاف، غير مفعّل |
+| JKc66/arabic-ui | مهارة عربي | كتابة عربية ونصوص واجهات وهندسة RTL | ٧ | https://www.skillsdirectory.com/skills/jkc66-arabic-ui | مضاف، غير مفعّل |
+| Owl-Listener designer-skills (localization-design) | مهارة تصميم | تعريب التصميم وعكس RTL وصيغ المحلية | ٦ | https://www.claudemarket.ai/skills/owl-listener/designer-skills/localization-design | مضاف، غير مفعّل |
+| ghaida/intent (localize) | مهارة | تكييف التجربة ثقافياً مع خطة RTL واختبارات | ٥ | https://skillselion.com/skills/ghaida/intent/localize | مضاف، غير مفعّل |
