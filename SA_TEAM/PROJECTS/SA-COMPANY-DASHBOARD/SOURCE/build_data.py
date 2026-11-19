@@ -107,9 +107,9 @@ def parse_project(folder):
 
     tasks = []
     for line in text.splitlines():
-        if line.startswith("|") and not line.startswith("|---") and "المهمة" not in line:
+        if line.startswith("|") and not line.startswith("|---"):
             cells = [c.strip() for c in line.strip().strip("|").split("|")]
-            if len(cells) == 3:
+            if len(cells) == 3 and cells[0] != "المهمة":
                 tasks.append({"task": cells[0], "employee": cells[1], "status": cells[2]})
     s = parse_sections(text)
     return {
@@ -136,7 +136,20 @@ def build_projects():
     return out
 
 
-def build_employees():
+def employee_live_status(first_name, projects):
+    """الحالة من المهام المكتوبة فعلاً في ملفات المشاريع، وإلا "غير معروفة"."""
+    parts = []
+    for p in projects:
+        for t in p["tasks"]:
+            if t["employee"].strip() == first_name:
+                parts.append(f"{t['task']}: {t['status']} ({p['name']})")
+        if p["owner"].strip() == first_name:
+            parts.append(f"مسؤول عن مشروع {p['name']} (المرحلة: {p['stage']})")
+    return " · ".join(parts) if parts else "غير معروفة (ما فيه مهام مسجلة باسمه)"
+
+
+def build_employees(projects=None):
+    projects = projects or []
     out = []
     if not os.path.isdir(EMPLOYEES_DIR):
         return out
@@ -147,12 +160,13 @@ def build_employees():
         h1 = re.search(r"^#\s+\d+\.\s+(.+?)\s+—\s+(.+)$", text, re.M)
         sup = re.search(r"\|\s*\*\*المشرف\*\*\s*\|\s*(.+?)\s*\|", text)
         status = re.search(r"\|\s*\*\*الحالة\*\*\s*\|\s*(.+?)\s*\|", text)
+        name = h1.group(1).strip() if h1 else fname
         out.append({
             "file": fname,
-            "name": h1.group(1).strip() if h1 else fname,
+            "name": name,
             "title": h1.group(2).strip() if h1 else "",
             "supervisor": sup.group(1).strip() if sup else "",
-            "status": status.group(1).strip() if status else "غير معروفة",
+            "status": employee_live_status(name, projects),
         })
     return out
 
@@ -190,7 +204,7 @@ def write(name, obj):
 def main():
     reports = build_reports()
     projects = build_projects()
-    employees = build_employees()
+    employees = build_employees(projects)
     finance = build_finance()
     write("reports.json", reports)
     write("projects.json", projects)
