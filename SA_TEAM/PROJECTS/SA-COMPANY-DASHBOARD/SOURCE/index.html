@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لوحة المؤسسة</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>لوحة المؤسسة</h1>
+      <p class="muted" id="last-build"></p>
+    </div>
+    <nav class="tabs" aria-label="الأقسام">
+      <button class="tab is-active" data-tab="overview">نظرة عامة</button>
+      <button class="tab" data-tab="reports">التقارير اليومية</button>
+      <button class="tab" data-tab="finance">الإيرادات</button>
+      <button class="tab" data-tab="employees">الموظفين</button>
+      <button class="tab" data-tab="projects">المشاريع</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- نظرة عامة -->
+    <section id="tab-overview" class="panel is-active">
+      <div class="kpis" id="kpis"></div>
+      <div class="grid-2">
+        <div class="card">
+          <h2>أهم النقاط اليوم</h2>
+          <ul class="list" id="highlights"></ul>
+        </div>
+        <div class="card">
+          <h2>يحتاج قرار منك</h2>
+          <ul class="list" id="needs-decision"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- التقارير -->
+    <section id="tab-reports" class="panel">
+      <div class="toolbar">
+        <label>اليوم
+          <select id="date-select"></select>
+        </label>
+        <label>الموظف
+          <select id="emp-select"><option value="">الكل</option></select>
+        </label>
+        <label class="check">
+          <input type="checkbox" id="only-work"> الشغل المنجز فقط
+        </label>
+      </div>
+      <p class="muted" id="report-count"></p>
+      <div class="cards" id="report-cards"></div>
+    </section>
+
+    <!-- الإيرادات -->
+    <section id="tab-finance" class="panel">
+      <div id="finance-body"></div>
+    </section>
+
+    <!-- الموظفين -->
+    <section id="tab-employees" class="panel">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>الموظف</th><th>المسمى</th><th>المشرف</th><th>الحالة</th></tr>
+          </thead>
+          <tbody id="employees-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- المشاريع -->
+    <section id="tab-projects" class="panel">
+      <div class="cards" id="project-cards"></div>
+    </section>
+  </main>
+
+  <footer class="foot muted">
+    البيانات من ملفات المؤسسة. لتحديثها شغّل: <code>python3 SOURCE/build_data.py</code>
+  </footer>
+
+  <script src="data/site-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
