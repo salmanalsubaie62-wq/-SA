@@ -60,8 +60,8 @@
     var kpis = document.getElementById("kpis");
     clear(kpis);
     var fin = DATA.finance;
-    var finValue = fin.has_data
-      ? fin.entries.reduce(function (s, e) { return s + e.amount; }, 0).toLocaleString("en-US") + " " + fin.currency
+    var finValue = fin.monthly
+      ? fin.monthly.amount.toLocaleString("en-US") + " " + fin.currency + " / شهر"
       : "لا بيانات";
     [
       [String(latestReports.length), "تقارير اليوم" + (latest ? " (" + latest + ")" : "")],
@@ -171,29 +171,34 @@
     if (!fin.has_data) {
       body.appendChild(el("div", { class: "empty" }, [
         el("h2", { text: "ما فيه بيانات إيرادات بعد" }),
-        el("p", { text: "ما نعرض أرقام مخترعة. أول ما تنزل بيانات الإيرادات في ملف finance-input.json (بجانب build_data.py) وتشغّل السكربت، تظهر هنا تلقائياً." })
+        el("p", { text: "أول ما تنزل الأرقام في finance-input.json تظهر هنا." })
       ]));
       return;
     }
-    var total = fin.entries.reduce(function (s, e) { return s + e.amount; }, 0);
-    body.appendChild(el("div", { class: "card" }, [
-      el("h2", { text: "الإجمالي: " + total.toLocaleString("en-US") + " " + fin.currency })
-    ]));
-    var wrap = el("div", { class: "table-wrap", style: "margin-top:12px" });
-    var tbody = el("tbody");
-    fin.entries.slice().sort(function (a, b) { return a.date < b.date ? 1 : -1; }).forEach(function (e) {
-      tbody.appendChild(el("tr", null, [
-        el("td", { text: e.date }),
-        el("td", { text: e.source }),
-        el("td", { text: e.amount.toLocaleString("en-US") + " " + fin.currency }),
-        el("td", { text: e.note || "" })
+    if (fin.monthly) {
+      body.appendChild(el("div", { class: "card" }, [
+        el("div", { class: "sub", text: "إيراد شهري ثابت" }),
+        el("h2", { text: fin.monthly.amount.toLocaleString("en-US") + " " + fin.currency + " / شهر" }),
+        el("p", { class: "sub", text: "يبدأ من " + fin.monthly.start + (fin.monthly.note ? " · " + fin.monthly.note : "") })
       ]));
-    });
-    wrap.appendChild(el("table", null, [
-      el("thead", null, [el("tr", null, [el("th", { text: "التاريخ" }), el("th", { text: "المصدر" }), el("th", { text: "المبلغ" }), el("th", { text: "ملاحظة" })])]),
-      tbody
-    ]));
-    body.appendChild(wrap);
+    }
+    if (fin.entries.length) {
+      var tbody = el("tbody");
+      fin.entries.slice().sort(function (a, b) { return a.date < b.date ? 1 : -1; }).forEach(function (e) {
+        tbody.appendChild(el("tr", null, [
+          el("td", { text: e.date }),
+          el("td", { text: e.source }),
+          el("td", { text: e.amount.toLocaleString("en-US") + " " + fin.currency }),
+          el("td", { text: e.note || "" })
+        ]));
+      });
+      body.appendChild(el("div", { class: "table-wrap", style: "margin-top:12px" }, [
+        el("table", null, [
+          el("thead", null, [el("tr", null, [el("th", { text: "التاريخ" }), el("th", { text: "المصدر" }), el("th", { text: "المبلغ" }), el("th", { text: "ملاحظة" })])]),
+          tbody
+        ])
+      ]));
+    }
   }
 
   // ---------- الموظفين ----------

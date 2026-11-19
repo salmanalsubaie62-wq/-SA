@@ -1,0 +1,5 @@
+{
+  "currency": "USD",
+  "monthly": { "amount": 500, "start": "2026-11-19", "note": "إيراد شهري ثابت، يبدأ من اليوم" },
+  "entries": []
+}

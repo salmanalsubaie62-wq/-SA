@@ -158,17 +158,27 @@ def build_employees():
 
 
 def build_finance():
-    """الإيرادات: ما فيه بيانات في أي ملف حالياً. إذا وُجد finance-input.json ينسخ منه، وإلا يكون فارغ."""
-    if os.path.isfile(FINANCE_SRC):
-        data = json.loads(read(FINANCE_SRC))
-        entries = data.get("entries", [])
-        for e in entries:
-            if not all(k in e for k in ("date", "amount", "source")):
-                sys.exit("finance-input.json: كل مدخل لازم يكون فيه date و amount و source")
-            if not isinstance(e["amount"], (int, float)):
-                sys.exit("finance-input.json: amount لازم يكون رقم")
-        return {"currency": data.get("currency", "KWD"), "entries": entries, "has_data": bool(entries)}
-    return {"currency": "KWD", "entries": [], "has_data": False}
+    """الإيرادات: من finance-input.json (إيراد شهري ثابت + مدخلات مفردة). إذا ما فيه ملف، يكون فارغ."""
+    empty = {"currency": "USD", "monthly": None, "entries": [], "has_data": False}
+    if not os.path.isfile(FINANCE_SRC):
+        return empty
+    data = json.loads(read(FINANCE_SRC))
+    monthly = data.get("monthly")
+    if monthly is not None:
+        if not isinstance(monthly.get("amount"), (int, float)) or not monthly.get("start"):
+            sys.exit("finance-input.json: monthly لازم يكون فيه amount (رقم) و start (تاريخ)")
+    entries = data.get("entries", [])
+    for e in entries:
+        if not all(k in e for k in ("date", "amount", "source")):
+            sys.exit("finance-input.json: كل مدخل لازم يكون فيه date و amount و source")
+        if not isinstance(e["amount"], (int, float)):
+            sys.exit("finance-input.json: amount لازم يكون رقم")
+    return {
+        "currency": data.get("currency", "USD"),
+        "monthly": monthly,
+        "entries": entries,
+        "has_data": bool(entries) or monthly is not None,
+    }
 
 
 def write(name, obj):
