@@ -108,3 +108,20 @@
 | JKc66/arabic-ui | مهارة عربي | كتابة عربية ونصوص واجهات وهندسة RTL | ٧ | https://www.skillsdirectory.com/skills/jkc66-arabic-ui | مضاف، غير مفعّل |
 | Owl-Listener designer-skills (localization-design) | مهارة تصميم | تعريب التصميم وعكس RTL وصيغ المحلية | ٦ | https://www.claudemarket.ai/skills/owl-listener/designer-skills/localization-design | مضاف، غير مفعّل |
 | ghaida/intent (localize) | مهارة | تكييف التجربة ثقافياً مع خطة RTL واختبارات | ٥ | https://skillselion.com/skills/ghaida/intent/localize | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٢٢:٣٦ (الكويت) · فيديو ومحتوى اجتماعي وربط Google
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| affaan-m video-editing | مهارة فيديو | قص وتراكبات وترجمة وصوت وإعادة قياس لـ Reels وTikTok وShorts | ٧ | https://claudemarketplaces.com/skills/affaan-m/everything-claude-code/video-editing | مضاف، غير مفعّل |
+| prabha-oss benai video (FFmpeg + Remotion) | مهارة فيديو | دمج مقاطع وانتقالات وترجمات وWhisper وتحليل ffprobe | ٧ | https://skills.sh/prabha-oss/benai-skills-develop/video | مضاف، غير مفعّل |
+| kajisho5/ffmpeg-skill | مهارة فيديو | سكربتات صمت وكشف مشاهد مع حركة Remotion | ٦ | https://raw.githubusercontent.com/kajisho5/ffmpeg-skill/HEAD/README.md | مضاف، غير مفعّل |
+| heygen-com/skills video-edit | مهارة فيديو | تحرير فيديو (قد يعتمد خدمة HeyGen) | ٥ | https://claudemarketplaces.com/skills/heygen-com/skills/video-edit | مضاف، غير مفعّل (تحقق من الاعتماد على حساب) |
+| calesthio OpenMontage ffmpeg | مهارة فيديو | وصفات ffmpeg للمونتاج | ٥ | https://openskillindex.com/skills/calesthio-openmontage-ffmpeg-20a0c1 | مضاف، غير مفعّل |
+| vstorm-co/content-skills | مجموعة محتوى | تعلّم صوت العلامة وتقويم تحريري ٣٠ يوم ومنشورات وشرائح | ٧ | https://awesome.ecosyste.ms/projects/github.com%2Fvstorm-co%2Fcontent-skills | مضاف، غير مفعّل |
+| social-media-skills/skills | مجموعة محتوى | ملف علامة وصوت وتقويم وكتابة كابشن | ٦ | https://github.com/social-media-skills/skills | مضاف، غير مفعّل |
+| charlie947/social-media-skills | مهارة محتوى | قيود المنصات وقواعد الصوت | ٥ | https://github.com/charlie947/social-media-skills | مضاف، غير مفعّل |
+| sickn33 content-creator | مهارة محتوى | مدونات وسوشال وصوت علامة وتقويم | ٥ | https://claudeskills.info/skills/sickn33/agentic-awesome-skills/content-creator/ | مضاف، غير مفعّل |
+| taylorwilsdon google_workspace_mcp | خادم MCP | Gmail وCalendar وDrive وDocs وSheets وSlides وForms | ٧ | https://lobehub.com/mcp/taylorwilsdon-google_workspace_mcp | مضاف، غير مفعّل (يحتاج OAuth) |
+| dguido google-workspace-mcp | خادم MCP | Drive وDocs وSheets وSlides وCalendar وGmail وContacts | ٦ | https://awesome.ecosyste.ms/projects/github.com%2Fdguido%2Fgoogle-workspace-mcp | مضاف، غير مفعّل (يحتاج OAuth) |
+| Images MCP (Gemini) | خادم MCP | توليد وتعديل صور بـ Gemini | ٥ | https://glama.ai/mcp/servers/itayshmool/images-mcp | مضاف، غير مفعّل (يحتاج مفتاح) |
+| StudioMeyer Personal Suite | خادم MCP | ٤٩ أداة: إيميل وتقويم وصور | ٤ | https://claudemarketplaces.com/mcp/io.studiomeyer/personal-suite | مضاف، غير مفعّل (يحتاج دخول) |
