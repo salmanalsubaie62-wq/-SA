@@ -195,6 +195,23 @@ def build_finance():
     }
 
 
+def build_news():
+    """أخبار الشرق الأوسط من news-input.json (يكتبها باحث الأخبار بمصادرها). إذا ما فيه ملف يرجع فاضي."""
+    src = os.path.join(HERE, "news-input.json")
+    if not os.path.isfile(src):
+        return {"updated": "", "note": "", "items": []}
+    data = json.loads(read(src))
+    items = data.get("items", [])
+    for it in items:
+        for k in ("id", "title", "summary", "confirmed", "sources"):
+            if k not in it:
+                sys.exit(f"news-input.json: كل خبر لازم يكون فيه {k}")
+        for s_ in it["sources"]:
+            if not str(s_.get("url", "")).startswith("https://"):
+                sys.exit("news-input.json: روابط المصادر لازم تبدأ بـ https://")
+    return {"updated": data.get("updated", ""), "note": data.get("note", ""), "items": items}
+
+
 def write(name, obj):
     os.makedirs(DATA_DIR, exist_ok=True)
     with open(os.path.join(DATA_DIR, name), "w", encoding="utf-8") as f:
@@ -211,7 +228,9 @@ def main():
     write("employees.json", employees)
     write("finance.json", finance)
     # نسخة JS عشان الموقع يشتغل من ملف محلي بدون خادم (fetch ما يشتغل على file://)
-    bundle = {"reports": reports, "projects": projects, "employees": employees, "finance": finance}
+    news = build_news()
+    write("news.json", news)
+    bundle = {"reports": reports, "projects": projects, "employees": employees, "finance": finance, "news": news}
     with open(os.path.join(DATA_DIR, "site-data.js"), "w", encoding="utf-8") as f:
         f.write("window.SA_DATA = " + json.dumps(bundle, ensure_ascii=False) + ";\n")
     print(f"تقارير: {len(reports)} · مشاريع: {len(projects)} · موظفين: {len(employees)} · إيرادات: {len(finance['entries'])} مدخل")

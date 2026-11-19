@@ -233,9 +233,134 @@
     });
   }
 
+
+  // ---------- أخبار تويتر: شات بأسلوب واتساب (بالذكاء الاصطناعي) ----------
+  function renderNews() {
+    var news = DATA.news || { items: [], updated: "", note: "" };
+    var body = document.getElementById("wa-body");
+    var form = document.getElementById("wa-form");
+    var input = document.getElementById("wa-input");
+    var sendBtn = document.getElementById("wa-send");
+    var stopBtn = document.getElementById("wa-stop");
+    var chips = document.getElementById("wa-chips");
+    document.getElementById("wa-note").textContent =
+      (news.note || "المصادر من بحث الويب.") + (news.updated ? " · آخر تحديث للأخبار: " + news.updated : "");
+
+    function safeHref(u) { return /^https:\/\//.test(String(u || "")) ? u : null; }
+    function addBubble(kind, nodes) {
+      var b = el("div", { class: "bub " + kind }, nodes);
+      body.appendChild(b);
+      body.scrollTop = body.scrollHeight;
+      return b;
+    }
+    function newsBubble(it) {
+      var tag = el("span", { class: "tag " + (it.confirmed ? "ok" : "warn"), text: it.confirmed ? "مؤكد" : "غير مؤكد" });
+      var srcs = el("div", { class: "srcs" });
+      (it.sources || []).forEach(function (s, i) {
+        var h = safeHref(s.url);
+        if (!h) return;
+        srcs.appendChild(el("a", { href: h, target: "_blank", rel: "noopener noreferrer", text: "[" + (i + 1) + "] " + (s.name || "مصدر") }));
+      });
+      return addBubble("in", [
+        el("div", null, [tag, el("span", { text: it.topic || "" })]),
+        el("h4", { text: it.title }),
+        el("div", { text: it.summary }),
+        el("div", { class: "meta", text: (it.date_note || "") + (it.confirmation_note ? " · " + it.confirmation_note : "") }),
+        srcs
+      ]);
+    }
+
+    clear(body);
+    if (!news.items.length) {
+      addBubble("in", [el("div", { text: "ما فيه أخبار محفوظة بعد." })]);
+    } else {
+      body.appendChild(el("div", { class: "wa-day", text: news.updated || "اليوم" }));
+      addBubble("in", [el("div", { text: "هلا. هذي أبرز أخبار الشرق الأوسط اللي تأكدت منها من المصادر. اسألني أو اطلب تحليل." })]);
+      news.items.forEach(newsBubble);
+    }
+
+    // نص الأخبار اللي يعتمد عليه الذكاء الاصطناعي (بأرقام المصادر)
+    function digest() {
+      return news.items.map(function (it, n) {
+        var src = (it.sources || []).map(function (s, i) { return "  [" + (n + 1) + "." + (i + 1) + "] " + s.name + " — " + s.url; }).join("\n");
+        return (n + 1) + ". [" + (it.confirmed ? "مؤكد" : "غير مؤكد") + "] " + it.topic + ": " + it.title + "\n   " + it.summary +
+          "\n   التاريخ: " + (it.date_note || "غير محدد") + "\n   ملاحظة التأكيد: " + (it.confirmation_note || "-") + "\n" + src;
+      }).join("\n\n");
+    }
+    var RULES = [
+      "أنت «راصد الأخبار»، محلل سياسي هادئ وخبير في شؤون الشرق الأوسط، وأنت ذكاء اصطناعي ولست شخصاً حقيقياً.",
+      "قواعد صارمة:",
+      "١) اعتمد فقط على الأخبار المرفقة أدناه. إذا السؤال خارجها قل صراحة إنه ما عندك مصدر، ولا تخترع أخبار أو أرقام أو أسماء أو تواريخ.",
+      "٢) اذكر رقم المصدر بين قوسين مربعين بجانب كل معلومة، مثل [1.2].",
+      "٣) فرّق بين الخبر المؤكد (أكثر من مصدر مستقل) وغير المؤكد، وانسب الادعاءات لأصحابها (مثل: الحوثيون قالوا).",
+      "٤) اربط الأحداث ببعضها وأعطِ تحليلاً سياسياً، لكن علّمه بوضوح كتقدير (مثل «أرجّح» أو «ممكن»)، وما تقدمه كحقيقة. اذكر سيناريوهين محتملين على الأكثر، وما يغيّر كل سيناريو.",
+      "٥) لا تتبنى موقفاً سياسياً ولا تحرّض. اعرض موقف كل طرف منسوباً له.",
+      "٦) اكتب بعربية مبسطة بلهجة خليجية مهذبة، بفقرات قصيرة، وبدون مبالغة.",
+      "",
+      "الأخبار المتاحة (آخر تحديث: " + (news.updated || "غير محدد") + "):",
+      ""
+    ].join("\n");
+
+    var turns = [];
+    var ctl = null;
+
+    function ask(q) {
+      q = String(q || "").trim();
+      if (!q) return;
+      addBubble("out", [el("div", { text: q })]);
+      input.value = "";
+      sendBtn.disabled = true;
+      stopBtn.hidden = false;
+      var thinking = addBubble("in thinking", [el("div", { text: "يكتب..." })]);
+      turns.push({ role: "user", content: q });
+      var history = turns.slice(-8);
+      var payload = [{ role: "user", content: RULES + digest() }].concat(history);
+      // يتأكد إن الدور الأخير مستخدم والأول مستخدم
+      claude.use("sample").then(function (sample) {
+        if (!sample) {
+          thinking.className = "bub in";
+          thinking.textContent = "الدردشة الحية غير متاحة هنا. افتح الصفحة من claude.ai وسجّل دخول.";
+          return null;
+        }
+        ctl = new AbortController();
+        return sample(payload, {
+          cache: false,
+          signal: ctl.signal,
+          onText: function (u) { thinking.className = "bub in"; thinking.textContent = u.text; body.scrollTop = body.scrollHeight; }
+        }).then(function (r) {
+          turns.push({ role: "assistant", content: r.text });
+          thinking.textContent = r.text + (r.truncated ? "\n(انقطع الرد، اسأل سؤال أقصر)" : "");
+        });
+      }).catch(function (e) {
+        var code = e && e.code;
+        if (code === "cancelled") { thinking.className = "bub in"; thinking.textContent = (e.text || "") + (e.text ? "\n" : "") + "(أوقفته)"; return; }
+        var msg = "تعذر الرد.";
+        if (code === "not_granted") msg = "ما انسمح للصفحة تستخدم Claude. اسمح لها من نافذة الموافقة.";
+        else if (code === "rate_limited") msg = "كثرت الطلبات. جرّب بعد شوي.";
+        else if (code === "sampling_disabled") msg = "Claude غير متاح لحسابك.";
+        thinking.className = "bub in";
+        thinking.textContent = (e && e.text ? e.text + "\n" : "") + msg;
+      }).then(function () {
+        sendBtn.disabled = false;
+        stopBtn.hidden = true;
+        ctl = null;
+      });
+    }
+
+    form.addEventListener("submit", function (ev) { ev.preventDefault(); ask(input.value); });
+    stopBtn.addEventListener("click", function () { if (ctl) ctl.abort(); });
+    clear(chips);
+    ["حلل لي الوضع بين إيران وأمريكا", "وش احتمالات تهدئة غزة؟", "اربط الأحداث ببعضها", "وش المؤكد وغير المؤكد؟"].forEach(function (q) {
+      var c = el("button", { class: "wa-chip", type: "button", text: q });
+      c.addEventListener("click", function () { ask(q); });
+      chips.appendChild(c);
+    });
+  }
+
   renderOverview();
   renderReports();
   renderFinance();
   renderEmployees();
   renderProjects();
+  renderNews();
 })();

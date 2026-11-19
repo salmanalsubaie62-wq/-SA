@@ -1,0 +1,70 @@
+{
+  "updated": "2026-11-19",
+  "note": "المصادر من نتائج بحث الويب العامة. ما فيه وصول مباشر لتويتر (X). الخبر المؤكد = أكثر من مصدر مستقل.",
+  "items": [
+    {
+      "id": "iran-gulf-june",
+      "topic": "إيران والخليج",
+      "title": "ضربات أمريكية على جزيرة قشم وردّ إيراني على البحرين والكويت",
+      "summary": "في أوائل يونيو ٢٠٢٦ قالت القيادة المركزية الأمريكية إنها نفذت ضربات «دفاعية» على جزيرة قشم الإيرانية بعد إسقاط صواريخ ومسيّرات. الحرس الثوري قال إنه استهدف منشآت أمريكية ردّاً، والقيادة الأمريكية نفت إصابة مقر الأسطول الخامس في البحرين وقالت إنها اعترضت المقذوفات. روايتا الطرفين تتعارضان في حجم الأضرار، وتسلسل الأحداث تختلف فيه المصادر.",
+      "date_note": "٢–١٠ يونيو ٢٠٢٦",
+      "confirmed": true,
+      "confirmation_note": "ورد في أكثر من مصدر مستقل. تفاصيل الأضرار وسبب الشرارة متضاربة.",
+      "sources": [
+        {"name": "الجزيرة", "url": "https://www.aljazeera.com/amp/news/2026/6/3/iran-kuwait-bahrain-hit-is-the-war-in-the-gulf-escalating-again"},
+        {"name": "خليج تايمز", "url": "https://www.khaleejtimes.com/world/us-military-says-it-has-defeated-iran-missile-drone-attacks-in-gulf-2"},
+        {"name": "واشنطن إكزامينر", "url": "https://www.washingtonexaminer.com/policy/defense/4592316/us-self-defense-strikes-iran-qeshm-island/"},
+        {"name": "إسرائيل هيوم", "url": "https://www.israelhayom.com/2026/06/03/us-strikes-irans-qeshm-island-sirens-sound-in-kuwait-and-bahrain/"}
+      ]
+    },
+    {
+      "id": "iran-ceasefire",
+      "topic": "إيران وأمريكا",
+      "title": "الهدنة مع إيران «على أجهزة الإنعاش» وتقديرات متباينة للتصعيد",
+      "summary": "ذكرت NBC أن هدوءاً دام شهرين انتهى بثالث ضربة إيرانية على أهداف أمريكية في البحرين، وأن ترامب وصف الهدنة بأنها «على أجهزة الإنعاش»، وأنه لمّح لاحقاً إلى أن ضربات جديدة على إيران مستبعدة. وذكرت CBS أن ضربات جديدة صارت أرجح تحت ضغط إسرائيلي حسب تقارير. المصدران يقرآن الاتجاه بشكل مختلف.",
+      "date_note": "حديث (التاريخ الدقيق غير ظاهر في نتائج البحث)",
+      "confirmed": false,
+      "confirmation_note": "مصدران متباينان في التقدير، والصورة غير محسومة.",
+      "sources": [
+        {"name": "NBC News", "url": "https://www.nbcnews.com/middle-east-conflict"},
+        {"name": "CBS News", "url": "https://www.cbsnews.com/live-updates/iran-war-us-gulf-retaliation-strikes-strait-of-hormuz/"}
+      ]
+    },
+    {
+      "id": "yemen-saudi",
+      "topic": "اليمن",
+      "title": "الحوثيون يتهمون السعودية بضربتين قتلتا ٣ أشخاص",
+      "summary": "قال الحوثيون إن ضربتين سعوديتين على مناطق تحت سيطرتهم قتلتا ثلاثة أشخاص بينهم طفل. القتال بين الحوثيين والسعودية استؤنف في يوليو وكسر هدنة ٢٠٢٢. هذا ادعاء الحوثيين، وما جاء تأكيد مستقل من طرف ثالث في النتائج.",
+      "date_note": "حديث (يوم الإثنين، التاريخ الدقيق غير ظاهر)",
+      "confirmed": false,
+      "confirmation_note": "مصدر واحد (وكالة AP)، والاتهام منسوب للحوثيين.",
+      "sources": [
+        {"name": "PBS NewsHour (AP)", "url": "https://www.pbs.org/newshour/world/houthis-accuse-saudi-arabia-of-strikes-that-killed-3-including-a-child-and-other-mideast-news"}
+      ]
+    },
+    {
+      "id": "lebanon",
+      "topic": "لبنان",
+      "title": "هدنة ٢٠ يونيو في لبنان، لكن الجيش الإسرائيلي ما زال ينفذ تفجيرات وغارات",
+      "summary": "انتهت الحرب الأخيرة بين إسرائيل وحزب الله بوقف إطلاق نار برعاية أمريكية في ٢٠ يونيو. الجيش الإسرائيلي يحتل عشرات البلدات في الجنوب ويواصل تفجيرات وغارات قرب الحدود حسب التقرير.",
+      "date_note": "ملخص حديث",
+      "confirmed": false,
+      "confirmation_note": "مصدر واحد (AP عبر PBS).",
+      "sources": [
+        {"name": "PBS NewsHour (AP)", "url": "https://www.pbs.org/newshour/world/houthis-accuse-saudi-arabia-of-strikes-that-killed-3-including-a-child-and-other-mideast-news"}
+      ]
+    },
+    {
+      "id": "gaza-central",
+      "topic": "غزة",
+      "title": "عملية إسرائيلية جديدة وسط غزة رغم الهدنة",
+      "summary": "ذكرت يورونيوز في ١٨ نوفمبر ٢٠٢٦ أن دبابات إسرائيلية تقدمت نحو وسط غزة في «عملية دقيقة» ضد حماس، رغم هدنة سارية منذ أكتوبر ٢٠٢٥. حسب إحصاء لوكالة AFP قُتل أكثر من ١٦٠٠ فلسطيني منذ بدء الهدنة.",
+      "date_note": "١٨ نوفمبر ٢٠٢٦",
+      "confirmed": false,
+      "confirmation_note": "مصدر واحد (يورونيوز). بحثت عن تأكيد ثاني ما لقيت.",
+      "sources": [
+        {"name": "يورونيوز", "url": "https://www.euronews.com/2026/11/18/israeli-military-launches-new-operation-on-central-gaza-despite-ceasefire"}
+      ]
+    }
+  ]
+}
