@@ -59,3 +59,19 @@
 | الأداة | النوع | الفايدة | المصدر | الحالة |
 |---|---|---|---|---|
 | openfilm | مهارة فيديو | يصنع فيديو كصفحات ويب (film.html) ويرندرها، حركة وموسيقى | https://github.com/openfilm/openfilm | مثبّت (٢٠٢٦-١١-١٩) عبر `npx skills add openfilm/openfilm`. ملاحظة: ملف المهارة صغير ويطلب تشغيل `npx -y openfilm@latest` وتنفيذ ما يطبعه، فالمحتوى الفعلي ينجلب وقت التشغيل |
+
+## دفعة بحث الساعة (٢٠٢٦-١١-١٩ · ١٧:٣٦ الكويت)
+ملاحظة: المصادر مقالات ومجمعات، وما فتحت الكود. كل عنصر يُقرأ قبل التفعيل.
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| Remotion Agent Skills (remotion-dev/skills) | مهارة فيديو | فيديو بحركة حقيقية بالكود وتصديره MP4 | ٨ | https://www.tella.com/blog/how-to-use-remotion-agent-skills-with-claude-code | مضاف، غير مفعّل |
+| Remotion (davila7/claude-code-templates) | مهارة فيديو | نسخة مجتمع لإنشاء فيديو بـ React | ٥ | https://skills.sh/davila7/claude-code-templates/remotion | مضاف، غير مفعّل |
+| n8n MCP (czlonkowski) | خادم MCP | يربط Claude بسير عمل n8n للأتمتة | ٧ | https://playbooks.com/mcp/czlonkowski-n8n | مضاف، غير مفعّل (يحتاج حساب n8n ومفتاح) |
+| n8n مع Claude Code (دليل MindStudio) | دليل أتمتة | طريقة ربط n8n بـ Claude Code عبر REST API | ٥ | https://www.mindstudio.ai/blog/n8n-mcp-server-claude-code-workflows | مضاف، غير مفعّل |
+| Playwright MCP | خادم MCP | أتمتة متصفح، قراءة صفحات ولقطات شاشة | ٧ | https://www.activepieces.com/blog/playwright-mcp-server-for-claude-code-and-cursor.md | مضاف، غير مفعّل (تحقق من اسم الحزمة الرسمي) |
+| Firecrawl MCP | خادم MCP | جمع وزحف صفحات وتحويلها لـ Markdown/JSON | ٦ | https://ice-ice-bear.github.io/posts/2026-04-01-claude-code-mcp-4 | مضاف، غير مفعّل (يحتاج مفتاح، تحقق من الأسعار) |
+| claude-seo (agricidaniel) | مهارة SEO | تدقيق تقني ومحتوى وبحث الذكاء الاصطناعي (GEO) | ٧ | https://docsearch.algolia.com/mcp/docs/repo/agricidaniel/claude-seo | مضاف، غير مفعّل |
+| SE Ranking seo-skills | مهارة SEO | ملخصات محتوى وتحليل صفحات | ٦ | https://github.com/seranking/seo-skills | مضاف، غير مفعّل |
+| SuperSEO Skills (inhouseseo) | مهارة SEO | ١١ مهارة منها تدقيق صفحات | ٥ | https://sharedcontext.ai/plugins/external/inhouseseo/superseo-skills-opinionated-claude-skills-for-seo | مضاف، غير مفعّل |
+| seo-geo-claude-skills (Aaron He Zhu) | مهارة SEO | بحث كلمات مفتاحية وخريطة نوايا وفجوات منافسة | ٦ | https://skillselion.com/guides/seo-skills-claude-code | مضاف، غير مفعّل |
