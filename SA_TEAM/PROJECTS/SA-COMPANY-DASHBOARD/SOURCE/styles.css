@@ -148,3 +148,5 @@ tr:last-child td { border-bottom: 0; }
 
 /* حالة الموظف: نص عادي يلتف داخل الخلية، بدون شارة طويلة */
 td.wrap { white-space: normal; overflow-wrap: anywhere; min-width: 180px; max-width: 280px; font-size: 11px; color: var(--muted); }
+td.wrap.ok { color: var(--ok); }
+td.wrap.warn { color: var(--warn); }
