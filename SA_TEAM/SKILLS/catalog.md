@@ -524,3 +524,26 @@
 | ncklrs startup-os pricing-strategist | مهارة | تسعير مبني على التقاط القيمة | ٥ | https://claudemarketplaces.com/skills/ncklrs/startup-os-skills/pricing-strategist | مضاف، غير مفعّل |
 | manojbajaj95 pricing-strategy | مهارة | استراتيجية تسعير ضمن خطة GTM | ٤ | https://claudemarketplaces.com/skills/manojbajaj95/claude-gtm-plugin/pricing-strategy | مضاف، غير مفعّل |
 | mikefilsaime funnel-pages | مهارة | صفحات اشتراك ومبيعات وupsell وتسجيل ويبنار وتحدّي | ٤ | https://skills.sh/mikefilsaime-groove/clickcampaigns-for-claude-code-in-cursor/funnel-pages | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٢٠:٣٦ (الكويت) · Notion وCRM وتصميم تجربة ومراقبة أخبار وتعريب
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| claude-office-skills notion-automation | مهارة | قوالب Notion جاهزة: إدارة مشاريع وCRM وتقويم محتوى بخصائص وعروض مضبوطة | ٥ | https://claudemarketplaces.com/skills/claude-office-skills/skills/notion-automation | مضاف، غير مفعّل (دخول Notion: قرارك) |
+| airtable-automation | مهارة | قواعد وجداول وسجلات وصيغ Airtable | ٤ | https://claudecodehq.com/blog/claude-skills-no-code | مضاف، غير مفعّل |
+| claude-office-skills crm-automation | مهارة | إدارة عملاء محتملين وصفقات ومزامنة بين HubSpot وSalesforce وPipedrive | ٤ | https://www.awesomeskills.dev/pt/skill/skills-crm-automation | مضاف، غير مفعّل (يربط بيانات عملاء: قرارك) |
+| crmkit/skills | حزمة | مهارات CRM (ما فتحت المستودع) | ٣ | https://github.com/crmkit/skills | مضاف، غير مفعّل |
+| donchitos Claude-Code-Game-Studios ux-design | مهارة | مواصفات UX لكل شاشة أو HUD بقوالب استوديو، وتنبّه لو ما فيه مفهوم لعبة | ٤ | https://skills.sh/donchitos/claude-code-game-studios/ux-design | مضاف، غير مفعّل |
+| thomaspraun ux-flow-designer | مهارة | تدفق مستخدم وwireframes وحالات استخدام مع تصدير لـFigma | ٥ | https://skillselion.com/skills/thomaspraun/ux-flow-designer | مضاف، غير مفعّل |
+| nexu-io open-design wireframe-mobile-flow | مهارة | wireframe منخفض الدقة لتدفق موبايل متعدد الشاشات من الإعداد للتأكيد | ٥ | https://claudeskills.info/skills/nexu-io/open-design/wireframe-mobile-flow/ | مضاف، غير مفعّل |
+| Figma: Claude skills for product designers | دليل رسمي | يشرح /prototype-to-figma وأوامر Figma الأصلية مثل /figma-generate-design | ٦ | https://www.figma.com/resource-library/claude-skills-for-product-designers/ | مضاف، غير مفعّل (دخول Figma: قرارك) |
+| claude-office-skills news-monitor | مهارة | تصميم استراتيجية مراقبة أخبار واقتراح RSS وقوالب ملخصات، بدون وصول لحظي | ٤ | https://www.skills.sh/claude-office-skills/skills-hub/news-monitor | مضاف، غير مفعّل |
+| aaaaqwq rss-automation | مهارة | تجميع ومراقبة RSS وAtom وإشعارات | ٤ | https://skills.sh/aaaaqwq/agi-super-skills/rss-automation | مضاف، غير مفعّل |
+| robbyczgw topic-monitor | مهارة | الأقرب لنظام تنبيهات فعلي: RSS وإصدارات GitHub وتقييم مشاعر | ٥ | https://clawhub.ai/robbyczgw-cla/skills/topic-monitor | مضاف، غير مفعّل |
+| openclaw competitor-watch | مهارة | مراقبة مواقع المنافسين وأسعارهم ومحتواهم (مبنية لنظام OpenClaw فتحقق من توافقها) | ٤ | https://openskillindex.com/skills/openclaw-skills-competitor-watch | مضاف، غير مفعّل |
+| gooseworks-ai social-listening | مهارة | رصد ذكر العلامة والمنافسين والمحادثات عبر Exa | ٥ | https://claudeskills.info/skills/gooseworks-ai/goose-skills/social-listening/ | مضاف، غير مفعّل (مفتاح Exa: قرارك) |
+| guia-matthieu clawfu social-listening | مهارة | حدود تنبيه وتتبع مشاعر | ٣ | https://claudeskills.info/skills/guia-matthieu/clawfu-skills/social-listening/ | مضاف، غير مفعّل |
+| davila7 i18n-localization | مهارة | أفضل ممارسات i18n وL10n | ٤ | https://vibehackers.io/claude-code/skills/i18n-localization-davila7 | مضاف، غير مفعّل |
+| travisjneuman i18n-localization | مهارة (MIT) | دعم لغات متعددة وتنسيقات إقليمية | ٣ | https://claudeskills.info/skills/travisjneuman/.claude/i18n-localization/ | مضاف، غير مفعّل |
+| secondsky internationalization-i18n | مهارة (MIT) | تدويل التطبيقات | ٣ | https://claudeskills.info/skills/secondsky/claude-skills/internationalization-i18n/ | مضاف، غير مفعّل |
+| AbsolutelySkilled localization-i18n | مهارة | تعريب مع تنبيه على أخطاء الجمع والمفرد في لغات كثيرة | ٣ | https://openskillindex.com/skills/absolutelyskilled-absolutelyskilled-localization-i18n | مضاف، غير مفعّل |
+| Kobo Translation Ar | مهارة | إرشادات ترجمة وتعريب من الإنجليزي للعربي لمحتوى KoboToolbox فقط، ما تحققت من مستودعها | ٤ | https://claudskills.com/skills/kobo-translation-ar/ | مضاف، غير مفعّل |
