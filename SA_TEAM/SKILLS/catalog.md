@@ -394,3 +394,22 @@
 | ComposioHQ googlebigquery-automation | مهارة | استعلامات SQL على BigQuery عبر Metabase | ٤ | https://www.awesomeskills.dev/de/skill/composiohq-awesome-claude-skills-googlebigquery-automation | مضاف، غير مفعّل (يحتاج ربط بيانات: قرارك) |
 | supercent-io looker-studio-bigquery | مهارة | ربط Looker Studio بـBigQuery وتصميم لوحات | ٥ | https://www.vibeindex.ai/skills/supercent-io/skills-template/looker-studio-bigquery | مضاف، غير مفعّل |
 | anthropics knowledge-work-plugins data-context-extractor | مهارة | يستخرج معرفة البيانات الخاصة بالشركة ويولّد مهارات تحليل مخصصة | ٥ | https://claudemarketplaces.com/skills/anthropics/knowledge-work-plugins/data-context-extractor | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٤:٣٦ (الكويت) · محتوى عربي خليجي ويوتيوب وإدارة سبرنت وخصوصية وامتثال
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| Arabic Social Content Studio (agensi) | مهارة | كابشنات وhooks بالفصحى واللهجات الخليجية والمصرية والشامية والمغاربية مع وضع تحويل لهجة | ٦ | https://www.agensi.io/skills/arabic-social-content-studio | مضاف، غير مفعّل |
+| clawic arabic | مهارة | كتابة عربية عامة، تفاصيلها قليلة | ٣ | https://www.skillsdirectory.com/skills/clawic-arabic | مضاف، غير مفعّل |
+| InfraNodus YouTube Viral Optimizer | مهارة | عناوين وأفكار صور مصغرة وسكربتات بقواعد نسبة نقر | ٥ | https://infranodus.com/skills/viral-videos | مضاف، غير مفعّل |
+| AgriciDaniel/claude-youtube | مجموعة أوامر (بيتا) | سكربتات وصور مصغرة وSEO وتدقيق قناة، وبيانات حية بمفتاح YouTube API | ٥ | https://github.com/AgriciDaniel/claude-youtube | مضاف، غير مفعّل (قد يتغير: بيتا) |
+| manojbajaj95 youtube-content | مهارة | عناوين وصور مصغرة وhooks مرتبطة بإطلاقات المنتجات | ٤ | https://www.skills.sh/manojbajaj95/claude-gtm-plugin/youtube-content | مضاف، غير مفعّل |
+| frankxai video-script-writing | مهارة | سكربتات YouTube وTikTok وReels وبودكاست بتركيز على أول ثواني | ٤ | https://openskillindex.com/skills/frankxai-agentic-creator-os-video-script-writing | مضاف، غير مفعّل |
+| claudskills youtube-scriptwriter | مهارة | حزمة ملفات: hooks ومخطط وقائمة لقطات ونص على الشاشة وCTA وفصول وميتاداتا وخيارات عنوان وصورة | ٥ | https://claudskills.com/skills/youtube-scriptwriter/ | مضاف، غير مفعّل |
+| houseofwolvesllc/claude-scrum-skill | حزمة npm | من PRD إلى هيكلة مشروع وتخطيط سبرنت وتتبع وإصدار، مع GitHub Projects وJira وTrello | ٥ | https://www.pkgstats.com/pkg:@houseofwolvesllc/claude-scrum-skill | مضاف، غير مفعّل (يربط أدوات إدارة: قرارك) |
+| skills-ws project-management | مهارة | ميثاق مشروع وتخطيط سبرنت وOKR وسجل مخاطر وتقييم | ٤ | https://app.unpkg.com/skills-ws@1.12.0/files/skills/project-management/SKILL.md | مضاف، غير مفعّل |
+| jeremylongshore privacy-generator | مهارة | سياسة خصوصية مؤرخة بناءً على أدوات الموقع مثل GA4 | ٤ | https://openskillindex.com/skills/jeremylongshore-claude-code-plugins-plus-skills-privacy-generator | مضاف، غير مفعّل (مسودة تحتاج مراجعة قانونية) |
+| zubair-trabzada legal-privacy | مهارة | تفحص الموقع وتولّد سياسة GDPR وCCPA مع تنبيه لمراجعة محامٍ | ٥ | https://openskillindex.com/skills/zubair-trabzada-ai-legal-claude-legal-privacy | مضاف، غير مفعّل (مراجعة قانونية) |
+| Oliver Schmidt-Prietz privacy-notice-eu | مهارة | إشعارات خصوصية GDPR بصيغة docx لـEU/EEA | ٣ | https://lawve.ai/@oliver-schmidt-prietz/skill/privacy-notice-generator | مضاف، غير مفعّل |
+| seb1n privacy-policy-drafting | مهارة | مسودة سياسة خصوصية، تبنّيها صغير | ٣ | https://skillselion.com/skills/seb1n/awesome-ai-agent-skills/privacy-policy-drafting | مضاف، غير مفعّل |
+| mikefilsaime legal-policy | مهارة | صفحات سياسة خصوصية وشروط وكوكيز في حزمة واحدة (ما تحققت من المستودع) | ٣ | https://skills.sh/mikefilsaime-groove/clickcampaigns-for-claude-code-in-cursor/legal-policy | مضاف، غير مفعّل |
+| terminalskills gdpr-compliance | مهارة | تطبيق متطلبات GDPR في تطبيقات الويب (تنفيذ مو مراجعة) | ٣ | https://openskillindex.com/skills/terminalskills-skills-gdpr-compliance | مضاف، غير مفعّل |
