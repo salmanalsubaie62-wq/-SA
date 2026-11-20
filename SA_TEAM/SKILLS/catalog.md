@@ -581,3 +581,23 @@
 | cathrynlavery diagram-design | مهارة | مخططات تحريرية أنيقة HTML/SVG/PNG بألوان العلامة للعروض | ٥ | https://raw.githubusercontent.com/cathrynlavery/diagram-design/HEAD/README.md | مضاف، غير مفعّل |
 | coleam00 excalidraw-diagram-skill | مهارة | مخططات بأسلوب سبورة Excalidraw قابلة للتعديل (تحتاج Playwright وuv) | ٣ | https://ice-ice-bear.github.io/posts/2026-04-01-excalidraw-skill | مضاف، غير مفعّل |
 | britt architecture-diagramming | مهارة | مخططات Mermaid لهيكل النظام تنعرض مباشرة في GitHub | ٣ | https://britt.github.io/claude-code-skills/skills/architecture-diagramming | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٢٣:٣٦ (الكويت) · أتمتة وWorkspace وسوشال وعروض عملاء وإعادة استخدام محتوى وإتاحة
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| Make Skills for Claude (رسمي) | مهارات+MCP | ٤ مهارات وأدوات لبناء سيناريوهات Make (تعدّل سيناريوهات حية، تُجرَّب ببيئة تجريبية أول) | ٥ | https://www.make.com/make-skills-for-claude | مضاف، غير مفعّل |
+| n8n-io skills (رسمي) | مهارات+MCP | مهارات رسمية تشتغل مع MCP الخاص بنسخة n8n (تحتاج رابط الـinstance) | ٥ | https://raw.githubusercontent.com/n8n-io/skills/main/README.md | مضاف، غير مفعّل |
+| promptadvisers n8n-powerhouse | مهارات | ٨ مهارات: هيكلة وأنماط وإعداد عقد n8n وصياغة الكود | ٣ | https://cdn.jsdelivr.net/gh/promptadvisers/n8n-powerhouse@main/README.md | مضاف، غير مفعّل |
+| googleworkspace/cli gws-forms | مهارة | التعامل مع Google Forms عبر أداة Workspace الرسمية (تحتاج OAuth) | ٤ | https://claudemarketplaces.com/skills/googleworkspace/cli/gws-forms | مضاف، غير مفعّل |
+| sickn33 google-drive-automation | مهارة | أتمتة Drive بدون خادم MCP مع OAuth محلي (تحتاج ربط حساب) | ٤ | https://claudemarketplaces.com/skills/sickn33/antigravity-awesome-skills/google-drive-automation | مضاف، غير مفعّل |
+| wesleysmits generating-social-media-captions | مهارة | كتابة كابشنات سوشال لمنصات مختلفة | ٣ | https://skills.sh/wesleysmits/agent-skills/generating-social-media-captions | مضاف، غير مفعّل |
+| colorize | مهارة | توليد باليتات ألوان متناسقة ومتاحة من وصف الجو أو المجال | ٤ | https://skillselion.com/guides/brand-identity-design-claude-code-2026 | مضاف، غير مفعّل |
+| jezweb proposal-writer | مهارة | عروض أسعار ونطاق عمل وخطابات ارتباط للعملاء (بعض القوائم تبيعها بسعر، تحقق قبل أي شراء) | ٤ | https://claudeskills.info/skills/jezweb/claude-skills/proposal-writer/ | مضاف، غير مفعّل |
+| zubair-trabzada agency-propose | مهارة | عرض وكالة بباقات أسعار يبنيه من ملفات التدقيق الموجودة | ٣ | https://skillselion.com/skills/zubair-trabzada/ai-agency-claude/agency-propose | مضاف، غير مفعّل |
+| bleasure34 client-ready-free | مهارات | عرض سعر وإدارة تغيّر النطاق والتسليم والاشتراك الشهري (MIT) | ٣ | https://bleasure34.github.io/client-ready-free/ | مضاف، غير مفعّل |
+| onewave-ai podcast-to-content-suite | مهارة | من حلقة واحدة: مقال ونشرة وبوستات وملاحظات حلقة | ٤ | https://skills.sh/onewave-ai/claude-skills/podcast-to-content-suite | مضاف، غير مفعّل |
+| guia-matthieu transcription-to-content | مهارة | تحويل نص مفرّغ إلى مقالات وسنيبتات ونشرات (MIT) | ٣ | https://claudeskills.info/skills/guia-matthieu/clawfu-skills/transcription-to-content/ | مضاف، غير مفعّل |
+| AccessLint skills | Plugin | تدقيق WCAG 2.2 على الصفحة الحية ومقارنة المخالفات | ٤ | https://github.com/AccessLint/skills | مضاف، غير مفعّل |
+| alirezarezvani a11y-audit | مهارة | تدقيق إتاحة بمراجع WCAG وARIA وaxe-core | ٣ | https://tessl.io/registry/skills/github/alirezarezvani/claude-skills/a11y-audit | مضاف، غير مفعّل |
+| plugin87 design-qa | مهارة | فحص جودة التصميم: إتاحة وتباين وانحدار بصري عبر الحالات والثيمات وRTL | ٤ | https://claudemarketplaces.com/skills/plugin87/ux-ui-agent-skills/a11y-audit | مضاف، غير مفعّل |
+| georgekhananaev color-accessibility-audit | مهارة | تدقيق تباين الألوان وإتاحتها | ٣ | https://skills.sh/georgekhananaev/claude-skills-vault/color-accessibility-audit | مضاف، غير مفعّل |
