@@ -618,3 +618,22 @@
 | vishalsachdev course-generator | مهارة | تحويل مخطط كورس إلى مادة بأسلوب كتاب | ٣ | https://skillselion.com/skills/vishalsachdev/claude-skills/course-generator | مضاف، غير مفعّل |
 | opusgamelabs game-creator make-game | مهارة | بناء ألعاب بمراحل (فكرة، هيكل، تطوير، صقل) مع خطة قبل الكود، لـPhaser/Three.js/Unity/Godot (لجاسم) | ٣ | https://claudemarketplaces.com/skills/opusgamelabs/game-creator/make-game | مضاف، غير مفعّل |
 | opusgamelabs game-creator phaser | مهارة | دليل Phaser 3 لألعاب المتصفح | ٣ | https://claudemarketplaces.com/skills/opusgamelabs/game-creator/phaser | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠١:٣٦ (الكويت) · تحليلات وخطط استراتيجية وأمان وأفاتار فيديو
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| jdrhyne ga4 | مهارة | قراءة وتحليل بيانات Google Analytics 4 (تحتاج صلاحية على الحساب) | ٤ | https://claudemarketplaces.com/skills/jdrhyne/agent-skills/ga4 | مضاف، غير مفعّل |
+| popey google-analytics-automation | مهارة | أتمتة GA عبر Composio وRube MCP (تحتاج ربط) | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/google-analytics-automation | مضاف، غير مفعّل |
+| thatrebeccarae looker-studio | مهارة | وصفات لوحات Looker Studio عبر Google Sheets ومعادلات KPI مثل LTV وCAC | ٤ | https://skills.sh/thatrebeccarae/claude-marketing/looker-studio | مضاف، غير مفعّل |
+| jezweb strategy-document | مهارة | وثيقة استراتيجية: SWOT وخطة عمل رشيقة وOKRs وتحليل منافسين (MIT) | ٤ | https://claudeskills.info/skills/jezweb/claude-skills/strategy-document/ | مضاف، غير مفعّل |
+| menkesu okr-frameworks | مهارة | كتابة OKRs ربعية وتنسيق أهداف الفريق | ٣ | https://skills.sh/menkesu/awesome-pm-skills/okr-frameworks | مضاف، غير مفعّل |
+| mrthames lean-pm-skills | Plugin | ٢٥ مهارة إدارة منتج رشيقة (v1.3.0) | ٣ | https://mrthames.github.io/lean-pm-skills/ | مضاف، غير مفعّل |
+| wondelai skills | مستودع مهارات | مجموعة مهارات أعمال ومنتج (ما فحصت محتواها) | ٢ | https://github.com/wondelai/skills | مضاف، غير مفعّل |
+| AgriciDaniel claude-cybersecurity | مهارة | تدقيق أمني بـOWASP وCWE وكشف أسرار وتحليل اعتماديات | ٤ | https://raw.githubusercontent.com/AgriciDaniel/claude-cybersecurity/main/skills/cybersecurity/SKILL.md | مضاف، غير مفعّل |
+| zebbern code-vuln-audit | مهارة | فحص ثغرات مع كشف أسرار بالإنتروبي وpip/npm audit | ٣ | https://tessl.io/registry/skills/github/zebbern/claude-code-guide/code-vuln-audit | مضاف، غير مفعّل |
+| mgiovani forge-security | مهارة | مراجعة OWASP Top 10 لتطبيقات SaaS | ٣ | https://skills.sh/mgiovani/cc-arsenal/forge-security | مضاف، غير مفعّل |
+| charlesjones-dev security-audit | مهارة | تدقيق أمني للمشروع (تشغّل أوامر، تُراجع قبل أي تفعيل) | ٣ | https://skills.sh/charlesjones-dev/claude-code-plugins-dev/security-audit | مضاف، غير مفعّل |
+| pika-labs ugc-ads | مهارة | إعلانات UGC عمودية بمتحدث ولِب-سنك (Apache-2.0، تحتاج خدمة Pika) | ٤ | https://claudeskills.info/skills/pika-labs/pika-plugins/ugc-ads/ | مضاف، غير مفعّل |
+| agentspace-so runcomfy ai-avatar-video | مهارة | فيديو أفاتار ولِب-سنك عبر RunComfy CLI (حساب مدفوع محتمل) | ٣ | https://claudemarketplaces.com/skills/agentspace-so/runcomfy-agent-skills/ai-avatar-video | مضاف، غير مفعّل |
+| dennisonbertram realistic-ugc-video | مهارة | فيديو UGC واقعي بمتحدث عبر Nano Banana وKling | ٣ | https://claudemarketplaces.com/skills/dennisonbertram/claude-media-skills/realistic-ugc-video | مضاف، غير مفعّل |
+| LeoYeAI citedy video-shorts | مهارة | شورتس ١٥ ثانية بأفاتار (التكلفة المذكورة ~١٫٨٥$ للفيديو، ما اشتريت شي) | ٢ | https://vibehackers.io/claude-code/skills/citedy-video-shorts | مضاف، غير مفعّل |
