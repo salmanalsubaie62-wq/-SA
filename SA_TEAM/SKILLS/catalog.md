@@ -566,3 +566,18 @@
 | claudskills beauty-photography | مهارة | تصوير إعلاني للعطور والجمال: توجيه إبداعي وتنسيق منتج وتصوير زجاجات وحملات فاخرة | ٥ | https://claudskills.com/skills/beauty-photography/ | مضاف، غير مفعّل |
 | claudskills marketing-copy-craft | مهارة | حرفة كتابة تسويقية | ٣ | https://claudskills.com/skills/marketing-copy-craft/ | مضاف، غير مفعّل |
 | imaimai17468 modern-short-video-skills | مهارة | أفضل ممارسات Remotion لفيديو قصير حديث | ٣ | https://skills.sh/imaimai17468/modern-short-video-skills/remotion-best-practices | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٢٢:٣٦ (الكويت) · تخطيط يومي وجدولة وأبحاث ومخططات
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| brianrwagner plan-my-day | مهارة | خطة يوم مرتبة بالوقت حسب مستوى الطاقة ومبادئ GTD للمؤسس | ٥ | https://claudeskills.info/skills/brianrwagner/ai-marketing-claude-code-skills/plan-my-day/ | مضاف، غير مفعّل |
+| britt daily-planning-ritual | مهارة | جلسة صباحية تفاعلية تخطط اليوم كامل (شغل وشخصي) بحوار | ٤ | https://britt.github.io/claude-code-skills/skills/daily-planning-ritual | مضاف، غير مفعّل |
+| Reclaim.ai Task Manager | MCP/مهارة | إدارة مهام وبلوكات وقت بأولويات P1-P4 عبر Reclaim (يحتاج حساب) | ٤ | https://mcpmarket.com/tools/skills/reclaim-ai-task-manager | مضاف، غير مفعّل |
+| earlyaidopters google-calendar | مهارة | إنشاء اجتماعات Meet وفحص التوفر وإدارة التقويم (يحتاج ربط Google) | ٥ | https://skills.sh/earlyaidopters/claudeclaw/google-calendar | مضاف، غير مفعّل |
+| wanshuiyin research-lit | مهارة | بحث أدبيات: يبحث بملفاتك المحلية وZotero أول ثم الإنترنت ويصدّر BibTeX | ٤ | https://skills.sh/wanshuiyin/auto-claude-code-research-in-sleep/research-lit | مضاف، غير مفعّل |
+| alirezarezvani research-summarizer | مهارة | تلخيص أبحاث واستخراج مراجع ومقارنة مصادر | ٤ | https://vibehackers.io/claude-code/skills/research-summarizer-alirezarezvani-2 | مضاف، غير مفعّل |
+| split-pdf workflow (Cunningham) | وصفة/أسلوب | قراءة PDF طويل بقطع ٣-٤ صفحات واستخراج منظم (مو حزمة جاهزة مؤكدة) | ٣ | https://velikov-mihail.github.io/ai-econ-wiki/summaries/cc-series-13-skills-split-pdf | مضاف، غير مفعّل |
+| Agents365-ai drawio-skill | مهارة | مخططات draw.io قابلة للتعديل من نص أو Mermaid (تحتاج draw.io CLI) | ٤ | https://hermesatlas.com/projects/Agents365-ai/drawio-skill | مضاف، غير مفعّل |
+| cathrynlavery diagram-design | مهارة | مخططات تحريرية أنيقة HTML/SVG/PNG بألوان العلامة للعروض | ٥ | https://raw.githubusercontent.com/cathrynlavery/diagram-design/HEAD/README.md | مضاف، غير مفعّل |
+| coleam00 excalidraw-diagram-skill | مهارة | مخططات بأسلوب سبورة Excalidraw قابلة للتعديل (تحتاج Playwright وuv) | ٣ | https://ice-ice-bear.github.io/posts/2026-04-01-excalidraw-skill | مضاف، غير مفعّل |
+| britt architecture-diagramming | مهارة | مخططات Mermaid لهيكل النظام تنعرض مباشرة في GitHub | ٣ | https://britt.github.io/claude-code-skills/skills/architecture-diagramming | مضاف، غير مفعّل |
