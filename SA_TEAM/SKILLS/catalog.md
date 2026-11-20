@@ -547,3 +547,22 @@
 | secondsky internationalization-i18n | مهارة (MIT) | تدويل التطبيقات | ٣ | https://claudeskills.info/skills/secondsky/claude-skills/internationalization-i18n/ | مضاف، غير مفعّل |
 | AbsolutelySkilled localization-i18n | مهارة | تعريب مع تنبيه على أخطاء الجمع والمفرد في لغات كثيرة | ٣ | https://openskillindex.com/skills/absolutelyskilled-absolutelyskilled-localization-i18n | مضاف، غير مفعّل |
 | Kobo Translation Ar | مهارة | إرشادات ترجمة وتعريب من الإنجليزي للعربي لمحتوى KoboToolbox فقط، ما تحققت من مستودعها | ٤ | https://claudskills.com/skills/kobo-translation-ar/ | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٢١:٣٦ (الكويت) · مونتاج فيديو وإبداع إعلاني وسرد علامة وعطور
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| capcut-mcp (dlyrr) | خادم MCP | يقرأ ويعدّل مشاريع CapCut سطح المكتب: قص وتحريك وتقسيم ونصوص وصوت وحفظ، يحتاج Node 18 وFFmpeg وCapCut | ٥ | https://images.glama.ai/mcp/servers/JmsLdrn/capcut-mcp | مضاف، غير مفعّل (يشتغل على جهازك فقط، وتوافقه مع نسخ CapCut الجديدة غير مؤكد) |
+| SmartCut MCP (mrbuslov) | خادم MCP | لفيديوهات المتحدث: حذف الفراغات وكشف اللقطات المكررة وترجمات وتصدير لمشروع CapCut | ٤ | https://lobehub.com/ko/mcp/mrbuslov-capcut-ai-editor | مضاف، غير مفعّل |
+| KyaniteLabs/mcp-video | خادم MCP + مكتبة + CLI (Apache-2.0) | أكثر من ٨٠ أداة FFmpeg وHyperframes للمونتاج | ٦ | https://github.com/KyaniteLabs/mcp-video | مضاف، غير مفعّل |
+| MakeMyClip/editor | خادم MCP + مهارة | قص وتكبير وترجمات وتجميع مقاطع من أي وكيل | ٥ | https://github.com/MakeMyClip/editor | مضاف، غير مفعّل |
+| wilwaldon/Claude-Code-Video-Toolkit | حزمة (MIT) | فيديو برمجي بـRemotion وManim وتسجيل شاشة وقص يوتيوب ومعالجة FFmpeg | ٥ | https://github.com/wilwaldon/Claude-Code-Video-Toolkit | مضاف، غير مفعّل |
+| MartinDelophy ai-video-editor edit-timeline-studio | مهارة | مونتاج بخط زمني يشتغل مع Claude Code وCodex وGemini CLI | ٤ | https://raw.githubusercontent.com/MartinDelophy/ai-video-editor/main/skills/edit-timeline-studio/README.md | مضاف، غير مفعّل |
+| smixs/creative-director-skill | مهارة | مدير إبداعي: من البصيرة للأفكار والتقييم والعرض بأكثر من ٢٠ منهجية، و٦ أطر سرد إعلاني ومكتبة ٥٧١ حملة فائزة (تبنّيها ضعيف جداً) | ٦ | https://github.com/smixs/creative-director-skill | مضاف، غير مفعّل |
+| SallyRS/video-director | مهارة | يوجّه فيديو قصير من البريف للرندر النهائي: أفلام علامة وإعلانات قصصية بـHyperFrames، تحتاج Python وffmpeg | ٦ | https://raw.githubusercontent.com/SallyRS/video-director/HEAD/README.md | مضاف، غير مفعّل |
+| claudskills creative-strategy | مهارة | مفاهيم حملات وتوجيه إبداعي وstoryboard وإعلانات تجارية | ٤ | https://claudskills.com/skills/creative-strategy/ | مضاف، غير مفعّل |
+| Polar Analytics creative-brief | مهارة | brief واحد لكل أصل إعلاني مع الفجوة اللي يسدها | ٤ | https://www.polaranalytics.com/claude-for-ecommerce/skills/creative-brief | مضاف، غير مفعّل |
+| guia-matthieu storytelling-storybrand | مهارة | هيكلة سير عمل الفيديو وأطر سكربت StoryBrand والقرار الإبداعي النهائي للإنسان | ٤ | https://claudeskills.info/skills/guia-matthieu/clawfu-skills/storytelling-storybrand/ | مضاف، غير مفعّل |
+| omer-metin brand-storytelling | مهارة | سرد علامة بملف صوت تقرأ منه مهارات الخطافات وزوايا الإعلان (وصفها عام) | ٣ | https://skills.sh/omer-metin/skills-for-antigravity/brand-storytelling | مضاف، غير مفعّل |
+| claudskills beauty-photography | مهارة | تصوير إعلاني للعطور والجمال: توجيه إبداعي وتنسيق منتج وتصوير زجاجات وحملات فاخرة | ٥ | https://claudskills.com/skills/beauty-photography/ | مضاف، غير مفعّل |
+| claudskills marketing-copy-craft | مهارة | حرفة كتابة تسويقية | ٣ | https://claudskills.com/skills/marketing-copy-craft/ | مضاف، غير مفعّل |
+| imaimai17468 modern-short-video-skills | مهارة | أفضل ممارسات Remotion لفيديو قصير حديث | ٣ | https://skills.sh/imaimai17468/modern-short-video-skills/remotion-best-practices | مضاف، غير مفعّل |
