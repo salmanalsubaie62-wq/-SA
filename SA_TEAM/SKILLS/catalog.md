@@ -299,3 +299,22 @@
 | claude-office-skills meeting-notes | مهارة | تحويل محاضر الاجتماعات إلى وثيقة بقرارات ومهام ومسؤولين | ٥ | https://claudemarketplaces.com/skills/claude-office-skills/skills/meeting-notes | مضاف، غير مفعّل |
 | borghei weekly-review | مهارة | مراجعة أسبوعية من تقويم ومهام وOKR | ٤ | https://claudeskills.info/skills/borghei/Claude-Skills/weekly-review/ | مضاف، غير مفعّل |
 | mohitagw15856 project-status-report وokr-builder | مهارات | تقرير حالة مشروع بنظام أحمر/أصفر/أخضر وبناء OKR | ٥ | https://vibeindex.ai/collection/mohitagw15856/pm-claude-skills | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٩:٣٦ (الكويت) · بحث عملاء وتجارة إلكترونية وفيديو قصير ومراسلة
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| AbsolutelySkilled customer-research | مهارة | استبيانات وأدلة مقابلات وNPS وشخصيات عملاء وتجميع النتائج | ٥ | https://openskillindex.com/skills/absolutelyskilled-absolutelyskilled-customer-research | مضاف، غير مفعّل |
+| TerminalSkills user-research | مهارة | مقابلات وشخصيات واستبيانات واختبارات استخدام بتسلسل مقابلة ثم استبيان | ٥ | https://openskillindex.com/skills/terminalskills-skills-user-research | مضاف، غير مفعّل |
+| whawkinsiv solo-founder-superpowers customer-research | مهارة | العميل المثالي وJobs-to-be-Done وملف مرجعي لتخصيص النصوص التسويقية | ٥ | https://claudeskills.info/ja/skills/whawkinsiv/solo-founder-superpowers/customer-research/ | مضاف، غير مفعّل |
+| Chompute Shopify Skills (dragonfruit-ai/skills) | إضافة | تشغيل متجر Shopify: استرجاع سلات متروكة وكتابة مدونة | ٥ | https://mcpservers.org/servers/github-com-dragonfruit-ai-skills-tree-main-plugins-shopify-skills | مضاف، غير مفعّل (يحتاج دخول المتجر: قرارك) |
+| sickn33 shopify-automation | مهارة | منتجات وطلبات وعملاء ومخزون عبر Composio Rube MCP | ٤ | https://claudemarketplaces.com/skills/sickn33/antigravity-awesome-skills/shopify-automation | مضاف، غير مفعّل (قرارك) |
+| shopify-pack | حزمة مهارات | ٣٠ مهارة لتطوير Shopify (Liquid وثيمات وAdmin API) | ٣ | https://ecommerceguide.com/mcp/shopify-pack/ | مضاف، غير مفعّل |
+| Membrane Shopify skill | مهارة | تحديث وحذف منتجات Shopify | ٣ | https://skills.getmembrane.com/apps/shopify | مضاف، غير مفعّل (قرارك) |
+| Genmz-shop storyboard | مهارة | storyboard لقطة بلقطة لـ TikTok وReels وShorts ونصوص UGC | ٥ | https://openskillindex.com/skills/darsh20009-genmz-shop-storyboard | مضاف، غير مفعّل |
+| DevHive-Cli storyboard | مهارة | storyboard لفيديوهات سوشال وحملات قصيرة | ٤ | https://openskillindex.com/skills/el3tar-cmd-devhive-cli-storyboard | مضاف، غير مفعّل |
+| vyralcontent viral-short-form وviral-hooks | مهارات | كتابة ومراجعة أول ١-٣ ثواني ومحتوى TikTok وReels وShorts (أرقام التبنّي متضاربة) | ٥ | https://claudemarketplaces.com/skills/vyralcontent/content-skills/viral-short-form | مضاف، غير مفعّل |
+| onewave-ai hyperframes-ad-director | مهارة | من brief إلى hook وسكربت وstoryboard وتركيب HTML وترجمات وتعليق صوتي بقصات ٩:١٦ ومربع و١٦:٩ | ٦ | https://claudeskills.info/ja/skills/onewave-ai/claude-skills/hyperframes-ad-director/ | مضاف، غير مفعّل |
+| nexu-io/open-design video-shortform | مهارة | hooks وسكربتات وقوائم لقطات وتوجيه إبداعي لكل منصة | ٤ | https://skillselion.com/skills/nexu-io/open-design/video-shortform | مضاف، غير مفعّل |
+| Automagik Omni (namastexlabs) | خادم MCP + مركز مراسلة | ربط وكلاء AI بواتساب وDiscord وSlack عبر واجهة موحدة، وخريطة طريقه عن Telegram قديمة | ٥ | https://github.com/namastexlabs/automagik-omni | مضاف، غير مفعّل (يربط قنوات عملاء: قرارك) |
+| Messaging Platform MCP (Apify) | خادم MCP | وصول موحد لـ Discord وSlack وTelegram وواتساب لدعم العملاء، على منصة Apify | ٤ | https://apify.com/alizarin_refrigerator-owner/messaging-mcp-server | مضاف، غير مفعّل (قرارك) |
+| joao-costa multichatmcp | خادم MCP (Go) | واتساب فقط حالياً عبر whatsmeow | ٣ | https://lobehub.com/mcp/joao-costa-multichatmcp | مضاف، غير مفعّل (قرارك) |
