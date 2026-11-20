@@ -354,3 +354,23 @@
 | davila7 spreadsheet | مهارة | جداول Excel وتنظيف بيانات، وتحويل لـPDF إذا توفر LibreOffice | ٥ | https://www.skills.sh/davila7/claude-code-templates/spreadsheet | مضاف، غير مفعّل |
 | tfriedel/claude-office-skills | حزمة مهارات | PPTX وDOCX وXLSX وPDF: نمذجة بصيغ وتنسيق احترافي وتعبئة نماذج ودمج مستندات | ٥ | https://docsearch.algolia.com/mcp/docs/repo/tfriedel/claude-office-skills | مضاف، غير مفعّل |
 | majiayu000 document-xlsx | مهارة | إنشاء وتدقيق واستخراج جداول Excel بمكتبات متعددة | ٤ | https://openskillindex.com/skills/majiayu000-claude-skill-registry-document-xlsx | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٢:٣٦ (الكويت) · Blender وفيديو وتصميم واجهات وSEO وتحليلات
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| roble3/cc-blender-skill | إضافة (نحو ٣٠ مهارة) | تحويل طلب بالعربي/الإنجليزي إلى كود Blender عبر Blender MCP مع إضاءة ثلاثية ورندر، تحتاج Blender 4+ | ٦ | https://cdn.jsdelivr.net/gh/roble3/cc-blender-skill@main/README.md | مضاف، غير مفعّل (يشتغل مع Blender على جهازك فقط) |
+| NousResearch hermes blender-mcp | مهارة | استخدام Blender MCP مع نصيحة تقسيم المشاهد الكبيرة لاستدعاءات أصغر | ٤ | https://skillselion.com/skills/nousresearch/hermes-agent/blender-mcp | مضاف، غير مفعّل |
+| pacphi sindri blender-3d | مهارة | أدوات orbit_render وset_camera لرندر من زوايا متعددة | ٤ | https://skills.cat/skills/pacphi/sindri/blender-3d | مضاف، غير مفعّل |
+| digitalsamba/claude-code-video-toolkit | مساحة إنتاج فيديو | Remotion وElevenLabs وFFmpeg وPlaywright في مكان واحد | ٦ | https://www.vibeindex.ai/collection/digitalsamba/claude-code-video-toolkit | مضاف، غير مفعّل |
+| samhvw8 ui-design-system | مهارة | مراجعة وتصميم مكونات واجهة بـ Tailwind وRadix وshadcn/ui | ٥ | https://skills.cat/skills/samhvw8/dot-claude/ui-design-system | مضاف، غير مفعّل |
+| htooayelwinict ui-ux-design | مهارة | تدقيق وبناء أنماط وصول (لوحة مفاتيح وتسميات وتباين) | ٤ | https://playbooks.com/skills/htooayelwinict/claude-config/ui-ux-design | مضاف، غير مفعّل |
+| madappgang ui-design-review | مهارة | فحص لقطات واجهة للوصول والاتساق والاستخدام عبر Gemini | ٥ | https://agentpedia.codes/agent-skills/ui-design/ui-ux-expert-skill | مضاف، غير مفعّل (قد يحتاج مفتاح Gemini: قرارك) |
+| shiplightai design-review | مهارة | تدقيق UI منظم يلتقط مشاكل التصميم | ٤ | https://claudemarketplaces.com/skills/shiplightai/agent-skills/design-review | مضاف، غير مفعّل |
+| 404kidwiz accessibility-tester | مهارة | اختبار وإصلاح WCAG 2.1/2.2 AA | ٤ | https://playbooks.com/for/accessibility | مضاف، غير مفعّل |
+| ComeOnOliver web-design-guidelines | مهارة | فحص كود الواجهة مقابل إرشادات تصميم | ٣ | https://openskillindex.com/skills/comeonoliver-skillshub-web-design-guidelines | مضاف، غير مفعّل |
+| viktorbezdek skillstack frontend-design | مهارة | ٥٩ ملف مرجعي: توكنز وWCAG 2.2 وTailwind وshadcn | ٥ | https://skillselion.com/skills/viktorbezdek/skillstack/frontend-design | مضاف، غير مفعّل |
+| iannuttall/seo | خادم MCP + CLI | بيانات Search Console وGA وBing وزحف للوكيل، طبقة بيانات بدون سير عمل | ٥ | https://claudemarketplaces.com/mcp/iannuttall/seo | مضاف، غير مفعّل (OAuth: قرارك) |
+| surendranb/google-search-console-mcp | خادم MCP | إضافة بسطر واحد، وأداة skill_read لتحميل أدلة تشخيص SEO | ٥ | https://github.com/surendranb/google-search-console-mcp | مضاف، غير مفعّل (OAuth: قرارك) |
+| aminforou/mcp-gsc | خادم MCP | Search Console للمختصين بالـSEO، ونسخة مستضافة فيها GA4 | ٥ | https://cdn.jsdelivr.net/gh/aminforou/mcp-gsc@main/README.md | مضاف، غير مفعّل (قرارك) |
+| delaren47 gsc-ga4-mcp | خادم MCP محلي | قراءة فقط لـSearch Console وGA4 وأدوات تقاطع بينهما | ٥ | https://glama.ai/mcp/servers/o2tejj59z5 | مضاف، غير مفعّل (قرارك) |
+| md-riaz/google-seo-mcp | خادم MCP (MIT) | Search Console وGA4 مع كشف شذوذ وتنافس كلمات وتسجيل فرص | ٥ | https://www.remoteopenclaw.com/mcp/md-riaz/google-seo-mcp | مضاف، غير مفعّل (قرارك) |
