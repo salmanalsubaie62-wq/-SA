@@ -246,3 +246,20 @@
 | agricidaniel/claude-obsidian | مهارات معرفة | ويكي تحافظ عليه Claude على نمط Karpathy (٣١٩٠ نجمة حسب فهرس) | ٦ | https://docsearch.algolia.com/mcp/docs/repo/agricidaniel/claude-obsidian | مضاف، غير مفعّل |
 | eugeniughelbur/obsidian-second-brain | مهارة | قاعدة معرفة قابلة للبحث من المحادثات والأبحاث | ٥ | https://cdn.jsdelivr.net/gh/eugeniughelbur/obsidian-second-brain@main/SKILL.md | مضاف، غير مفعّل |
 | charlie947/ai-second-brain | مهارة | دماغ ثاني بـ Obsidian | ٤ | https://github.com/charlie947/ai-second-brain | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٦:٣٦ (الكويت) · إيميل ونشرات وأتمتة سوشال وقوائم مهارات
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| agricidaniel/claude-email | مجموعة مهارات | كتابة إيميلات بأطر PAS وAIDA وBAB، تقييم قبل الإرسال، تدقيق وصول، وتسلسلات أتمتة | ٧ | https://skillsmp.com/creators/agricidaniel/claude-email | مضاف، غير مفعّل |
+| arnabbagxd email marketing | مهارة | تسويق بالإيميل: حملات ونشرات | ٤ | https://enterprisedna.co/directories/skills/arnabbagxd-email-marketing | مضاف، غير مفعّل |
+| aradotso email-marketing-bible-skill | مهارة معرفية | قاعدة معرفة كبيرة (٦٨ ألف كلمة، ١٩ دليل قطاعات) للتسويق بالإيميل، وتبنّيها قليل | ٤ | https://www.claudemarket.ai/skills/aradotso/marketing-skills/email-marketing-bible-skill | مضاف، غير مفعّل |
+| pawbytes paw-mkt-email | مهارة | تسلسلات ونشرات وأتمتة وتحسين وصول الإيميل | ٥ | https://openskillindex.com/skills/pawbytes-skill-suites-paw-mkt-email | مضاف، غير مفعّل |
+| guia-matthieu/clawfu-skills email-writing | مهارة | كتابة إيميلات بأسلوبك الشخصي | ٤ | https://claudemarketplaces.com/skills/guia-matthieu/clawfu-skills/email-writing | مضاف، غير مفعّل |
+| guia-matthieu/clawfu-skills data-visualizer | مهارة | رسوم بيانية وتصوير بيانات من جداول | ٥ | https://claudeskills.info/skills/guia-matthieu/clawfu-skills/data-visualizer/ | مضاف، غير مفعّل |
+| ViralNote mcp-server | خادم MCP | جدولة ونشر وتحليل على TikTok وReels وShorts وX وThreads وLinkedIn | ٦ | https://github.com/viralnote/mcp-server | مضاف، غير مفعّل (ينشر على حسابات: قرارك) |
+| Upload-Post MCP | خادم MCP (TypeScript، MIT) | نشر متعدد المنصات عبر Upload-Post API، تبنّيه قليل | ٤ | https://github.com/Upload-Post/upload-post-mcp | مضاف، غير مفعّل (قرارك) |
+| helbertparanhos/postforme-mcp-pro | خادم MCP | ٩ منصات و٢٧ أداة للنشر والجدولة | ٥ | https://enterprisedna.co/directories/mcp/helbertparanhos-postforme-mcp-pro | مضاف، غير مفعّل (قرارك) |
+| Socialync MCP | خادم MCP مستضاف | نشر على السوشال من Claude | ٤ | https://www.socialync.io/mcp | مضاف، غير مفعّل (قرارك) |
+| bundle.social MCP | خادم MCP مستضاف رسمي | نشر وجدولة وتحليلات على ١٥ منصة | ٥ | https://bundle.social/social-media-mcp-server | مضاف، غير مفعّل (مدفوع وقرارك) |
+| travisvn/awesome-claude-skills | قائمة | قائمة مرتبة لمهارات Claude Code، مرجع لبحث لاحق | ٥ | https://github.com/travisvn/awesome-claude-skills | مضاف، غير مفعّل |
+| BehiSecc/awesome-claude-skills | قائمة | أكثر من ١٢٠ مهارة بـ ١٣ تصنيف | ٥ | https://github.com/BehiSecc/awesome-claude-skills | مضاف، غير مفعّل |
