@@ -194,3 +194,19 @@
 | nexscope-ai/ecommerce-skills | مهارات | قوائم منتجات لـ ٨ منصات مع تحليل منافسين | ٥ | https://claudemarketplaces.com/skills/nexscope-ai/ecommerce-skills/product-description-generator | مضاف، غير مفعّل |
 | kostja94/marketing-skills | مجموعة تسويق | صفحات منتجات وسيو | ٥ | https://claudemarketplaces.com/skills/kostja94/marketing-skills/products-page-generator | مضاف، غير مفعّل |
 | arabicskill (claudskills) | مهارة عربي | نصوص منتجات ونصوص واجهات بالعربي (مو قوائم أسواق) | ٦ | https://claudskills.com/skills/arabicskill/ | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٣:٣٦ (الكويت) · إدارة مشاريع وألعاب 3D وإعلانات فيديو
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| makenotion/claude-code-notion-plugin (الرسمي) | إضافة | مهارات Notion مع خادم MCP وتلخيص اجتماعات | ٦ | https://claudemarketplaces.com/skills/makenotion/claude-code-notion-plugin/notion-meeting-intelligence | مضاف، غير مفعّل (يحتاج دخول) |
+| tommy-ca/notion-skills | مهارات | تحويل نقاشات لتوثيق منظم في Notion | ٤ | https://github.com/tommy-ca/notion-skills | مضاف، غير مفعّل |
+| threejs (nexu-io) | مهارة | مشاهد Three.js ومواد وتحكم وبوست برودكشن | ٦ | https://skillselion.com/game-dev | مضاف، غير مفعّل (الأرقام غير متسقة) |
+| majidmanzarpour/threejs-game-skills | مهارات ألعاب | مخرج لعبة Three.js | ٥ | https://claudemarketplaces.com/skills/majidmanzarpour/threejs-game-skills/threejs-game-director | مضاف، غير مفعّل |
+| Godot MCP Pro | خادم MCP | ٨٤ أداة للتحكم بمحرر Godot | ٥ | https://mcp.directory/blog/godot-vs-unity-vs-blender-mcp-skills-2026 | مضاف، غير مفعّل |
+| unity (Mindrally) | مهارة | إرشاد Unity وC# للألعاب ثنائية وثلاثية الأبعاد | ٥ | https://www.mdskills.ai/category/games-3d | مضاف، غير مفعّل |
+| roblox-luau (gamedev-skills) | مهارة | Luau وخدمات Roblox مع اتصال آمن | ٥ | https://www.claudepluginhub.com/plugins/gamedev-skills-workflows | مضاف، غير مفعّل |
+| Creatify-AI/ai-ad-prompt-guide | مهارة إعلانات | قوالب برومبتات إعلانات لـ Sora 2 وVeo 3.1 (منتج وB-roll وUGC) | ٧ | https://github.com/Creatify-AI/ai-ad-prompt-guide | مضاف، غير مفعّل |
+| zubair-trabzada/ai-ads-claude (Video Ad Script Writer) | مهارة | سيناريوهات إعلانات ١٥ و٣٠ و٦٠ ثانية مع ستوري بورد | ٦ | https://skillselion.com/skills/zubair-trabzada/ai-ads-claude/video-ad-script-writer | مضاف، غير مفعّل |
+| Adspirer UGC-Style Video Ads | مهارة | أفكار وسكربتات إعلانات UGC لـ Meta وTikTok وReels | ٥ | https://www.adspirer.com/skills/ugc-ads | مضاف، غير مفعّل |
+| SuperCMO Skills | مجموعة | إعلان UGC من صورة منتج واحدة | ٥ | https://mcpservers.org/id/servers/supercmohq/supercmo-skills | مضاف، غير مفعّل |
+| leadmagic GTM ai-video-creation | مهارة | سير عمل توليد فيديو بالذكاء الاصطناعي | ٤ | https://claudepluginhub.com/skills/leadmagic-gtm-skills/ai-video-creation | مضاف، غير مفعّل |
