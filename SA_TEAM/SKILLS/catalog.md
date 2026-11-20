@@ -282,3 +282,20 @@
 | aviz85 translate-video | إضافة | تفريغ وترجمة وتدقيق ثم تضمين ترجمة نصية تدعم العربية RTL | ٦ | https://www.claudepluginhub.com/plugins/aviz85-translate-video-plugins-translate-video | مضاف، غير مفعّل |
 | aviz85 embed-subtitles | إضافة | حرق ترجمات داخل الفيديو | ٤ | https://www.claudepluginhub.com/plugins/aviz85-embed-subtitles-plugins-embed-subtitles | مضاف، غير مفعّل |
 | claude-office-skills transcription-automation | مهارة | تفريغ بودكاست وترجمات SRT وVTT | ٤ | https://claudemarketplaces.com/skills/claude-office-skills/skills/transcription-automation | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٨:٣٦ (الكويت) · عربي وRTL وهوية بصرية وإدارة مشاريع وGoogle Sheets/Docs
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| Arabic Content Creator (sanada123/openclaw-skills) | مهارة | محتوى عربي بلهجات ٢٢ دولة عربية مع قسم خليجي (السعودية، الإمارات، الكويت، قطر، البحرين، عُمان) وأمثلة hooks. ما فتحت المستودع | ٦ | https://claudskills.com/skills/arabic-content-creator/SKILL.md | مضاف، غير مفعّل (راجع الجودة والترخيص قبل التفعيل) |
+| rtl-arabic | مهارة | قواعد تصميم واجهات عربية RTL | ٥ | https://claudskills.com/skills/rtl-arabic/ | مضاف، غير مفعّل |
+| zakariaf i18n-rtl-l10n | مهارة | تعريب ودعم RTL (ضمن مستودع Flutter-Skills) | ٤ | https://www.typingmind.com/skills/zakariaf-i18n-rtl-l10n | مضاف، غير مفعّل |
+| rampstackco/claude-skills brand-identity | مهارة | نظام هوية: شعار وألوان وخطوط وصور وأيقونات وحركة، يفترض اتجاه معتمد | ٦ | https://skills.cat/skills/rampstackco/claude-skills/brand-identity | مضاف، غير مفعّل |
+| aaaaqwq brand-identity | مهارة | هوية لمشروع صغير: لوحة ألوان بأكواد وخطوط وقواعد الشعار | ٥ | https://skillselion.com/skills/aaaaqwq/claude-code-skills/brand-identity | مضاف، غير مفعّل |
+| nexu-io/open-design brandkit | مهارة | تجهيز brand kit | ٤ | https://claudemarketplaces.com/skills/nexu-io/open-design/brandkit | مضاف، غير مفعّل |
+| daffy0208 brand-designer | مهارة | شعارات ولوحات ألوان وخطوط | ٣ | https://claudeskills.info/skills/daffy0208/ai-dev-standards/brand-designer/ | مضاف، غير مفعّل |
+| xing5/mcp-google-sheets | خادم MCP (Python) | إنشاء وتعديل Google Sheets عبر Sheets وDrive API، تشغيل بـ uvx | ٦ | https://docsearch.algolia.com/mcp/docs/repo/xing5/mcp-google-sheets | مضاف، غير مفعّل (يحتاج OAuth: قرارك) |
+| a-bonus/google-docs-mcp | خادم MCP | قراءة وتحرير Google Docs وSheets وDrive | ٥ | https://github.com/a-bonus/google-docs-mcp | مضاف، غير مفعّل (يحتاج OAuth: قرارك) |
+| PM Operating System (ninety2ua) | إضافة | ٢٤ مهارة وأوامر: standup يومي ومراجعة أسبوعية وتقييم OKR ربع سنوي | ٦ | https://ninety2ua.github.io/pm-operating-system/ | مضاف، غير مفعّل |
+| claude-office-skills meeting-notes | مهارة | تحويل محاضر الاجتماعات إلى وثيقة بقرارات ومهام ومسؤولين | ٥ | https://claudemarketplaces.com/skills/claude-office-skills/skills/meeting-notes | مضاف، غير مفعّل |
+| borghei weekly-review | مهارة | مراجعة أسبوعية من تقويم ومهام وOKR | ٤ | https://claudeskills.info/skills/borghei/Claude-Skills/weekly-review/ | مضاف، غير مفعّل |
+| mohitagw15856 project-status-report وokr-builder | مهارات | تقرير حالة مشروع بنظام أحمر/أصفر/أخضر وبناء OKR | ٥ | https://vibeindex.ai/collection/mohitagw15856/pm-claude-skills | مضاف، غير مفعّل |
