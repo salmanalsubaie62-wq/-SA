@@ -601,3 +601,20 @@
 | alirezarezvani a11y-audit | مهارة | تدقيق إتاحة بمراجع WCAG وARIA وaxe-core | ٣ | https://tessl.io/registry/skills/github/alirezarezvani/claude-skills/a11y-audit | مضاف، غير مفعّل |
 | plugin87 design-qa | مهارة | فحص جودة التصميم: إتاحة وتباين وانحدار بصري عبر الحالات والثيمات وRTL | ٤ | https://claudemarketplaces.com/skills/plugin87/ux-ui-agent-skills/a11y-audit | مضاف، غير مفعّل |
 | georgekhananaev color-accessibility-audit | مهارة | تدقيق تباين الألوان وإتاحتها | ٣ | https://skills.sh/georgekhananaev/claude-skills-vault/color-accessibility-audit | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٠:٣٦ (الكويت) · ثلاثي الأبعاد وقواعد بيانات ومحتوى تعليمي وألعاب
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| 404kidwiz threejs-pro | مهارة | Three.js وR3F من مشاهد بسيطة لشيدرز GLSL مخصصة (لوليد) | ٤ | https://skills.sh/404kidwiz/claude-supercode-skills/threejs-pro | مضاف، غير مفعّل |
+| dgreenheck webgpu-claude-skill | مهارة | تطبيقات Three.js بـWebGPU ولغة TSL للشيدرز | ٣ | https://docsearch.algolia.com/mcp/docs/repo/dgreenheck/webgpu-claude-skill | مضاف، غير مفعّل |
+| EnzeD r3f-skills (r3f-shaders) | مهارة | خامات GLSL/TSL مخصصة داخل React Three Fiber | ٣ | https://claude-plugins.dev/skills/@EnzeD/r3f-skills/r3f-shaders | مضاف، غير مفعّل |
+| jeremylongshore supabase-migration-deep-dive | مهارة | هجرات قاعدة Supabase بشكل آمن (لطارق) | ٣ | https://www.skills.sh/jeremylongshore/claude-code-plugins-plus-skills/supabase-migration-deep-dive | مضاف، غير مفعّل |
+| migration-safety-reliability | مهارة | تغييرات مخطط Postgres/Supabase قابلة للتكرار مع RLS (تبنّي ضعيف) | ٢ | https://mcpmarket.com/tools/skills/migration-safety-reliability | مضاف، غير مفعّل |
+| anthropics k12-teacher-skills | Plugin | مهارات معلمين من Anthropic (لأ. منيرة) — ما تأكدت من محتواها | ٣ | https://github.com/anthropics/k12-teacher-skills | مضاف، غير مفعّل |
+| Jellypod school-skills-for-claude-code | Plugin | خطط دروس ورُبريكس ودلائل مذاكرة (MIT، نسخة ألفا) | ٣ | https://sharedcontext.ai/plugins/external/Jellypod-Inc/school-skills-for-claude-code | مضاف، غير مفعّل |
+| luongnv89 lesson-quiz | مهارة | اختبار قصير ٨-١٠ أسئلة بتغذية راجعة (مخصص لدروس Claude Code) | ٢ | https://tessl.io/registry/skills/github/luongnv89/claude-howto/lesson-quiz | مضاف، غير مفعّل |
+| johnbr0phy course-builder | مهارة | بناء كورس مع تتبع التقدم ودرجات الاختبارات وموقع | ٣ | https://johnbr0phy.github.io/course-builder/ | مضاف، غير مفعّل |
+| sickn33 lesson-generator | مهارة | كورسات متعددة الدروس بأهداف وبطاقات واختبارات | ٣ | https://claudeskills.info/skills/sickn33/agentic-awesome-skills/lesson-generator/ | مضاف، غير مفعّل |
+| vishalsachdev course-generator | مهارة | تحويل مخطط كورس إلى مادة بأسلوب كتاب | ٣ | https://skillselion.com/skills/vishalsachdev/claude-skills/course-generator | مضاف، غير مفعّل |
+| opusgamelabs game-creator make-game | مهارة | بناء ألعاب بمراحل (فكرة، هيكل، تطوير، صقل) مع خطة قبل الكود، لـPhaser/Three.js/Unity/Godot (لجاسم) | ٣ | https://claudemarketplaces.com/skills/opusgamelabs/game-creator/make-game | مضاف، غير مفعّل |
+| opusgamelabs game-creator phaser | مهارة | دليل Phaser 3 لألعاب المتصفح | ٣ | https://claudemarketplaces.com/skills/opusgamelabs/game-creator/phaser | مضاف، غير مفعّل |
