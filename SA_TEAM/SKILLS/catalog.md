@@ -374,3 +374,23 @@
 | aminforou/mcp-gsc | خادم MCP | Search Console للمختصين بالـSEO، ونسخة مستضافة فيها GA4 | ٥ | https://cdn.jsdelivr.net/gh/aminforou/mcp-gsc@main/README.md | مضاف، غير مفعّل (قرارك) |
 | delaren47 gsc-ga4-mcp | خادم MCP محلي | قراءة فقط لـSearch Console وGA4 وأدوات تقاطع بينهما | ٥ | https://glama.ai/mcp/servers/o2tejj59z5 | مضاف، غير مفعّل (قرارك) |
 | md-riaz/google-seo-mcp | خادم MCP (MIT) | Search Console وGA4 مع كشف شذوذ وتنافس كلمات وتسجيل فرص | ٥ | https://www.remoteopenclaw.com/mcp/md-riaz/google-seo-mcp | مضاف، غير مفعّل (قرارك) |
+
+## دفعة بحث الساعة ١٣:٣٦ (الكويت) · أتمتة أعمال وتحليل سوق وفكرة وSQL وجداول بيانات
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| davila7 zapier-workflows | مهارة | بناء أتمتة Zapier | ٤ | https://skillselion.com/skills/davila7/claude-code-templates/zapier-workflows | مضاف، غير مفعّل |
+| sickn33 zapier-make-patterns | مهارة (MIT) | أنماط أتمتة لـZapier وMake | ٤ | https://claudemarketplaces.com/skills/sickn33/antigravity-awesome-skills/zapier-make-patterns | مضاف، غير مفعّل |
+| AbsolutelySkilled no-code-automation | مهارة | يوجّه لاختيار الأبسط: Zapier للخطوات الخطية وMake للتفرع وn8n للمستضاف ذاتياً | ٥ | https://openskillindex.com/skills/absolutelyskilled-absolutelyskilled-no-code-automation | مضاف، غير مفعّل |
+| jeremylongshore n8n-workflow-generator | مهارة | توليد workflows لـn8n | ٤ | https://claudemarketplaces.com/skills/akillness/oh-my-skills/workflow-automation | مضاف، غير مفعّل |
+| potentialInc/claude-contents | حزمة مهارات | مجلد استراتيجية فيه ٦ مهارات منها content-calendar وbrand-voice | ٥ | https://www.neura.market/directories/md-directory/content-calendar-md-claude-content-readme-monvjvxe | مضاف، غير مفعّل |
+| productbuilder social-media-calendar | مهارة | وتيرة نشر ثابتة على السوشال لمنتج أو فريق | ٤ | https://productbuilder.net/skills/social-media-calendar | مضاف، غير مفعّل |
+| veyralabsgroup/venture-analyst | مهارة | تقييم فكرة: أدلة سوق وخريطة منافسين وتسجيل جدوى وتجارب تحقق، بدون مفاتيح | ٦ | https://awesome.ecosyste.ms/projects/github.com%2Fveyralabsgroup%2Fventure-analyst | مضاف، غير مفعّل |
+| ferdinandobons/startup-skill | حزمة مهارات | تحقق وذكاء تنافسي وبطاقات معارك وتسعير وبحث سوق | ٥ | https://agentskill.work/en/skills/ferdinandobons/startup-skill | مضاف، غير مفعّل |
+| mfwarren competitive-analysis | مهارة | تفكيك منافسين وSWOT وخرائط تموضع | ٥ | https://skills.cat/skills/mfwarren/entrepreneur-claude-skills/competitive-analysis | مضاف، غير مفعّل |
+| thatrebeccarae market-research | مهارة | Porter وPESTLE وSWOT وحجم السوق TAM/SAM/SOM وBCG | ٥ | https://skillselion.com/skills/thatrebeccarae/claude-marketing/market-research | مضاف، غير مفعّل |
+| ailabs-393 startup-validator | مهارة | تقرير تحقق بملخص وتوصية نهائية | ٤ | https://claudeskills.info/skills/ailabs-393/ai-labs-claude-skills/startup-validator/ | مضاف، غير مفعّل |
+| phuryn pm-skills competitor-analysis | مهارة | تحليل منافسين من مكتبة PM كبيرة (الأرقام متضاربة) | ٤ | https://claudemarketplaces.com/skills/phuryn/pm-skills/competitor-analysis | مضاف، غير مفعّل |
+| claude-office-skills company-research | مهارة | بحث عن شركات | ٣ | https://claudemarketplaces.com/skills/claude-office-skills/skills/company-research | مضاف، غير مفعّل |
+| ComposioHQ googlebigquery-automation | مهارة | استعلامات SQL على BigQuery عبر Metabase | ٤ | https://www.awesomeskills.dev/de/skill/composiohq-awesome-claude-skills-googlebigquery-automation | مضاف، غير مفعّل (يحتاج ربط بيانات: قرارك) |
+| supercent-io looker-studio-bigquery | مهارة | ربط Looker Studio بـBigQuery وتصميم لوحات | ٥ | https://www.vibeindex.ai/skills/supercent-io/skills-template/looker-studio-bigquery | مضاف، غير مفعّل |
+| anthropics knowledge-work-plugins data-context-extractor | مهارة | يستخرج معرفة البيانات الخاصة بالشركة ويولّد مهارات تحليل مخصصة | ٥ | https://claudemarketplaces.com/skills/anthropics/knowledge-work-plugins/data-context-extractor | مضاف، غير مفعّل |
