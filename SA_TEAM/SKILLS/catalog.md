@@ -413,3 +413,26 @@
 | seb1n privacy-policy-drafting | مهارة | مسودة سياسة خصوصية، تبنّيها صغير | ٣ | https://skillselion.com/skills/seb1n/awesome-ai-agent-skills/privacy-policy-drafting | مضاف، غير مفعّل |
 | mikefilsaime legal-policy | مهارة | صفحات سياسة خصوصية وشروط وكوكيز في حزمة واحدة (ما تحققت من المستودع) | ٣ | https://skills.sh/mikefilsaime-groove/clickcampaigns-for-claude-code-in-cursor/legal-policy | مضاف، غير مفعّل |
 | terminalskills gdpr-compliance | مهارة | تطبيق متطلبات GDPR في تطبيقات الويب (تنفيذ مو مراجعة) | ٣ | https://openskillindex.com/skills/terminalskills-skills-gdpr-compliance | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٥:٣٦ (الكويت) · Google Slides وDocs وتقارير ودعم عملاء ومبيعات وكاروسيل سوشال
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| sanjay3290 google-slides | مهارة | قراءة وكتابة عروض Google Slides بـOAuth مستقل | ٥ | https://claudemarketplaces.com/skills/sanjay3290/ai-skills/google-slides | مضاف، غير مفعّل (OAuth: قرارك) |
+| NeverSight google-slides/docs | مهارات | إنشاء وتعديل عروض ومستندات Google عبر Playwright MCP | ٤ | https://skills.sh/andrejones92/canifi-life-os/google-slides | مضاف، غير مفعّل (قرارك) |
+| popey google-slides-automation | مهارة | سكربتات بايثون لاستخراج نص العرض والبحث بالعنوان | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/google-slides-automation | مضاف، غير مفعّل |
+| dbmcco google-docs-automation | مهارة | أتمتة Google Docs | ٣ | https://skills.sh/dbmcco/claude-agent-toolkit/google-docs-automation | مضاف، غير مفعّل |
+| christopheryeo/claude-skills | حزمة مهارات | موجز أسبوعي للمشاريع (معالم ومخاطر ومسؤولين) وملخص Gmail ومولّد ورقة بيضاء | ٥ | https://playbooks.com/skills/christopheryeo/claude-skills | مضاف، غير مفعّل |
+| akillness presentation-builder | مهارة | بناء عروض تقديمية فعلية | ٤ | https://claudemarketplaces.com/skills/akillness/oh-my-skills/presentation-builder | مضاف، غير مفعّل |
+| composio-community support-skills response-templates | مهارة | ردود جاهزة لسيناريوهات دعم العملاء الشائعة | ٥ | https://openskillindex.com/skills/composio-community-support-skills-response-templates | مضاف، غير مفعّل |
+| customer-support-kb (equipt) | مهارة | قاعدة معرفة دعم: أسئلة متدرجة وقوالب ردود وأشجار حل مشاكل وتصعيد | ٥ | https://equipt-agent.vercel.app/catalog/equipt-marketing/customer-support-kb | مضاف، غير مفعّل |
+| faq-builder (ID8Labs) | مهارة | تحويل التذاكر والوثائق إلى أسئلة شائعة قابلة للبحث | ٤ | https://claude-plugins.dev/skills/@majiayu000/claude-skill-registry/faq-builder | مضاف، غير مفعّل |
+| nbashaw/claude-cs customer-support-builder | مهارة | بناء أتمتة دعم للشركة، تحتاج مفاتيح منصات الدعم والفوترة | ٤ | https://tomevault.io/tome/nbashaw/claude-cs | مضاف، غير مفعّل (مفاتيح: قرارك) |
+| louisblythe/Sales-Skills | حزمة مهارات | ٢٠ مهارة أساسية: بحث عملاء خارجي وتحويل اجتماعات وتفاوض تسعير | ٥ | https://github.com/louisblythe/Sales-Skills | مضاف، غير مفعّل |
+| TheCraigHewitt/skills | حزمة مهارات | cold-email (عناوين وتخصيص ومتابعات) وتسلسلات متعددة القنوات وعروض وتسعير | ٥ | https://www.aibuilderclub.com/blog/claude-code-for-sales-skills-guide | مضاف، غير مفعّل |
+| chadboyda/agent-gtm-skills | حزمة مهارات | ai-cold-outreach: وصول البريد وتصميم التسلسلات | ٤ | https://www.aibuilderclub.com/blog/claude-code-for-sales-skills-guide | مضاف، غير مفعّل |
+| sickn33 sales-automator | مهارة | إيميلات باردة ومتابعات وقوالب عروض (الأرقام متضاربة) | ٤ | https://claudeskills.info/ja/skills/sickn33/agentic-awesome-skills/sales-automator/ | مضاف، غير مفعّل |
+| marcolang instagram-carousel | مهارة | كاروسيل Instagram كمعاينة HTML وشرائح PNG مقاس ١٠٨٠×١٣٥٠ | ٦ | https://claudemarketplaces.com/skills/marcolang/marketing-skills/instagram-carousel | مضاف، غير مفعّل |
+| inference-sh social-media-carousel | مهارة | كاروسيل لـInstagram وLinkedIn وX بقوالب HTML وقواعد تسلسل نص (٣٠-٤٠ كلمة للشريحة) | ٤ | https://claudemarketplaces.com/skills/inference-sh/skills/social-media-carousel | مضاف، غير مفعّل (يحتاج أداة inference.sh) |
+| nexu-io open-design social-carousel | مهارة | كاروسيل سوشال | ٤ | https://claudemarketplaces.com/skills/nexu-io/open-design/social-carousel | مضاف، غير مفعّل |
+| ComposioHQ canva-automation | مهارة | تصاميم وبوسترات PNG وPDF عبر Composio | ٤ | https://www.vibeindex.ai/plugins/ComposioHQ/awesome-claude-skills/canva-automation | مضاف، غير مفعّل (دخول Canva: قرارك) |
+| pawbytes paw-cra-agent-designer | مهارة | منشورات وكاروسيل وفلايرات وشعار بقوالب هوية | ٤ | https://openskillindex.com/skills/pawbytes-skill-suites-paw-cra-agent-designer | مضاف، غير مفعّل |
