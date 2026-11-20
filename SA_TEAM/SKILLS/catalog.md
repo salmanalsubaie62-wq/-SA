@@ -318,3 +318,21 @@
 | Automagik Omni (namastexlabs) | خادم MCP + مركز مراسلة | ربط وكلاء AI بواتساب وDiscord وSlack عبر واجهة موحدة، وخريطة طريقه عن Telegram قديمة | ٥ | https://github.com/namastexlabs/automagik-omni | مضاف، غير مفعّل (يربط قنوات عملاء: قرارك) |
 | Messaging Platform MCP (Apify) | خادم MCP | وصول موحد لـ Discord وSlack وTelegram وواتساب لدعم العملاء، على منصة Apify | ٤ | https://apify.com/alizarin_refrigerator-owner/messaging-mcp-server | مضاف، غير مفعّل (قرارك) |
 | joao-costa multichatmcp | خادم MCP (Go) | واتساب فقط حالياً عبر whatsmeow | ٣ | https://lobehub.com/mcp/joao-costa-multichatmcp | مضاف، غير مفعّل (قرارك) |
+
+## دفعة بحث الساعة ١٠:٣٦ (الكويت) · عروض مستثمرين وصور إعلانية وأبحاث إعلانات منافسين ومحاسبة وعقود
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| affaan-m investor-materials | مهارة | عروض مستثمرين وموجز ومذكرات ونماذج مالية بسيناريوهات، وتنبيه على ادعاءات غير موثقة | ٦ | https://claudeskills.info/skills/affaan-m/ecc/investor-materials/ | مضاف، غير مفعّل |
+| mfwarren pitch-deck | مهارة (ضمن ٢٤ مهارة لرواد الأعمال) | هيكل عرض المستثمر وسرد وشرائح | ٤ | https://skills.cat/skills/mfwarren/entrepreneur-claude-skills/pitch-deck | مضاف، غير مفعّل |
+| claude-ads ads-photoshoot | مهارة | خمسة أنماط صور منتج من صورة واحدة بقياس ١:١ و٩:١٦، تحتاج nanobanana-mcp | ٦ | https://claudemarketplaces.com/skills/agricidaniel/claude-ads/ads-photoshoot | مضاف، غير مفعّل (تحتاج مفتاح Gemini: قرارك) |
+| agricidaniel/banana-claude | مهارة | مدير إبداعي لتوليد صور بنماذج Gemini Nano Banana | ٥ | https://claudeskills.info/skills/agricidaniel/banana-claude/banana/ | مضاف، غير مفعّل |
+| ckorhonen nano-banana | مهارة + MCP | توليد صور عبر NanoBanana-MCP بسطر إضافة واحد | ٥ | https://skills.sh/ckorhonen/claude-skills/nano-banana | مضاف، غير مفعّل (مفتاح: قرارك) |
+| 0xobat creative | حزمة مهارات | صور ومنتج وفيديو ورسومات سوشال عبر Replicate وGlif | ٤ | https://skillselion.com/skills/0xobat/claude-skills/creative | مضاف، غير مفعّل (مدفوع: قرارك) |
+| starchild image-ecommerce | مهارة | صور منتجات للتجارة الإلكترونية، تفاصيلها قليلة | ٣ | https://claudemarketplaces.com/skills/starchild-ai-agent/official-skills/image-ecommerce | مضاف، غير مفعّل |
+| PicsArt product-photo-studio | مهارة | استوديو صور منتجات | ٤ | https://claudemarketplaces.com/skills/PicsArt/gen-ai-skills/product-photo-studio | مضاف، غير مفعّل (قد يحتاج حساب: قرارك) |
+| gooseworks-ai meta-ad-scraper | مهارة (MIT) | سحب إعلانات المنافسين من مكتبة إعلانات Meta بالاسم أو الصفحة أو الكلمة. تحذير: تعتمد على Apify ومعروفة بعدم الثبات، وقد تخالف شروط Meta | ٤ | https://claudeskills.info/skills/gooseworks-ai/goose-skills/meta-ad-scraper/ | مضاف، غير مفعّل (قرارك) |
+| ScrapeCreators ad-library-teardown | مهارة (MIT) | تحليل مكتبات إعلانات ومنصات سوشال منها Instagram، وغير مراجعة | ٤ | https://enterprisedna.co/directories/skills/ad-library-teardown | مضاف، غير مفعّل (مفتاح: قرارك) |
+| aradotso facebook-ads-library-mcp-server | خادم MCP | مكتبة إعلانات فيسبوك عبر ScrapeCreators | ٣ | https://skillselion.com/skills/aradotso/marketing-skills/facebook-ads-library-mcp-server | مضاف، غير مفعّل (مفتاح: قرارك) |
+| claude-office-skills contract-review وNDA generator | مهارات | مراجعة عقود وفحص اكتمالها ومولّد اتفاقية سرية. لا تغني عن محامٍ | ٥ | https://llmbase.ai/skills/claude-office-skills/mcp-hub | مضاف، غير مفعّل |
+| jk-0001 bookkeeping-basics | مهارة | أساسيات مسك الدفاتر | ٣ | https://claudemarketplaces.com/skills/jk-0001/skills/bookkeeping-basics | مضاف، غير مفعّل |
+| ReyemTech QuickBooks integration | مهارة | عملاء وفواتير ومدفوعات وتقارير على QuickBooks | ٤ | https://gh.r-mj.com/ReyemTech/skills | مضاف، غير مفعّل (يربط حساب مالي: قرارك) |
