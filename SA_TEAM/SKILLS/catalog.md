@@ -210,3 +210,21 @@
 | Adspirer UGC-Style Video Ads | مهارة | أفكار وسكربتات إعلانات UGC لـ Meta وTikTok وReels | ٥ | https://www.adspirer.com/skills/ugc-ads | مضاف، غير مفعّل |
 | SuperCMO Skills | مجموعة | إعلان UGC من صورة منتج واحدة | ٥ | https://mcpservers.org/id/servers/supercmohq/supercmo-skills | مضاف، غير مفعّل |
 | leadmagic GTM ai-video-creation | مهارة | سير عمل توليد فيديو بالذكاء الاصطناعي | ٤ | https://claudepluginhub.com/skills/leadmagic-gtm-skills/ai-video-creation | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٤:٣٦ (الكويت) · جودة وعروض وعربي خليجي
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| ArabAgentSkills arabic-copywriting-dialects | مهارة عربي | كتابة إعلانية بلهجات (فيها مرجع خليجي) ومراجعة RTL | ٨ | https://skillsmp.com/creators/arabagentskills/skills/skills-arabic-copywriting-dialects | مضاف، غير مفعّل (ما تحققت من مرجع الخليجي) |
+| amjadshakhshir/awesome-claude-arabic | مكتبة مهارات عربية | مهارات إنشاء محتوى وإعلانات بالعربي | ٧ | https://amjadshakhshir.github.io/awesome-claude-arabic/skills/ | مضاف، غير مفعّل |
+| Arabic Copy Localizer (growthack88) | مهارة | توطين إعلانات وصفحات (مصري افتراضياً، خليجي عند الطلب) | ٦ | https://www.skillsdirectory.com/authors/growthack88 | مضاف، غير مفعّل |
+| mujez mideast-fintech-content | مهارة | محتوى مالي لدول الخليج (مجال واحد) | ٤ | https://skills.cat/skills/mujez/claude-skills/mideast-fintech-content | مضاف، غير مفعّل |
+| mubyn arabic-content-calendar | مهارة | تقويم محتوى بلهجة خليجي أو فصحى أو مصري | ٥ | https://claudskills.com/skills/arabic-content-calendar/SKILL.md | مضاف، غير مفعّل |
+| ailabs-393 pitch-deck | مهارة | عرض مستثمرين ١٠ شرائح يُبنى PowerPoint من JSON | ٧ | https://claudemarket.ai/skills/ailabs-393/ai-labs-claude-skills/pitch-deck | مضاف، غير مفعّل |
+| manojbajaj95 pitch-deck-creation | مهارة | عرض تقديمي من pitch_data.json | ٥ | https://claudeskills.info/skills/manojbajaj95/claude-gtm-plugin/pitch-deck-creation/ | مضاف، غير مفعّل |
+| sundial-org pptx-creator | مهارة | عروض وتقارير PowerPoint | ٥ | https://claudeskills.info/skills/sundial-org/awesome-openclaw-skills/pptx-creator/ | مضاف، غير مفعّل |
+| accessibility-review (knowledge-work-plugins) | مهارة رسمية | مراجعة WCAG 2.1 AA للواجهات | ٦ | https://claudemarketplaces.com/skills/anthropics/knowledge-work-plugins/accessibility-review | مضاف، غير مفعّل |
+| community-access/accessibility-agents (playwright-testing) | مهارة | اختبار إتاحة داخل اختبارات Playwright | ٥ | https://claudemarketplaces.com/skills/community-access/accessibility-agents/playwright-testing | مضاف، غير مفعّل |
+| jeffallan playwright-expert | مهارة | اختبارات E2E بـ Playwright | ٥ | https://www.awesomeskills.dev/de/skill/claude-skills-playwright-expert | مضاف، غير مفعّل |
+| cskiro/claudex e2e-testing | مهارة | اختبارات E2E | ٤ | https://www.skills.sh/cskiro/claudex/e2e-testing | مضاف، غير مفعّل |
+| pvnarp security-audit | مهارة | تدقيق أمني OWASP Top 10 وأسرار ومدخلات | ٦ | https://sharedcontext.ai/plugins/external/pvnarp/claude-code-skills-8 | مضاف، غير مفعّل |
+| sc30gsw code-reviewer | مهارة | مراجعة كود وفحص أمني | ٤ | https://tessl.io/registry/skills/github/sc30gsw/claude-code-customes | مضاف، غير مفعّل |
