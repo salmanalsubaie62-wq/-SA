@@ -484,3 +484,24 @@
 | sundial-org audio-gen | مهارة | Claude يكتب سكربت وElevenLabs يحوّله لصوت | ٤ | https://claudeskills.info/skills/sundial-org/awesome-openclaw-skills/audio-gen/ | مضاف، غير مفعّل (مفتاح: قرارك) |
 | erichowens voice-audio-engineer | مهارة | توليد صوت من نص واستنساخ صوت وبودكاست | ٤ | https://claudemarketplaces.com/skills/erichowens/some_claude_skills/voice-audio-engineer | مضاف، غير مفعّل (استنساخ الصوت يحتاج إذن صاحبه) |
 | sgasser/claude-skill-podcast | مهارة | بودكاست مجاني بـWeb Speech API بدون واجهات خارجية | ٤ | https://github.com/sgasser/claude-skill-podcast | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٨:٣٦ (الكويت) · متاجر وأسواق وإيميل تسويقي واجتماعات وعلم بيانات
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| nexscope-ai/amazon-skills amazon-product-photography | مهارة (MIT) | تخطيط تصوير منتج: قوائم لقطات وإضاءة وإنفوجرافيك ومتطلبات أمازون | ٥ | https://claudemarketplaces.com/skills/nexscope-ai/amazon-skills/amazon-product-photography | مضاف، غير مفعّل |
+| 101-skills product-photography | مهارة | برومبتات ومواصفات لأنواع صور Shopify وأمازون | ٤ | https://claudemarketplaces.com/skills/101-skills/skills/product-photography | مضاف، غير مفعّل |
+| higgsfield marketplace-cards | مهارة | بطاقات منتجات للأسواق | ٣ | https://claudemarketplaces.com/skills/higgsfield-ai/skills/higgsfield-marketplace-cards | مضاف، غير مفعّل (قد يحتاج حساب: قرارك) |
+| jmsktm e-commerce-manager | مهارة | إدارة متجر إلكتروني بشكل عام | ٣ | https://skills.sh/jmsktm/claude-settings/e-commerce-manager | مضاف، غير مفعّل |
+| sendx/email-skills | مجموعة مهارات | مهارات إيميل تسويقي تشتغل مع Claude Code وCodex وCursor | ٤ | https://github.com/sendx/email-skills | مضاف، غير مفعّل |
+| popey mailchimp-automation | مهارة | حملات وجماهير ومشتركين وتحليلات Mailchimp عبر Rube MCP | ٤ | https://tessl.io/registry/skills/github/popey/claude-code-skills/mailchimp-automation | مضاف، غير مفعّل (ترسل بيانات اعتماد عبر طرف ثالث: قرارك) |
+| sickn33 brevo-automation | مهارة | أتمتة Brevo عبر Composio Rube MCP، مصنفة risk: critical فراجع صلاحياتها | ٣ | https://claudemarketplaces.com/skills/sickn33/antigravity-awesome-skills/brevo-automation | مضاف، غير مفعّل (قرارك، خطورة عالية) |
+| skinnyandbald process-meeting-notes | مهارة | يجلب ملخصات اجتماعات وتفريغها من Fireflies MCP ويحوّل المهام لـGitHub Issues | ٥ | https://skills.sh/skinnyandbald/fish-skills/process-meeting-notes | مضاف، غير مفعّل (دخول Fireflies: قرارك) |
+| casper-studios meeting-followup | مهارة | مسودة بريد متابعة اجتماع في Gmail | ٤ | https://claudemarketplaces.com/skills/casper-studios/casper-marketplace/meeting-followup | مضاف، غير مفعّل (دخول Gmail: قرارك) |
+| ComposioHQ meeting-notes-and-actions | مهارة | ملاحظات اجتماعات ومهام متابعة | ٤ | https://claudemarketplaces.com/skills/composiohq/awesome-codex-skills/meeting-notes-and-actions | مضاف، غير مفعّل |
+| onewave meeting-to-tasks | مهارة | تحويل اجتماع لمهام | ٤ | https://claudeskills.info/skills/onewave-ai/claude-skills/meeting-to-tasks/ | مضاف، غير مفعّل |
+| garg-aayush handbook meeting-notes | مهارة | محاضر اجتماعات | ٣ | https://skillsmp.com/creators/garg-aayush/handbook/claude-skills-meeting-notes | مضاف، غير مفعّل |
+| phuryn pm-skills ab-test-analysis | مهارة (MIT) | تقييم تجربة A/B: دلالة وحجم عينة وفواصل ثقة، وتوصية ship أو extend أو stop | ٥ | https://claudeskills.info/skills/phuryn/pm-skills/ab-test-analysis/ | مضاف، غير مفعّل |
+| borghei data-scientist | مهارة | نمذجة إحصائية وتجارب بما فيها تصميم A/B | ٤ | https://borghei.github.io/Claude-Skills/skills/data-analytics/data-scientist.html | مضاف، غير مفعّل |
+| borghei senior-data-scientist | مهارة | سكربتات بايثون لاختبارات t وتتبع التجارب (تقييم Tessl: مطوّلة) | ٣ | https://borghei.github.io/Claude-Skills/skills/engineering/senior-data-scientist.html | مضاف، غير مفعّل |
+| eyadsibai/ltk data-science | مهارة | Statsmodels وPyMC وJupyter ورسوم Matplotlib وSeaborn وPlotly ومثال حجم عينة A/B | ٥ | https://playbooks.com/skills/eyadsibai/ltk/data-science | مضاف، غير مفعّل |
+| ucdavis data-science-python | مهارة | بنية دفاتر وقابلية إعادة إنتاج وتوثيق نماذج | ٤ | https://tessl.io/registry/skills/github/ucdavis/ai-skills-registry/data-science-python/evals | مضاف، غير مفعّل |
