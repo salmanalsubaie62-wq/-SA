@@ -505,3 +505,22 @@
 | borghei senior-data-scientist | مهارة | سكربتات بايثون لاختبارات t وتتبع التجارب (تقييم Tessl: مطوّلة) | ٣ | https://borghei.github.io/Claude-Skills/skills/engineering/senior-data-scientist.html | مضاف، غير مفعّل |
 | eyadsibai/ltk data-science | مهارة | Statsmodels وPyMC وJupyter ورسوم Matplotlib وSeaborn وPlotly ومثال حجم عينة A/B | ٥ | https://playbooks.com/skills/eyadsibai/ltk/data-science | مضاف، غير مفعّل |
 | ucdavis data-science-python | مهارة | بنية دفاتر وقابلية إعادة إنتاج وتوثيق نماذج | ٤ | https://tessl.io/registry/skills/github/ucdavis/ai-skills-registry/data-science-python/evals | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٩:٣٦ (الكويت) · Shopify وLinkedIn وقمع مبيعات وتسعير وتفريغ صوت
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| theplasmak/sundial faster-whisper | مهارة | تفريغ صوت بسرعة ×٤ مع ترجمات SRT وVTT وتمييز متحدثين ومدخلات روابط (دعم العربي ما تحققت منه) | ٥ | https://claudeskills.info/skills/sundial-org/awesome-openclaw-skills/faster-whisper/ | مضاف، غير مفعّل |
+| shopify/shopify-ai-toolkit | حزمة رسمية ٢٣ مهارة | منها مهارة Liquid تبحث التوثيق أولاً وتتحقق من الكود قبل ما تعيده | ٧ | https://claudemarketplaces.com/skills/shopify/shopify-ai-toolkit/shopify-liquid | مضاف، غير مفعّل |
+| domocarroll/shopify-builds | نظام مهارات | ثيمات Liquid وHydrogen وتطبيقات وتخصيص checkout بـFunctions وUI extensions | ٦ | https://github.com/domocarroll/shopify-builds | مضاف، غير مفعّل |
+| jeffallan shopify-expert | مهارة | Liquid وStorefront API وتطبيقات وامتداد checkout ومرجع سرعة الثيم | ٦ | https://www.skills.sh/jeffallan/claude-skills/shopify-expert | مضاف، غير مفعّل |
+| popey shopify-development | مهارة | امتدادات تطبيقات وأوامر Shopify CLI للثيمات | ٤ | https://tessl.io/registry/skills/github/popey/claude-code-skills/shopify-development | مضاف، غير مفعّل |
+| dragnoir shopify-agent-skills theme-development | مهارة | تطوير ثيمات | ٣ | https://skills.sh/dragnoir/shopify-agent-skills/theme-development | مضاف، غير مفعّل |
+| brianrwagner linkedin-authority-builder | مهارة | أطر منشورات وتموضع بروفايل وتقويم محتوى (تبنّيها قليل) | ٤ | https://skillselion.com/skills/brianrwagner/ai-marketing-claude-code-skills/linkedin-authority-builder | مضاف، غير مفعّل |
+| openclaw linkedin-post-engine | مهارة | منشورات تحديثات المؤسس وقصص حالة وتحويل أفكار X إلى LinkedIn | ٥ | https://openskillindex.com/skills/clawdbot-skills-linkedin-post-engine | مضاف، غير مفعّل |
+| jamesgray007 writing-linkedin-posts | مهارة | منشورات أصيلة بقيادة فكرية بدل تحسين التفاعل | ٤ | https://www.skills.sh/jamesgray007/hoai-course/writing-linkedin-posts | مضاف، غير مفعّل |
+| claudskills linkedin-thought-leader | مهارة | يحوّل محتوى إلى منشورات قيادة فكرية بقصص وتنسيق للخوارزمية | ٤ | https://claudskills.com/skills/linkedin-thought-leader/ | مضاف، غير مفعّل |
+| mcpmarket thought-leader-content | مهارة | محتوى LinkedIn وX ومدونات ونشرات، وتفاصيل خيوط X غير واضحة | ٣ | https://mcpmarket.com/tools/skills/thought-leader-content | مضاف، غير مفعّل |
+| autonnel sales-funnel-blueprint | مهارة | يحوّل عرضاً إلى مواصفات قمع مبيعات: صفحات وسلّم أسعار ومقاييس كل خطوة | ٥ | https://claudemarketplaces.com/skills/autonnel/autonnel-skills/sales-funnel-blueprint | مضاف، غير مفعّل |
+| ncklrs startup-os pricing-strategist | مهارة | تسعير مبني على التقاط القيمة | ٥ | https://claudemarketplaces.com/skills/ncklrs/startup-os-skills/pricing-strategist | مضاف، غير مفعّل |
+| manojbajaj95 pricing-strategy | مهارة | استراتيجية تسعير ضمن خطة GTM | ٤ | https://claudemarketplaces.com/skills/manojbajaj95/claude-gtm-plugin/pricing-strategy | مضاف، غير مفعّل |
+| mikefilsaime funnel-pages | مهارة | صفحات اشتراك ومبيعات وupsell وتسجيل ويبنار وتحدّي | ٤ | https://skills.sh/mikefilsaime-groove/clickcampaigns-for-claude-code-in-cursor/funnel-pages | مضاف، غير مفعّل |
