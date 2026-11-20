@@ -228,3 +228,21 @@
 | cskiro/claudex e2e-testing | مهارة | اختبارات E2E | ٤ | https://www.skills.sh/cskiro/claudex/e2e-testing | مضاف، غير مفعّل |
 | pvnarp security-audit | مهارة | تدقيق أمني OWASP Top 10 وأسرار ومدخلات | ٦ | https://sharedcontext.ai/plugins/external/pvnarp/claude-code-skills-8 | مضاف، غير مفعّل |
 | sc30gsw code-reviewer | مهارة | مراجعة كود وفحص أمني | ٤ | https://tessl.io/registry/skills/github/sc30gsw/claude-code-customes | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٥:٣٦ (الكويت) · إعلانات مدفوعة وأتمتة متصفح وقاعدة معرفة
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| agricidaniel/claude-ads | مهارة تدقيق إعلانات | أكثر من ٢٥٠ فحص لحسابات Google وMeta وLinkedIn وTikTok وAmazon | ٧ | https://claudemarketplaces.com/skills/agricidaniel/claude-ads/ads | مضاف، غير مفعّل |
+| Adspirer / amekala/ads-mcp | خادم MCP مستضاف | إنشاء وتحليل حملات Google وMeta وTikTok وLinkedIn | ٦ | https://github.com/amekala/ads-mcp | مضاف، غير مفعّل (يربط حسابات إعلانية ويصرف فلوس: قرارك) |
+| AdWhiz (iamzifei) | خادم MCP | ٩٩ أداة لتدقيق وتحسين حسابات إعلانية | ٥ | https://www.skillsdirectory.com/skills/modbender-adwhiz | مضاف، غير مفعّل (قرارك) |
+| AdsAgent | إضافة + مهارات | Meta وGoogle وTikTok عبر MCP مستضاف | ٥ | https://mcpservers.org/servers/adsagents/adsagent-ai-skills | مضاف، غير مفعّل (قرارك) |
+| Ryze AI: Google + Meta Ads + GA4 MCP | خادم MCP | إعلانات وتحليلات وSearch Console | ٥ | https://claudemarketplaces.com/mcp/io.github.irinabuht12-oss/google-meta-ads-ga4-mcp | مضاف، غير مفعّل |
+| itallstartedwithaidea/google-ads-skills | مهارات | Google Ads API مع .mcp.json (يحتاج developer token) | ٥ | https://skills.sh/itallstartedwithaidea/google-ads-skills/google-ads-mcp | مضاف، غير مفعّل |
+| hyperfx-ai/marketing-skills | مجموعة تسويق | إعلانات وسوشال وسيو ومنافسين وإبداع | ٥ | https://awesome.ecosyste.ms/projects/github.com%2Fhyperfx-ai%2Fmarketing-skills | مضاف، غير مفعّل |
+| Apify Claude Code plugin (الرسمي) | إضافة | خادم MCP وخمس مهارات جاهزة وآلاف الـ scrapers | ٧ | https://use-apify.com/blog/build-claude-skill-web-scraping-2026 | مضاف، غير مفعّل (حساب Apify) |
+| mindrally puppeteer-automation | مهارة | Puppeteer لسحب وتصوير واختبار | ٥ | https://claudemarket.ai/skills/mindrally/skills/puppeteer-automation | مضاف، غير مفعّل |
+| Browserbase skill (Stagehand) | مهارة | متصفح سحابي بلا واجهة | ٥ | https://mcp.directory/skills/browserbase-browser-automation | مضاف، غير مفعّل (حساب) |
+| Crawlforge MCP | خادم MCP | ٢٦ أداة لسحب وزحف وبحث عميق | ٤ | https://use-apify.com/blog/build-claude-skill-web-scraping-2026 | مضاف، غير مفعّل |
+| agricidaniel/claude-obsidian | مهارات معرفة | ويكي تحافظ عليه Claude على نمط Karpathy (٣١٩٠ نجمة حسب فهرس) | ٦ | https://docsearch.algolia.com/mcp/docs/repo/agricidaniel/claude-obsidian | مضاف، غير مفعّل |
+| eugeniughelbur/obsidian-second-brain | مهارة | قاعدة معرفة قابلة للبحث من المحادثات والأبحاث | ٥ | https://cdn.jsdelivr.net/gh/eugeniughelbur/obsidian-second-brain@main/SKILL.md | مضاف، غير مفعّل |
+| charlie947/ai-second-brain | مهارة | دماغ ثاني بـ Obsidian | ٤ | https://github.com/charlie947/ai-second-brain | مضاف، غير مفعّل |
