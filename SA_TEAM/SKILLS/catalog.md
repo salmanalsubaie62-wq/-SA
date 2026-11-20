@@ -458,3 +458,29 @@
 | borghei cfo-advisor | مهارة | نموذج مالي وتحضير تمويل واقتصاديات وحدة وسيولة، مع سكربتات حاسبة وتدفق نقدي | ٥ | https://claudeskills.info/skills/borghei/Claude-Skills/cfo-advisor/ | مضاف، غير مفعّل |
 | wshobson startup-financial-modeling | مهارة | نمذجة مالية للشركات الناشئة (النجوم متضاربة) | ٥ | https://claudemarketplaces.com/skills/wshobson/agents/startup-financial-modeling | مضاف، غير مفعّل |
 | MCP Market finance-tracker | مهارة | توقع تدفق نقدي ١٢ شهراً وانحراف ميزانيات وNPV وIRR بـSQL وPython | ٤ | https://mcpmarket.com/tools/skills/finance-tracker-3 | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٧:٣٦ (الكويت) · SEO محلي ومستندات وفواتير وصفحات هبوط وصوت
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| garrettjsmith/localseoskills | حزمة ٣٨ مهارة | متخصص SEO محلي: إدارة تقييمات وتحسين Google Business Profile وظهور الخريطة | ٦ | https://github.com/garrettjsmith/localseoskills | مضاف، غير مفعّل |
+| AgriciDaniel claude-seo seo-local | مهارة | Google Business Profile وتناسق NAP والاستشهادات وإشارات التقييم وschema محلي وصفحات المواقع | ٦ | https://claudeskills.info/skills/agricidaniel/claude-seo/seo-local/ | مضاف، غير مفعّل |
+| alirezarezvani local-seo-manager | مهارة | ردود على التقييمات وتحسين خرائط Google، للمحلي فقط | ٥ | https://vibehackers.io/claude-code/skills/local-seo-manager | مضاف، غير مفعّل |
+| onewave local-seo-optimizer | مهارة | عوامل ترتيب الحزمة المحلية وسرعة التقييمات وصفحات المواقع | ٤ | https://claudeskills.info/skills/onewave-ai/claude-skills/local-seo-optimizer/ | مضاف، غير مفعّل |
+| Composio: automate local SEO with Claude | دليل | إعداد فحوص SEO محلي عبر Google Maps وDataForSEO وGBP وSearch Console بـMCP | ٤ | https://composio.dev/blog/how-to-automate-local-seo-with-claude | مضاف، غير مفعّل (مفاتيح: قرارك) |
+| learngvrk/claude-code-skills | حزمة | دمج واستخراج PDF وإصلاحها، وOCR للخط اليدوي إلى Word مع تطبيق Flask | ٤ | https://github.com/learngvrk/claude-code-skills | مضاف، غير مفعّل |
+| claude-office-skills pdf-ocr-extraction | مهارة | نص من PDF ممسوح وصور مع دعم محدود لليدوي | ٥ | https://claudemarketplaces.com/skills/claude-office-skills/skills/pdf-ocr-extraction | مضاف، غير مفعّل |
+| telagod/code-abyss processing-pdfs | مهارة | أدوات PDF من الدمج إلى OCR | ٣ | https://claudemarketplaces.com/skills/telagod/code-abyss/processing-pdfs | مضاف، غير مفعّل |
+| openclaw invoice-extractor | مهارة | استخراج بيانات الفواتير بـOCR من Baidu وتصدير Excel، تحتاج مفتاح Baidu | ٣ | https://openskillindex.com/skills/openclaw-skills-invoice-extractor-5c7cb7 | مضاف، غير مفعّل (مفتاح: قرارك) |
+| Lord1Egypt invoice-scan | مهارة | مسح فواتير واستخراج بياناتها | ٣ | https://www.skillsdirectory.com/skills/lord1egypt-invoice-scan | مضاف، غير مفعّل |
+| onewave financial-document-parser | مهارة | تحليل مستندات مالية | ٤ | https://claudeskills.info/skills/onewave-ai/claude-skills/financial-document-parser/ | مضاف، غير مفعّل |
+| jakerains skill-seekers | مهارة | يحوّل مواقع توثيق ومستودعات وPDF إلى مهارات Claude | ٤ | https://skills.sh/jakerains/agentskills/skill-seekers | مضاف، غير مفعّل |
+| sickn33 landing-page-generator | مهارة (MIT) | صفحات Next.js وTailwind بأطر نسخ تسويقي وتركيز على السرعة وSEO | ٥ | https://claudeskills.info/skills/sickn33/agentic-awesome-skills/landing-page-generator/ | مضاف، غير مفعّل |
+| onewave claude-landing-composer | مهارة (MIT) | صفحات هبوط متحركة قسماً قسماً بـNext.js وTailwind وMotion | ٥ | https://claudeskills.info/skills/onewave-ai/claude-skills/claude-landing-composer/ | مضاف، غير مفعّل |
+| LeoYeAI frontend-design-ultimate | مهارة | موقع Vite ثابت أو Next.js جاهز لـVercel بتصميم تحريري | ٤ | https://vibehackers.io/claude-code/skills/frontend-design-ultimate | مضاف، غير مفعّل |
+| melvinmt agentic-website-design | مهارة | Astro افتراضياً وNext.js عند الحاجة مع أدلة حركة وبرومبت | ٥ | https://skills.sh/melvinmt/skills/agentic-website-design | مضاف، غير مفعّل |
+| nexu-io open-design-landing | مهارة (Apache-2.0) | صفحة هبوط بحركة كشف وشريط تنقل ثابت | ٤ | https://claudeskills.info/skill/open-design-landing/ | مضاف، غير مفعّل |
+| tailkits Landing Page Builder | مهارة | أقسام من قوالب Tailwind مصبوغة بملف DESIGN.md، تحتاج Tailkits MCP مجاني | ٤ | https://tailkits.com/skills/tailkits-landing-page/ | مضاف، غير مفعّل |
+| sanjay3290 elevenlabs | مهارة | سرد مستند أو بودكاست بصوتين وتعليق صوتي وتأثيرات | ٥ | https://claudemarketplaces.com/skills/sanjay3290/ai-skills/elevenlabs | مضاف، غير مفعّل (مفتاح ElevenLabs: قرارك) |
+| sundial-org audio-gen | مهارة | Claude يكتب سكربت وElevenLabs يحوّله لصوت | ٤ | https://claudeskills.info/skills/sundial-org/awesome-openclaw-skills/audio-gen/ | مضاف، غير مفعّل (مفتاح: قرارك) |
+| erichowens voice-audio-engineer | مهارة | توليد صوت من نص واستنساخ صوت وبودكاست | ٤ | https://claudemarketplaces.com/skills/erichowens/some_claude_skills/voice-audio-engineer | مضاف، غير مفعّل (استنساخ الصوت يحتاج إذن صاحبه) |
+| sgasser/claude-skill-podcast | مهارة | بودكاست مجاني بـWeb Speech API بدون واجهات خارجية | ٤ | https://github.com/sgasser/claude-skill-podcast | مضاف، غير مفعّل |
