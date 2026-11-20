@@ -263,3 +263,22 @@
 | bundle.social MCP | خادم MCP مستضاف رسمي | نشر وجدولة وتحليلات على ١٥ منصة | ٥ | https://bundle.social/social-media-mcp-server | مضاف، غير مفعّل (مدفوع وقرارك) |
 | travisvn/awesome-claude-skills | قائمة | قائمة مرتبة لمهارات Claude Code، مرجع لبحث لاحق | ٥ | https://github.com/travisvn/awesome-claude-skills | مضاف، غير مفعّل |
 | BehiSecc/awesome-claude-skills | قائمة | أكثر من ١٢٠ مهارة بـ ١٣ تصنيف | ٥ | https://github.com/BehiSecc/awesome-claude-skills | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٧:٣٦ (الكويت) · تصميم من Figma وSEO وCRM وصوت وترجمة فيديو
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| figma implement-design (الرسمي) | مهارة | تحويل إطار Figma إلى كود واجهة عبر Figma MCP مع استخراج التوكنز (أرقام التبنّي متضاربة) | ٧ | https://skillselion.com/skills/aiskillstore/marketplace/implement-design | مضاف، غير مفعّل (يحتاج دخول Figma: قرارك) |
+| madebysan/claude-figma-skills | مجموعة مهارات | استخراج توكنز وأصول ومواصفات مكونات من Figma إلى CSS وTailwind وJSON | ٥ | https://github.com/madebysan/claude-figma-skills | مضاف، غير مفعّل |
+| davila7 design-to-code | مهارة | تحويل تصاميم Figma إلى مكونات React وTailwind v4 | ٥ | https://playbooks.com/skills/davila7/claude-code-templates/design-to-code | مضاف، غير مفعّل |
+| ecomfe/tempad-dev figma-design-to-code | مهارة | Figma إلى JSX وVue وTailwind | ٤ | https://claudemarketplaces.com/skills/ecomfe/tempad-dev/figma-design-to-code | مضاف، غير مفعّل |
+| calm-north/seojuice-skills (brief) | مهارة | كتابة brief محتوى SEO | ٤ | https://claudemarketplaces.com/skills/calm-north/seojuice-skills/brief | مضاف، غير مفعّل |
+| inference-sh seo-content-brief | مهارة | brief محتوى SEO، تحتاج أداة inference.sh الخاصة | ٣ | https://claudemarketplaces.com/skills/inference-sh/skills/seo-content-brief | مضاف، غير مفعّل |
+| HubSpot MCP (الرسمي) | خادم MCP | جهات اتصال وشركات وصفقات وتذاكر | ٦ | https://mcp.so/blog/best-mcp-servers-for-sales-marketing | مضاف، غير مفعّل (يربط بيانات عملاء: قرارك) |
+| Attio MCP | خادم MCP | CRM مرن للمتابعة والعملاء | ٥ | https://attio.com/platform/mcp/llms.txt | مضاف، غير مفعّل (قرارك) |
+| ClearFeed remote MCP | خادم MCP مستضاف | دعم العملاء مع HubSpot وSalesforce | ٤ | https://clearfeed.ai/blogs/clearfeed-remote-mcp-server-with-claude | مضاف، غير مفعّل (قرارك) |
+| Trello MCP (مجتمعي) | خادم MCP | إدارة لوحات وقوائم وبطاقات المشاريع | ٤ | https://www.mindstudio.ai/blog/mcp-servers-claude-code-business-automation | مضاف، غير مفعّل |
+| sanjay3290 google-tts | مهارة | تعليق صوتي وبودكاست بصوتين عبر Google Cloud TTS | ٥ | https://claudemarketplaces.com/skills/sanjay3290/ai-skills/google-tts | مضاف، غير مفعّل (يحتاج مفتاح مدفوع) |
+| bytedance/deer-flow podcast-generation | مهارة | تحويل نص مكتوب إلى بودكاست | ٤ | https://claudemarketplaces.com/skills/bytedance/deer-flow/podcast-generation | مضاف، غير مفعّل |
+| aviz85 translate-video | إضافة | تفريغ وترجمة وتدقيق ثم تضمين ترجمة نصية تدعم العربية RTL | ٦ | https://www.claudepluginhub.com/plugins/aviz85-translate-video-plugins-translate-video | مضاف، غير مفعّل |
+| aviz85 embed-subtitles | إضافة | حرق ترجمات داخل الفيديو | ٤ | https://www.claudepluginhub.com/plugins/aviz85-embed-subtitles-plugins-embed-subtitles | مضاف، غير مفعّل |
+| claude-office-skills transcription-automation | مهارة | تفريغ بودكاست وترجمات SRT وVTT | ٤ | https://claudemarketplaces.com/skills/claude-office-skills/skills/transcription-automation | مضاف، غير مفعّل |
