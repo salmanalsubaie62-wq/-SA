@@ -436,3 +436,25 @@
 | nexu-io open-design social-carousel | مهارة | كاروسيل سوشال | ٤ | https://claudemarketplaces.com/skills/nexu-io/open-design/social-carousel | مضاف، غير مفعّل |
 | ComposioHQ canva-automation | مهارة | تصاميم وبوسترات PNG وPDF عبر Composio | ٤ | https://www.vibeindex.ai/plugins/ComposioHQ/awesome-claude-skills/canva-automation | مضاف، غير مفعّل (دخول Canva: قرارك) |
 | pawbytes paw-cra-agent-designer | مهارة | منشورات وكاروسيل وفلايرات وشعار بقوالب هوية | ٤ | https://openskillindex.com/skills/pawbytes-skill-suites-paw-cra-agent-designer | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٦:٣٦ (الكويت) · Remotion وبناء وكلاء وموارد بشرية وتمويل وحسابات
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| JJenglert1/remotion-claude-video | حزمة ٣ مهارات | موشن جرافيك وترجمات كلمة بكلمة وفيديو منتج بقوالب علامة | ٦ | https://github.com/JJenglert1/remotion-claude-video | مضاف، غير مفعّل |
+| davila7 remotion-best-practices | مهارة | أفضل ممارسات إنشاء فيديو بـReact/Remotion | ٤ | https://www.skills.sh/davila7/claude-code-templates/remotion-best-practices | مضاف، غير مفعّل |
+| ali-abassi remotion-templates | مهارة | قوالب وأنماط Remotion منها الترجمات والسوشال | ٤ | https://skillsmp.com/creators/ali-abassi/remotion-templates/skill | مضاف، غير مفعّل |
+| panaversity video-generator | مهارة | يسحب بيانات علامة المنتج ويبني مشاهد ويتفادى نمط السلايد شو | ٤ | https://skills.sh/panaversity/claude-code-skills-lab/video-generator | مضاف، غير مفعّل |
+| bidah/skill-set create-onboarding-video | مهارة | فيديو تعريفي للتطبيق بـRemotion | ٣ | https://github.com/bidah/skill-set | مضاف، غير مفعّل |
+| williamhallatt cogworks skill-evaluation | مهارة | توليد SKILL.md والتحقق منه ببوابات جودة | ٥ | https://www.skills.sh/williamhallatt/cogworks/skill-evaluation | مضاف، غير مفعّل |
+| jeffallan prompt-engineer | مهارة | أطر تقييم وحزم اختبار لهندسة البرومبت | ٤ | https://jeffallan.github.io/claude-skills/skills/data-ml/prompt-engineer | مضاف، غير مفعّل |
+| alirezarezvani senior-prompt-engineer | مهارة | هندسة برومبت متقدمة | ٤ | https://www.skills.sh/alirezarezvani/claude-skills/senior-prompt-engineer | مضاف، غير مفعّل |
+| raphael67 claude-expert | مهارة | تشغيل وكلاء بالتوازي والاختيار بين subagents وفرق الوكلاء | ٥ | https://smithery.ai/skills/raphael67/claude-expert | مضاف، غير مفعّل |
+| dwmkerr/claude-toolkit | حزمة مهارات | إنشاء فريق وكلاء وتنسيق جلسات Claude متعددة | ٥ | https://tessl.io/registry/skills/github/dwmkerr/claude-toolkit | مضاف، غير مفعّل |
+| ruvnet agentic-flow skill-builder | مهارة | بناء مهارات جديدة | ٣ | https://tessl.io/registry/skills/github/ruvnet/agentic-flow/skill-builder | مضاف، غير مفعّل |
+| sickn33 hr-pro | مهارة (MIT) | توظيف وتهيئة وإنهاء خدمة وإجازات وأداء وعلاقات موظفين، مع تنبيه قانوني | ٥ | https://claudeskills.info/skills/sickn33/agentic-awesome-skills/hr-pro/ | مضاف، غير مفعّل (راجع قانونياً قبل استخدام السياسات) |
+| eddiebelaval squire hr-assistant | مهارة | توظيف وتهيئة وأداء وصياغة سياسات وامتثال | ٤ | https://openskillindex.com/skills/eddiebelaval-squire-hr-assistant | مضاف، غير مفعّل |
+| claude-office-skills hr-automation | مهارة | دورة HR كاملة من نشر وظيفة لإنهاء الخدمة مبنية على قوالب n8n | ٤ | https://claudemarketplaces.com/skills/claude-office-skills/skills/hr-automation | مضاف، غير مفعّل |
+| whawkinsiv finances | مهارة | مقاييس SaaS وCAC/LTV ومعدل الحرق وتدفق نقدي بلغة غير المحاسبين | ٥ | https://skills.sh/whawkinsiv/claude-code-skills/finances | مضاف، غير مفعّل |
+| borghei cfo-advisor | مهارة | نموذج مالي وتحضير تمويل واقتصاديات وحدة وسيولة، مع سكربتات حاسبة وتدفق نقدي | ٥ | https://claudeskills.info/skills/borghei/Claude-Skills/cfo-advisor/ | مضاف، غير مفعّل |
+| wshobson startup-financial-modeling | مهارة | نمذجة مالية للشركات الناشئة (النجوم متضاربة) | ٥ | https://claudemarketplaces.com/skills/wshobson/agents/startup-financial-modeling | مضاف، غير مفعّل |
+| MCP Market finance-tracker | مهارة | توقع تدفق نقدي ١٢ شهراً وانحراف ميزانيات وNPV وIRR بـSQL وPython | ٤ | https://mcpmarket.com/tools/skills/finance-tracker-3 | مضاف، غير مفعّل |
