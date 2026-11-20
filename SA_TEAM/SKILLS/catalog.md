@@ -350,7 +350,7 @@
 | cyanheads/perplexity-mcp-server | خادم MCP | بحث سريع وبحث عميق متعدد المصادر عبر Perplexity | ٦ | https://lobehub.com/nl/mcp/cyanheads-perplexity-mcp-server | مضاف، غير مفعّل (مفتاح مدفوع: قرارك) |
 | RossH121/perplexity-mcp | خادم MCP | يوجّه الأسئلة الشاملة تلقائياً لنموذج بحث عميق | ٤ | https://mcpservers.org/es/servers/RossH121/perplexity-mcp | مضاف، غير مفعّل (مفتاح: قرارك) |
 | exa-labs/exa-mcp-server | خادم MCP (MIT) | بحث ويب دلالي بالمعنى مو بالكلمات | ٦ | https://lobehub.com/en/mcp/dsouza-anush-exa-mcp-server-heroku | مضاف، غير مفعّل (مفتاح: قرارك) |
-| tavily-ai/tavily-mcp | خادم MCP (رسمي) | بحث واستخراج وخريطة وزحف، ونسخة مجانية ١٠٠٠ رصيد شهرياً حسب مدونة | ٦ | https://claude-code-catalog.vercel.app/en/skills/ab-copy-generator | مضاف، غير مفعّل (مفتاح: قرارك) |
+| tavily-ai/tavily-mcp | خادم MCP (رسمي) | بحث واستخراج وخريطة وزحف، ونسخة مجانية ١٠٠٠ رصيد شهرياً حسب مدونة | ٦ | https://claudemarket.ai/blog/best-web-search-mcp-servers | مضاف، غير مفعّل (مفتاح: قرارك) |
 | davila7 spreadsheet | مهارة | جداول Excel وتنظيف بيانات، وتحويل لـPDF إذا توفر LibreOffice | ٥ | https://www.skills.sh/davila7/claude-code-templates/spreadsheet | مضاف، غير مفعّل |
 | tfriedel/claude-office-skills | حزمة مهارات | PPTX وDOCX وXLSX وPDF: نمذجة بصيغ وتنسيق احترافي وتعبئة نماذج ودمج مستندات | ٥ | https://docsearch.algolia.com/mcp/docs/repo/tfriedel/claude-office-skills | مضاف، غير مفعّل |
 | majiayu000 document-xlsx | مهارة | إنشاء وتدقيق واستخراج جداول Excel بمكتبات متعددة | ٤ | https://openskillindex.com/skills/majiayu000-claude-skill-registry-document-xlsx | مضاف، غير مفعّل |
