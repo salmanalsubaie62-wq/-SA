@@ -336,3 +336,21 @@
 | claude-office-skills contract-review وNDA generator | مهارات | مراجعة عقود وفحص اكتمالها ومولّد اتفاقية سرية. لا تغني عن محامٍ | ٥ | https://llmbase.ai/skills/claude-office-skills/mcp-hub | مضاف، غير مفعّل |
 | jk-0001 bookkeeping-basics | مهارة | أساسيات مسك الدفاتر | ٣ | https://claudemarketplaces.com/skills/jk-0001/skills/bookkeeping-basics | مضاف، غير مفعّل |
 | ReyemTech QuickBooks integration | مهارة | عملاء وفواتير ومدفوعات وتقارير على QuickBooks | ٤ | https://gh.r-mj.com/ReyemTech/skills | مضاف، غير مفعّل (يربط حساب مالي: قرارك) |
+
+## دفعة بحث الساعة ١١:٣٦ (الكويت) · قاعدة معرفة وبحث ويب عميق وجداول وكتابة إعلانية
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| phelps-sg/claude-code-obsidian-skills | مجموعة مهارات | تحويل Obsidian vault إلى قاعدة معرفة مشتركة بين البشر وClaude مع مدير vault ولوحة شغل جاري | ٥ | https://github.com/phelps-sg/claude-code-obsidian-skills | مضاف، غير مفعّل |
+| ArtemXTech/personal-os-skills | مجموعة مهارات | نظام شخصي لإدارة المهام والمعرفة | ٤ | https://github.com/ArtemXTech/personal-os-skills | مضاف، غير مفعّل |
+| kepano/obsidian-skills | مجموعة مهارات | مهارات Obsidian من صاحب التطبيق الشهير (ما تحققت من المستودع) | ٥ | https://claudeskills.info/blog/obsidian-claude-skills-guide/ | مضاف، غير مفعّل |
+| practicalswan notion-docs | مهارة | إدارة وثائق Notion عبر MCP: مواصفات وقرارات وأدلة تهيئة موظفين. الأقرب لشغل الـSOP | ٥ | https://www.remoteopenclaw.com/skills/practicalswan/agent-skills/notion-docs | مضاف، غير مفعّل (يحتاج دخول Notion: قرارك) |
+| seaworld008 notion-knowledge-capture | مهارة | تحويل المحادثات إلى وثائق منظمة في Notion | ٤ | https://openskillindex.com/skills/seaworld008-commonly-used-high-value-skills-notion-knowledge-capture | مضاف، غير مفعّل |
+| popey copywriting | مهارة | كتابة إعلانية عامة | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/copywriting--copywriting | مضاف، غير مفعّل |
+| A/B Copy Generator | مهارة | توليد نسخ A/B للعناوين وCTA وعناوين الإيميل | ٤ | https://claude-code-catalog.vercel.app/en/skills/ab-copy-generator | مضاف، غير مفعّل |
+| cyanheads/perplexity-mcp-server | خادم MCP | بحث سريع وبحث عميق متعدد المصادر عبر Perplexity | ٦ | https://lobehub.com/nl/mcp/cyanheads-perplexity-mcp-server | مضاف، غير مفعّل (مفتاح مدفوع: قرارك) |
+| RossH121/perplexity-mcp | خادم MCP | يوجّه الأسئلة الشاملة تلقائياً لنموذج بحث عميق | ٤ | https://mcpservers.org/es/servers/RossH121/perplexity-mcp | مضاف، غير مفعّل (مفتاح: قرارك) |
+| exa-labs/exa-mcp-server | خادم MCP (MIT) | بحث ويب دلالي بالمعنى مو بالكلمات | ٦ | https://lobehub.com/en/mcp/dsouza-anush-exa-mcp-server-heroku | مضاف، غير مفعّل (مفتاح: قرارك) |
+| tavily-ai/tavily-mcp | خادم MCP (رسمي) | بحث واستخراج وخريطة وزحف، ونسخة مجانية ١٠٠٠ رصيد شهرياً حسب مدونة | ٦ | https://claude-code-catalog.vercel.app/en/skills/ab-copy-generator | مضاف، غير مفعّل (مفتاح: قرارك) |
+| davila7 spreadsheet | مهارة | جداول Excel وتنظيف بيانات، وتحويل لـPDF إذا توفر LibreOffice | ٥ | https://www.skills.sh/davila7/claude-code-templates/spreadsheet | مضاف، غير مفعّل |
+| tfriedel/claude-office-skills | حزمة مهارات | PPTX وDOCX وXLSX وPDF: نمذجة بصيغ وتنسيق احترافي وتعبئة نماذج ودمج مستندات | ٥ | https://docsearch.algolia.com/mcp/docs/repo/tfriedel/claude-office-skills | مضاف، غير مفعّل |
+| majiayu000 document-xlsx | مهارة | إنشاء وتدقيق واستخراج جداول Excel بمكتبات متعددة | ٤ | https://openskillindex.com/skills/majiayu000-claude-skill-registry-document-xlsx | مضاف، غير مفعّل |
