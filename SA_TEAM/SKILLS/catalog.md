@@ -637,3 +637,20 @@
 | agentspace-so runcomfy ai-avatar-video | مهارة | فيديو أفاتار ولِب-سنك عبر RunComfy CLI (حساب مدفوع محتمل) | ٣ | https://claudemarketplaces.com/skills/agentspace-so/runcomfy-agent-skills/ai-avatar-video | مضاف، غير مفعّل |
 | dennisonbertram realistic-ugc-video | مهارة | فيديو UGC واقعي بمتحدث عبر Nano Banana وKling | ٣ | https://claudemarketplaces.com/skills/dennisonbertram/claude-media-skills/realistic-ugc-video | مضاف، غير مفعّل |
 | LeoYeAI citedy video-shorts | مهارة | شورتس ١٥ ثانية بأفاتار (التكلفة المذكورة ~١٫٨٥$ للفيديو، ما اشتريت شي) | ٢ | https://vibehackers.io/claude-code/skills/citedy-video-shorts | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٢:٣٦ (الكويت) · واتساب وأتمتة المتصفح وبرومبتات ومستندات بهوية
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| wassengerhq whatsapp-skills | Plugin+MCP | ٢٣ مهارة لإدارة واتساب (حملات وصندوق وارد ودعم)، تحتاج حساب Wassenger ومفتاح API وربط رقم | ٤ | https://wassenger.com/whatsapp-skills | مضاف، غير مفعّل |
+| sickn33 whatsapp-automation | مهارة | بوتات ورسائل طلبات وبث عبر WhatsApp Business API (تحتاج حساب أعمال، ورسوم Meta) | ٣ | https://claudemarketplaces.com/skills/sickn33/antigravity-awesome-skills/whatsapp-automation | مضاف، غير مفعّل |
+| gokapso integrate-whatsapp | مهارة | دمج واتساب عبر Kapso | ٣ | https://claudemarketplaces.com/skills/gokapso/kapso-agent-skills/integrate-whatsapp | مضاف، غير مفعّل |
+| lackeyjb playwright-skill | مهارة | أتمتة متصفح Playwright مع لقطات شاشة ومخرجات الكونسول (MIT) | ٤ | https://cdn.jsdelivr.net/gh/lackeyjb/playwright-skill@main/README.md | مضاف، غير مفعّل |
+| arlenagreer playwright-browser | مهارة | لقطات شاشة كاملة بسكربتات Python بدون MCP | ٣ | https://skills.sh/arlenagreer/claude_configuration_docs/playwright-browser | مضاف، غير مفعّل |
+| phalves23 prompt-engineering-skill | مهارة | إعادة كتابة البرومبتات بتقنيات من Anthropic وOpenAI وGemini | ٣ | https://awesome.ecosyste.ms/projects/github.com%2Fphalves23%2Fprompt-engineering-skill | مضاف، غير مفعّل |
+| aaaaqwq prompt-optimizer | مهارة | تقييم البرومبت وتوليد نسخة محسّنة بـ٥٨ تقنية | ٣ | https://www.skills.sh/aaaaqwq/claude-code-skills/prompt-optimizer | مضاف، غير مفعّل |
+| justinperea midjourney-cc-skill | مهارة | برومبتات Midjourney V7 من الوثائق الرسمية (تبنّي ضعيف) لإعلانات العطر | ٣ | https://skills.sh/justinperea/midjourney-cc-skill/midjourney-prompt-engineering | مضاف، غير مفعّل |
+| codaone image-prompt | مهارة | برومبتات صور لـMidjourney وDALL-E وStable Diffusion مع برومبت سلبي ومكتبة ستايلات | ٣ | https://www.codaone.ai/skills/image-prompt | مضاف، غير مفعّل |
+| ferdinandobons brand-docs | مهارة | يتعلم قوالب Word وPowerPoint وExcel ويطلع ملفات بنفس الهوية (بدون PDF) | ٤ | https://ferdinandobons.github.io/brand-docs/ | مضاف، غير مفعّل |
+| netresearch markdown-to-pdf | مهارة | تحويل Markdown إلى PDF منسّق بـWeasyPrint وCSS مخصص للهوية | ٤ | https://netresearch.github.io/claude-code-marketplace/en/skills/markdown-to-pdf/ | مضاف، غير مفعّل |
+| claude-office-skills md-to-office | مهارة | Markdown إلى Word وPDF وPowerPoint بـPandoc وقوالب | ٣ | https://skills.sh/claude-office-skills/skills/md-to-office | مضاف، غير مفعّل |
+| davila7 markitdown | مهارة | تحويل ملفات مختلفة إلى Markdown لاستخراج المحتوى | ٣ | https://vibehackers.io/claude-code/skills/markitdown-davila7 | مضاف، غير مفعّل |
