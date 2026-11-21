@@ -952,3 +952,24 @@
 | office-mcp (Python) | خادم MCP | Word وExcel وPowerPoint مع تصدير PDF عبر LibreOffice | ٣ | https://app.unpkg.com/office-mcp@1.6.1/files/README.md | مضاف، غير مفعّل |
 | Tally (مع MCP رسمي) | خدمة نماذج | نماذج وإجابات بخادم MCP رسمي وخطة مجانية. ينفع لاستبيانات العملاء. يحتاج حساب | ٥ | https://tally.so/help/best-mcp-form-builders | مضاف، غير مفعّل |
 | Weavely AI Forms & Surveys | خادم MCP | إنشاء نماذج واستبيانات بالذكاء الاصطناعي. يحتاج حساب | ٣ | https://mcpservers.org/id/servers/help-weavely-ai-integrations-mcp | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٩:٣٦ (الكويت) · Search Console وGA4 وفيديو FFmpeg ونص عربي وCRM مفتوح
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| saurabhsharma2u search-console-mcp | خادم MCP | ربط Google Search Console بالمساعد (أداء كلمات وصفحات). يحتاج Google Cloud وOAuth (للمؤسس فقط) | ٥ | https://mcpservers.org/servers/saurabhsharma2u/search-console-mcp | مضاف، غير مفعّل |
+| samalyxx gsc-seo-mcp | خادم MCP | تدقيق SEO وأفكار كلمات وفحص روابط وإدارة sitemap عبر Search Console | ٤ | https://mcpservers.org/servers/samalyxx/gsc-seo-mcp | مضاف، غير مفعّل |
+| nrvmodi google-search-console-mcp-server | خادم MCP | Search Console بديل مجتمعي | ٣ | https://mcpservers.org/servers/nrvmodi/google-search-console-mcp-server | مضاف، غير مفعّل |
+| SEOcrawl AI MCP (مستضاف) | خادم MCP مستضاف | بيانات Search Console وGA4 وتحليل كلمات وصفحات من المحادثة. خدمة مدفوعة تأخذ بياناتك لطرف ثالث | ٣ | https://mcpservers.org/servers/seocrawl/seocrawl-mcp | مضاف، غير مفعّل |
+| jafforgehq google-analytics-mcp | خادم MCP | تقارير GA4 مركّزة على SEO والإعلانات المدفوعة | ٤ | https://glama.ai/mcp/servers/@jafforgehq/google-analytics-mcp/blob/1d0c792957a5174a37eaf1f5c18c2f7c1a05496a/README.md | مضاف، غير مفعّل |
+| Jluethke marketing-mcp | خادم MCP | GA4 وGoogle Trends واقتراحات Google التلقائية لبحث الكلمات. أدوات Google Ads تحتاج إعداد منفصل | ٥ | https://glama.ai/mcp/servers/Jluethke/marketing-mcp | مضاف، غير مفعّل |
+| Kush36Agrawal Video_Editor_MCP | خادم MCP | مونتاج بـFFmpeg بأوامر لغة طبيعية: قص وترجمات وفلاتر | ٤ | https://github.com/Kush36Agrawal/Video_Editor_MCP | مضاف، غير مفعّل |
+| video-dev ffmpeg-mcp-comp | خادم MCP | قص ودمج وترجمات Whisper. للاستكشاف فقط حسب README ولا يُعتمد للإنتاج | ٢ | https://www.github.com/video-dev/ffmpeg-mcp-comp | مضاف، غير مفعّل |
+| wmeints media-editor | خادم MCP | قص فيديو لمدى زمني وتفريغ صوت | ٣ | https://github.com/wmeints/media-editor | مضاف، غير مفعّل |
+| mcp-ffmpeg (priyanshum143) | خادم MCP | مهام FFmpeg بطابور وعمال متوازيين | ٣ | https://pypi.org/project/mcp-ffmpeg/0.1.4/ | مضاف، غير مفعّل |
+| BenjisCollector mcp-arabic-toolkit | خادم MCP | أدوات نص عربي: تطبيع وإزالة تشكيل وتحويل حروف وكشف لهجة (تقريبي) وعدّ رموز. MIT. ما يرجع التشكيل | ٦ | https://claudemarket.ai/mcp/BenjisCollector/mcp-arabic-toolkit | مضاف، غير مفعّل |
+| langchain-arabic | مكتبة Python | تشكيل مخرجات النموذج وتحويل أرقام لكلمات مع dialect=gulf للخليجي، وخلفية عصبية CATT. الوحيد المستهدف للخليجي | ٦ | https://pypi.org/project/langchain-arabic | مضاف، غير مفعّل |
+| mhenry3164 twenty-crm-mcp-server | خادم MCP | ربط Twenty CRM (مفتوح المصدر) بمفتاح API، يدعم الاستضافة الذاتية. MIT | ٥ | https://lobehub.com/bg/mcp/mhenry3164-twenty-crm-mcp-server | مضاف، غير مفعّل |
+| SaschaRoelofs twenty-crm-mcp-server | خادم MCP | إنشاء وقراءة وتعديل أشخاص وشركات وصفقات ومهام وملاحظات في Twenty. MIT | ٥ | https://glama.ai/mcp/servers/iwfc1lxxef | مضاف، غير مفعّل |
+| jezweb twenty-mcp | خادم MCP | Twenty CRM بـOAuth 2.1 لعدة مستخدمين | ٤ | https://lobehub.com/mcp/jezweb-twenty-mcp | مضاف، غير مفعّل |
+| peakmojo mcp-hubspot | خادم MCP | HubSpot مجتمعي (MIT، ٧ أدوات) لأن الرسمي شبه فاضي حسب مقال. ما تحققت من المستودع | ٣ | https://dev.to/grove_chatforest/crm-mcp-servers-salesforce-hubspot-pipedrive-attio-and-beyond-off | مضاف، غير مفعّل |
+| Odoo lu_mcp_crm (مدفوع) | وحدة Odoo | ٨ أدوات لبحث العملاء المحتملين وإدارة الصفقات. مدفوعة ٩٨.٠١ دولار (لا تُشترى) | ٢ | https://apps.odoo.com/apps/modules/19.0/lu_mcp_crm | مضاف، غير مفعّل |
