@@ -987,3 +987,20 @@
 | dereknex skills ui-styling | مهارة | shadcn/ui وTailwind v3/v4 وتوكنات تصميم مع npx shadcn@latest init | ٤ | https://skills.sh/dereknex/skills/ui-styling | مضاف، غير مفعّل |
 | inerrata brief | مهارة تسويق شاملة | نص إعلاني وصوت علامة وتقويم محتوى وSEO وCRO وقياس في مهارة واحدة بملفات مرجعية | ٥ | https://github.com/inerrata/brief | مضاف، غير مفعّل |
 | ognjengt founder-skills brand-copywriter | مهارة | نصوص إعلانات فيسبوك وإنستغرام وتيك توك ويوتيوب وصفحات هبوط ورسائل بريد. MIT و٢٥٥ نجمة | ٥ | https://claudeskills.info/skills/ognjengt/founder-skills/brand-copywriter/ | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٢١:٣٦ (الكويت) · حجوزات ودعم عملاء وقوائم Claude Code وخطوط عربية
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| Cal.com MCP (الرسمي) | خادم MCP | حجز وإعادة جدولة وإلغاء مواعيد. مستضاف بـOAuth أو محلي بمفتاح API. عدد الأدوات متضارب بين الصفحات (٣٤ أو ٨٥) | ٥ | https://cal.com/docs/mcp-server | مضاف، غير مفعّل |
+| Calendly MCP (عبر Workato) | خادم MCP مستضاف | إنشاء حجوزات وإلغاؤها وجلب تفاصيل المدعو. صفحة Workato وليست Calendly الرسمية، ويحتاج توكن شخصي. ما لقيت مستودع | ٣ | https://docs.workato.com/en/mcp/registry/calendly-scheduling-mcp-server | مضاف، غير مفعّل |
+| helpdesk-mender-mcp | خادم MCP | عمليات كتابة موحّدة لـZendesk وFreshdesk وHelp Scout. إصدار ٠.١.٠ ومطوّر واحد | ٣ | https://socket.dev/npm/package/helpdesk-mender-mcp | مضاف، غير مفعّل |
+| zendesk-mcp (PyPI) | خادم MCP | قراءة وكتابة تذاكر Zendesk لـClaude Code. الوضع الرسمي لدى Zendesk غير واضح | ٣ | https://pypi.org/project/zendesk-mcp | مضاف، غير مفعّل |
+| effytech freshdesk_mcp | خادم MCP (Python) | الأغنى بأدوات الدعم حسب مراجعة، MIT و٤٦ نجمة. يحتاج حساب Freshdesk ومفتاح API | ٤ | https://mcpservers.org/servers/effytech/freshdesk_mcp | مضاف، غير مفعّل |
+| hesreallyhim awesome-claude-code | قائمة منتقاة | مهارات وhooks وأوامر وأدوات من المجتمع. مصدر لاكتشاف أدوات بدل البحث عن الصفر | ٥ | https://raw.githubusercontent.com/hesreallyhim/awesome-claude-code/HEAD/README.md | مضاف، غير مفعّل |
+| rohitg00 awesome-claude-code-toolkit | مجموعة أدوات | نحو ١٣٥ وكيلاً و٣٥ مهارة و٤٢ أمراً و١٩ hook. الأرقام تتفاوت حسب النسخة | ٤ | https://awesome.ecosyste.ms/projects/github.com%2Frohitg00%2Fawesome-claude-code-toolkit | مضاف، غير مفعّل |
+| jqueryscript awesome-claude-code | قائمة منتقاة | أدوات ومهارات وإضافات وأطر، مع رابط لقائمة وكلاء فرعيين | ٣ | https://github.com/jqueryscript/awesome-claude-code | مضاف، غير مفعّل |
+| shahshrey awesome-claude-code-mastery | قائمة منتقاة | موارد وشروحات ومجتمع لإتقان Claude Code | ٣ | https://github.com/shahshrey/awesome-claude-code-mastery | مضاف، غير مفعّل |
+| agentsys | مجموعة أدوات | إضافات ووكلاء ومهارات وأوامر لعدة أدوات برمجة (نحو ٨٧٨ نجمة حسب فهرس طرف ثالث) | ٣ | https://awesome.ecosyste.ms/lists/jqueryscript%2Fawesome-claude-code | مضاف، غير مفعّل |
+| Tajawal (خط عربي، Google Fonts) | خط | خط عربي نظيف بـ٧ أوزان مناسب للنصوص الطويلة. رخصة مفتوحة غالباً، تأكد قبل الاستخدام التجاري | ٦ | https://fonts.google.com/specimen/Tajawal/about | مضاف، غير مفعّل |
+| Cairo (خط عربي، Google Fonts) | خط | خط عربي ولاتيني بأسلوب كوفي، يدعم العربية والفارسية والأردو | ٦ | https://fonts.adobe.com/fonts/cairo | مضاف، غير مفعّل |
+| Noto Sans Arabic (Google Fonts) | خط | خط عربي واسع الحروف والأوزان، خيار آمن للواجهات | ٥ | https://fonts.google.com/noto/specimen/Noto+Sans+Arabic/about | مضاف، غير مفعّل |
