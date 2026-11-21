@@ -785,3 +785,22 @@
 | fradser pricing | مهارة | تسعير مع بناء العرض: مكافآت وضمانات وقيمة (MIT) | ٣ | https://claudeskills.info/skills/fradser/dotclaude/pricing/ | مضاف، غير مفعّل |
 | refoundai lenny-skills pricing-strategy | مهارة | استراتيجية تسعير مبنية على مصادر Lenny | ٣ | https://claudemarketplaces.com/skills/refoundai/lenny-skills/pricing-strategy | مضاف، غير مفعّل |
 | absolutelyskilled pricing-strategy | مهارة | تسعير وباقات وتموضع | ٣ | https://claudemarketplaces.com/skills/absolutelyskilled/absolutelyskilled/pricing-strategy | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٠:٣٦ (الكويت) · اختبارات وتصحيح أخطاء وأداء ويب وgit
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| alirezarezvani tdd-guide | مهارة | توليد اختبارات وتحليل تغطية وإرشاد red-green-refactor (لعلي) | ٤ | https://www.skills.sh/alirezarezvani/claude-skills/tdd-guide | مضاف، غير مفعّل |
+| majiayu000 comprehensive-testing | مهارة | استراتيجية اختبارات كاملة: هرم وmocks وCI لـJest وVitest وpytest | ٣ | https://raw.githubusercontent.com/majiayu000/spellbook/main/skills/comprehensive-testing/SKILL.md | مضاف، غير مفعّل |
+| takusaotome tdd-developer | مهارة | TDD لعدة أطر: pytest وJest وVitest وJUnit وGo وغيرها | ٣ | https://takusaotome.github.io/claude-skills-library/en/skills/dev/tdd-developer/ | مضاف، غير مفعّل |
+| anton-abyzov unit-testing | مهارة | اختبارات وحدة بـVitest/Jest مع أمثلة red-green-refactor | ٣ | https://skills.sh/anton-abyzov/specweave/unit-testing | مضاف، غير مفعّل |
+| ckorhonen systematic-debugging | مهارة | تصحيح أخطاء منهجي بتحقيق السبب الجذري قبل أي تعديل (لمنصور) | ٤ | https://skills.sh/ckorhonen/claude-skills/systematic-debugging | مضاف، غير مفعّل |
+| xenitv1 debug-mastery | مهارة | تحليل جنائي يمنع الإصلاح بدون سبب جذري مؤكد | ٣ | https://skills.sh/xenitv1/claude-code-maestro/debug-mastery | مضاف، غير مفعّل |
+| issue-resolution-pipeline (mcpmarket) | مهارة | مسار ٦ مراحل: فرز وإعادة إنتاج وسبب جذري وإصلاح مُتحقق وإعادة هيكلة آمنة | ٣ | https://mcpmarket.com/tools/skills/issue-resolution-pipeline-2 | مضاف، غير مفعّل |
+| addyosmani web-quality-skills | مجموعة مهارات | أكثر من ١٥٠ تدقيق Lighthouse: أداء وإتاحة وSEO وCore Web Vitals (غير رسمية) | ٥ | https://github.com/addyosmani/web-quality-skills | مضاف، غير مفعّل |
+| mksglu web-perf | مهارة | تدقيق أداء صفحة بأدوات Chrome DevTools MCP | ٣ | https://skills.sh/mksglu/skills/web-perf | مضاف، غير مفعّل |
+| hardikpandya perf-analyzer | مهارة | ملف SKILL.md واحد يخرج درجات Lighthouse وCore Web Vitals | ٣ | https://skillsmp.com/creators/hardikpandya/perf-analyzer | مضاف، غير مفعّل |
+| performance-lighthouse-runner (mcpmarket) | مهارة | تشغيل Lighthouse لتدقيق الأداء | ٣ | https://mcpmarket.com/tools/skills/performance-lighthouse-runner-1 | مضاف، غير مفعّل |
+| kimasplund git-workflow-skills | مهارة | مسارات git ومراجعات | ٣ | https://skills.sh/kimasplund/claude_cognitive_reasoning/git-workflow-skills | مضاف، غير مفعّل |
+| everyinc git-commit-push-pr | مهارة | commit وpush وPR في خطوة (تدفع وتفتح PR، تُراجع قبل أي تفعيل) | ٣ | https://skills.sh/everyinc/compound-engineering-plugin/git-commit-push-pr | مضاف، غير مفعّل |
+| jezweb git-workflow | مهارة | أسلوب commit وفروع | ٣ | https://www.skills.sh/jezweb/claude-skills/git-workflow | مضاف، غير مفعّل |
+| Git Workflows & PR Automation (mcpmarket) | مهارة | أتمتة PR ووصف التغييرات | ٢ | https://mcpmarket.com/tools/skills/git-workflows-pr-automation | مضاف، غير مفعّل |
