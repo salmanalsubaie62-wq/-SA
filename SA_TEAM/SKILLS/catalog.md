@@ -1004,3 +1004,22 @@
 | Tajawal (خط عربي، Google Fonts) | خط | خط عربي نظيف بـ٧ أوزان مناسب للنصوص الطويلة. رخصة مفتوحة غالباً، تأكد قبل الاستخدام التجاري | ٦ | https://fonts.google.com/specimen/Tajawal/about | مضاف، غير مفعّل |
 | Cairo (خط عربي، Google Fonts) | خط | خط عربي ولاتيني بأسلوب كوفي، يدعم العربية والفارسية والأردو | ٦ | https://fonts.adobe.com/fonts/cairo | مضاف، غير مفعّل |
 | Noto Sans Arabic (Google Fonts) | خط | خط عربي واسع الحروف والأوزان، خيار آمن للواجهات | ٥ | https://fonts.google.com/noto/specimen/Noto+Sans+Arabic/about | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٢٢:٣٦ (الكويت) · Blender لإعلان المنتج وصور منتجات بالذكاء الاصطناعي وLinkedIn وX
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| sandraschi blender-mcp | خادم MCP | Blender مع استيراد وتصدير GLB/glTF وتحميل ملفات من روابط. مهم لإعلان العطر لو أرسل المؤسس ملف .glb. ما لقيت تأكيد لتصدير PNG شفاف | ٥ | https://glama.ai/mcp/servers/sandraschi/blender-mcp | مضاف، غير مفعّل |
+| DeemosTech blender-mcp-rodin-integration | خادم MCP | تكامل Blender مع Rodin لتوليد نماذج ثلاثية الأبعاد. قد يحتاج حساب | ٣ | https://github.com/DeemosTech/blender-mcp-rodin-integration | مضاف، غير مفعّل |
+| Photoroom MCP (مستضاف) | خادم MCP | إزالة خلفية وتحرير صور منتجات، يناسب تجهيز PNG شفاف لمنتجنا. موصل Claude فيه يتطلب اشتراك Claude مدفوع | ٥ | https://www.photoroom.com/mcp | مضاف، غير مفعّل |
+| CherryShot MCP | خادم MCP بعيد | صور حملات للمنتج من صورة واحدة: لقطات على عارض ومشاهد وإعلانات فيديو. مفتاح bearer مدفوع غالباً | ٣ | https://mcpservers.org/servers/cherryshot-mintlify-app-guides-mcp | مضاف، غير مفعّل |
+| Kive AI MCP | خادم MCP | ربط صور المنتج وأصول العلامة بـClaude وFigma وn8n. يحتاج حساب | ٣ | https://kive.ai/mcp | مضاف، غير مفعّل |
+| SudoMock MCP | خادم MCP | موكابات: رفع قوالب PSD ووضع التصميم على smart objects. يحتاج حساب | ٤ | https://mcpservers.org/tr/servers/sudomock/mcp-server | مضاف، غير مفعّل |
+| ProductAI MCP | خادم MCP | صور منتجات بالذكاء الاصطناعي من رابط صورة وطلب نصي | ٣ | https://mcp.so/ja/servers/productai-mcp | مضاف، غير مفعّل |
+| OpenArt Product Ad Studio | مهارة + MCP | حملة إعلان منتج كاملة داخل محادثة واحدة. يحتاج OpenArt MCP وحساب | ٣ | https://openart.ai/blog/generate-product-ads-from-claude-with-openart-mcp/ | مضاف، غير مفعّل |
+| tayler-id social-media-mcp | خادم MCP | نشر على X وMastodon وLinkedIn مع تنسيق لكل منصة وتوليد محتوى. API لـX وLinkedIn قد تكون مدفوعة | ٤ | https://github.com/tayler-id/social-media-mcp | مضاف، غير مفعّل |
+| writio mcp-server (LinkedIn) | خادم MCP | مقاييس LinkedIn (ظهور وإعجاب وتعليق) وأفضل وقت للنشر | ٤ | https://github.com/writio/mcp-server | مضاف، غير مفعّل |
+| maheidem linkedin-optimizer-mcp | خادم MCP | أداء منشورات LinkedIn وتحسينها | ٣ | https://lobehub.com/tr/mcp/maheidem-linkedin-optimizer-mcp | مضاف، غير مفعّل |
+| cybeleri social-media-scheduler-mcp | خادم MCP | جدولة على X وLinkedIn وBluesky وMastodon مع مقاييس وأوقات نشر مقترحة | ٤ | https://lobehub.com/ja/mcp/cybeleri-social-media-scheduler-mcp | مضاف، غير مفعّل |
+| PostMCP AI | خادم MCP | نشر على LinkedIn وX، MIT حسب الوصف. ما تأكدت من التحليلات | ٣ | https://mcpservers.org/servers/postmcp/postmcp-mcp-server | مضاف، غير مفعّل |
+| LinkIntel MCP | خادم MCP | يقرأ منشورات X ومقاييسها يومياً ليعطي أدلة للمنشور القادم. ما أكدت أنه مفتوح المصدر | ٣ | https://mcpservers.org/servers/www-getlinkintel-com | مضاف، غير مفعّل |
+| Publora MCP (مستضاف) | خادم MCP | إحصاءات LinkedIn ونمو المتابعين مع نشر. خدمة مستضافة، وتحليلات X غير ظاهرة | ٣ | https://images.glama.ai/mcp/servers/publora/mcp-server | مضاف، غير مفعّل |
