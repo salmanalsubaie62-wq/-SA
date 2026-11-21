@@ -748,3 +748,22 @@
 | sickn33 startup-business-analyst-financial-projections | مهارة | توقعات ٣-٥ سنوات بثلاثة سيناريوهات للإيراد والتكاليف والتدفق (لخالد) | ٣ | https://claudeskills.info/skills/sickn33/agentic-awesome-skills/startup-business-analyst-financial-projections/ | مضاف، غير مفعّل |
 | kondalrao finance skills | Plugin | تحليل نسب وDCF وانحراف ميزانية وتوقعات متجددة مع ٤ أدوات Python | ٤ | https://www.claudepluginhub.com/plugins/kondalrao-finance-skills-finance | مضاف، غير مفعّل |
 | VC Financial Modeler (startup valuation) | مهارة | نمذجة تقييم شركات ناشئة | ٢ | https://mcpmarket.com/tools/skills/vc-financial-modeler-startup-valuation | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٨:٣٦ (الكويت) · بلندر وفيديو ذكاء اصطناعي وصوت عربي خليجي وموسيقى
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| minihellboy claude-blender | خادم MCP | ربط Claude ببلندر (لازم بلندر على جهاز المؤسس) | ٣ | https://lobehub.com/mcp/minihellboy-claude-blender | مضاف، غير مفعّل |
+| mfranzon render | مهارة | أمر /render لعرض نماذج ثلاثية الأبعاد | ٣ | https://skillsmp.com/creators/mfranzon/render | مضاف، غير مفعّل |
+| SamurAIGPT Generative-Media-Skills | خادم MCP + مهارات | أكثر من ١٠٠ نموذج صور وفيديو (Veo3 وKling وSeedance وMidjourney) عبر ١٩ أداة (يحتاج مفاتيح ورصيد) | ٤ | https://github.com/SamurAIGPT/Generative-Media-Skills | مضاف، غير مفعّل |
+| pexoai pexo-skills | مهارات | نص-إلى-فيديو وصورة-إلى-فيديو بمرجع عبر نماذج متعددة | ٣ | https://cdn.jsdelivr.net/gh/pexoai/pexo-skills@main/README.md | مضاف، غير مفعّل |
+| inference-sh ai-video-generation | مهارة | وصول CLI لأكثر من ٤٠ نموذج فيديو (الأكثر تثبيتاً بحسب قائمة، يحتاج حساب) | ٣ | https://claudemarketplaces.com/skills/inference-sh/skills/ai-video-generation | مضاف، غير مفعّل |
+| guia-matthieu ai-video-prompting | مهارة | كتابة برومبتات فيديو: موضوع وحركة وكاميرا وأسلوب ومزاج (لنواف وجود) | ٤ | https://claudemarketplaces.com/skills/guia-matthieu/clawfu-skills/ai-video-prompting | مضاف، غير مفعّل |
+| tuziapi tuzi-video-gen | مهارة | توليد فيديو عبر واجهة Tuzi | ٢ | https://claudemarketplaces.com/skills/tuziapi/tuzi-skills/tuzi-video-gen | مضاف، غير مفعّل |
+| michaelboeding video-generation | مهارة | سكربتات Veo بدفعات وتمديد مقطع سابق | ٣ | https://www.claudepluginhub.com/skills/michaelboeding-skills/video-generation | مضاف، غير مفعّل |
+| saudi-tts (ClaudSkills) | مهارة | نطق عربي سعودي بـNAMAA وLahajati ولهجات (تغطية الكويت غير مؤكدة) | ٣ | https://claudskills.com/skills/saudi-tts/ | مضاف، غير مفعّل |
+| groq-arabic-tts (ClaudSkills) | مهارة | نطق عربي عبر Groq (دعم اللهجات غير مؤكد، يحتاج مفتاح) | ٢ | https://claudskills.com/skills/groq-arabic-tts/ | مضاف، غير مفعّل |
+| arabimaak gulf-arabic | خادم MCP | قاموس عبارات خليجية لدول المجلس الست للتأكد من صياغة النص (مو نطق) | ٣ | https://claudemarketplaces.com/mcp/arabimaak/gulf-arabic | مضاف، غير مفعّل |
+| CodeKeanu suno-mcp | خادم MCP | توليد موسيقى بـSuno API (يحتاج مفتاح مدفوع) | ٣ | https://github.com/CodeKeanu/suno-mcp | مضاف، غير مفعّل |
+| schwepps suno-music-creator | مهارة | كتابة برومبتات Suno وإنتاج موسيقى للإعلانات | ٣ | https://claudemarketplaces.com/skills/schwepps/skills/suno-music-creator | مضاف، غير مفعّل |
+| bitwize claude-ai-music-skills | Plugin | سير إنتاج موسيقى: ألبوم وكلمات وبرومبتات وماسترنغ | ٢ | https://vibed-lab-plugins.pages.dev/plugin/bitwize-music-studio-claude-ai-music-skills | مضاف، غير مفعّل |
+| michaelboeding music-generation | مهارة | موسيقى عبر عدة محركات (Lyria للآلات وSuno للغناء) لخلفية الفيديو | ٣ | https://skills.sh/michaelboeding/skills/music-generation | مضاف، غير مفعّل |
