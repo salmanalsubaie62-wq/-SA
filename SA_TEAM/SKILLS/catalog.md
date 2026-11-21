@@ -844,3 +844,26 @@
 | anthropics build-mcp-server | مهارة | اكتشاف قبل الكود وتغليف الخادم ببلجن مع مهارات | ٤ | https://skills.sh/anthropics/claude-plugins-official/build-mcp-server | مضاف، غير مفعّل |
 | borghei mcp-server-builder | مهارة | تحويل OpenAPI إلى MCP | ٣ | https://skills.sh/borghei/claude-skills/mcp-server-builder | مضاف، غير مفعّل |
 | parcadei skill-developer | مهارة | مهارة لصنع مهارات جديدة بما فيها ما يغلّف MCP | ٣ | https://smithery.ai/skills/parcadei/skill-developer | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٣:٣٦ (الكويت) · تتبع تحويلات وسكربتات مبيعات وإعلانات تيك توك وصوت ومكالمات
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| mikefilsaime gtm-pixels | مهارة | إعداد بكسلات عبر Google Tag Manager | ٣ | https://skills.sh/mikefilsaime-groove/clickcampaigns-for-claude-code-in-cursor/gtm-pixels | مضاف، غير مفعّل |
+| borghei analytics-tracking | مهارة | خطة تتبع GA4 وGTM وتصنيف أحداث وتحويلات Google Ads وMeta (ببايثون) | ٤ | https://borghei.github.io/Claude-Skills/skills/marketing/analytics-tracking.html | مضاف، غير مفعّل |
+| thatrebeccarae google-tag-manager | مهارة | تدقيق حاويات GTM وConsent Mode v2 وTagging من جهة الخادم | ٤ | https://www.skills.sh/thatrebeccarae/claude-marketing/google-tag-manager | مضاف، غير مفعّل |
+| soborbo zero-cost-tracking | مهارة | تتبع Meta من جهة الخادم عبر Cloudflare Zaraz بدون كشف التوكن بالكود | ٣ | https://skills.sh/soborbo/claudeskills/zero-cost-tracking | مضاف، غير مفعّل |
+| henkisdabro gtm (wookstar) | مهارة | حاويات GTM | ٣ | https://skills.sh/henkisdabro/wookstar-claude-code-plugins/gtm | مضاف، غير مفعّل |
+| zubair-trabzada ai-sales-team-claude | مجموعة | ١٤ مهارة و٥ وكلاء مبيعات مع أمر اعتراضات (MIT) | ٣ | https://github.com/zubair-trabzada/ai-sales-team-claude | مضاف، غير مفعّل |
+| l3mpire cold-call-script | مهارة | سكربت اتصال بارد من ٦ أجزاء (لحمد) | ٣ | https://raw.githubusercontent.com/l3mpire/claude-skills/main/cold-call-script/SKILL.md | مضاف، غير مفعّل |
+| gooseworks sales-call-prep | مهارة | تحضير مكالمة مبيعات | ٣ | https://claudeskills.info/skills/gooseworks-ai/goose-skills/sales-call-prep/ | مضاف، غير مفعّل |
+| Equipt sales-script | مهارة | سكربتات مكالمات ورسائل وفيديو بأسئلة اكتشاف واعتراضات وإغلاق | ٣ | https://equipt-agent.vercel.app/catalog/equipt-marketing/sales-script | مضاف، غير مفعّل |
+| thatrebeccarae tiktok-ads | مهارة | حملات تيك توك: أهداف وتحسين (لبدر) | ٣ | https://skills.sh/thatrebeccarae/claude-marketing/tiktok-ads | مضاف، غير مفعّل |
+| eachlabs tiktok-ad-creative-generation | مهارة | توليد فيديوهات إعلان عمودية لتيك توك عبر API (خدمة مدفوعة محتملة) | ٣ | https://claudemarketplaces.com/skills/eachlabs/skills/tiktok-ad-creative-generation | مضاف، غير مفعّل |
+| coreyhaines31 ad-creative | مهارة | نصوص إعلانات ومتغيرات (MIT) | ٣ | https://claudemarketplaces.com/skills/coreyhaines31/marketingskills/ad-creative | مضاف، غير مفعّل |
+| borghei ad-creative | مهارة | إبداع إعلانات | ٣ | https://borghei.github.io/Claude-Skills/skills/marketing/ad-creative.html | مضاف، غير مفعّل |
+| mohitagw15856 social-ad-campaign | مهارة | حملة إعلانات سوشال | ٣ | https://claudeskills.info/skills/mohitagw15856/pm-claude-skills/social-ad-campaign/ | مضاف، غير مفعّل |
+| Kai Ad Campaign (ClaudSkills) | مهارة | حملات على Pinterest وSnapchat وغيرها | ٢ | https://claudskills.com/skills/kai-ad-campaign/ | مضاف، غير مفعّل |
+| abracadabra50 claude-code-voice-skill | مهارة | مكالمة صوتية مع Claude عبر Vapi (يحتاج حساب Vapi ورقم، تكلفة) | ٢ | https://github.com/abracadabra50/claude-code-voice-skill | مضاف، غير مفعّل |
+| VapiAI vapi-voice-ai (رسمي) | Plugin | إنشاء أرقام ومكالمات وأدوات لوكلاء صوت (يحتاج حساب وتكلفة) | ٣ | https://agentskill.sh/plugins/vapiai/vapi-voice-ai | مضاف، غير مفعّل |
+| agentiveau twilio-phone | مهارة | هاتف عبر Twilio (يحتاج حساب وتكلفة) | ٢ | https://skills.sh/agentiveau/myagentive/twilio-phone | مضاف، غير مفعّل |
+| popey voice-agents | مهارة | بناء وكلاء صوت | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/voice-agents | مضاف، غير مفعّل |
