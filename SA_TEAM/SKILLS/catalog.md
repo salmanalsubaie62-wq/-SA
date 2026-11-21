@@ -973,3 +973,17 @@
 | jezweb twenty-mcp | خادم MCP | Twenty CRM بـOAuth 2.1 لعدة مستخدمين | ٤ | https://lobehub.com/mcp/jezweb-twenty-mcp | مضاف، غير مفعّل |
 | peakmojo mcp-hubspot | خادم MCP | HubSpot مجتمعي (MIT، ٧ أدوات) لأن الرسمي شبه فاضي حسب مقال. ما تحققت من المستودع | ٣ | https://dev.to/grove_chatforest/crm-mcp-servers-salesforce-hubspot-pipedrive-attio-and-beyond-off | مضاف، غير مفعّل |
 | Odoo lu_mcp_crm (مدفوع) | وحدة Odoo | ٨ أدوات لبحث العملاء المحتملين وإدارة الصفقات. مدفوعة ٩٨.٠١ دولار (لا تُشترى) | ٢ | https://apps.odoo.com/apps/modules/19.0/lu_mcp_crm | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٢٠:٣٦ (الكويت) · أتمتة n8n وواجهات RTL وتوكنات تصميم ونصوص إعلانية
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| makafeli n8n-workflow-builder | خادم MCP | بناء وإدارة workflows في n8n (سحابي أو ذاتي الاستضافة) بلغة طبيعية. يحتاج مفتاح API ورابط n8n (للمؤسس فقط) | ٥ | https://github.com/makafeli/n8n-workflow-builder | مضاف، غير مفعّل |
+| nourdeo mcp-n8n-server | خادم MCP | إنشاء وإدارة workflows n8n من Claude، يشتغل بـDocker | ٤ | https://lobehub.com/mcp/nourdeo-mcp-n8n-server | مضاف، غير مفعّل |
+| ry-ops n8n-mcp-server | خادم MCP | وصول Claude Desktop لنسخة n8n مستضافة ذاتياً عبر N8N_URL وN8N_API_KEY | ٣ | https://lobehub.com/en/mcp/ry-ops-n8n-mcp-server | مضاف، غير مفعّل |
+| Workflow Automator MCP (whoffagents) | خادم MCP | يسجّل webhooks ويشغّل Make وZapier وn8n من لغة طبيعية. ما يدير المنصات نفسها | ٤ | https://dev.to/whoffagents/workflow-automator-mcp-trigger-makecom-zapier-and-n8n-from-natural-language-2kek | مضاف، غير مفعّل |
+| ibrahimbadawy frontend-design (يدعم RTL) | مهارة | تصميم واجهات كاملة بـshadcn/Tailwind مع RTL وdir=rtl وخصائص CSS منطقية ووضع داكن. الأقرب لاحتياجنا العربي، ما تأكدت من الكود | ٦ | https://skillsmp.com/skills/ibrahimbadawy-claude-system-design-plugin-claude-skills-frontend-design-skill-md | مضاف، غير مفعّل |
+| jjyaoao HelloAgents frontend-design | مهارة | توكنات تصميم منهجية تحوّل متطلبات الواجهة لكود (Tailwind وshadcn وصفحات هبوط) | ٤ | https://skills.sh/jjyaoao/helloagents/frontend-design | مضاف، غير مفعّل |
+| mintuz claude-plugins tailwind | مهارة | هرمية توكنات: علامة ثم دلالي ثم مكوّن مع Tailwind | ٤ | https://skills.sh/mintuz/claude-plugins/tailwind | مضاف، غير مفعّل |
+| dereknex skills ui-styling | مهارة | shadcn/ui وTailwind v3/v4 وتوكنات تصميم مع npx shadcn@latest init | ٤ | https://skills.sh/dereknex/skills/ui-styling | مضاف، غير مفعّل |
+| inerrata brief | مهارة تسويق شاملة | نص إعلاني وصوت علامة وتقويم محتوى وSEO وCRO وقياس في مهارة واحدة بملفات مرجعية | ٥ | https://github.com/inerrata/brief | مضاف، غير مفعّل |
+| ognjengt founder-skills brand-copywriter | مهارة | نصوص إعلانات فيسبوك وإنستغرام وتيك توك ويوتيوب وصفحات هبوط ورسائل بريد. MIT و٢٥٥ نجمة | ٥ | https://claudeskills.info/skills/ognjengt/founder-skills/brand-copywriter/ | مضاف، غير مفعّل |
