@@ -767,3 +767,21 @@
 | schwepps suno-music-creator | مهارة | كتابة برومبتات Suno وإنتاج موسيقى للإعلانات | ٣ | https://claudemarketplaces.com/skills/schwepps/skills/suno-music-creator | مضاف، غير مفعّل |
 | bitwize claude-ai-music-skills | Plugin | سير إنتاج موسيقى: ألبوم وكلمات وبرومبتات وماسترنغ | ٢ | https://vibed-lab-plugins.pages.dev/plugin/bitwize-music-studio-claude-ai-music-skills | مضاف، غير مفعّل |
 | michaelboeding music-generation | مهارة | موسيقى عبر عدة محركات (Lyria للآلات وSuno للغناء) لخلفية الفيديو | ٣ | https://skills.sh/michaelboeding/skills/music-generation | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٩:٣٦ (الكويت) · مؤثرون وأفلييت وتويتر/X واحتفاظ بالعملاء وتسعير
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| coreyhaines31 influencer-marketing | مهارة | تخطيط حملات مؤثرين وشراكات (MIT) | ٤ | https://claudemarketplaces.com/skills/coreyhaines31/marketingskills/influencer-marketing | مضاف، غير مفعّل |
+| kostja94 influencer-marketing | مهارة | حملات مؤثرين ضمن مجموعة التسويق | ٣ | https://claudemarketplaces.com/skills/kostja94/marketing-skills/influencer-marketing | مضاف، غير مفعّل |
+| kostja94 affiliate-marketing | مهارة | برنامج أفلييت وعمولات | ٣ | https://claudemarketplaces.com/skills/kostja94/marketing-skills/affiliate-marketing | مضاف، غير مفعّل |
+| Affitor affiliate-skills | مجموعة مهارات | ٥٢ مهارة بـ٨ مراحل لفريق أفلييت (تركيزها محتوى وبحث برامج أكثر من تواصل المؤثرين) | ٣ | https://raw.githubusercontent.com/Affitor/affiliate-skills/main/README.md | مضاف، غير مفعّل |
+| claudskills influencer-outreach | مهارة | قوالب تواصل مع مؤثرين وصناع محتوى | ٣ | https://claudskills.com/skills/influencer-outreach/ | مضاف، غير مفعّل |
+| alirezarezvani x-twitter-growth | مهارة | بناء جمهور وتحليل تفاعل على X | ٣ | https://skills.sh/alirezarezvani/claude-skills/x-twitter-growth | مضاف، غير مفعّل |
+| openclaudia thread-writer | مهارة | قوالب ثريدات: قصة وقائمة ومخالفة وشرح وحالة | ٣ | https://claudeskills.info/skills/openclaudia/openclaudia-skills/thread-writer/ | مضاف، غير مفعّل |
+| sundial-org tweet-writer | مهارة | يدرس أمثلة منتشرة بمجال معين ثم يكتب على نمطها | ٣ | https://claudeskills.info/skills/sundial-org/awesome-openclaw-skills/tweet-writer/ | مضاف، غير مفعّل |
+| kostja94 retention-strategy | مهارة | احتفاظ بالعملاء ومنع الانسحاب وبرامج ولاء | ٣ | https://claudeskills.info/skills/kostja94/marketing-skills/retention-strategy/ | مضاف، غير مفعّل |
+| mikefilsaime loyalty-referral | مهارة | تصميم برامج ولاء وإحالة لرفع قيمة العميل | ٣ | https://skills.sh/mikefilsaime-groove/clickcampaigns-for-claude-code-in-cursor/loyalty-referral | مضاف، غير مفعّل |
+| loyalty-retention-marketing (mcpmarket) | مهارة | استراتيجيات احتفاظ وولاء لتقليل الانسحاب | ٢ | https://mcpmarket.com/tools/skills/loyalty-retention-marketing | مضاف، غير مفعّل |
+| fradser pricing | مهارة | تسعير مع بناء العرض: مكافآت وضمانات وقيمة (MIT) | ٣ | https://claudeskills.info/skills/fradser/dotclaude/pricing/ | مضاف، غير مفعّل |
+| refoundai lenny-skills pricing-strategy | مهارة | استراتيجية تسعير مبنية على مصادر Lenny | ٣ | https://claudemarketplaces.com/skills/refoundai/lenny-skills/pricing-strategy | مضاف، غير مفعّل |
+| absolutelyskilled pricing-strategy | مهارة | تسعير وباقات وتموضع | ٣ | https://claudemarketplaces.com/skills/absolutelyskilled/absolutelyskilled/pricing-strategy | مضاف، غير مفعّل |
