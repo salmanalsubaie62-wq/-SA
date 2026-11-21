@@ -710,3 +710,24 @@
 | googleworkspace/cli gws-gmail-triage | مهارة | ملخص بريد غير مقروء للقراءة فقط بدون تعديل الصندوق (رسمي من Google، يحتاج ربط حساب) | ٥ | https://claudemarketplaces.com/skills/googleworkspace/cli/gws-gmail-triage | مضاف، غير مفعّل |
 | Gmail GWS Inbox Assistant | مهارة | فرز وصياغة ردود بموافقة المشغّل عبر gws (تبنّي ضعيف جداً) | ٢ | https://mcpmarket.com/tools/skills/gmail-gws-inbox-assistant | مضاف، غير مفعّل |
 | popey gmail-automation | مهارة | أتمتة Gmail بـOAuth محلي بدون MCP (حساب Workspace فقط) | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/gmail-automation | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٦:٣٦ (الكويت) · تحسين تحويل وعلاقات عامة وتوظيف واستبيانات
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| skills-ws page-cro | مهارة | تدقيق صفحة هبوط بقائمة ١٠٠ نقطة وإرشاد اختبار إحصائي | ٤ | https://app.unpkg.com/skills-ws@1.8.0/files/skills/page-cro/SKILL.md | مضاف، غير مفعّل |
+| borghei page-cro | مهارة | وضوح العرض والعنوان والـCTA وإثبات اجتماعي ومعالجة اعتراضات | ٣ | https://borghei.github.io/Claude-Skills/skills/business-growth/page-cro.html | مضاف، غير مفعّل |
+| wondelai cro-methodology | مهارة | تدقيق مواقع وتصميم اختبارات A/B مبنية على أدلة | ٣ | https://vibehackers.io/claude-code/skills/cro-methodology-wondelai | مضاف، غير مفعّل |
+| mohitagw15856 press-release | مهارة | بيان صحفي: عنوان وبداية وجسم ونبذة وجهة اتصال (MIT) | ٤ | https://mohitagw15856.github.io/pm-claude-skills/skill/press-release.html | مضاف، غير مفعّل |
+| mohitagw15856 media-pitch | مهارة | عرض صحفي بزاوية خبرية وخطاف لكل صحفي ودعوة واضحة | ٣ | https://mohitagw15856.github.io/pm-claude-skills/skill/media-pitch.html | مضاف، غير مفعّل |
+| samber press-release-writer | مهارة | ١٢ نوع بيان: إطلاق منتج وتمويل وشراكات وأزمات | ٣ | https://claudemarketplaces.com/skills/samber/cc-skills/press-release-writer | مضاف، غير مفعّل |
+| aaron-he-zhu press-media-relations | مهارة | قائمة إعلام بثلاث طبقات وصياغة بيانات (Apache-2.0) | ٣ | https://claudeskills.info/skills/aaron-he-zhu/aaron-marketing-skills/press-media-relations/ | مضاف، غير مفعّل |
+| coreyhaines31 public-relations | مهارة | إعلام مكتسب وطلبات HARO/Qwoted (MIT) | ٣ | https://claudemarketplaces.com/skills/coreyhaines31/marketingskills/public-relations | مضاف، غير مفعّل |
+| dvcrn recruiting-pro | مهارة | أوصاف وظائف وفرز وأسئلة مقابلة وتتبع وعروض (لا تقرر التوظيف) | ٣ | https://www.skillsdirectory.com/skills/dvcrn-recruiting-pro | مضاف، غير مفعّل |
+| guia-matthieu resume-screener | مهارة | معايير فرز وتقييم مرشحين مع ترك القرار للإنسان | ٣ | https://claudemarketplaces.com/skills/guia-matthieu/clawfu-skills/resume-screener | مضاف، غير مفعّل |
+| onewave-ai cowork-hiring-screener | مهارة | فرز مرشحين مع بطاقة تقييم للمقابلة (MIT) | ٣ | https://claudeskills.info/skills/onewave-ai/claude-skills/cowork-hiring-screener/ | مضاف، غير مفعّل |
+| dazuck hiring-helper | مهارة | بحث عن مواهب لأصحاب الشركات الناشئة | ٢ | https://claude-plugins.dev/skills/@dazuck/operator-skills/hiring-helper | مضاف، غير مفعّل |
+| borghei talent-acquisition | مهارة | بطاقات تقييم وأدلة مقابلات منظمة بكفاءات وأسئلة سلوكية | ٣ | https://borghei.github.io/Claude-Skills/skills/hr-operations/talent-acquisition.html | مضاف، غير مفعّل |
+| a5c-ai babysitter survey-platform | مهارة | استبيانات عبر Typeform وSurveyMonkey وGoogle Forms وتحليل SUS | ٣ | https://openskillindex.com/skills/a5c-ai-babysitter-survey-platform | مضاف، غير مفعّل |
+| Typeform skill (mcp.directory) | مهارة | إنشاء نماذج وجلب ردود (يحتاج API token) | ٣ | https://mcp.directory/skills/typeform | مضاف، غير مفعّل |
+| Survey Results Analyzer | مهارة | تحليل صادرات Google Forms وTypeform إلى تقارير | ٣ | https://claudskills.com/skills/survey-results-analyzer/ | مضاف، غير مفعّل |
+| Designing Surveys | مهارة | حزمة استبيان: أسئلة وخطة تحليل وقائمة إطلاق (CSAT وNPS) | ٣ | https://claudskills.com/skills/designing-surveys/ | مضاف، غير مفعّل |
