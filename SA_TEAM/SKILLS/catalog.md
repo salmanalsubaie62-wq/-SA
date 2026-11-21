@@ -654,3 +654,20 @@
 | netresearch markdown-to-pdf | مهارة | تحويل Markdown إلى PDF منسّق بـWeasyPrint وCSS مخصص للهوية | ٤ | https://netresearch.github.io/claude-code-marketplace/en/skills/markdown-to-pdf/ | مضاف، غير مفعّل |
 | claude-office-skills md-to-office | مهارة | Markdown إلى Word وPDF وPowerPoint بـPandoc وقوالب | ٣ | https://skills.sh/claude-office-skills/skills/md-to-office | مضاف، غير مفعّل |
 | davila7 markitdown | مهارة | تحويل ملفات مختلفة إلى Markdown لاستخراج المحتوى | ٣ | https://vibehackers.io/claude-code/skills/markitdown-davila7 | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٣:٣٦ (الكويت) · ترجمة وترجمة فيديو وتحليل مشاعر وإيرادات Stripe وإشعارات
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| aaaaqwq video-subtitles | مهارة | ملفات SRT وترجمة ودمج ترجمة بدعم RTL (موثقة للعبرية والإنجليزية، جودة العربية غير مختبرة) | ٣ | https://skills.sh/aaaaqwq/claude-code-skills/video-subtitles | مضاف، غير مفعّل |
+| video-translator-subtitler | مهارة | ترجمة فيديو مع دعم RTL للعربية (تبنّي ضعيف، المستودع غير مؤكد) | ٢ | https://mcpmarket.com/tools/skills/video-translator-subtitler | مضاف، غير مفعّل |
+| jeremylongshore analyzing-text-sentiment | مهارة | تصنيف مشاعر التعليقات والاستبيانات بدرجات ثقة (MIT) | ٣ | https://tessl.io/registry/skills/github/jeremylongshore/claude-code-plugins-plus-skills/analyzing-text-sentiment | مضاف، غير مفعّل |
+| gked2121 customer-review-aggregator | مهارة | تجميع مراجعات من عدة منصات وتحليل مشاعرها | ٣ | https://skills.sh/gked2121/claude-skills/customer-review-aggregator | مضاف، غير مفعّل |
+| nexscope-ai product-review-analysis | مهارة | تحليل مراجعات المنتجات من Amazon وShopify وEtsy | ٣ | https://claudemarketplaces.com/skills/nexscope-ai/ecommerce-skills/product-review-analysis | مضاف، غير مفعّل |
+| nexscope-ai brand-monitoring | مهارة | تتبع ذكر العلامة وتصنيف المشاعر وتنبيه عند ارتفاع السلبي | ٣ | https://claudemarketplaces.com/skills/nexscope-ai/ecommerce-skills/brand-monitoring | مضاف، غير مفعّل |
+| Apify Brand Reputation Monitor | مهارة | سمعة العلامة من Google Maps وFacebook وInstagram وTikTok عبر Apify (خدمة مدفوعة محتملة) | ٣ | https://mcpmarket.com/tools/skills/apify-brand-reputation-monitor-2 | مضاف، غير مفعّل |
+| npow stripe-analytics-mcp | خادم MCP | فحص صباحي لـMRR والـchurn والمدفوعات الفاشلة بصلاحية قراءة فقط (يحتاج مفتاح Stripe) | ٤ | https://awesome.ecosyste.ms/projects/github.com%2Fnpow%2Fstripe-analytics-mcp | مضاف، غير مفعّل |
+| agentskillexchange Stripe Revenue Analytics Dashboard Builder | مهارة | لوحة إيرادات MRR وchurn وLTV من Stripe API | ٣ | https://skills.sh/agentskillexchange/skills/stripe-revenue-analytics-dashboard-builder | مضاف، غير مفعّل |
+| Revenue MCP (warfare-hub) | خادم MCP | مقاييس اشتراكات من Stripe وGumroad وLemon Squeezy | ٣ | https://crossaitools.com/mcp/warfare-hub/revenue-mcp | مضاف، غير مفعّل |
+| broomva claude-code-channels | مهارة | دردشة ثنائية الاتجاه عبر Telegram وDiscord (تحتاج حساب claude.ai وBun) | ٣ | https://www.skills.sh/broomva/skills/claude-code-channels | مضاف، غير مفعّل |
+| yeachan-heo configure-notifications | مهارة | إعداد تنبيهات Telegram وDiscord وSlack عند انتهاء الجلسات | ٣ | https://claudemarketplaces.com/skills/yeachan-heo/oh-my-claudecode/configure-notifications | مضاف، غير مفعّل |
+| notification-configurator | مهارة | إعداد إشعارات مع سجل تدقيق محلي | ٢ | https://mcpmarket.com/tools/skills/notification-configurator | مضاف، غير مفعّل |
