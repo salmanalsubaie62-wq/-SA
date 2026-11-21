@@ -922,3 +922,17 @@
 | robdmc presentation | مهارة | بناء عروض تقديمية (Smithery). راجع الكود قبل التثبيت | ٣ | https://smithery.ai/skills/robdmc/presentation | مضاف، غير مفعّل |
 | aaronvanston presentation-pitch-deck | مهارة | هيكل عرض مستثمرين ١٠-١٢ شريحة (مشكلة، حل، سوق، طلب) | ٤ | https://claudemarketplaces.com/skills/aaronvanston/skills-presentations/presentation-pitch-deck | مضاف، غير مفعّل |
 | coleam00 pptx-generator | مهارة | شرائح بـpython-pptx بمجلد لكل علامة ونبرة صوت. فحص أمني لمهارة pptx مشابهة طلع متوسط الخطورة | ٤ | https://skills.sh/coleam00/second-brain-skills/pptx-generator | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٧:٣٦ (الكويت) · محاسبة وفواتير وكشط ويب وتدقيق وصول ومعالجة صور
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| XeroAPI xero-mcp-server (الرسمي) | خادم MCP | فواتير وجهات اتصال ومعاملات بنكية وتقارير محاسبة Xero. MIT. يحتاج OAuth وبيانات مالية حقيقية (للمؤسس فقط) | ٥ | https://raw.githubusercontent.com/XeroAPI/xero-mcp-server/HEAD/README.md | مضاف، غير مفعّل |
+| bbookmind mcp | خادم MCP | مسك دفاتر ذكي لـQuickBooks Online. نجومه قليلة فافحصه قبل أي استخدام | ٣ | https://github.com/bbookmind/mcp | مضاف، غير مفعّل |
+| SrishtiKalpa accouting-mcp | خادم MCP | أسئلة بلغة طبيعية على الدفاتر وإنشاء فواتير وتقارير مع خطوة موافقة بشرية. تبنّي قليل | ٣ | https://github.com/SrishtiKalpa/accouting-mcp | مضاف، غير مفعّل |
+| Lumman Multi Books | خادم MCP | تسجيل مصاريف ومدفوعات لـZoho Books | ٣ | https://mcpservers.org/servers/lumman-co-mcp-multi-books | مضاف، غير مفعّل |
+| punkpeye mcp-server-firecrawl | خادم MCP | كشط ويب مع JavaScript rendering ودفعات واكتشاف روابط. مجتمعي، وFirecrawl الرسمي موجود عندنا | ٣ | https://github.com/punkpeye/mcp-server-firecrawl | مضاف، غير مفعّل |
+| mastepanoski wcag-accessibility-audit | مهارة | تدقيق وصول WCAG 2.1/2.2 حسب مبادئ POUR. ما فيها RTL ولا عربي | ٤ | https://skills.sh/mastepanoski/claude-skills/wcag-accessibility-audit | مضاف، غير مفعّل |
+| rmyndharis accessibility-compliance-accessibility-audit | مهارة | دليل تنفيذ تدقيق وصول مع أدوات وأمثلة إصلاح | ٣ | https://skills.sh/rmyndharis/antigravity-skills/accessibility-compliance-accessibility-audit | مضاف، غير مفعّل |
+| vipul510-web mcp-changeimageto | خادم MCP | ١٦ أداة صور: إزالة خلفية وتكبير وإزالة ضوضاء وOCR وinpainting. MIT، بدون حساب حسب الوصف | ٦ | https://mcpservers.org/servers/vipul510-web/mcp-changeimageto | مضاف، غير مفعّل |
+| ryankramer pixelpanda-mcp | خادم MCP | إزالة خلفية وتكبير ٢×/٤× مجاناً (٣ استخدامات يومياً)، وصور منتجات مدفوعة بالرصيد. MIT | ٥ | https://mcpservers.org/es/servers/ryankramer/pixelpanda-mcp | مضاف، غير مفعّل |
+| Pixelcut MCP (مستضاف) | خادم MCP | تعديل صور (إزالة خلفية وتكبير وتوسيع) وتوليد. يستهلك رصيد حساب Pixelcut | ٣ | https://www.pixelcut.ai/docs/agents/mcp.md | مضاف، غير مفعّل |
