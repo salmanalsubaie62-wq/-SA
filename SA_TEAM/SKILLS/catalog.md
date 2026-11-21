@@ -671,3 +671,21 @@
 | broomva claude-code-channels | مهارة | دردشة ثنائية الاتجاه عبر Telegram وDiscord (تحتاج حساب claude.ai وBun) | ٣ | https://www.skills.sh/broomva/skills/claude-code-channels | مضاف، غير مفعّل |
 | yeachan-heo configure-notifications | مهارة | إعداد تنبيهات Telegram وDiscord وSlack عند انتهاء الجلسات | ٣ | https://claudemarketplaces.com/skills/yeachan-heo/oh-my-claudecode/configure-notifications | مضاف، غير مفعّل |
 | notification-configurator | مهارة | إعداد إشعارات مع سجل تدقيق محلي | ٢ | https://mcpmarket.com/tools/skills/notification-configurator | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٤:٣٦ (الكويت) · تحليل بيانات وتوثيق API ونشر وواجهات Next.js
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| coffeefuelbump csv-data-summarizer | مهارة | تحليل pandas كامل لملف CSV يُسقط عليها بدون أسئلة (لفحص مبيعات وتقارير) | ٣ | https://claudemarketplaces.com/skills/coffeefuelbump/csv-data-summarizer-claude-skill/csv-data-summarizer-claude-skill | مضاف، غير مفعّل |
+| dathere qsv | مجموعة مهارات | تنظيف وتدقيق وتحليل وتحويل CSV/Excel واستعلام SQL عليها (الأشمل بين نتائج البيانات) | ٤ | https://tessl.io/registry/skills/github/dathere/qsv | مضاف، غير مفعّل |
+| georgekhananaev data-wrangler | مهارة | عمليات بيانات عامة وميزات Excel بـpandas | ٣ | https://skills.sh/georgekhananaev/claude-skills-vault/data-wrangler | مضاف، غير مفعّل |
+| ericwang915 PythonClaw csv_analyzer | مهارة | إحصاءات وتجميع وفلترة لـCSV وTSV وExcel (يحتاج pandas وopenpyxl) | ٣ | https://openskillindex.com/skills/ericwang915-pythonclaw-csv-analyzer | مضاف، غير مفعّل |
+| luongnv89 api-documentation-generator | مهارة | توثيق API ومواصفات OpenAPI وأمثلة استخدام (لطارق) | ٣ | https://smithery.ai/skills/luongnv89/api-documentation-generator | مضاف، غير مفعّل |
+| jeremylongshore generating-api-docs | مهارة | توليد توثيق API من الكود | ٣ | https://skills.sh/jeremylongshore/claude-code-plugins-plus-skills/generating-api-docs | مضاف، غير مفعّل |
+| davila7 api-documentation-generator | مهارة | قالب توثيق نقاط النهاية بجدول معاملات (مراجعته قبل التفعيل) | ٣ | https://skills.sh/davila7/claude-code-templates/api-documentation-generator | مضاف، غير مفعّل |
+| pfangueiro docker-deployment | مهارة | نشر عبر Docker ببناء متعدد المراحل وتقوية الأمان | ٣ | https://skills.sh/pfangueiro/claude-code-agents/docker-deployment | مضاف، غير مفعّل |
+| affaan-m deployment-patterns | مهارة | أنماط نشر وCI/CD وrollback لـVercel وKubernetes وRailway | ٣ | https://x-cmd.com/skill/affaanmustafa/deployment-patterns | مضاف، غير مفعّل |
+| supercent-io deployment-automation | مهارة | أتمتة نشر بـGitHub Actions وDocker وVercel | ٣ | https://claudemarketplaces.com/skills/supercent-io/skills-template/deployment-automation | مضاف، غير مفعّل |
+| alphaonedev web-deploy | مهارة | نشر مواقع ويب | ٢ | https://skills.sh/alphaonedev/openclaw-graph/web-deploy | مضاف، غير مفعّل |
+| laguagu nextjs-shadcn | مهارة | واجهات Next.js 15/16 بـshadcn/ui وأنماط React حديثة | ٤ | https://www.skills.sh/laguagu/claude-code-nextjs-skills/nextjs-shadcn | مضاف، غير مفعّل |
+| mindrally nextjs-react-typescript | مهارة | إرشادات Next.js وReact وTypeScript | ٣ | https://claudemarketplaces.com/skills/mindrally/skills/nextjs-react-typescript | مضاف، غير مفعّل |
+| borghei senior-frontend | مهارة | فرونت إند React/Next.js/Tailwind مع هيكلة مشاريع | ٣ | https://borghei.github.io/Claude-Skills/skills/engineering/senior-frontend.html | مضاف، غير مفعّل |
