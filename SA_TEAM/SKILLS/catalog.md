@@ -1087,3 +1087,22 @@
 | modelcontextprotocol server-memory (الرسمي) | خادم MCP مرجعي | ذاكرة دائمة بقاعدة معرفة محلية تحفظ معلومات المؤسس عبر المحادثات. اضبط MEMORY_FILE_PATH وإلا الملف قد ينحذف مع التحديث | ٥ | https://raw.githubusercontent.com/modelcontextprotocol/servers/main/src/memory/README.md | مضاف، غير مفعّل |
 | stevenwangler mcp-memory-server | خادم MCP | ذاكرة بين الجلسات مع بحث دلالي فوق قاعدة المعرفة | ٣ | https://github.com/stevenwangler/mcp-memory-server | مضاف، غير مفعّل |
 | s2005 mcp-memory-server | خادم MCP | ذاكرة دائمة بديلة | ٢ | https://github.com/s2005/mcp-memory-server | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٢:٣٦ (الكويت) · مخططات وJupyter وPostman وتحكم بسطح المكتب
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| jgraph drawio-mcp (الرسمي) | خادم MCP | مخططات draw.io قابلة للتعديل من Mermaid. خادم مستضاف على mcp.draw.io وأداة npm وإضافة Claude Code تكتب ملفات .drawio محلياً | ٦ | https://github.com/jgraph/drawio-mcp | مضاف، غير مفعّل |
+| adrianc137 drawio-mcp-claude | خادم MCP | draw.io لـClaude مجتمعي. ما فتحته | ٢ | https://github.com/adrianc137/drawio-mcp-claude | مضاف، غير مفعّل |
+| maaker-ai excalidraw-mcp | خادم MCP | أكثر من ٢٥ نوع مخطط (تدفق وتسلسل وER وخريطة ذهنية ومعمارية) بملفات Excalidraw مع import_mermaid | ٤ | https://mcpservers.org/servers/maaker-ai/excalidraw-mcp | مضاف، غير مفعّل |
+| datalayer jupyter-mcp-server | خادم MCP | تفاعل لحظي مع دفاتر Jupyter. الأنسب للتحليل (pandas وmatplotlib) مع JupyterLab الخاص بنا. نسخة Claude Desktop المجمّعة بدون pandas ولا رسوم | ٥ | https://github.com/datalayer/jupyter-mcp-server | مضاف، غير مفعّل |
+| jjsantos01 jupyter-notebook-mcp | خادم MCP | Jupyter Notebook الكلاسيكي 6.x عبر WebSocket. نشاط مجتمعي محدود | ٢ | https://github.com/jjsantos01/jupyter-notebook-mcp | مضاف، غير مفعّل |
+| Cyb3rWard0g mcp-jupyter-notebook | خادم MCP | FastMCP يشتغل بـuvx، عدد الأدوات يتغير بين النسخ (١٧ ثم ٢٨) | ٣ | https://pypi.org/project/mcp-jupyter-notebook/0.4.0/ | مضاف، غير مفعّل |
+| Postman MCP (الرسمي) | خادم MCP رسمي | اختبار واجهات برمجية وتوليد كود عميل من مجموعات Postman. مستضاف بـOAuth أو محلي بمفتاح Postman. الخادم البعيد ما يوصل لجهازك المحلي | ٤ | https://github.com/postmanlabs/postman-mcp-server | مضاف، غير مفعّل |
+| delano postman-mcp-server | خادم MCP | نسخة مجتمعية. الأفضل الرسمي | ٢ | https://mcpservers.org/servers/delano/postman-mcp-server | مضاف، غير مفعّل |
+| CursorTouch Windows-MCP | خادم MCP | التحكم بويندوز (ماوس وكيبورد ونوافذ وصور شاشة)، الأوسع استخداماً. مخاطرة عالية، يتحكم بالجهاز كامل (للمؤسس فقط) | ٤ | https://raw.githubusercontent.com/CursorTouch/Windows-MCP/main/README.md | مضاف، غير مفعّل |
+| sbroenne mcp-windows | خادم MCP | تشغيل ويندوز ١١ بماوس وكيبورد وصور شاشة. مخاطرة تحكم كامل | ٣ | https://github.com/sbroenne/mcp-windows | مضاف، غير مفعّل |
+| kblood MCPComputerUse | خادم MCP (C#) | ملف تنفيذي واحد، صور شاشة أقل من ١٠٠ مللي ثانية. مخاطرة تحكم كامل | ٣ | https://mcpservers.org/servers/kblood/MCPComputerUse | مضاف، غير مفعّل |
+| WinRemote MCP | خادم MCP | تحكم عن بعد بأكثر من ٤٠ أداة. مخاطرة عالية | ٢ | https://dddabtc.github.io/winremote-mcp | مضاف، غير مفعّل |
+| Cheffromspace MCPControl | خادم MCP | ماوس وكيبورد ونوافذ وصور شاشة لويندوز فقط | ٣ | https://mcpservers.org/ja/servers/Cheffromspace/MCPControl | مضاف، غير مفعّل |
+| AB498 computer-control-mcp | خادم MCP | PyAutoGUI مع RapidOCR للماوس والكيبورد والتعرف على النص | ٣ | https://mcpservers.org/ja/servers/AB498/computer-control-mcp | مضاف، غير مفعّل |
+| k1ta141k mcp-desktop-tools | خادم MCP | تحكم بالمتصفح والحافظة والنوافذ على ويندوز ١٠/١١ بـNode 18+ | ٣ | https://lobehub.com/mcp/k1ta141k-mcp-desktop-tools | مضاف، غير مفعّل |
