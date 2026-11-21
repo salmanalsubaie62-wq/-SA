@@ -890,3 +890,18 @@
 | donchitos sprint-status | مهارة | لقطة تقدم سبرنت: مكتمل وجاري ومحجوب ومخاطر | ٣ | https://claudeskills.info/skills/donchitos/claude-code-game-studios/sprint-status/ | مضاف، غير مفعّل |
 | mindcockpit-ai project-board | مهارة | لوحة مشروع على GitHub Projects وJira وYouTrack | ٣ | https://skillsmp.com/creators/mindcockpit-ai/cognitive-core/claude-skills-project-board | مضاف، غير مفعّل |
 | skills-ws project-management | مهارة | تخطيط مشاريع وتقدير ومخاطر وتحديثات حالة | ٣ | https://app.unpkg.com/skills-ws@1.12.0/files/skills/project-management/SKILL.md | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٥:٣٦ (الكويت) · عربي OCR وترجمة وتجارة Shopify وجدولة سوشل
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| a2mus arabic_ocr_mcp | خادم MCP محلي | التعرف على الخط العربي المكتوب بخط اليد عبر PaddleOCR (محلي، ما يحتاج حساب) | ٦ | https://lobehub.com/mcp/a2mus-arabic_ocr_mcp | مضاف، غير مفعّل |
+| claude-office-skills smart-ocr | مهارة | استخراج نص من صور وسكرينشوتات ومستندات ممسوحة بأكثر من ١٠٠ لغة (يُفترض يشمل العربي، ما تأكدت) | ٦ | https://claudemarketplaces.com/skills/claude-office-skills/skills/smart-ocr | مضاف، غير مفعّل |
+| Arabic AI Atlas | خادم MCP | دليل موارد ذكاء اصطناعي عربية (OCR وغيرها)، دليل مو أداة تنفيذ | ٣ | https://mcpmarket.com/server/arabic-ai-atlas | مضاف، غير مفعّل |
+| everything-claude-code visa-doc-translate | مهارة | ترجمة مستندات صفحة بصفحة مع صورة الأصل جنبها، تنفع لوثائق العملاء | ٤ | https://claudemarketplaces.com/skills/affaan-m/everything-claude-code/visa-doc-translate | مضاف، غير مفعّل |
+| GeLi2001 shopify-mcp | خادم MCP | إدارة منتجات ومتغيرات متجر Shopify. يحتاج توكن Admin API ونطاق المتجر (للمؤسس فقط) | ٥ | https://github.com/geli2001/shopify-mcp | مضاف، غير مفعّل |
+| antoineschaller shopify-mcp-server | خادم MCP | تتبع وتحديث مخزون Shopify. يحتاج توكن Admin API | ٤ | https://github.com/antoineschaller/shopify-mcp-server | مضاف، غير مفعّل |
+| aserper shopify-mcp | خادم MCP | مخزون Shopify (عرض وتعديل ونقل) عبر Admin GraphQL. يحتاج توكن | ٤ | https://images.glama.ai/mcp/servers/aserper/shopify-mcp | مضاف، غير مفعّل |
+| untitled-developers shopify-mcp (١٣٦ أداة) | خادم MCP | تغطية واسعة لـShopify بـ١٣٦ أداة في ١٨ فئة. يحتاج توكن، وكبر الأدوات يرفع المخاطرة | ٤ | https://untitled-developers.github.io/shopify-mcp | مضاف، غير مفعّل |
+| Planoly MCP | خادم MCP | تخطيط وجدولة محتوى سوشل (إنستغرام وتيك توك ويوتيوب) وتحليلات. حساب Planoly مطلوب | ٥ | https://mcpservers.org/servers/planoly/planoly-mcp | مضاف، غير مفعّل |
+| Eclincher MCP | خادم MCP | نشر وصندوق وارد وتحليلات لأكثر من ١٢ شبكة. حساب مدفوع مطلوب | ٤ | https://mcpservers.org/servers/talm/eclincher-mcp-server | مضاف، غير مفعّل |
+| Social Neuron MCP | خادم MCP | ٩٣ أداة لإنشاء وجدولة وتحليل محتوى سوشل. حسب الوصف يحتاج خطة مدفوعة | ٣ | https://mcpservers.org/servers/socialneuron/mcp-server | مضاف، غير مفعّل |
