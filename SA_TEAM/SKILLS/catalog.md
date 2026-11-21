@@ -867,3 +867,26 @@
 | VapiAI vapi-voice-ai (رسمي) | Plugin | إنشاء أرقام ومكالمات وأدوات لوكلاء صوت (يحتاج حساب وتكلفة) | ٣ | https://agentskill.sh/plugins/vapiai/vapi-voice-ai | مضاف، غير مفعّل |
 | agentiveau twilio-phone | مهارة | هاتف عبر Twilio (يحتاج حساب وتكلفة) | ٢ | https://skills.sh/agentiveau/myagentive/twilio-phone | مضاف، غير مفعّل |
 | popey voice-agents | مهارة | بناء وكلاء صوت | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/voice-agents | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٤:٣٦ (الكويت) · حركة وأنيميشن وGoogle Sheets وSlack وTeams وإدارة مشاريع
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| iart-ai web-animation-skills | مجموعة مهارات | GSAP وSVG وLottie وتفاعلات دقيقة وانتقالات صفحات وأداء ٦٠ إطار (لوليد) | ٤ | https://github.com/iart-ai/web-animation-skills | مضاف، غير مفعّل |
+| greensock gsap-skills (يُوصف رسمياً، ما تأكدت) | مهارة | مهارات GSAP: tweens وأداء وأطر | ٣ | https://github.com/greensock/gsap-skills | مضاف، غير مفعّل |
+| freshtechbro gsap-scrolltrigger | مهارة | أنيميشن حسب التمرير بـGSAP ScrollTrigger | ٣ | https://www.skills.sh/freshtechbro/claudedesignskills/gsap-scrolltrigger | مضاف، غير مفعّل |
+| freshtechbro lottie-animations | مهارة | إضافة أنيميشن Lottie للتطبيقات | ٣ | https://claudemarketplaces.com/plugins/freshtechbro-claudedesignskills/lottie-animations | مضاف، غير مفعّل |
+| avabillions motion-framer | مهارة | حركة Framer Motion لواجهات React | ٣ | https://www.skills.sh/avabillions2040/claudedesignskills-02-02-2026/motion-framer | مضاف، غير مفعّل |
+| obeskay lottie-animator | Plugin | توليد Lottie من ملفات SVG بديل لـAfter Effects | ٣ | https://www.claudepluginhub.com/plugins/obeskay-lottie-animator | مضاف، غير مفعّل |
+| ui-skills motion | مهارة | تدقيق جودة الحركة: أداء وتقليل الحركة ومنع تعليق التمرير | ٣ | https://www.ui-skills.com/skills/motion | مضاف، غير مفعّل |
+| henkisdabro google-apps-script | مهارة | سكربتات Google Apps Script | ٣ | https://skills.sh/henkisdabro/wookstar-claude-code-plugins/google-apps-script | مضاف، غير مفعّل |
+| googleworkspace/cli gws-sheets | مهارة | التعامل مع Sheets API عبر أداة gws (يحتاج مصادقة Workspace) | ٤ | https://claudemarketplaces.com/skills/googleworkspace/cli/gws-sheets | مضاف، غير مفعّل |
+| googleworkspace/cli recipe-deploy-apps-script | مهارة | رفع كود Apps Script بسطر الأوامر بدل المحرر (رسمي) | ٣ | https://claudemarketplaces.com/skills/googleworkspace/cli/recipe-deploy-apps-script | مضاف، غير مفعّل |
+| popey google-sheets-automation | مهارة | أتمتة Sheets بـOAuth محلي بدون MCP | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/google-sheets-automation | مضاف، غير مفعّل |
+| claude-office-skills sheets-automation | مهارة | أتمتة جداول (محتوى الوصف غير معروف) | ٢ | https://claudemarketplaces.com/skills/claude-office-skills/skills/sheets-automation | مضاف، غير مفعّل |
+| Slack Bot Creator (mcpmarket) | مهارة | بناء ونشر بوتات Slack لأتمتة العمل | ٣ | https://mcpmarket.com/tools/skills/slack-bot-creator | مضاف، غير مفعّل |
+| popey slack-automation | مهارة | أتمتة Slack: ستاند أب وموافقات وتوجيه إشعارات (يحتاج صلاحيات) | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/slack-automation | مضاف، غير مفعّل |
+| claude-office-skills slack-workflows | مهارة | سير عمل Slack | ٢ | https://claudemarketplaces.com/skills/claude-office-skills/skills/slack-workflows | مضاف، غير مفعّل |
+| popey microsoft-teams-automation | مهارة | رسائل واجتماعات وقنوات Teams عبر Composio/Rube (دليل بدون كود تنفيذي) | ٢ | https://tessl.io/registry/skills/github/popey/claude-code-skills/microsoft-teams-automation | مضاف، غير مفعّل |
+| donchitos sprint-status | مهارة | لقطة تقدم سبرنت: مكتمل وجاري ومحجوب ومخاطر | ٣ | https://claudeskills.info/skills/donchitos/claude-code-game-studios/sprint-status/ | مضاف، غير مفعّل |
+| mindcockpit-ai project-board | مهارة | لوحة مشروع على GitHub Projects وJira وYouTrack | ٣ | https://skillsmp.com/creators/mindcockpit-ai/cognitive-core/claude-skills-project-board | مضاف، غير مفعّل |
+| skills-ws project-management | مهارة | تخطيط مشاريع وتقدير ومخاطر وتحديثات حالة | ٣ | https://app.unpkg.com/skills-ws@1.12.0/files/skills/project-management/SKILL.md | مضاف، غير مفعّل |
