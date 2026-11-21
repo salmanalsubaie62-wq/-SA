@@ -1066,3 +1066,24 @@
 | NickCrew Claude-Cortex terms-of-service | مهارة | صياغة شروط الخدمة وسياسة الخصوصية وEULA لتطبيق أو SaaS. MIT. تحتاج مراجعة محامي | ٤ | https://skills.sh/nickcrew/claude-cortex/terms-of-service | مضاف، غير مفعّل |
 | AgentNXXT website-policy-drafting-skill | مهارة | سياسات خصوصية وشروط وذكاء اصطناعي وكوكيز واستخدام مقبول وDPA | ٣ | https://agentnxxt.github.io/agentskills/policy-skill.html | مضاف، غير مفعّل |
 | eddiebe147 claude-settings contract-drafter | مهارة | مولّد عقود بقوالب (اتفاقيات خدمة). للمُعد سعود. تحتاج مراجعة محامي | ٣ | https://skills.sh/eddiebe147/claude-settings/contract-drafter | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠١:٣٦ (الكويت) · بريد وتخزين سحابي وقواعد بيانات وذاكرة
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| UseJunior email-agent-mcp | خادم MCP | قراءة وبحث وصياغة ردود وتصنيف لـGmail وOutlook. آمن افتراضياً: ما يرسل إلا بعد ضبط قائمة سماح. Apache-2.0 حسب صفحة | ٦ | https://mcpservers.org/de/servers/usejunior/email-agent-mcp | مضاف، غير مفعّل |
+| elie222 inbox-zero | خادم MCP | أتمتة فرز وتلخيص وصياغة ردود البريد. الأرقام متضاربة فتحقق من المستودع | ٤ | https://enterprisedna.co/directories/mcp/elie222-inbox-zero | مضاف، غير مفعّل |
+| marlinjai email-mcp | خادم MCP | Gmail وOutlook وiCloud وIMAP بـOAuth2. MIT. أقرب للوصول والعمليات الجماعية مو الصياغة | ٤ | https://github.com/marlinjai/email-mcp | مضاف، غير مفعّل |
+| sgroi-l email-mcp-server | خادم MCP (Python) | ردود Gmail بنبرة قابلة للضبط وحفظها كمسودات. ما يغطي Outlook | ٣ | https://lobehub.com/mcp/sgroi-l-email-mcp-server | مضاف، غير مفعّل |
+| mcpemails.com (مستضاف) | خادم MCP | قراءة وبحث وإرسال وجدولة وفرز تلقائي. AGPL-3.0 | ٣ | https://mcpservers.org/hi/servers/mcpemails-com | مضاف، غير مفعّل |
+| Dropbox MCP (الرسمي، مستضاف) | خادم MCP رسمي | تصفح مجلدات ومعرفة المساحة المستخدمة وغيرها عبر mcp.dropbox.com. يعمل مع Claude Code و Claude web، ويحتاج حساب Dropbox | ٥ | https://help.dropbox.com/integrations/connect-dropbox-mcp-server | مضاف، غير مفعّل |
+| ngs dropbox-mcp-server (Go) | خادم MCP | Dropbox مجتمعي: كل مستخدم ينشئ تطبيق Dropbox خاص فيه ويسجّل دخول من المتصفح | ٣ | https://raw.githubusercontent.com/ngs/dropbox-mcp/HEAD/README.md | مضاف، غير مفعّل |
+| gouthamkallempudi silo-mcp | خادم MCP | نقل ملفات بين الجهاز و٩ منصات تخزين منها Dropbox وOneDrive. تحذير: وضع HTTP بدون مصادقة، لا يُكشف خارج localhost | ٣ | https://mcpservers.org/servers/gouthamkallempudi/silo-mcp | مضاف، غير مفعّل |
+| cloud-storage-mcp (PyPI) | خادم MCP | Mega وBox وOneDrive: عرض وبحث ورفع وتنزيل وحذف. يحتاج اعتمادات OneDrive. ما فيه خادم OneDrive رسمي | ٣ | https://pypi.org/project/cloud-storage-mcp | مضاف، غير مفعّل |
+| joybindroo pyMCP | خادم MCP (Python) | PostgreSQL وMySQL وSQLite بوضع قراءة فقط يمنع الكتابة | ٤ | https://github.com/joybindroo/pyMCP | مضاف، غير مفعّل |
+| melkeydev mcp-database (Go) | خادم MCP | استعلامات داخل معاملات للقراءة فقط لثلاث قواعد | ٤ | https://github.com/melkeydev/mcp-database | مضاف، غير مفعّل |
+| nam088 mcp-database-server | خادم MCP | قراءة فقط افتراضياً لـPostgreSQL وMySQL وSQLite بـnpx | ٤ | https://github.com/nam088/mcp-database-server | مضاف، غير مفعّل |
+| mcp-sql (Rust) | خادم MCP | ثلاث قواعد، قراءة فقط افتراضياً | ٣ | https://docs.rs/crate/mcp-sql/0.1.0/source/README.md | مضاف، غير مفعّل |
+| executeautomation mcp-database-server | خادم MCP | قواعد بيانات متعددة. تحقق من وضع القراءة بالإعدادات | ٣ | https://mcpservers.org/en/servers/executeautomation/mcp-database-server | مضاف، غير مفعّل |
+| modelcontextprotocol server-memory (الرسمي) | خادم MCP مرجعي | ذاكرة دائمة بقاعدة معرفة محلية تحفظ معلومات المؤسس عبر المحادثات. اضبط MEMORY_FILE_PATH وإلا الملف قد ينحذف مع التحديث | ٥ | https://raw.githubusercontent.com/modelcontextprotocol/servers/main/src/memory/README.md | مضاف، غير مفعّل |
+| stevenwangler mcp-memory-server | خادم MCP | ذاكرة بين الجلسات مع بحث دلالي فوق قاعدة المعرفة | ٣ | https://github.com/stevenwangler/mcp-memory-server | مضاف، غير مفعّل |
+| s2005 mcp-memory-server | خادم MCP | ذاكرة دائمة بديلة | ٢ | https://github.com/s2005/mcp-memory-server | مضاف، غير مفعّل |
