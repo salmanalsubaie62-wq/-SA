@@ -1045,3 +1045,24 @@
 | piotr-agier google-drive-mcp | خادم MCP | Drive وDocs وSheets وSlides وCalendar بخادم واحد. صلاحيات OAuth واسعة (للمؤسس فقط) | ٥ | https://unpkg.com/@piotr-agier/google-drive-mcp@2.2.0/README.md | مضاف، غير مفعّل |
 | ngs google-mcp-server | خادم MCP (Go) | أدوات إنشاء صريحة: docs_document_create وslides_presentation_create. تثبيت Homebrew أو Go | ٥ | https://lobehub.com/es/mcp/ngs-google-mcp-server | مضاف، غير مفعّل |
 | Google Slides MCP الرسمي (مستضاف) | خادم MCP رسمي | يُضاف كموصل مخصص في Claude بـOAuth. يتطلب خطة Claude مدفوعة. Google تحذر من ربطه بتطبيقات غير موثوقة | ٥ | https://developers.google.com/workspace/slides/api/guides/configure-mcp-server | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٢٤:٣٦ (الكويت) · مناهج وثلاثي الأبعاد وألعاب وسياسات وعقود
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| weihaoqu gemini-curriculum-designer | مهارة | تحويل فكرة دورة خام لمنهج منظم وخطة تقديم. للأستاذة منيرة. ما أكدت الملفات الناتجة | ٤ | https://weihaoqu.github.io/gemini-curriculum-designer/ | مضاف، غير مفعّل |
+| diegosouzapw curriculum-designer | مهارة | ملفات منفصلة للمنهج وخطة التقديم والتقييمات والموارد، وقالب اختبار بدرجة نجاح ومدة | ٤ | https://openskillindex.com/skills/diegosouzapw-awesome-omni-skill-curriculum-designer | مضاف، غير مفعّل |
+| dev261004 web3d-mcp-server | خادم MCP | يحوّل وصفاً نصياً لخطة مشهد ثلاثي الأبعاد وكود R3F جاهز (.jsx/.tsx). للمطوّر وليد | ٥ | https://glama.ai/mcp/servers/dev261004/web3d-mcp-server | مضاف، غير مفعّل |
+| laaielichter threesmith | خادم MCP | توليد كود Three.js: مشاهد وكاميرات ومواد وإضاءة وتحكم وتحريك | ٤ | https://claudemarketplaces.com/mcp/laaielichter/threesmith | مضاف، غير مفعّل |
+| react-three-fiber 3d graphics (mcpmarket) | مهارة | بناء مشاهد ثلاثية معقدة داخل تطبيقات React. أرقام النجوم متضاربة بين الصفحات | ٣ | https://mcpmarket.com/tools/skills/react-three-fiber-3d-graphics | مضاف، غير مفعّل |
+| dexploarer threejs-scene-builder | مهارة | إعداد مشهد وشخصيات وفيزياء وتفاعل ولعب | ٣ | https://www.skills.sh/dexploarer/claudius-skills/threejs-scene-builder | مضاف، غير مفعّل |
+| anthemflynn ccmp threejs | مهارة | Three.js عام | ٣ | https://www.skills.sh/anthemflynn/ccmp/threejs | مضاف، غير مفعّل |
+| IvanMurzak GameDev-MCP-Server | خادم MCP | خادم واحد يربط Unity وGodot وUnreal عبر إضافات المحرر. للمطوّر جاسم. النسخة متضاربة (٨.٠.١ و٩.٢.٦) فتأكد من المستودع | ٤ | https://packages.nuget.org/packages/com.IvanMurzak.GameDev.MCP.Server | مضاف، غير مفعّل |
+| dmae97 gamedev-all-in-one-mcp | خادم MCP | Roblox Studio وUnity وUnreal وBlender معاً | ٣ | https://mcpservers.org/servers/dmae97/gamedev-all-in-one-mcp | مضاف، غير مفعّل |
+| WesleySalzer GameCodex | خادم MCP | توثيق وسير عمل لمحركات كثيرة (Godot وUnity وUnreal وPhaser) بـnpx | ٤ | https://glama.ai/mcp/servers/WesleySalzer/GameCodex | مضاف، غير مفعّل |
+| bradypp godot-mcp | خادم MCP | الأشمل لـGodot حسب مراجعة، وفيه وضع للقراءة فقط للأمان | ٤ | https://dev.to/grove_chatforest/game-engine-3d-development-mcp-servers-unity-unreal-godot-roblox-phaser-and-more-4kk3 | مضاف، غير مفعّل |
+| ChiR24 Unreal_mcp | خادم MCP | ٣٦ أداة لـUnreal عبر جسر C++ أصلي | ٣ | https://dev.to/grove_chatforest/game-engine-3d-development-mcp-servers-unity-unreal-godot-roblox-phaser-and-more-4kk3 | مضاف، غير مفعّل |
+| phaserjs editor-mcp-server (الرسمي) | خادم MCP | إدارة مشاهد وأصول وخرائط في Phaser Editor 5. مشروع صغير (٢٦ نجمة) | ٣ | https://dev.to/grove_chatforest/game-engine-3d-development-mcp-servers-unity-unreal-godot-roblox-phaser-and-more-4kk3 | مضاف، غير مفعّل |
+| lauripiispanen game-mcp | خادم MCP | وسيط TCP بسيط لأي محرك يطبّق بروتوكوله | ٢ | https://lobehub.com/zh/mcp/lauripiispanen-game-mcp | مضاف، غير مفعّل |
+| NickCrew Claude-Cortex terms-of-service | مهارة | صياغة شروط الخدمة وسياسة الخصوصية وEULA لتطبيق أو SaaS. MIT. تحتاج مراجعة محامي | ٤ | https://skills.sh/nickcrew/claude-cortex/terms-of-service | مضاف، غير مفعّل |
+| AgentNXXT website-policy-drafting-skill | مهارة | سياسات خصوصية وشروط وذكاء اصطناعي وكوكيز واستخدام مقبول وDPA | ٣ | https://agentnxxt.github.io/agentskills/policy-skill.html | مضاف، غير مفعّل |
+| eddiebe147 claude-settings contract-drafter | مهارة | مولّد عقود بقوالب (اتفاقيات خدمة). للمُعد سعود. تحتاج مراجعة محامي | ٣ | https://skills.sh/eddiebe147/claude-settings/contract-drafter | مضاف، غير مفعّل |
