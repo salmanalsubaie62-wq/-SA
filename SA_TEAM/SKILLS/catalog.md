@@ -824,3 +824,23 @@
 | samber chrome-extension | مهارة | تطوير إضافات كروم Manifest V3 | ٣ | https://claudemarketplaces.com/skills/samber/cc-skills/chrome-extension | مضاف، غير مفعّل |
 | googlechrome modern-web-guidance chrome-extensions | مهارة | إرشادات إضافات كروم من Google | ٣ | https://claudemarketplaces.com/skills/googlechrome/modern-web-guidance/chrome-extensions | مضاف، غير مفعّل |
 | popey chrome-extension-developer | مهارة | service workers وcontent scripts وتواصل بين السياقات | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/chrome-extension-developer | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٢:٣٦ (الكويت) · وكلاء متعددون وتقييم ومراقبة LLM وRAG وبناء MCP
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| orchestra-research crewai-multi-agent | مهارة | فرق وكلاء بأدوار عبر CrewAI بدون LangChain | ٣ | https://claudemarketplaces.com/skills/orchestra-research/ai-research-skills/crewai-multi-agent | مضاف، غير مفعّل |
+| jeremylongshore orchestrating-multi-agent-systems | مهارة | تنسيق أنظمة وكلاء متعددين بـAI SDK | ٣ | https://raw.githubusercontent.com/jeremylongshore/claude-code-plugins-plus-skills/HEAD/plugins/ai-ml/ai-sdk-agents/skills/orchestrating-multi-agent-systems/SKILL.md | مضاف، غير مفعّل |
+| borghei agent-workflow-designer | مهارة | تصميم سير عمل وكلاء | ٣ | https://borghei.github.io/Claude-Skills/skills/engineering/agent-workflow-designer.html | مضاف، غير مفعّل |
+| yonatangross orchestkit agent-orchestration | مهارة | توجيه وكلاء وأنماط موثوقية وميزانية سياق وتكلفة | ٣ | https://claudeskills.info/skills/yonatangross/orchestkit/agent-orchestration/ | مضاف، غير مفعّل |
+| jamie-bitflight orchestrating-swarms | مهارة | أسراب وكلاء بأدوات الفرق الأصلية في Claude Code | ٣ | https://skills.sh/jamie-bitflight/claude_skills/orchestrating-swarms | مضاف، غير مفعّل |
+| langfuse/skills (رسمي) | مهارة | تتبع وإدارة برومبتات وتقييم (يحتاج حساب Langfuse) | ٤ | https://langfuse.com/changelog/2026-05-26-langfuse-agent-skill | مضاف، غير مفعّل |
+| Langfuse plugin (دليل Claude) | Plugin | إعداد تتبع واستعلام عن traces وبوابات تجارب CI | ٣ | https://claude.com/plugins/langfuse | مضاف، غير مفعّل |
+| popey langfuse | مهارة | تتبع وتقييم ومجموعات بيانات | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/langfuse | مضاف، غير مفعّل |
+| PramodDutta qaskills langfuse-llm-observability | مهارة | اختبار بالإنتاج وتقييم على حركة حقيقية واكتشاف تراجع | ٣ | https://raw.githubusercontent.com/PramodDutta/qaskills/main/seed-skills/langfuse-llm-observability/SKILL.md | مضاف، غير مفعّل |
+| wshobson rag-implementation | مهارة | مقارنة Pinecone وQdrant وpgvector وغيرها وتوصيات embeddings (لبوتات دعم) | ٤ | https://claudemarketplaces.com/skills/wshobson/agents/rag-implementation | مضاف، غير مفعّل |
+| github pinecone-rag | مهارة | خطوط RAG وذاكرة وكلاء على Pinecone | ٣ | https://mcpservers.org/agent-skills/github/pinecone-rag | مضاف، غير مفعّل |
+| claude-dev-suite vector-databases | مهارة | أمثلة pgvector وPinecone وChroma وQdrant | ٣ | https://skills.sh/claude-dev-suite/claude-dev-suite/vector-databases | مضاف، غير مفعّل |
+| anthropics mcp-builder | مهارة | بناء خادم MCP: بحث وتنفيذ ومراجعة وتقييم (رسمي، متوفر أصلاً بجلسة العمل) | ٤ | https://hackernoon.com/skills/anthropics-mcp-builder | مضاف، غير مفعّل |
+| anthropics build-mcp-server | مهارة | اكتشاف قبل الكود وتغليف الخادم ببلجن مع مهارات | ٤ | https://skills.sh/anthropics/claude-plugins-official/build-mcp-server | مضاف، غير مفعّل |
+| borghei mcp-server-builder | مهارة | تحويل OpenAPI إلى MCP | ٣ | https://skills.sh/borghei/claude-skills/mcp-server-builder | مضاف، غير مفعّل |
+| parcadei skill-developer | مهارة | مهارة لصنع مهارات جديدة بما فيها ما يغلّف MCP | ٣ | https://smithery.ai/skills/parcadei/skill-developer | مضاف، غير مفعّل |
