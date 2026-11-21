@@ -731,3 +731,20 @@
 | Typeform skill (mcp.directory) | مهارة | إنشاء نماذج وجلب ردود (يحتاج API token) | ٣ | https://mcp.directory/skills/typeform | مضاف، غير مفعّل |
 | Survey Results Analyzer | مهارة | تحليل صادرات Google Forms وTypeform إلى تقارير | ٣ | https://claudskills.com/skills/survey-results-analyzer/ | مضاف، غير مفعّل |
 | Designing Surveys | مهارة | حزمة استبيان: أسئلة وخطة تحليل وقائمة إطلاق (CSAT وNPS) | ٣ | https://claudskills.com/skills/designing-surveys/ | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٧:٣٦ (الكويت) · نشرات بريدية وقواعد معرفة وبوتات دعم ونصوص منتجات ونماذج مالية
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| openclaudia newsletter | مهارة | تخطيط وكتابة وتسييل نشرة بريدية | ٣ | https://claudeskills.info/skills/openclaudia/openclaudia-skills/newsletter/ | مضاف، غير مفعّل |
+| mohitagw15856 newsletter-writer | مهارة | عدد نشرة كامل: عنوان ومعاينة وخطاف وجسم وCTA (MIT) | ٤ | https://claudeskills.info/skills/mohitagw15856/pm-claude-skills/newsletter-writer/ | مضاف، غير مفعّل |
+| jamditis newsletter-publishing | مهارة | اختيار منصة نشر ونشر نشرات (صحافة) | ٣ | https://jamditis.github.io/claude-skills-journalism/newsletter-publishing | مضاف، غير مفعّل |
+| Growth Unhinged skills | مجموعة مهارات | تحرير محتوى ومنشورات LinkedIn وSEO ونمو نشرات (أحسن مع beehiiv MCP، يحتاج ربط) | ٣ | https://www.growthunhinged.com/p/the-claude-skills-i-use-to-run-growth-unhinged | مضاف، غير مفعّل |
+| moizibnyousaf newsletter | مهارة | إعداد نشرة على Substack وBeehiiv وGhost وConvertKit | ٣ | https://www.skillsdirectory.com/skills/moizibnyousaf-newsletter | مضاف، غير مفعّل |
+| onewave-ai knowledge-base-builder | مهارة | تحويل تذاكر الدعم إلى مقالات قاعدة معرفة جاهزة (لشهد) | ٤ | https://www.skills.sh/onewave-ai/claude-skills/knowledge-base-builder | مضاف، غير مفعّل |
+| codaone ai-customer-service | مهارة | قاعدة معرفة دعم عملاء من مستندات أو موقع مع اختبار استعلامات (يحترم robots.txt) | ٣ | https://www.codaone.ai/skills/ai-customer-service | مضاف، غير مفعّل |
+| codaone chatbot-builder | مهارة | بناء بوت محادثة | ٣ | https://www.codaone.ai/skills/chatbot-builder | مضاف، غير مفعّل |
+| Bo FAQ Bot | مهارة | قاعدة FAQ واستعلام منها من ملفات Markdown | ٣ | https://claudskills.com/skills/bo-faq-bot/ | مضاف، غير مفعّل |
+| vos91 ecommerce-copywriting | مهارة | وصف منتجات وصفحات تصنيف وسلة الدفع وبريد المعاملات (لسلة وزد يُستخدم كنص مع قوالب عربية) | ٤ | https://claudemarketplaces.com/skills/vos91/agent-skills/ecommerce-copywriting | مضاف، غير مفعّل |
+| sickn33 startup-business-analyst-financial-projections | مهارة | توقعات ٣-٥ سنوات بثلاثة سيناريوهات للإيراد والتكاليف والتدفق (لخالد) | ٣ | https://claudeskills.info/skills/sickn33/agentic-awesome-skills/startup-business-analyst-financial-projections/ | مضاف، غير مفعّل |
+| kondalrao finance skills | Plugin | تحليل نسب وDCF وانحراف ميزانية وتوقعات متجددة مع ٤ أدوات Python | ٤ | https://www.claudepluginhub.com/plugins/kondalrao-finance-skills-finance | مضاف، غير مفعّل |
+| VC Financial Modeler (startup valuation) | مهارة | نمذجة تقييم شركات ناشئة | ٢ | https://mcpmarket.com/tools/skills/vc-financial-modeler-startup-valuation | مضاف، غير مفعّل |
