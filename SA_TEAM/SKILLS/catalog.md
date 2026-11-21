@@ -689,3 +689,24 @@
 | laguagu nextjs-shadcn | مهارة | واجهات Next.js 15/16 بـshadcn/ui وأنماط React حديثة | ٤ | https://www.skills.sh/laguagu/claude-code-nextjs-skills/nextjs-shadcn | مضاف، غير مفعّل |
 | mindrally nextjs-react-typescript | مهارة | إرشادات Next.js وReact وTypeScript | ٣ | https://claudemarketplaces.com/skills/mindrally/skills/nextjs-react-typescript | مضاف، غير مفعّل |
 | borghei senior-frontend | مهارة | فرونت إند React/Next.js/Tailwind مع هيكلة مشاريع | ٣ | https://borghei.github.io/Claude-Skills/skills/engineering/senior-frontend.html | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٥:٣٦ (الكويت) · شعارات SVG ومعالجة صور وشخصيات عملاء وGmail
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| neonwatty logo-designer-skill | Plugin | تصميم شعار SVG تكرارياً بمقابلة واستكشاف وتصدير PNG (MIT) | ٤ | https://github.com/neonwatty/logo-designer-skill | مضاف، غير مفعّل |
+| op7418 logo-generator-skill | مهارة | شعارات SVG وPNG بـGemini (تحتاج مفتاح GEMINI_API_KEY، للمؤسس فقط) | ٣ | https://awesome.ecosyste.ms/projects/github.com%2Fop7418%2Flogo-generator-skill | مضاف، غير مفعّل |
+| rknall svg-logo-designer | مهارة | شعارات SVG بتخطيطات وأنماط متعددة | ٣ | https://www.skills.sh/rknall/claude-skills/svg-logo-designer | مضاف، غير مفعّل |
+| dwsy svg-logo-generator | مهارة | شعارات وأيقونات هندسية بسكربتات Python بدون اعتماديات | ٣ | https://skills.sh/dwsy/agent/svg-logo-generator | مضاف، غير مفعّل |
+| nasrulhazim svg-logo-system | مهارة | نظام شعار من أربع مراحل مع نسخ فاتحة وداكنة وأيقونات | ٣ | https://claude-plugins.dev/skills/@nasrulhazim/agent-skills/svg-logo-system | مضاف، غير مفعّل |
+| jlouage Image-Editing-Claude-Skill | مهارة | تعديل صور CLI: حجم وعلامة مائية ودفعات وشفافية | ٤ | https://github.com/jlouage/Image-Editing-Claude-Skill | مضاف، غير مفعّل |
+| tdimino image-forge | مهارة | تغيير حجم دفعات وتحويل صيغ وعلامات مائية وصفحات معاينة | ٣ | https://skills.sh/tdimino/claude-code-minoan/image-forge | مضاف، غير مفعّل |
+| guia-matthieu image-batch | مهارة | تغيير حجم مجلد صور بـPillow وrembg | ٣ | https://www.skills.sh/guia-matthieu/clawfu-skills/image-batch | مضاف، غير مفعّل |
+| codaone image-process | مهارة | ضغط وإزالة وتبديل خلفية ورفع دقة (محلي) | ٤ | https://www.codaone.ai/skills/image-process/ | مضاف، غير مفعّل |
+| Sirv AI Studio | خادم MCP | إزالة خلفية ورفع دقة بدفعات حتى ١٠٠ صورة (خدمة مستضافة برصيد مدفوع) | ٣ | https://skills.sh/igorvaryvoda/image-optimization-skill/sirv-ai-studio | مضاف، غير مفعّل |
+| thatrebeccarae icp-research | مهارة | ملف عميل مثالي مع اكتشاف مجتمعات واستخراج لغة العملاء | ٤ | https://skills.sh/thatrebeccarae/claude-marketing/icp-research | مضاف، غير مفعّل |
+| levalencia icp-persona-builder | مهارة | ٤-٦ شرائح مشترين بأبحاث ويب وشخصيات بدوافع ومعايير قرار | ٤ | https://www.skillsdirectory.com/skills/levalencia-icp-persona-builder | مضاف، غير مفعّل |
+| gooseworks-ai buyer-persona-generator | مهارة | شخصيات مشترين بـWebSearch بدون سكربت | ٣ | https://claudeskills.info/skills/gooseworks-ai/goose-skills/buyer-persona-generator/ | مضاف، غير مفعّل |
+| phuryn ideal-customer-profile | مهارة | تحديد العميل المثالي من بيانات بحث وJTBD | ٣ | https://claudemarketplaces.com/skills/phuryn/pm-skills/ideal-customer-profile | مضاف، غير مفعّل |
+| googleworkspace/cli gws-gmail-triage | مهارة | ملخص بريد غير مقروء للقراءة فقط بدون تعديل الصندوق (رسمي من Google، يحتاج ربط حساب) | ٥ | https://claudemarketplaces.com/skills/googleworkspace/cli/gws-gmail-triage | مضاف، غير مفعّل |
+| Gmail GWS Inbox Assistant | مهارة | فرز وصياغة ردود بموافقة المشغّل عبر gws (تبنّي ضعيف جداً) | ٢ | https://mcpmarket.com/tools/skills/gmail-gws-inbox-assistant | مضاف، غير مفعّل |
+| popey gmail-automation | مهارة | أتمتة Gmail بـOAuth محلي بدون MCP (حساب Workspace فقط) | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/gmail-automation | مضاف، غير مفعّل |
