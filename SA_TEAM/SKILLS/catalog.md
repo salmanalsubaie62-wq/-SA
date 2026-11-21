@@ -905,3 +905,20 @@
 | Planoly MCP | خادم MCP | تخطيط وجدولة محتوى سوشل (إنستغرام وتيك توك ويوتيوب) وتحليلات. حساب Planoly مطلوب | ٥ | https://mcpservers.org/servers/planoly/planoly-mcp | مضاف، غير مفعّل |
 | Eclincher MCP | خادم MCP | نشر وصندوق وارد وتحليلات لأكثر من ١٢ شبكة. حساب مدفوع مطلوب | ٤ | https://mcpservers.org/servers/talm/eclincher-mcp-server | مضاف، غير مفعّل |
 | Social Neuron MCP | خادم MCP | ٩٣ أداة لإنشاء وجدولة وتحليل محتوى سوشل. حسب الوصف يحتاج خطة مدفوعة | ٣ | https://mcpservers.org/servers/socialneuron/mcp-server | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٦:٣٦ (الكويت) · Notion وObsidian وAirtable وMetabase وGoogle Workspace وعروض تقديمية
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| awkoy notion-mcp-server | خادم MCP | Notion بخفة أكثر على السياق، بديل خادم Notion المتوقف. يحتاج توكن تكامل (للمؤسس فقط) | ٥ | https://raw.githubusercontent.com/awkoy/notion-mcp-server/HEAD/README.md | مضاف، غير مفعّل |
+| fazer-ai mcp-obsidian | خادم MCP | ربط Claude بمخزن Obsidian عبر Local REST API. تبنّيه قليل (١٦ نجمة) | ٤ | https://hub.docker.com/mcp/server/obsidian/config | مضاف، غير مفعّل |
+| cwente25 knowledgebasemcp | خادم MCP | قاعدة معرفة شخصية بملفات Markdown وYAML frontmatter، متوافقة مع Obsidian، محلية | ٤ | https://lobehub.com/bg/mcp/cwente25-knowledgebasemcp | مضاف، غير مفعّل |
+| Airtable MCP (Docker Hub) | خادم MCP | قراءة مخططات وسجلات Airtable وتعديلها. يحتاج توكن Airtable | ٤ | https://hub.docker.com/mcp/server/notion/config | مضاف، غير مفعّل |
+| CW-Codewalnut metabase-mcp-server | خادم MCP | ربط لوحات وجداول Metabase بـClaude بطلبات لغة طبيعية. يحتاج مفتاح API | ٤ | https://github.com/CW-Codewalnut/metabase-mcp-server | مضاف، غير مفعّل |
+| easecloudio mcp-metabase-server | خادم MCP | نحو ٩٦ أداة للوحات والأسئلة وقواعد البيانات في Metabase | ٤ | https://github.com/easecloudio/mcp-metabase-server | مضاف، غير مفعّل |
+| 1luvc0d3 metabase-mcp | خادم MCP | Metabase بأوضاع قراءة/كتابة/كامل وحواجز SQL وسجل تدقيق (الأكثر أماناً بين المجتمعية) | ٥ | https://raw.githubusercontent.com/1luvc0d3/metabase-mcp/HEAD/README.md | مضاف، غير مفعّل |
+| giuseppe-coco Google-Workspace-MCP-Server | خادم MCP | Gmail وCalendar وDrive بخادم واحد. صلاحيات OAuth واسعة (للمؤسس فقط) | ٥ | https://raw.githubusercontent.com/giuseppe-coco/Google-Workspace-MCP-Server/master/README.md | مضاف، غير مفعّل |
+| foreverworks mcps (google) | خادم MCP | وحدة تقويم: أحداث ومواعيد فاضية وإيجاد وقت والرد على دعوات | ٤ | https://mcpservers.org/servers/github-com-foreverworks-mcps-tree-main-servers-google | مضاف، غير مفعّل |
+| Google Meet MCP (Gumloop) | خادم MCP مستضاف | إنشاء اجتماعات وإدارة الحضور وقراءة نصوص الاجتماعات. يحتاج حساب Gumloop | ٣ | https://www.gumloop.com/connectors/gmeet-mcp | مضاف، غير مفعّل |
+| robdmc presentation | مهارة | بناء عروض تقديمية (Smithery). راجع الكود قبل التثبيت | ٣ | https://smithery.ai/skills/robdmc/presentation | مضاف، غير مفعّل |
+| aaronvanston presentation-pitch-deck | مهارة | هيكل عرض مستثمرين ١٠-١٢ شريحة (مشكلة، حل، سوق، طلب) | ٤ | https://claudemarketplaces.com/skills/aaronvanston/skills-presentations/presentation-pitch-deck | مضاف، غير مفعّل |
+| coleam00 pptx-generator | مهارة | شرائح بـpython-pptx بمجلد لكل علامة ونبرة صوت. فحص أمني لمهارة pptx مشابهة طلع متوسط الخطورة | ٤ | https://skills.sh/coleam00/second-brain-skills/pptx-generator | مضاف، غير مفعّل |
