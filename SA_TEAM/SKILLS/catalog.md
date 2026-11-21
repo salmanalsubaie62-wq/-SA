@@ -936,3 +936,19 @@
 | vipul510-web mcp-changeimageto | خادم MCP | ١٦ أداة صور: إزالة خلفية وتكبير وإزالة ضوضاء وOCR وinpainting. MIT، بدون حساب حسب الوصف | ٦ | https://mcpservers.org/servers/vipul510-web/mcp-changeimageto | مضاف، غير مفعّل |
 | ryankramer pixelpanda-mcp | خادم MCP | إزالة خلفية وتكبير ٢×/٤× مجاناً (٣ استخدامات يومياً)، وصور منتجات مدفوعة بالرصيد. MIT | ٥ | https://mcpservers.org/es/servers/ryankramer/pixelpanda-mcp | مضاف، غير مفعّل |
 | Pixelcut MCP (مستضاف) | خادم MCP | تعديل صور (إزالة خلفية وتكبير وتوسيع) وتوليد. يستهلك رصيد حساب Pixelcut | ٣ | https://www.pixelcut.ai/docs/agents/mcp.md | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١٨:٣٦ (الكويت) · واتساب وتيليغرام ومدفوعات الخليج ومستندات Office ونماذج واستبيانات
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| lharries whatsapp-mcp | خادم MCP (Go) | إرسال واستقبال رسائل واتساب لحساب شخصي. خطر حظر الحساب وربط رقم حقيقي (للمؤسس فقط) | ٤ | https://enterprisedna.co/directories/mcp/lharries-whatsapp-mcp | مضاف، غير مفعّل |
+| toloco whasapo | خادم MCP (Go) | واتساب عبر whatsmeow بملف تنفيذي واحد. نفس مخاطر الحساب الشخصي | ٣ | https://mcpservers.org/es/servers/toloco/whasapo | مضاف، غير مفعّل |
+| Gnaneshdivi personal-whatsapp-mcp | خادم MCP (Python) | واتساب شخصي بـ٢٣ أداة، ذاتي الاستضافة | ٣ | https://mcpservers.org/ru/servers/gnaneshdivi/personal-whatsapp-mcp | مضاف، غير مفعّل |
+| myfatoorah-mcp (npm، إصدار ٠.١.٠) | خادم MCP | روابط دفع MyFatoorah (KNET وApple Pay) والتحقق من الدفع والفواتير والاستردادات. مجتمعي مبكر، لمس مدفوعات حقيقية (للمؤسس فقط) | ٥ | https://socket.dev/npm/package/myfatoorah-mcp | مضاف، غير مفعّل |
+| tap-payments MCP | خادم MCP | مدفوعات Tap (الكويت والسعودية والإمارات والبحرين): خصومات واستردادات وعملاء وفواتير. مجتمعي | ٤ | https://mcpmarket.com/server/tap-payments | مضاف، غير مفعّل |
+| Kuwait Payments MCP | خادم MCP بعيد | قبول مدفوعات في الكويت (KNET وبطاقات وApple Pay) عبر Tap. حساب Tap مطلوب | ٤ | https://glama.ai/mcp/servers/pxns04ydtv | مضاف، غير مفعّل |
+| GongRzhe Office-Word-MCP-Server | خادم MCP | إنشاء وقراءة وتعديل ملفات Word. محلي | ٥ | https://mcpservers.org/servers/GongRzhe/Office-Word-MCP-Server | مضاف، غير مفعّل |
+| alejandroBallesterosC document-edit-mcp | خادم MCP | Word وExcel وPDF: تحويل CSV إلى Excel وWord إلى PDF | ٤ | https://glama.ai/mcp/servers/@alejandroBallesterosC/document-edit-mcp/tree | مضاف، غير مفعّل |
+| filhocf docforge-mcp | خادم MCP | توليد مستندات من قوالب (DOCX وXLSX وPPTX وPDF) بشروط وحلقات. الأقرب لتقارير العملاء | ٥ | https://images.glama.ai/mcp/servers/filhocf/docforge-mcp | مضاف، غير مفعّل |
+| office-mcp (Python) | خادم MCP | Word وExcel وPowerPoint مع تصدير PDF عبر LibreOffice | ٣ | https://app.unpkg.com/office-mcp@1.6.1/files/README.md | مضاف، غير مفعّل |
+| Tally (مع MCP رسمي) | خدمة نماذج | نماذج وإجابات بخادم MCP رسمي وخطة مجانية. ينفع لاستبيانات العملاء. يحتاج حساب | ٥ | https://tally.so/help/best-mcp-form-builders | مضاف، غير مفعّل |
+| Weavely AI Forms & Surveys | خادم MCP | إنشاء نماذج واستبيانات بالذكاء الاصطناعي. يحتاج حساب | ٣ | https://mcpservers.org/id/servers/help-weavely-ai-integrations-mcp | مضاف، غير مفعّل |
