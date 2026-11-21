@@ -1023,3 +1023,25 @@
 | PostMCP AI | خادم MCP | نشر على LinkedIn وX، MIT حسب الوصف. ما تأكدت من التحليلات | ٣ | https://mcpservers.org/servers/postmcp/postmcp-mcp-server | مضاف، غير مفعّل |
 | LinkIntel MCP | خادم MCP | يقرأ منشورات X ومقاييسها يومياً ليعطي أدلة للمنشور القادم. ما أكدت أنه مفتوح المصدر | ٣ | https://mcpservers.org/servers/www-getlinkintel-com | مضاف، غير مفعّل |
 | Publora MCP (مستضاف) | خادم MCP | إحصاءات LinkedIn ونمو المتابعين مع نشر. خدمة مستضافة، وتحليلات X غير ظاهرة | ٣ | https://images.glama.ai/mcp/servers/publora/mcp-server | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٢٣:٣٦ (الكويت) · RSS وأخبار وترجمة وتتبع وقت وGoogle Slides وDocs
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| imprvhub mcp-rss-aggregator | خادم MCP | جلب وتحليل عدة خلاصات RSS عند الطلب. TypeScript، MPL-2.0، ٢٥ نجمة. مفيد لراصد الأخبار | ٥ | https://enterprisedna.co/directories/mcp/imprvhub-mcp-rss-aggregator | مضاف، غير مفعّل |
+| ishan-parihar igs-mcp | خادم MCP | مراقبة أخبار لحظية عبر ٢٢٣ مصدر RSS مع بحث Reddit وأبحاث أكاديمية. محلي فقط | ٤ | https://awesome.ecosyste.ms/projects/github.com%2Fishan-parihar%2Figs-mcp | مضاف، غير مفعّل |
+| awee1453 RSS-MCP v3.0 | خادم MCP | كاشف أخبار عاجلة وتنبيهات webhook وجدولة cron ومراقبة صحة الخلاصات. الأغنى بالتنبيهات | ٥ | https://glama.ai/mcp/servers/@awee1453/RSS-MCP/tree/2c469c27eb6049adcadf6f6f89d87c63266a64b5 | مضاف، غير مفعّل |
+| kwp-lab rss-reader-mcp | خادم MCP | تجميع خلاصات واستخراج محتوى المقالات. MIT | ٤ | https://awesome.ecosyste.ms/projects/github.com%2Fkwp-lab%2Frss-reader-mcp | مضاف، غير مفعّل |
+| Joopsnijder rss-news-analyzer-mcp | خادم MCP | الأقرب للعمل الصحفي: تحليل Google Alerts وتخزين مؤقت. ما فتحت المستودع | ٣ | https://dev.to/grove_chatforest/news-media-journalism-mcp-servers-rss-feeds-hacker-news-news-apis-podcasts-and-2a04 | مضاف، غير مفعّل |
+| risadams OpenGathyr | خادم MCP | جمع خلاصات بتحديث قابل للضبط RSS_REFRESH_INTERVAL | ٣ | https://lobehub.com/mcp/risadams-opengathyr | مضاف، غير مفعّل |
+| ZenFeed | أداة RSS | RSS مع ذكاء اصطناعي وتنبيهات بريد ومقاييس Prometheus، وMCP اختياري | ٣ | https://mcp.so/servers/zenfeed-infernape000?tab=tools | مضاف، غير مفعّل |
+| DeepL MCP Server (الرسمي) | خادم MCP | ترجمة نصوص ومستندات وإعادة صياغة وقواميس ونمط. مجاني حتى ٥٠٠ ألف حرف شهرياً بمفتاح API. لازم تتأكد من جودة العربي | ٦ | https://mcpservers.org/servers/DeepLcom/deepl-mcp-server | مضاف، غير مفعّل |
+| lancedelgardo deepl-i18n | أداة CLI | ترجمة ملفات اللغات وإكمال المفاتيح الناقصة مع وضع تجربة بدون مفتاح. مو MCP | ٤ | https://glama.ai/mcp/servers/lancedelgardo/deepl-i18n | مضاف، غير مفعّل |
+| sa9saq translation-mcp | خادم MCP | ترجمة عامة. ما تحققت من دعم العربي ولا من الصيانة | ٢ | https://lobehub.com/ar/mcp/sa9saq-translation-mcp | مضاف، غير مفعّل |
+| Toggl MCP (الرسمي) | خادم MCP | قراءة وتحديث مهام ومشاريع وإدخالات وقت وتقارير. يحتاج حساب Toggl (للمؤسس فقط) | ٤ | https://toggl.com/ai/mcp | مضاف، غير مفعّل |
+| longrackslabs mcp-server-toggl | خادم MCP | تتبع وقت الفريق وتقارير عبر Reports API v3 | ٣ | https://mcpservers.org/en/servers/longrackslabs/mcp-server-toggl | مضاف، غير مفعّل |
+| ianaleck harvest-mcp-server | خادم MCP | Harvest غير رسمي عبر npx: إدخالات وقت ومشاريع وعملاء | ٣ | https://mcpservers.org/de/servers/ianaleck/harvest-mcp-server | مضاف، غير مفعّل |
+| aslamanver mcp_clockify | خادم MCP | Clockify: إدخالات وقت ومشاريع ومهام ومساحات عمل | ٣ | https://aslamanver.github.io/mcp_clockify | مضاف، غير مفعّل |
+| TrackingTime MCP | خادم MCP | تتبع وقت يعمل مع Claude Desktop وClaude Code وغيرها | ٣ | https://github.com/trackingtime/mcp | مضاف، غير مفعّل |
+| piotr-agier google-drive-mcp | خادم MCP | Drive وDocs وSheets وSlides وCalendar بخادم واحد. صلاحيات OAuth واسعة (للمؤسس فقط) | ٥ | https://unpkg.com/@piotr-agier/google-drive-mcp@2.2.0/README.md | مضاف، غير مفعّل |
+| ngs google-mcp-server | خادم MCP (Go) | أدوات إنشاء صريحة: docs_document_create وslides_presentation_create. تثبيت Homebrew أو Go | ٥ | https://lobehub.com/es/mcp/ngs-google-mcp-server | مضاف، غير مفعّل |
+| Google Slides MCP الرسمي (مستضاف) | خادم MCP رسمي | يُضاف كموصل مخصص في Claude بـOAuth. يتطلب خطة Claude مدفوعة. Google تحذر من ربطه بتطبيقات غير موثوقة | ٥ | https://developers.google.com/workspace/slides/api/guides/configure-mcp-server | مضاف، غير مفعّل |
