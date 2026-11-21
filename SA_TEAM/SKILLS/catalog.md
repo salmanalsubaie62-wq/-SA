@@ -804,3 +804,23 @@
 | everyinc git-commit-push-pr | مهارة | commit وpush وPR في خطوة (تدفع وتفتح PR، تُراجع قبل أي تفعيل) | ٣ | https://skills.sh/everyinc/compound-engineering-plugin/git-commit-push-pr | مضاف، غير مفعّل |
 | jezweb git-workflow | مهارة | أسلوب commit وفروع | ٣ | https://www.skills.sh/jezweb/claude-skills/git-workflow | مضاف، غير مفعّل |
 | Git Workflows & PR Automation (mcpmarket) | مهارة | أتمتة PR ووصف التغييرات | ٢ | https://mcpmarket.com/tools/skills/git-workflows-pr-automation | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ١١:٣٦ (الكويت) · بناء مواقع CMS وتطبيقات موبايل وقوالب بريد وإضافات متصفح
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| webflow/webflow-skills (رسمي) | Plugin | إدارة محتوى Webflow CMS وتدقيق صحة الموقع ونشر آمن (يحتاج ربط MCP وحساب) | ٤ | https://cdn.jsdelivr.net/gh/webflow/webflow-skills@main/README.md | مضاف، غير مفعّل |
+| respira-press agent-skills-wordpress | مهارة | تدقيق وتحسين وإصلاح مواقع WordPress | ٣ | https://github.com/respira-press/agent-skills-wordpress | مضاف، غير مفعّل |
+| kanopi cms-cultivator WordPress skills | مهارات | ١٣ مهارة تطوير WordPress | ٣ | https://kanopi.github.io/cms-cultivator/wordpress-skills | مضاف، غير مفعّل |
+| Build with WordPress (Claude marketplace) | Plugin | مهارات WooCommerce وJetpack تعمل تلقائياً عند بناء مشاريع WordPress | ٣ | https://claude.com/marketplace/plugins/build-with-wordpress | مضاف، غير مفعّل |
+| ClaudSkills content-management-systems | مهارة | إدارة محتوى عبر WordPress وShopify وWix وSquarespace وWebflow وغيرها | ٣ | https://claudskills.com/skills/content-management-systems/ | مضاف، غير مفعّل |
+| expo/skills (رسمي) | Plugin | هيكل مشاريع Expo وتنقل Expo Router وتحويل ويب لتطبيق | ٤ | https://raw.githubusercontent.com/expo/skills/main/README.md | مضاف، غير مفعّل |
+| maikotrindade awesome-react-native-skills | مجموعة مهارات | مهارات React Native: Expo وأداء واختبار وواجهات | ٣ | https://awesome.ecosyste.ms/projects/github.com%2Fmaikotrindade%2Fawesome-react-native-skills | مضاف، غير مفعّل |
+| jeffallan react-native-expert | مهارة | React Native 0.73+ وExpo SDK 50+ وReact Navigation 7 | ٣ | https://jeffallan.github.io/claude-skills/skills/frontend/react-native-expert | مضاف، غير مفعّل |
+| popey mobile-developer | مهارة | React Native وFlutter وiOS/Android الأصلي | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/mobile-developer | مضاف، غير مفعّل |
+| borghei senior-mobile | مهارة | تطوير موبايل مع هيكلة مشاريع | ٣ | https://borghei.github.io/Claude-Skills/skills/engineering/senior-mobile.html | مضاف، غير مفعّل |
+| framix-team email-html-mjml | مهارة | قوالب بريد MJML 4.x متوافقة عبر العملاء ومترجمة إلى HTML (لفريق التسويق) | ٤ | https://claudemarketplaces.com/skills/framix-team/skill-email-html-mjml/email-html-mjml | مضاف، غير مفعّل |
+| borghei email-template-builder | مهارة | قوالب بريد React Email أو MJML بوضع داكن وترجمة وفحص سبام | ٤ | https://borghei.github.io/Claude-Skills/skills/marketing/email-template-builder.html | مضاف، غير مفعّل |
+| ClaudSkills mjml-email-templates | مهارة | قوالب MJML مع متغيرات (لمشاريع .NET أصلاً) | ٢ | https://claudskills.com/skills/mjml-email-templates/ | مضاف، غير مفعّل |
+| samber chrome-extension | مهارة | تطوير إضافات كروم Manifest V3 | ٣ | https://claudemarketplaces.com/skills/samber/cc-skills/chrome-extension | مضاف، غير مفعّل |
+| googlechrome modern-web-guidance chrome-extensions | مهارة | إرشادات إضافات كروم من Google | ٣ | https://claudemarketplaces.com/skills/googlechrome/modern-web-guidance/chrome-extensions | مضاف، غير مفعّل |
+| popey chrome-extension-developer | مهارة | service workers وcontent scripts وتواصل بين السياقات | ٣ | https://tessl.io/registry/skills/github/popey/claude-code-skills/chrome-extension-developer | مضاف، غير مفعّل |
