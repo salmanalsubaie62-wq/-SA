@@ -1509,3 +1509,15 @@
 | janction-render | خادم MCP | render سحابي بـGPU لمشاهد Blender وملفات GLB/FBX/USD؛ خدمة خارجية | ٢ | https://enterprisedna.co/directories/mcp/jasmylab-janction-janction-render | مضاف، غير مفعّل |
 | Performance Engineer MCP (PageSpeed) | خادم MCP | تدقيق Lighthouse محلي ونصائح للخطوط (preconnect وfont-display وWOFF2)؛ يفيد سرعة المواقع | ٣ | https://glama.ai/mcp/servers/rhamevangelista/PageSpeed-Performance-Engineer-MCP | مضاف، غير مفعّل |
 | google-fonts-mcp | خادم MCP + مهارة | يبحث في ١٩٢٣ خط ويقترح أزواج خطوط ويولّد CSS؛ ما تأكدت من دعمه للعربي | ٣ | https://pypi.org/project/google-fonts-mcp/ | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٢:٣٦ (الكويت) · Google Workspace ومحتوى تسويقي وأتمتة
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| composiohq google-calendar-automation | مهارة | أتمتة Google Calendar عبر Composio؛ مواعيد واجتماعات المؤسسة (تحتاج حساب Composio) | ٣ | https://skillselion.com/skills/composiohq/awesome-claude-skills/google-calendar-automation | مضاف، غير مفعّل |
+| aaronsb google-workspace-mcp | خادم MCP | Gmail وCalendar وDrive وغيرها بخادم واحد؛ يحتاج OAuth لحساب Google | ٣ | https://claudemarketplaces.com/mcp/aaronsb/google-workspace-mcp | مضاف، غير مفعّل |
+| donmrmango google-workspace-mcp | خادم MCP | خادم Google Workspace مجتمعي؛ ما تأكدت من صيانته | ٢ | https://lobehub.com/pt-BR/mcp/donmrmango-google-workspace-mcp | مضاف، غير مفعّل |
+| mindstone mcp-server-google-workspace | خادم MCP | Google Workspace لعدة حسابات بملفات توكن لكل حساب؛ يحتاج OAuth | ٢ | https://skillselion.com/mcp/tool/io.github.mindstone/mcp-server-google-workspace | مضاف، غير مفعّل |
+| the-focus-ai google-skill (gmail) | مهارة | مهارة Gmail لـClaude Code؛ مفيدة لو انربط Gmail بالمؤسسة | ٢ | https://www.skills.sh/the-focus-ai/google-skill/gmail | مضاف، غير مفعّل |
+| indranilbanerjee digital-marketing-pro (content-engine) | مهارة | محرك محتوى تسويقي ضمن حزمة تسويق رقمي؛ ما فتحت ملفها | ٢ | https://skills.sh/indranilbanerjee/digital-marketing-pro/content-engine | مضاف، غير مفعّل |
+| milisp automatisch-mcp-server | خادم MCP | خادم MCP لمنصة Automatisch المفتوحة (بديل Zapier) برخصة MIT؛ أتمتة بدون اشتراك | ٣ | https://mcpservers.org/zh-CN/servers/milisp/automatisch-mcp-server | مضاف، غير مفعّل |
