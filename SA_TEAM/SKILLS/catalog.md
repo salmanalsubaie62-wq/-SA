@@ -1363,3 +1363,12 @@
 | adobe-mcp-rs (Aodaruma) | خادم MCP | Rust؛ مسار After Effects الأكمل، وPhotoshop وIllustrator تجريبية؛ إثبات مفهوم غير مجرّب على البرنامج الحقيقي | ٢ | https://github.com/Aodaruma/adobe-mcp-rs | مضاف، غير مفعّل |
 | photoshop-python-api-mcp-server (loonghao) | خادم MCP | Photoshop فقط وعلى Windows لاعتماده على COM | ٢ | https://github.com/loonghao/photoshop-python-api-mcp-server | مضاف، غير مفعّل |
 | تكامل Adobe MCP المحلي (الرسمي، مُعلن) | إعلان | حسب TechCrunch (١٠ نوفمبر ٢٠٢٦) أدوبي أعلنت MCP محلي يسمح لـClaude وChatGPT بالعمل داخل Photoshop وIllustrator وPremiere وAfter Effects؛ ما فتحت التفاصيل ولا أعرف توفره الحالي | ٥ | https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/ | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ١٧:٣٦ (الكويت) · قواعد متجهات وتصوير منتجات ومدفوعات
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| vector-mcp (PyPI) | خادم MCP | RAG عبر قواعد متجهات (ChromaDB وPGVector وQdrant وMongoDB وCouchbase) بوضعي stdio وHTTP؛ ما لقيت رخصته ولا حالته، وPinecone وWeaviate غير مدعومة حسب القائمة | ٣ | https://pypi.org/project/vector-mcp/1.7.1/ | مضاف، غير مفعّل |
+| sanky369 product-photography | مهارة | تحوّل وصف المنتج إلى قائمة لقطات وأوامر صور تجارية؛ رخصة MIT (٢٩ نجمة حسب السجل) | ٤ | https://claudeskills.info/skills/sanky369/vibe-building-skills/product-photography/ | مضاف، غير مفعّل |
+| intrepidservicesllc lemonsqueezy-mcp-server | خادم MCP | استعلام مدفوعات واشتراكات Lemon Squeezy؛ يحتاج Node 18+ ومفتاح | ٣ | https://lobehub.com/en/mcp/intrepidservicesllc-lemonsqueezy-mcp-server | مضاف، غير مفعّل |
