@@ -1237,3 +1237,20 @@
 | lighthouse-mcp-server (danielsogl) | خادم MCP | تدقيق أداء ووصول وSEO بـLighthouse، الأوسع بين خوادم Lighthouse | ٥ | https://mcpservers.org/servers/danielsogl/lighthouse-mcp-server | مضاف، غير مفعّل |
 | lighthouse-mcp (priyankark) | خادم MCP | غلاف على Lighthouse عبر npx لقياس أداء الصفحات | ٤ | https://cdn.jsdelivr.net/gh/priyankark/lighthouse-mcp@main/README.md | مضاف، غير مفعّل |
 | mcp-pagespeed-server (phialsbasement) | خادم MCP | خادم أصغر لـPageSpeed Insights على npm | ٣ | https://www.npmjs.com/package/mcp-pagespeed-server | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ١٠:٣٦ (الكويت) · git وGoogle Workspace وCMS وMailchimp
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| mcp-server-git (الرسمي) | خادم MCP | أدوات git محلية (diff وlog وcommit) عبر uvx؛ يُشارَك بملف .mcp.json بالمشروع | ٦ | https://claudemarketplaces.com/mcp/modelcontextprotocol/servers/git | مضاف، غير مفعّل |
+| GitMCP (idosal) | خادم MCP | يربط أي مستودع GitHub عام كمصدر وثائق للوكيل بدون تثبيت | ٥ | https://enterprisedna.co/directories/mcp/idosal-git-mcp | مضاف، غير مفعّل |
+| iskifogl/mcp-server-google-workspace | خادم MCP | Gmail وCalendar وDrive، رخصة MIT؛ يحتاج OAuth من Google Cloud | ٣ | https://github.com/iskifogl/mcp-server-google-workspace | مضاف، غير مفعّل |
+| tumf/fastmcp-gsuite | خادم MCP | Gmail وCalendar وDrive مع دعم عدة حسابات؛ يحتاج OAuth | ٣ | https://awesome.ecosyste.ms/projects/github.com%2Ftumf%2Ffastmcp-gsuite | مضاف، غير مفعّل |
+| gg-mcp (PyPI) | خادم MCP | Gmail وCalendar وDrive وDocs وSheets وSlides، رخصة MIT؛ يحتاج OAuth | ٣ | https://pypi.org/project/gg-mcp/ | مضاف، غير مفعّل |
+| ve-gws (HuntsDesk) | خادم MCP | خادم Google Workspace مجتمعي، فحصه ضروري قبل الاعتماد | ٣ | https://github.com/HuntsDesk/ve-gws | مضاف، غير مفعّل |
+| WordPress/mcp-adapter | مكوّن رسمي | التنفيذ الرسمي لـMCP في WordPress (~٦٦٣ نجمة حسب مراجعة)؛ يحتاج موقع WordPress وصلاحيات | ٦ | https://dev.to/grove_chatforest/cms-content-management-mcp-servers-wordpress-contentful-sanity-strapi-directus-ghost-and-14fl | مضاف، غير مفعّل |
+| docdyhr/mcp-wordpress | خادم MCP | ٥٩ أداة لإدارة مواقع WordPress؛ يحتاج بيانات دخول للموقع | ٤ | https://mcpservers.org/zh-CN/servers/docdyhr/mcp-wordpress | مضاف، غير مفعّل |
+| MFYDev/ghost-mcp | خادم MCP | أكثر من ٥٠ أداة لمقالات وأعضاء ونشرات Ghost؛ يحتاج Admin API key | ٤ | https://lobehub.com/es/mcp/mfydev-ghost-mcp | مضاف، غير مفعّل |
+| damientilman/mailchimp-mcp-server | خادم MCP | الأكمل لـMailchimp Marketing API مع وضع قراءة فقط؛ مجتمعي (لا يوجد رسمي) | ٥ | https://mcpservers.org/de/servers/damientilman/mailchimp-mcp-server | مضاف، غير مفعّل |
+| agentx-ai/mailchimp-mcp | خادم MCP | وصول قراءة فقط لـMailchimp، أأمن للتجربة الأولى | ٣ | https://lobehub.com/mcp/agentx-ai-mailchimp-mcp | مضاف، غير مفعّل |
