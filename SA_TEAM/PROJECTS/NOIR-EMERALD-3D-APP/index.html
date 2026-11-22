@@ -1,14 +1,14 @@
 <title>NOIR EMERALD</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&family=Reem+Kufi:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap">
 <style>
 /* One committed dark look, like the watch site in the reference clip: a fixed 3D stage
    behind scrolling copy. The bottle's rotation, position and zoom follow the scroll. */
 :root{
   --bg:#07080a; --fg:#f2ede3; --muted:#a8a193; --line:#2b2720;
   --gold:#c9a24a; --gold-hi:#f1dc95; --gold-lo:#8a6a25; --glow:rgba(201,162,74,.14);
-  --f-head:"Cormorant Garamond","Amiri",Georgia,serif;
-  --f-ar:"Amiri","Cormorant Garamond",Georgia,serif;
+  --f-head:"Bodoni Moda","Reem Kufi",Georgia,serif;
+  --f-ar:"Reem Kufi","Bodoni Moda",Georgia,serif;
   --f-body:"IBM Plex Sans Arabic","Segoe UI",system-ui,sans-serif;
   color-scheme:dark;
 }
@@ -45,7 +45,7 @@ main{counter-reset:s}
 .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 22px;font-weight:600;counter-increment:s}
 .eyebrow::before{content:"0" counter(s) " / ";color:var(--muted);font-variant-numeric:tabular-nums}
 .huge{font-family:var(--f-head);font-weight:700;font-size:clamp(64px,11vw,148px);line-height:.9;margin:0 0 22px;color:var(--fg);text-wrap:balance;letter-spacing:-.01em}
-html[lang=ar] .huge{font-family:var(--f-ar);line-height:1.15}
+html[lang=ar] .huge{font-family:var(--f-ar);font-weight:500;line-height:1.25;letter-spacing:0}
 .copy p{margin:0;color:var(--muted);font-size:16px;line-height:1.85}
 .num{display:flex;align-items:baseline;gap:10px;margin-top:18px;font-family:var(--f-head);color:var(--fg)}
 .num b{font-size:clamp(44px,7vw,84px);font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
@@ -57,7 +57,7 @@ html[lang=ar] .huge{font-family:var(--f-ar);line-height:1.15}
 .cue{display:inline-flex;gap:10px;align-items:center;margin-top:20px;color:var(--muted);font-size:13px}
 .cue i{width:1px;height:34px;background:linear-gradient(var(--gold),transparent);display:block;animation:cue 1.8s ease-in-out infinite}
 @keyframes cue{0%{transform:scaleY(.2);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}100%{transform:scaleY(.2);transform-origin:bottom}}
-.btn{display:inline-block;margin-top:26px;text-decoration:none;background:var(--gold);color:#150f04;
+.btn{display:inline-block;border:0;cursor:pointer;margin-top:26px;text-decoration:none;background:var(--gold);color:#150f04;
   padding:15px 28px;border-radius:0;font:600 16px var(--f-body);letter-spacing:.02em;box-shadow:5px 5px 0 var(--gold-lo);transition:transform .2s,box-shadow .2s}
 .btn:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--gold-lo)}
 .foot{position:relative;z-index:3;padding:40px 0 calc(40px + env(safe-area-inset-bottom,0px));display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;
@@ -124,6 +124,14 @@ input[type=file]{position:absolute;opacity:0;width:1px;height:1px}
   </section>
   <section class="sec">
     <div class="copy r reveal">
+      <p class="eyebrow" data-i="s_eye"></p>
+      <h2 class="huge" data-i="s_title"></h2>
+      <p data-i="s_p"></p>
+      <button class="btn" id="spray" type="button" data-i="s_btn"></button>
+    </div>
+  </section>
+  <section class="sec">
+    <div class="copy l reveal">
       <p class="eyebrow" data-i="n_eye"></p>
       <h2 class="huge"><span data-count="3">3</span> <span data-i="n_title"></span></h2>
       <ul class="notes">
@@ -134,7 +142,7 @@ input[type=file]{position:absolute;opacity:0;width:1px;height:1px}
     </div>
   </section>
   <section class="sec">
-    <div class="copy l reveal">
+    <div class="copy r reveal">
       <p class="eyebrow" data-i="o_eye"></p>
       <h2 class="huge" data-i="o_title"></h2>
       <a class="btn" id="wa" href="#" target="_blank" rel="noopener" data-i="wa"></a>
@@ -160,6 +168,7 @@ ar:{h_eye:"عطر رجالي",h_title:"ليل. زمرد. ذهب.",h_p:"زجاج�
  g_eye:"الزجاجة",g_title:"أسود",g_p:"زجاج أسود لامع بحواف حادة. يعكس الضوء مثل مرآة سودة ويعطي العطر حضور ثقيل.",g_unit:"مل",
  c_eye:"الغطاء",c_title:"ذهب",c_p:"غطاء ذهبي مصقول بحواف مشطوفة، ثقيل بيدك ويلمع مع كل زاوية.",
  t_eye:"النقش",t_title:"حروف ذهبية",t_p:"نقش ذهبي شفاف شوي على الواجهة، يبان ويخف حسب الضوء اللي ينزل عليه.",
+ s_eye:"الرشّة",s_title:"افتح",s_p:"ينفك الغطاء الذهبي ويبان الرشّاش. اضغط الزر وشوف الرذاذ يطلع.",s_btn:"رشّة",
  n_eye:"الرائحة",n_title:"طبقات",n_top:"افتتاحية",n_top_v:"برغموت، فلفل أسود",n_heart:"قلب",n_heart_v:"ورد، عود",n_base:"قاعدة",n_base_v:"عنبر، باتشولي",
  o_eye:"NOIR EMERALD",o_title:"جاهز لك",wa:"اطلب عبر واتساب",
  sample:"النصوص والمواصفات تجريبية وتنتظر بيانات المنتج الحقيقية.",load:"حمّل موديل .glb",
@@ -168,6 +177,7 @@ en:{h_eye:"Pour homme",h_title:"Night. Emerald. Gold.",h_p:"A black bottle with 
  g_eye:"The bottle",g_title:"Black",g_p:"Glossy black glass with sharp edges. It reflects light like a black mirror and gives the fragrance weight.",g_unit:"ml",
  c_eye:"The cap",c_title:"Gold",c_p:"A polished gold cap with chamfered edges. Heavy in the hand, bright from every angle.",
  t_eye:"The lettering",t_title:"Gold letters",t_p:"Slightly transparent gold lettering on the front. It shows and fades with the light that falls on it.",
+ s_eye:"The spray",s_title:"Open",s_p:"The gold cap lifts off and the nozzle shows. Press the button and watch the mist come out.",s_btn:"Spray",
  n_eye:"The scent",n_title:"layers",n_top:"Top",n_top_v:"Bergamot, black pepper",n_heart:"Heart",n_heart_v:"Rose, oud",n_base:"Base",n_base_v:"Amber, patchouli",
  o_eye:"NOIR EMERALD",o_title:"Ready for you",wa:"Order on WhatsApp",
  sample:"Copy and specifications are sample text until the real product data arrives.",load:"Load a .glb model",
@@ -182,6 +192,7 @@ function render(){
   $("wa").href="https://wa.me/?text="+encodeURIComponent(T[lang].msg);
   $("status").textContent=custom?T[lang].loaded+custom:"";
 }
+$("spray").onclick=function(){burst(performance.now())};
 $("lAr").onclick=function(){lang="ar";render()};$("lEn").onclick=function(){lang="en";render()};
 render();
 
@@ -220,11 +231,11 @@ function labelTexture(){
   var g=x.createLinearGradient(0,200,0,820);g.addColorStop(0,"#f6e3a1");g.addColorStop(.5,"#d4a843");g.addColorStop(1,"#9a7424");
   x.fillStyle=g;x.strokeStyle=g;x.globalAlpha=.84;x.textAlign="center";x.textBaseline="middle";
   function ls(v){if("letterSpacing" in x)x.letterSpacing=v}
-  x.font="700 196px 'Cormorant Garamond',Georgia,serif";ls("14px");x.fillText("NOIR",512,360);
-  x.font="600 96px 'Cormorant Garamond',Georgia,serif";ls("30px");x.fillText("EMERALD",512,500);
+  x.font="700 196px 'Bodoni Moda',Georgia,serif";ls("14px");x.fillText("NOIR",512,360);
+  x.font="600 96px 'Bodoni Moda',Georgia,serif";ls("30px");x.fillText("EMERALD",512,500);
   x.lineWidth=3;x.beginPath();x.moveTo(250,590);x.lineTo(774,590);x.stroke();
-  x.font="500 40px 'Cormorant Garamond',Georgia,serif";ls("12px");x.fillText("EAU DE PARFUM",512,660);
-  x.font="500 32px 'Cormorant Garamond',Georgia,serif";ls("10px");x.fillText("POUR HOMME",512,722);
+  x.font="500 40px 'Bodoni Moda',Georgia,serif";ls("12px");x.fillText("EAU DE PARFUM",512,660);
+  x.font="500 32px 'Bodoni Moda',Georgia,serif";ls("10px");x.fillText("POUR HOMME",512,722);
   var t=new THREE.CanvasTexture(c);t.encoding=THREE.sRGBEncoding;t.anisotropy=8;return t;
 }
 function rr(w,d,r){var s=new THREE.Shape(),x=-w/2,y=-d/2;
@@ -233,26 +244,32 @@ function rr(w,d,r){var s=new THREE.Shape(),x=-w/2,y=-d/2;
 function block(w,d,r,h,bev,mat){
   var g=new THREE.ExtrudeGeometry(rr(w,d,r),{depth:h,bevelEnabled:true,bevelThickness:bev,bevelSize:bev,bevelSegments:6,curveSegments:18});
   g.rotateX(-Math.PI/2);return new THREE.Mesh(g,mat)}
+var lblMat=null;
 function buildBottle(){
   var g=new THREE.Group();
   g.add(block(1.7,.95,.14,2.0,.07,blackGlass));
   var foot=block(1.62,.87,.12,.1,.03,goldSoft);foot.position.y=-.02;g.add(foot);
   var collar=new THREE.Mesh(new THREE.CylinderGeometry(.36,.4,.26,48),gold);collar.position.y=2.26;g.add(collar);
   var neck=new THREE.Mesh(new THREE.CylinderGeometry(.27,.27,.16,48),goldSoft);neck.position.y=2.1;g.add(neck);
+  var stem=new THREE.Mesh(new THREE.CylinderGeometry(.075,.075,.24,32),goldSoft);stem.position.y=2.51;g.add(stem);
+  var btn=new THREE.Mesh(new THREE.CylinderGeometry(.17,.17,.1,40),gold);btn.position.y=2.68;g.add(btn);
   var cap=block(1.05,.72,.12,.8,.05,gold);cap.position.y=2.34;g.add(cap);
-  var lbl=new THREE.Mesh(new THREE.PlaneGeometry(1.3,1.3),new THREE.MeshStandardMaterial({map:labelTexture(),transparent:true,metalness:.85,roughness:.3,envMapIntensity:1.2,depthWrite:false}));
+  lblMat=new THREE.MeshStandardMaterial({map:labelTexture(),transparent:true,metalness:.85,roughness:.3,envMapIntensity:1.2,depthWrite:false});
+  var lbl=new THREE.Mesh(new THREE.PlaneGeometry(1.3,1.3),lblMat);
   lbl.position.set(0,1.05,.56);g.add(lbl);
+  g.userData.parts={cap:cap,btn:btn};
   return g;
 }
 var holder=new THREE.Group();scene.add(holder);
-var model=null;
+var model=null,parts=null;
 function setModel(obj,norm){
-  if(model)holder.remove(model);model=obj;holder.add(model);
+  if(model)holder.remove(model);model=obj;parts=obj.userData.parts||null;holder.add(model);
   if(norm){var b=new THREE.Box3().setFromObject(model),s=b.getSize(new THREE.Vector3());
     model.scale.multiplyScalar(3.3/Math.max(s.y,.0001));b.setFromObject(model);var c=b.getCenter(new THREE.Vector3());
     model.position.x-=c.x;model.position.z-=c.z;model.position.y-=b.min.y}
 }
 setModel(buildBottle(),false);
+if(document.fonts&&document.fonts.load){document.fonts.load("700 100px 'Bodoni Moda'").then(function(){if(lblMat){lblMat.map=labelTexture();lblMat.needsUpdate=true}}).catch(function(){})}
 var loader=new THREE.GLTFLoader();
 $("glb").addEventListener("change",function(e){
   var f=e.target.files&&e.target.files[0];if(!f)return;var rd=new FileReader();
@@ -261,22 +278,42 @@ $("glb").addEventListener("change",function(e){
 });
 
 /* ---------- scroll story: one keyframe per section ---------- */
-var K=[{ry:.55,x:0,cz:8.6,ly:1.65},{ry:2.2,x:1.7,cz:8.2,ly:1.65},{ry:3.6,x:-1.7,cz:5.4,ly:2.75},
-       {ry:6.2832,x:1.6,cz:7.1,ly:1.55},{ry:7.5,x:-1.7,cz:8.6,ly:1.65},{ry:8.4,x:1.7,cz:8.4,ly:1.65}];
+var K=[{ry:.55,x:0,cz:8.6,ly:1.65,o:0},{ry:2.2,x:1.7,cz:8.2,ly:1.65,o:0},{ry:3.6,x:-1.7,cz:5.4,ly:2.75,o:0},
+       {ry:6.2832,x:1.6,cz:7.1,ly:1.55,o:0},{ry:6.75,x:-1.6,cz:7.4,ly:2.8,o:1},{ry:7.9,x:1.7,cz:8.4,ly:1.9,o:1},{ry:9.0,x:-1.7,cz:8.6,ly:1.65,o:0}];
 function ease(t){return t*t*(3-2*t)}
 function target(){
   var max=Math.max(1,document.documentElement.scrollHeight-innerHeight),p=Math.min(1,Math.max(0,scrollY/max));
   var f=p*(K.length-1),i=Math.min(K.length-2,Math.floor(f)),t=ease(f-i),a=K[i],b=K[i+1];
   function L(k){return a[k]+(b[k]-a[k])*t}
-  return{ry:L("ry"),x:L("x"),cz:L("cz"),ly:L("ly"),p:p};
+  return{ry:L("ry"),x:L("x"),cz:L("cz"),ly:L("ly"),o:L("o"),p:p};
+}
+/* ---------- spray mist: soft particles that leave the nozzle ---------- */
+var N=480,mPos=new Float32Array(N*3),mVel=new Float32Array(N*3),mAge=new Float32Array(N).fill(99),mLife=new Float32Array(N).fill(1),
+    mSize=new Float32Array(N),mAlpha=new Float32Array(N),mi=0,pend=0,press=0,lastBurst=-9999,nz=new THREE.Vector3();
+var mg=new THREE.BufferGeometry();
+mg.setAttribute("position",new THREE.BufferAttribute(mPos,3));mg.setAttribute("size",new THREE.BufferAttribute(mSize,1));mg.setAttribute("alpha",new THREE.BufferAttribute(mAlpha,1));
+var mm=new THREE.ShaderMaterial({transparent:true,depthWrite:false,uniforms:{pr:{value:renderer.getPixelRatio()}},
+  vertexShader:"attribute float size;attribute float alpha;varying float vA;uniform float pr;void main(){vA=alpha;vec4 m=modelViewMatrix*vec4(position,1.0);gl_PointSize=size*(420.0/-m.z)*pr;gl_Position=projectionMatrix*m;}",
+  fragmentShader:"varying float vA;void main(){float d=length(gl_PointCoord-.5)*2.0;float a=smoothstep(1.0,0.0,d);a*=a;gl_FragColor=vec4(.96,.9,.76,a*vA);}"});
+var mist=new THREE.Points(mg,mm);mist.frustumCulled=false;scene.add(mist);
+function burst(now){if(!parts)return;pend+=130;press=1;lastBurst=now}
+function emit(mob){
+  holder.updateMatrixWorld(true);nz.set(0,2.68,0);model.localToWorld(nz);
+  var i=mi;mi=(mi+1)%N;
+  var sp=2.4+Math.random()*1.6,dx=mob?.25:1,dy=.28,dz=.5,l=Math.hypot(dx,dy,dz);
+  mPos[i*3]=nz.x;mPos[i*3+1]=nz.y+.05;mPos[i*3+2]=nz.z;
+  mVel[i*3]=dx/l*sp+(Math.random()-.5)*.9;mVel[i*3+1]=dy/l*sp+(Math.random()-.5)*.7;mVel[i*3+2]=dz/l*sp+(Math.random()-.5)*.9;
+  mAge[i]=0;mLife[i]=.9+Math.random()*1.1;
 }
 var cur=target(),mx=0,my=0,t0=performance.now(),still=matchMedia("(prefers-reduced-motion:reduce)").matches;
 addEventListener("pointermove",function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
 function size(){var w=innerWidth,h=innerHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()}
 addEventListener("resize",size);size();
 var big=$("bigword");
+var tPrev=performance.now();
 function frame(now){
   requestAnimationFrame(frame);
+  var dt=Math.min(.05,(now-tPrev)/1000);tPrev=now;
   var tg=target(),k=still?1:.085,aspect=innerWidth/innerHeight,mob=aspect<.9;
   for(var n in tg)cur[n]+=(tg[n]-cur[n])*k;
   holder.rotation.y=cur.ry+(still?0:Math.sin((now-t0)/1600)*.06)+mx*.25;
@@ -286,6 +323,18 @@ function frame(now){
   camera.position.set(mx*.4,cur.ly+.6+my*-.3+drop,cz);
   camera.lookAt(0,cur.ly+drop,0);
   big.style.opacity=String(Math.max(0,1-cur.p*5));
+  if(parts){var o=ease(Math.min(1,Math.max(0,cur.o)));
+    parts.cap.position.set(-o*.55,2.34+o*.9,o*.1);parts.cap.rotation.set(0,o*.7,o*.32);
+    parts.btn.position.y=2.68-press*.05;press=Math.max(0,press-dt*5);
+    if(o>.97&&!still&&now-lastBurst>3800&&!document.hidden)burst(now);
+    var k2=Math.min(pend,dt*320);for(var e=0;e<k2;e++)emit(mob);pend=Math.max(0,pend-dt*320);
+  }
+  for(var q=0;q<N;q++){var a=mAge[q];if(a>=mLife[q]){mAlpha[q]=0;continue}
+    a+=dt;mAge[q]=a;var f=a/mLife[q];
+    mVel[q*3]*=.965;mVel[q*3+1]=mVel[q*3+1]*.965+.35*dt;mVel[q*3+2]*=.965;
+    mPos[q*3]+=mVel[q*3]*dt;mPos[q*3+1]+=mVel[q*3+1]*dt;mPos[q*3+2]+=mVel[q*3+2]*dt;
+    mSize[q]=.3+f*.75;mAlpha[q]=Math.pow(1-f,1.4)*.5}
+  mg.attributes.position.needsUpdate=true;mg.attributes.size.needsUpdate=true;mg.attributes.alpha.needsUpdate=true;
   renderer.render(scene,camera);
 }
 requestAnimationFrame(frame);
