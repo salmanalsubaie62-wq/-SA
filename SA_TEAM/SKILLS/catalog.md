@@ -1198,3 +1198,25 @@
 | Tokven MCP | خادم MCP | توليد نظام ألوان بتوكنات متوافقة مع WCAG من لون العلامة (hex) | ٤ | https://ai.g2.com/marketplace/tools/tokven-mcp | مضاف، غير مفعّل |
 | color-engine-mcp (npm) | خادم MCP | تباين WCAG وAPCA ودرجات tints/shades وتوكنات، مسجّل بسجل MCP الرسمي حسب وصفه | ٤ | https://socket.dev/npm/package/color-engine-mcp | مضاف، غير مفعّل |
 | Colors MCP Server (Glama) | خادم MCP | لوحات وفحص وصول، حساب فقط بدون شبكة ولا آثار جانبية | ٣ | https://glama.ai/mcp/servers/nkcjzdtfbb | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ٠٨:٣٦ (الكويت) · Excel وAirtable وتيليجرام وSlack وPostHog
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| sbroenne/mcp-server-excel | خادم MCP | يتحكم بـExcel الحقيقي عبر COM (٢٣ أداة)؛ يحتاج Windows وExcel مثبّت | ٦ | https://raw.githubusercontent.com/sbroenne/mcp-server-excel/HEAD/README.md | مضاف، غير مفعّل |
+| yzfly/mcp-excel-server | خادم MCP | Power Query وDAX وVBA وPivotTable لمستخدمي Windows | ٤ | https://chatforest.com/guides/best-spreadsheet-mcp-servers/ | مضاف، غير مفعّل |
+| Aspose Cells MCP | خادم MCP | أتمتة جداول Excel بدون تثبيت Excel؛ مكتبة تجارية فتأكد من الترخيص | ٣ | https://docs.aspose.com/cells/nodejs-cpp/mcp/ | مضاف، غير مفعّل |
+| kousunh/Excel-mcp-server | خادم MCP | قراءة وتعديل ملفات Excel من المحادثة | ٥ | https://mcpservers.org/servers/kousunh/Excel-mcp-server | مضاف، غير مفعّل |
+| SheetForge MCP | خادم MCP | تعديل ملفات xlsx محلياً | ٤ | https://mcpservers.org/servers/iheldan/sheetforge-mcp | مضاف، غير مفعّل |
+| mcp-spreadsheet (theluckystrike) | خادم MCP | التعامل مع جداول البيانات محلياً بدون خدمة خارجية | ٤ | https://mcpservers.org/servers/theluckystrike/mcp-spreadsheet | مضاف، غير مفعّل |
+| domdomegg/airtable-mcp-server | خادم MCP | ربط Airtable كقاعدة بيانات للعملاء والمحتوى؛ يحتاج توكن Airtable | ٦ | https://chatforest.com/reviews/spreadsheet-mcp-servers/ | مضاف، غير مفعّل |
+| rashidazarang/airtable-mcp | خادم MCP | بديل مجتمعي لـAirtable (٤٢ أداة حسب المقارنة)؛ يحتاج توكن | ٤ | https://chatforest.com/reviews/spreadsheet-mcp-servers/ | مضاف، غير مفعّل |
+| IQAIcom/mcp-telegram | خادم MCP | إرسال وإدارة رسائل تيليجرام؛ يحتاج بوت وتوكن | ٤ | https://awesome.ecosyste.ms/projects/github.com%2Fiqaicom%2Fmcp-telegram | مضاف، غير مفعّل |
+| chaindead/telegram-mcp | خادم MCP | خادم تيليجرام مكتوب بـGo؛ يدخل بحساب المستخدم فخطر على الخصوصية | ٣ | https://mcpservers.org/id/servers/chaindead/telegram-mcp | مضاف، غير مفعّل |
+| beepmedia/mcp-telegram | خادم MCP | Telegram Bot API مع stdio وHTTP وSSE؛ يحتاج TELEGRAM_BOT_TOKEN | ٤ | https://lobehub.com/mcp/beepmedia-mcp-telegram | مضاف، غير مفعّل |
+| FantomaSkaRus1/telegram-bot-mcp | خادم MCP | ١٧٤ أداة لبوت تيليجرام؛ مشروع صغير (٧ نجوم) فخذ حذرك | ٣ | https://enterprisedna.co/directories/mcp/fantomaskarus1-telegram-bot-mcp | مضاف، غير مفعّل |
+| korotovsky/slack-mcp-server | خادم MCP | Slack بلغة Go ورخصة MIT مع وضع OAuth؛ يحتاج صلاحيات workspace | ٥ | https://awesome.ecosyste.ms/api/v1/projects/github.com%2Fkorotovsky%2Fslack-mcp-server | مضاف، غير مفعّل |
+| PostHog skills | مهارات | مجموعة مهارات رسمية من PostHog لتحليلات المنتج، تتثبّت كـplugin | ٥ | https://posthog.com/docs/posthog-code/skills | مضاف، غير مفعّل |
+| posthog-debugger | مهارة | فحص مواقع حية بقراءة فقط مع Playwright/Chrome DevTools MCP | ٤ | https://skills.sh/posthog/skills/posthog-debugger | مضاف، غير مفعّل |
+| posthog playwright-test | مهارة | كتابة اختبار Playwright والتأكد أنه يشتغل بلا تذبذب | ٤ | https://www.skills.sh/posthog/posthog-foss/playwright-test | مضاف، غير مفعّل |
