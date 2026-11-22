@@ -1326,3 +1326,20 @@
 | Open Agreements MCP | خادم MCP | تعبئة قوالب (NDA وSAFE) كملفات DOCX مع إرسال عبر DocuSign اختياري؛ ما فيه توقيع مدمج | ٣ | https://enterprisedna.co/directories/mcp/open-agreements-open-agreements | مضاف، غير مفعّل |
 | SignNow MCP (الرسمي) | خادم MCP | قوالب ودعوات وتوقيع إلكتروني، رخصة MIT؛ يحتاج حساب SignNow | ٣ | https://images.glama.ai/mcp/categories/legal-and-compliance | مضاف، غير مفعّل |
 | mcp-server-esignatures | خادم MCP | صياغة وإرسال عقود عبر خدمة eSignatures؛ يحتاج حساب | ٣ | https://mcpservers.org/servers/esignaturescom/mcp-server-esignatures | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ١٥:٣٦ (الكويت) · نماذج واستبيانات وبريد تسويقي واجتماعات
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| Typeform MCP (الرسمي) | خدمة MCP | خادم مستضاف بـOAuth: إنشاء نماذج وتحليل ردود؛ المصادر تتضارب بحالته (بيتا) | ٥ | https://www.typeform.com/developers/mcp/ | مضاف، غير مفعّل |
+| dscovr/typeform-mcp | خادم MCP | ٤٧ أداة لـTypeform بـPython ورخصة MIT، أُنشئ مارس ٢٠٢٦؛ مجتمعي | ٣ | https://chatforest.com/reviews/survey-forms-mcp-servers/ | مضاف، غير مفعّل |
+| SurveyMonkey MCP (رسمي: تأليف وتوزيع) | خدمة MCP | خادمان رسميان: تأليف الاستبيانات وتوزيعها وقراءة الردود؛ يحتاج OAuth وحساب | ٤ | https://docs.workato.com/en/mcp/prebuilt-mcps/surveymonkey-authoring-mcp-server.html | مضاف، غير مفعّل |
+| cyanheads/survey-mcp-server | خادم MCP | يجري الاستبيان داخل المحادثة نفسها بدون منصة خارجية، رخصة Apache-2.0 | ٣ | https://chatforest.com/reviews/survey-forms-mcp-servers/ | مضاف، غير مفعّل |
+| Zoom MCP (عبر Gumloop) | خدمة MCP | اجتماعات Zoom عبر API؛ ما تأكدت من المصدر ولا الصيانة، تحقق أول | ٢ | https://www.gumloop.com/mcp/cal | مضاف، غير مفعّل |
+| Brevo MCP (الرسمي) | خدمة MCP | خادم مستضاف بـ١٩٣ أداة مولّدة من مواصفات API؛ يحتاج توكن MCP وحساب | ٥ | https://www.brevo.com/features/email-mcp-new/ | مضاف، غير مفعّل |
+| houtini-ai/brevo-mcp | خادم MCP | بديل مجتمعي لـBrevo عبر npx بمفتاح BREVO_API_KEY | ٣ | https://github.com/houtini-ai/brevo-mcp | مضاف، غير مفعّل |
+| MailerLite MCP (الرسمي) | خدمة MCP | خادم مستضاف بـOAuth بلا مفاتيح للّصق؛ ادعاء الأفضل من مدونتهم فيتأكد | ٤ | https://www.mailerlite.com/blog/best-email-mcp-servers | مضاف، غير مفعّل |
+| MailerSend MCP | خادم MCP | إرسال بريد معاملات عبر MailerSend؛ يحتاج حساب | ٣ | https://developers.mailersend.com/mcp-server | مضاف، غير مفعّل |
+| Resend MCP | خادم MCP | إرسال بريد من المحرر عبر Resend API؛ يحتاج مفتاح | ٣ | https://www.mailtrap.io/blog/best-email-mcp-servers/ | مضاف، غير مفعّل |
+| SendGrid MCP (الرسمي) | خادم MCP | حسب مراجعة: أداتان لاكتشاف الوثائق فقط ولا يرسل؛ الإرسال يحتاج خوادم مجتمعية بلا دعم | ٢ | https://mailtrap.io/blog/best-email-mcp-servers/ | مضاف، غير مفعّل |
