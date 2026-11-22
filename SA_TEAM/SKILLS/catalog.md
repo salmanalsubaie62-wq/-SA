@@ -1220,3 +1220,20 @@
 | PostHog skills | مهارات | مجموعة مهارات رسمية من PostHog لتحليلات المنتج، تتثبّت كـplugin | ٥ | https://posthog.com/docs/posthog-code/skills | مضاف، غير مفعّل |
 | posthog-debugger | مهارة | فحص مواقع حية بقراءة فقط مع Playwright/Chrome DevTools MCP | ٤ | https://skills.sh/posthog/skills/posthog-debugger | مضاف، غير مفعّل |
 | posthog playwright-test | مهارة | كتابة اختبار Playwright والتأكد أنه يشتغل بلا تذبذب | ٤ | https://www.skills.sh/posthog/posthog-foss/playwright-test | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ٠٩:٣٦ (الكويت) · PDF وObsidian وأداء المواقع
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| PDF Toolkit MCP (AryanBV) | خادم MCP | ١٦ أداة: Markdown إلى PDF ودمج وتقسيم، بدون مفاتيح أو Docker؛ الوثائق متضاربة بخصوص حقول النماذج | ٦ | https://mcpservers.org/servers/aryanbv/pdf-toolkit-mcp | مضاف، غير مفعّل |
+| FolioPDF MCP | خادم MCP | Markdown إلى PDF بـ٣ قوالب ودمج وتقسيم وتدوير، محلي وبدون إنترنت؛ لا يدعم Tailwind v4 | ٥ | https://mcp.so/servers/foliopdf-mcp | مضاف، غير مفعّل |
+| pdf-it | أداة | Markdown إلى PDF مع غلاف وفهرس وترقيم صفحات، مناسب لتقارير المؤسسة | ٥ | https://github.com/mrslbt/pdf-it | مضاف، غير مفعّل |
+| markdown2pdf-mcp | خادم MCP | تحويل عبر Chrome مع تلوين الكود ومخططات Mermaid وCSS مخصص | ٥ | https://cdn.jsdelivr.net/gh/2b3pro/markdown2pdf-mcp@main/README.md | مضاف، غير مفعّل |
+| obsidian-mcp-server (bbdaniels) | خادم MCP | قراءة وكتابة خزنة Obsidian من Claude Code؛ مجتمعي وليس رسمي | ٤ | https://pypi.org/project/obsidian-mcp-server | مضاف، غير مفعّل |
+| lwaetzig/obsidian-mcp | خادم MCP | قراءة وكتابة ملاحظات Obsidian عبر مسار الخزنة (OBSIDIAN_VAULT_PATH) | ٤ | https://mcpservers.org/id/servers/lwaetzig/obsidian-mcp | مضاف، غير مفعّل |
+| obsidian-claude-code-mcp (iansinnott) | إضافة Obsidian | إضافة تشغّل خادم MCP وClaude Code يكتشف الخزنة تلقائياً؛ يحتاج Obsidian مفتوح | ٤ | https://mcpservers.org/servers/iansinnott/obsidian-claude-code-mcp | مضاف، غير مفعّل |
+| pagespeed-insights-mcp (ruslanlap) | خادم MCP | أداء المواقع عبر PageSpeed وCrUX، رخصة Apache-2.0؛ يحتاج مفتاح Google API | ٥ | https://github.com/ruslanlap/pagespeed-insights-mcp | مضاف، غير مفعّل |
+| lighthouse-mcp-server (danielsogl) | خادم MCP | تدقيق أداء ووصول وSEO بـLighthouse، الأوسع بين خوادم Lighthouse | ٥ | https://mcpservers.org/servers/danielsogl/lighthouse-mcp-server | مضاف، غير مفعّل |
+| lighthouse-mcp (priyankark) | خادم MCP | غلاف على Lighthouse عبر npx لقياس أداء الصفحات | ٤ | https://cdn.jsdelivr.net/gh/priyankark/lighthouse-mcp@main/README.md | مضاف، غير مفعّل |
+| mcp-pagespeed-server (phialsbasement) | خادم MCP | خادم أصغر لـPageSpeed Insights على npm | ٣ | https://www.npmjs.com/package/mcp-pagespeed-server | مضاف، غير مفعّل |
