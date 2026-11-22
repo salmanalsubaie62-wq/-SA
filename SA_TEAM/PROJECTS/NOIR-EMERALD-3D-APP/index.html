@@ -1,134 +1,154 @@
 <title>NOIR EMERALD</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&family=El+Messiri:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;1,400&family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@300;400;500&display=swap">
 <style>
-/* NOIR EMERALD: a 3D hero that holds only the bottle, then a quiet editorial page below it. */
+/* NOIR EMERALD — black glass, a trace of emerald, champagne gold. One 3D stage, then a slow editorial page. */
 :root{
-  --bg:#08090b; --bg2:#0d0e11; --fg:#efe9de; --muted:#9a9388; --line:#26231e;
-  --gold:#c9a24a; --gold-hi:#e8cf8d; --gold-lo:#7d6127;
-  --f-head:"Bodoni Moda",Georgia,serif;
+  --bg:#050706; --bg2:#070b09; --fg:#ece6da; --muted:#8f8a80; --line:rgba(200,169,106,.16);
+  --gold:#c8a96a; --gold-hi:#e6d3a3; --em:#0f3b2e; --em-hi:#2f7a61;
+  --f-lat:"Bodoni Moda",Georgia,serif;
   --f-ar:"El Messiri","IBM Plex Sans Arabic",Georgia,serif;
   --f-body:"IBM Plex Sans Arabic","Segoe UI",system-ui,sans-serif;
   color-scheme:dark;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:16px;overflow-x:hidden}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-weight:300;font-size:16px;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:40;opacity:.05;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
 img{display:block;max-width:100%}
 [hidden]{display:none!important}
 a{color:inherit}
-button:focus-visible,a:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
-.wrap{max-width:1240px;margin-inline:auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+button:focus-visible,a:focus-visible{outline:1px solid var(--gold-hi);outline-offset:4px}
+.wrap{max-width:1280px;margin-inline:auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
 
 /* nav */
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
-.nav{position:fixed;top:0;left:0;right:0;z-index:20;padding-top:env(safe-area-inset-top,0px);transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
-.nav.solid{background:rgba(8,9,11,.88);border-bottom-color:var(--line);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
-.nav-in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:64px}
-.logo{grid-column:2;font-family:"Bodoni Moda",Georgia,serif;font-weight:600;letter-spacing:.34em;font-size:15px;color:var(--gold-hi);text-decoration:none;white-space:nowrap;padding-inline-start:.34em}
-.nav-cta{justify-self:end;font-size:13px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--fg);padding-block:6px;background:linear-gradient(var(--gold),var(--gold)) no-repeat 0 100%/0 1px;transition:background-size .35s}
-.nav-cta:hover{background-size:100% 1px}
-.seg{justify-self:start;display:inline-flex;border:1px solid var(--gold-lo)}
-.seg button{border:0;background:transparent;color:var(--muted);padding:6px 12px;font:inherit;font-size:12px;cursor:pointer}
-.seg button[aria-pressed="true"]{background:var(--gold);color:#120e05}
+.nav{position:fixed;top:0;left:0;right:0;z-index:20;padding-top:env(safe-area-inset-top,0px);transition:background .5s,border-color .5s;border-bottom:1px solid transparent}
+.nav.solid{background:rgba(5,7,6,.86);border-bottom-color:var(--line);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.nav-in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:72px}
+.logo{grid-column:2;font-family:var(--f-lat);font-weight:500;letter-spacing:.42em;font-size:14px;color:var(--gold-hi);text-decoration:none;white-space:nowrap;padding-inline-start:.42em}
+.nav-cta{justify-self:end;font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;padding-block:6px;
+  background:linear-gradient(var(--gold),var(--gold)) no-repeat 100% 100%/0 1px;transition:background-size .4s}
+.nav-cta:hover{background-size:100% 1px;background-position:0 100%}
+.lang{justify-self:start;display:flex;gap:14px;font-size:12px;letter-spacing:.14em}
+.lang button{border:0;background:none;color:var(--muted);font:inherit;padding:4px 0;cursor:pointer;border-bottom:1px solid transparent}
+.lang button[aria-pressed="true"]{color:var(--gold-hi);border-bottom-color:var(--gold)}
 
 /* hero */
 .hero{position:relative;height:220vh}
 .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;touch-action:pan-y;cursor:grab;
-  background:radial-gradient(60% 55% at 50% 40%,#16161a 0%,var(--bg) 70%)}
+  background:radial-gradient(44% 46% at 50% 46%,rgba(15,59,46,.55) 0%,rgba(8,16,13,.6) 45%,var(--bg) 78%)}
 .stage:active{cursor:grabbing}
-.bigword{position:absolute;inset:0;display:grid;place-content:center;text-align:center;pointer-events:none;
-  font-family:"Bodoni Moda",Georgia,serif;font-weight:600;line-height:.88;letter-spacing:.04em;
-  font-size:clamp(68px,17vw,270px);color:transparent;-webkit-text-stroke:1px rgba(201,162,74,.28);padding-bottom:8vh}
-.bigword span{display:block}
 #gl{position:absolute;inset:0;width:100%;height:100%;display:block}
 .fallback{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hc{position:absolute;z-index:2;opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s;pointer-events:none;max-width:320px}
+.vt{position:absolute;top:50%;z-index:2;font-family:var(--f-lat);font-size:11px;letter-spacing:.5em;color:var(--muted);text-transform:uppercase;white-space:nowrap;pointer-events:none}
+.vt.l{left:max(28px,env(safe-area-inset-left,0px));transform:translateY(-50%) rotate(-90deg) translateX(50%);transform-origin:left center}
+.vt.r{right:max(28px,env(safe-area-inset-right,0px));transform:translateY(-50%) rotate(90deg) translateX(-50%);transform-origin:right center}
+.hc{position:absolute;z-index:2;opacity:0;transform:translateY(12px);transition:opacity .7s,transform .7s;pointer-events:none;max-width:340px}
 .hc.on{opacity:1;transform:none;pointer-events:auto}
-.hc .k{margin:0 0 8px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
-.hc .t{margin:0;font-family:var(--f-head);font-size:clamp(26px,2.6vw,38px);line-height:1.15;color:var(--fg)}
-html[lang=ar] .hc .t{font-family:var(--f-ar);font-weight:400;line-height:1.45}
-.c1{left:0;right:0;margin-inline:auto;bottom:4vh;text-align:center;max-width:none}
-.c1 .k{margin-bottom:16px}
-.c2{right:max(6vw,24px);bottom:16vh;text-align:right}
-.c3{left:max(6vw,24px);bottom:16vh;text-align:left}
+.hc .k{margin:0 0 12px;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.hc .t{margin:0;font-family:var(--f-lat);font-weight:400;font-size:clamp(28px,2.8vw,42px);line-height:1.12}
+.hc .t em{font-style:italic;color:var(--gold-hi)}
+html[lang=ar] .hc .t{font-family:var(--f-ar);line-height:1.45}
+.c1{left:0;right:0;margin-inline:auto;bottom:5vh;text-align:center;max-width:none}
+.c1 .brand{margin:0;font-family:var(--f-lat);font-size:13px;letter-spacing:.5em;color:var(--fg);padding-inline-start:.5em}
+.c1 .line{display:block;width:1px;height:46px;margin:18px auto 0;background:linear-gradient(var(--gold),transparent);animation:cue 2.2s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(.15);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}100%{transform:scaleY(.15);transform-origin:bottom}}
+.c2{right:max(8vw,40px);bottom:18vh;text-align:right}
+.c3{left:max(8vw,40px);bottom:18vh;text-align:left}
 html[dir=rtl] .c3{text-align:right}
 html[dir=ltr] .c2{text-align:left}
-.cue{display:inline-flex;flex-direction:column;align-items:center;gap:10px;color:var(--muted);font-size:11px;letter-spacing:.24em;text-transform:uppercase}
-.cue i{width:1px;height:38px;background:linear-gradient(var(--gold),transparent);animation:cue 1.9s ease-in-out infinite}
-@keyframes cue{0%{transform:scaleY(.2);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}100%{transform:scaleY(.2);transform-origin:bottom}}
-.prog{position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--line);z-index:2}
+.prog{position:absolute;left:50%;bottom:0;width:120px;margin-left:-60px;height:1px;background:var(--line);z-index:2}
 .prog i{display:block;height:100%;width:0;background:var(--gold)}
-.drag{position:absolute;z-index:2;top:calc(env(safe-area-inset-top,0px) + 84px);left:0;right:0;margin:0;text-align:center;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);opacity:.7;pointer-events:none;transition:opacity .4s}
 
-/* buttons */
-.btn{display:inline-block;border:0;cursor:pointer;text-decoration:none;background:var(--gold);color:#140f05;
-  padding:15px 30px;border-radius:0;font:600 15px var(--f-body);letter-spacing:.04em;box-shadow:5px 5px 0 var(--gold-lo);transition:transform .2s,box-shadow .2s}
-.btn:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--gold-lo)}
-.hc .btn{margin-top:20px}
+/* buttons: thin, quiet, gold */
+.btn{display:inline-flex;align-items:center;gap:14px;border:1px solid var(--gold);background:transparent;color:var(--gold-hi);cursor:pointer;text-decoration:none;
+  padding:16px 34px;font:400 12px var(--f-body);letter-spacing:.24em;text-transform:uppercase;position:relative;overflow:hidden;transition:color .45s}
+.btn::before{content:"";position:absolute;inset:0;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .45s cubic-bezier(.6,0,.2,1);z-index:-1}
+.btn:hover{color:#0b0a07}.btn:hover::before{transform:scaleX(1);transform-origin:left}
+.btn{z-index:0}
+html[lang=ar] .btn{letter-spacing:0;font-size:14px}
+.hc .btn{margin-top:26px}
 
 /* editorial */
-section.blk{padding-block:clamp(88px,12vw,170px)}
-.label{margin:0;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-variant-numeric:tabular-nums}
-.label b{font-weight:400;color:var(--muted)}
-.display{font-family:var(--f-head);font-weight:500;font-size:clamp(42px,6.2vw,96px);line-height:1.02;margin:22px 0 0;letter-spacing:-.01em;text-wrap:balance}
-.display.sm{font-size:clamp(34px,4.2vw,62px)}
-html[lang=ar] .display{font-family:var(--f-ar);font-weight:400;line-height:1.35;letter-spacing:0}
-.lead{margin:0;font-size:clamp(16px,1.35vw,19px);line-height:1.95;color:var(--muted);max-width:50ch}
-.intro{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px 6vw;align-items:end}
-.intro .lead{padding-bottom:12px;border-top:1px solid var(--gold-lo);padding-top:22px}
-.shot{margin:0;background:#050506}
-.shot img{width:100%;height:clamp(420px,88vh,920px);object-fit:cover}
-.shot figcaption{display:flex;justify-content:space-between;gap:16px;padding-block:18px;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
-.pyr{list-style:none;margin:64px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 40px}
-.pyr li{border-top:1px solid var(--line);padding-top:26px;min-width:0;position:relative}
-.pyr li::before{content:"";position:absolute;top:-1px;inset-inline-start:0;width:0;height:1px;background:var(--gold);transition:width .6s}
-.pyr li:hover::before{width:100%}
-.pyr .n{font-family:"Bodoni Moda",Georgia,serif;font-size:15px;color:var(--gold)}
-.pyr h3{margin:18px 0 10px;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-.pyr p{margin:0;font-family:var(--f-head);font-size:clamp(24px,2.3vw,34px);line-height:1.25}
-html[lang=ar] .pyr p{font-family:var(--f-ar);font-weight:400;line-height:1.55}
-/* Arabic letters must stay joined: no tracking on Arabic text */
-html[lang=ar] .label,html[lang=ar] .hc .k,html[lang=ar] .cue,html[lang=ar] .drag,html[lang=ar] .nav-cta,html[lang=ar] .pyr h3,html[lang=ar] .spec dt,html[lang=ar] .shot figcaption span+span{letter-spacing:0;font-size:13px}
-.details{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px 7vw;align-items:center}
-.details img,.order img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#050506}
-.spec{margin:44px 0 0;padding:0}
-.spec div{display:grid;grid-template-columns:minmax(0,130px) minmax(0,1fr);gap:16px;padding-block:16px;border-bottom:1px solid var(--line)}
-.spec dt{color:var(--muted);font-size:13px;letter-spacing:.08em}
-.spec dd{margin:0;font-size:16px}
-.steps{list-style:none;margin:60px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+section.blk{padding-block:clamp(110px,14vw,200px)}
+.label{margin:0;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.display{font-family:var(--f-lat);font-weight:400;font-size:clamp(40px,5.6vw,88px);line-height:1.04;margin:26px 0 0;letter-spacing:-.005em;text-wrap:balance}
+.display em{font-style:italic;color:var(--gold-hi)}
+.display.sm{font-size:clamp(34px,3.8vw,58px)}
+html[lang=ar] .display{font-family:var(--f-ar);line-height:1.4;letter-spacing:0}
+html[lang=ar] .display em{font-style:normal}
+.lead{margin:0;font-size:clamp(16px,1.3vw,18px);line-height:2;color:var(--muted);max-width:46ch}
+.orn{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold)}
+.orn::before,.orn::after{content:"";width:56px;height:1px;background:var(--gold);opacity:.6}
+.orn i{width:7px;height:7px;border:1px solid var(--gold);transform:rotate(45deg)}
+.manifesto{text-align:center}
+.manifesto .display{max-width:17ch;margin-inline:auto}
+.manifesto .lead{margin:34px auto 0;text-align:center}
+.manifesto .sig{margin:40px 0 0;font-family:var(--f-lat);font-size:12px;letter-spacing:.5em;color:var(--muted);padding-inline-start:.5em}
+.shot{margin:0;position:relative;background:#030403}
+.shot img{width:100%;height:clamp(460px,92vh,960px);object-fit:cover}
+.shot figcaption{position:absolute;inset:auto 0 0 0;padding-block:28px;display:flex;justify-content:space-between;gap:16px;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);
+  background:linear-gradient(transparent,rgba(3,4,3,.8))}
+.head2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 6vw;align-items:end}
+.pyr{list-style:none;margin:80px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.pyr li{padding:8px 36px 0;min-width:0;border-inline-start:1px solid var(--line)}
+.pyr li:first-child{border-inline-start:0;padding-inline-start:0}
+.pyr .n{display:block;font-family:var(--f-lat);font-weight:400;font-size:74px;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(200,169,106,.55)}
+.pyr h3{margin:28px 0 12px;font-size:11px;font-weight:400;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.pyr p{margin:0;font-family:var(--f-lat);font-size:clamp(22px,2vw,30px);line-height:1.3}
+html[lang=ar] .pyr p{font-family:var(--f-ar);line-height:1.6}
+.design{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:56px 7vw;align-items:center}
+.design img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#030403}
+.spec{margin:48px 0 0;padding:0}
+.spec div{display:grid;grid-template-columns:minmax(0,120px) minmax(0,1fr);gap:16px;padding-block:18px;border-bottom:1px solid var(--line)}
+.spec div:first-child{border-top:1px solid var(--line)}
+.spec dt{color:var(--gold);font-size:11px;letter-spacing:.28em;text-transform:uppercase;padding-top:3px}
+.spec dd{margin:0;font-size:16px;color:var(--fg)}
+.ritual{background:var(--bg2);border-block:1px solid var(--line)}
+.steps{list-style:none;margin:72px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px}
 .steps li{min-width:0}
-.steps b{display:block;font-family:"Bodoni Moda",Georgia,serif;font-weight:500;font-size:clamp(46px,5vw,72px);line-height:1;color:transparent;-webkit-text-stroke:1px var(--gold)}
-.steps p{margin:18px 0 0;font-size:17px;line-height:1.85;color:var(--fg);max-width:30ch}
-.order{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:0;background:var(--bg2);border-top:1px solid var(--line)}
-.order .o-txt{padding-block:64px;min-width:0}
-.order .lead{margin-top:22px}
-.order .btn{margin-top:34px}
-.tel{margin:20px 0 0;font-size:15px;letter-spacing:.14em;color:var(--fg);user-select:all}
-.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;padding-block:36px calc(36px + env(safe-area-inset-bottom,0px));
-  font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line)}
-.rv{transition:opacity .9s,transform .9s}
-.js .rv:not(.in){opacity:.001;transform:translateY(26px)}
+.steps b{display:block;font-family:var(--f-lat);font-style:italic;font-weight:400;font-size:20px;color:var(--gold)}
+.steps b::after{content:"";display:block;width:40px;height:1px;background:var(--gold);opacity:.5;margin-top:18px}
+.steps p{margin:22px 0 0;font-size:17px;line-height:1.9;max-width:28ch}
+.order{position:relative;text-align:center;overflow:hidden}
+.order::before{content:"";position:absolute;inset:-20% -10% auto;height:120%;background:radial-gradient(40% 50% at 50% 50%,rgba(15,59,46,.5),transparent 70%);pointer-events:none}
+.order>*{position:relative}
+.order img{width:min(420px,78vw);margin:0 auto 64px;aspect-ratio:4/5;object-fit:cover}
+.order .display{margin-inline:auto;max-width:14ch}
+.order .lead{margin:24px auto 0}
+.order .btn{margin-top:44px}
+.tel{margin:22px 0 0;font-family:var(--f-lat);font-size:16px;letter-spacing:.2em;color:var(--muted);user-select:all}
+.foot{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;padding-block:40px calc(40px + env(safe-area-inset-bottom,0px));
+  font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line)}
+.foot .logo{grid-column:2;font-size:12px}
+.foot #status{justify-self:end;letter-spacing:0;text-transform:none}
+html[lang=ar] .label,html[lang=ar] .hc .k,html[lang=ar] .nav-cta,html[lang=ar] .pyr h3,html[lang=ar] .spec dt,html[lang=ar] .shot figcaption span+span,html[lang=ar] .foot>span:first-child{letter-spacing:0;font-size:13px}
+.rv{transition:opacity 1.1s cubic-bezier(.2,.6,.2,1),transform 1.1s cubic-bezier(.2,.6,.2,1)}
+.js .rv:not(.in){opacity:.001;transform:translateY(30px)}
 
 @media (max-width:860px){
-  .nav-in{height:56px}
-  .logo{font-size:13px;letter-spacing:.26em}
-  .nav-cta{font-size:12px}
+  .nav-in{height:60px}
+  .logo{font-size:12px;letter-spacing:.3em}
   .hero{height:200vh}
-  .c2,.c3{left:0;right:0;margin-inline:auto;bottom:9vh;text-align:center!important;max-width:86vw}
-  .intro,.details,.order{grid-template-columns:minmax(0,1fr)}
+  .vt{display:none}
+  .c2,.c3{left:0;right:0;margin-inline:auto;bottom:8vh;text-align:center!important;max-width:86vw}
+  .head2,.design{grid-template-columns:minmax(0,1fr)}
   .pyr,.steps{grid-template-columns:minmax(0,1fr);gap:0}
-  .pyr li{padding-block:24px}
-  .steps li{padding-block:18px;border-top:1px solid var(--line)}
-  .order .o-txt{padding-block:56px 72px}
-  .shot img{height:72vh}
+  .pyr li{border-inline-start:0;border-top:1px solid var(--line);padding:30px 0}
+  .pyr li:first-child{border-top:0}
+  .steps li{padding-block:22px}
+  .shot img{height:76vh}
+  .foot{grid-template-columns:minmax(0,1fr);text-align:center}
+  .foot .logo,.foot #status{grid-column:1;justify-self:center}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 </style>
 
 <header class="nav" id="nav">
   <div class="nav-in wrap">
-    <div class="seg" role="group" aria-label="Language">
+    <div class="lang" role="group" aria-label="Language">
       <button id="lAr" aria-pressed="true">عربي</button>
       <button id="lEn" aria-pressed="false">EN</button>
     </div>
@@ -139,21 +159,21 @@ html[lang=ar] .label,html[lang=ar] .hc .k,html[lang=ar] .cue,html[lang=ar] .drag
 
 <section class="hero" id="top">
   <div class="stage" id="stage">
-    <div class="bigword" id="bigword" aria-hidden="true"><span>NOIR</span><span>EMERALD</span></div>
     <canvas id="gl" aria-label="NOIR EMERALD 3D"></canvas>
     <img class="fallback" id="fallback" src="img/front.jpg" alt="" hidden>
-    <p class="drag" id="drag" data-i="drag"></p>
-    <div class="hc c1" data-from="0" data-to=".18">
-      <p class="k" data-i="h_eye"></p>
-      <div class="cue"><i></i><span data-i="cue"></span></div>
+    <span class="vt l">Eau de Parfum</span>
+    <span class="vt r">Pour Homme</span>
+    <div class="hc c1" data-from="0" data-to=".16">
+      <p class="brand">NOIR EMERALD</p>
+      <span class="line"></span>
     </div>
-    <div class="hc c2" data-from=".22" data-to=".44">
+    <div class="hc c2" data-from=".2" data-to=".44">
       <p class="k" data-i="h2_k"></p>
-      <p class="t" data-i="h2_t"></p>
+      <p class="t" data-i="h2_t" data-html></p>
     </div>
-    <div class="hc c3" data-from=".54" data-to=".86">
+    <div class="hc c3" data-from=".54" data-to=".88">
       <p class="k" data-i="h3_k"></p>
-      <p class="t" data-i="h3_t"></p>
+      <p class="t" data-i="h3_t" data-html></p>
       <button class="btn" id="spray" type="button" data-i="s_btn"></button>
     </div>
     <div class="prog"><i id="progbar"></i></div>
@@ -161,12 +181,11 @@ html[lang=ar] .label,html[lang=ar] .hc .k,html[lang=ar] .cue,html[lang=ar] .drag
 </section>
 
 <main>
-  <section class="blk wrap intro" id="story">
-    <div class="rv">
-      <p class="label">01 <b>/</b> <span data-i="in_k"></span></p>
-      <h2 class="display" data-i="in_t"></h2>
-    </div>
+  <section class="blk wrap manifesto" id="story">
+    <div class="orn rv"><i></i></div>
+    <h2 class="display rv" data-i="in_t" data-html></h2>
     <p class="lead rv" data-i="in_p"></p>
+    <p class="sig rv">NOIR EMERALD</p>
   </section>
 
   <figure class="shot rv">
@@ -175,9 +194,12 @@ html[lang=ar] .label,html[lang=ar] .hc .k,html[lang=ar] .cue,html[lang=ar] .drag
   </figure>
 
   <section class="blk wrap" id="notes">
-    <div class="rv">
-      <p class="label">02 <b>/</b> <span data-i="no_k"></span></p>
-      <h2 class="display sm" data-i="no_t"></h2>
+    <div class="head2 rv">
+      <div>
+        <p class="label" data-i="no_k"></p>
+        <h2 class="display sm" data-i="no_t" data-html></h2>
+      </div>
+      <p class="lead" data-i="no_p"></p>
     </div>
     <ol class="pyr rv">
       <li><span class="n">I</span><h3 data-i="no_top"></h3><p data-i="no_top_v"></p></li>
@@ -186,14 +208,13 @@ html[lang=ar] .label,html[lang=ar] .hc .k,html[lang=ar] .cue,html[lang=ar] .drag
     </ol>
   </section>
 
-  <section class="blk wrap details" id="design">
+  <section class="blk wrap design" id="design">
     <img class="rv" src="img/detail.jpg" data-alt="alt_detail" alt="" loading="lazy">
     <div class="rv">
-      <p class="label">03 <b>/</b> <span data-i="de_k"></span></p>
-      <h2 class="display sm" data-i="de_t"></h2>
+      <p class="label" data-i="de_k"></p>
+      <h2 class="display sm" data-i="de_t" data-html></h2>
       <dl class="spec">
         <div><dt data-i="sp1k"></dt><dd data-i="sp1v"></dd></div>
-        <div><dt data-i="sp2k"></dt><dd data-i="sp2v"></dd></div>
         <div><dt data-i="sp3k"></dt><dd data-i="sp3v"></dd></div>
         <div><dt data-i="sp4k"></dt><dd data-i="sp4v"></dd></div>
         <div><dt data-i="sp5k"></dt><dd data-i="sp5v"></dd></div>
@@ -201,32 +222,33 @@ html[lang=ar] .label,html[lang=ar] .hc .k,html[lang=ar] .cue,html[lang=ar] .drag
     </div>
   </section>
 
-  <section class="blk wrap" id="ritual">
-    <div class="rv">
-      <p class="label">04 <b>/</b> <span data-i="ri_k"></span></p>
-      <h2 class="display sm" data-i="ri_t"></h2>
+  <section class="blk ritual" id="ritual">
+    <div class="wrap">
+      <div class="rv">
+        <p class="label" data-i="ri_k"></p>
+        <h2 class="display sm" data-i="ri_t" data-html></h2>
+      </div>
+      <ol class="steps rv">
+        <li><b>i.</b><p data-i="ri1"></p></li>
+        <li><b>ii.</b><p data-i="ri2"></p></li>
+        <li><b>iii.</b><p data-i="ri3"></p></li>
+      </ol>
     </div>
-    <ol class="steps rv">
-      <li><b>01</b><p data-i="ri1"></p></li>
-      <li><b>02</b><p data-i="ri2"></p></li>
-      <li><b>03</b><p data-i="ri3"></p></li>
-    </ol>
   </section>
 
-  <section class="order" id="order">
+  <section class="blk wrap order" id="order">
     <img class="rv" src="img/spray.jpg" data-alt="alt_spray" alt="" loading="lazy">
-    <div class="o-txt wrap rv">
-      <p class="label">05 <b>/</b> <span data-i="or_k"></span></p>
-      <h2 class="display" data-i="or_t"></h2>
-      <p class="lead" data-i="or_p"></p>
-      <a class="btn" id="wa" href="https://wa.me/96551704421" target="_blank" rel="noopener" data-i="wa"></a>
-      <p class="tel" dir="ltr">+965 5170 4421</p>
-    </div>
+    <div class="orn rv"><i></i></div>
+    <h2 class="display rv" data-i="or_t" data-html></h2>
+    <p class="lead rv" data-i="or_p"></p>
+    <a class="btn rv" id="wa" href="https://wa.me/96551704421" target="_blank" rel="noopener" data-i="wa"></a>
+    <p class="tel rv" dir="ltr">+965 5170 4421</p>
   </section>
 </main>
 
 <footer class="foot wrap">
-  <span>NOIR EMERALD · Kuwait</span>
+  <span data-i="foot_l"></span>
+  <span class="logo">NOIR EMERALD</span>
   <span id="status" role="status"></span>
 </footer>
 
@@ -236,33 +258,34 @@ html[lang=ar] .label,html[lang=ar] .hc .k,html[lang=ar] .cue,html[lang=ar] .drag
 var D=document.documentElement;D.classList.add("js");
 function $(i){return document.getElementById(i)}
 var T={
-ar:{nav_order:"اطلب",drag:"اسحب لتدوير الزجاجة",h_eye:"أو دو بارفان · رجالي",cue:"مرّر",
- h2_k:"الزجاجة",h2_t:"زجاج أسود ثقيل",h3_k:"الرشّة",h3_t:"افتح وجرّب الرشّة",s_btn:"رشّة",
- in_k:"العطر",in_t:"حضور يوصل قبلك",in_p:"NOIR EMERALD عطر رجالي بزجاجة سودة ثقيلة، غطاء أسود لامع وطوق ذهبي. هادي من بعيد، وواضح من قريب.",
+ar:{nav_order:"اطلب",h2_k:"الزجاجة",h2_t:"زجاج أسود<br>بقاعدة ثقيلة",h3_k:"الرشّة",h3_t:"افتحه،<br>وخلّ الرذاذ يحكي",s_btn:"رشّة",
+ in_t:"الفخامة ما <em>ترفع صوتها</em>",in_p:"NOIR EMERALD عطر رجالي في زجاجة سودة ثقيلة، بغطاء أسود لامع وطوق ذهبي. هادي من بعيد، وواضح لما يقرب.",
  shot_cap:"أو دو بارفان",
- no_k:"المكونات",no_t:"ثلاث طبقات",no_top:"الافتتاحية",no_top_v:"برغموت، فلفل أسود",no_heart:"القلب",no_heart_v:"عود، ورد",no_base:"القاعدة",no_base_v:"عنبر، مسك",
- de_k:"التصميم",de_t:"تفاصيل تنمسك باليد",
- sp1k:"النوع",sp1v:"أو دو بارفان",sp2k:"لمن",sp2v:"رجالي",sp3k:"الزجاجة",sp3v:"زجاج أسود بقاعدة سميكة",sp4k:"الغطاء",sp4v:"أسود لامع بطوق ذهبي",sp5k:"الرشّاش",sp5v:"رذاذ ناعم",
- ri_k:"طريقة الاستخدام",ri_t:"ثلاث خطوات",ri1:"رشّه من مسافة ١٥ إلى ٢٠ سم.",ri2:"على نقاط النبض: الرقبة، المعصم، وخلف الأذن.",ri3:"لا تفرك بعد الرش، خلّه يجف بروحه.",
- or_k:"الطلب",or_t:"اطلبه الحين",or_p:"اطلب مباشرة عبر واتساب.",wa:"اطلب عبر واتساب",
+ no_k:"المكونات",no_t:"ثلاث <em>طبقات</em>",no_p:"يفتح خفيف، ويستقر دافي، ويبقى أثره على الملابس.",
+ no_top:"الافتتاحية",no_top_v:"برغموت، فلفل أسود",no_heart:"القلب",no_heart_v:"عود، ورد",no_base:"القاعدة",no_base_v:"عنبر، مسك",
+ de_k:"التصميم",de_t:"تفاصيل <em>تنمسك</em> باليد",
+ sp1k:"النوع",sp1v:"أو دو بارفان، رجالي",sp3k:"الزجاجة",sp3v:"زجاج أسود بقاعدة سميكة",sp4k:"الغطاء",sp4v:"أسود لامع بطوق ذهبي",sp5k:"الرشّاش",sp5v:"ذهبي، رذاذ ناعم",
+ ri_k:"طريقة الاستخدام",ri_t:"طقس <em>بسيط</em>",ri1:"رشّه من مسافة ١٥ إلى ٢٠ سم.",ri2:"على نقاط النبض: الرقبة، المعصم، وخلف الأذن.",ri3:"لا تفرك بعد الرش. خلّه يجف بروحه.",
+ or_t:"اطلبه <em>الحين</em>",or_p:"الطلب مباشرة عبر واتساب.",wa:"اطلب عبر واتساب",foot_l:"الكويت",
  alt_front:"زجاجة NOIR EMERALD السوداء بغطاء أسود لامع",alt_detail:"قريب على الغطاء والطوق الذهبي",alt_spray:"الزجاجة مفتوحة والرذاذ طالع",
  msg:"السلام عليكم، أبي أطلب عطر NOIR EMERALD"},
-en:{nav_order:"Order",drag:"Drag to turn the bottle",h_eye:"Eau de Parfum · Pour Homme",cue:"Scroll",
- h2_k:"The bottle",h2_t:"Heavy black glass",h3_k:"The spray",h3_t:"Open it and try the spray",s_btn:"Spray",
- in_k:"The fragrance",in_t:"A presence that arrives first",in_p:"NOIR EMERALD is a fragrance for men in a heavy black bottle, with a glossy black cap and a gold collar. Quiet from afar, clear up close.",
+en:{nav_order:"Order",h2_k:"The bottle",h2_t:"Black glass,<br><em>a heavy base</em>",h3_k:"The spray",h3_t:"Open it.<br><em>Let the mist speak.</em>",s_btn:"Spray",
+ in_t:"Luxury <em>never raises its voice</em>",in_p:"NOIR EMERALD is a fragrance for men in a heavy black bottle, with a glossy black cap and a gold collar. Quiet from afar, clear up close.",
  shot_cap:"Eau de Parfum",
- no_k:"Notes",no_t:"Three layers",no_top:"Top",no_top_v:"Bergamot, black pepper",no_heart:"Heart",no_heart_v:"Oud, rose",no_base:"Base",no_base_v:"Amber, musk",
- de_k:"Design",de_t:"Details you can hold",
- sp1k:"Type",sp1v:"Eau de Parfum",sp2k:"For",sp2v:"Men",sp3k:"Bottle",sp3v:"Black glass, heavy base",sp4k:"Cap",sp4v:"Glossy black, gold collar",sp5k:"Spray",sp5v:"Fine mist",
- ri_k:"How to wear",ri_t:"Three steps",ri1:"Spray from 15 to 20 cm away.",ri2:"On pulse points: neck, wrists and behind the ears.",ri3:"Do not rub it in. Let it dry on its own.",
- or_k:"Order",or_t:"Order now",or_p:"Order directly on WhatsApp.",wa:"Order on WhatsApp",
+ no_k:"Notes",no_t:"Three <em>layers</em>",no_p:"It opens light, settles warm, and stays on the fabric.",
+ no_top:"Top",no_top_v:"Bergamot, black pepper",no_heart:"Heart",no_heart_v:"Oud, rose",no_base:"Base",no_base_v:"Amber, musk",
+ de_k:"Design",de_t:"Details <em>you can hold</em>",
+ sp1k:"Type",sp1v:"Eau de Parfum, pour homme",sp3k:"Bottle",sp3v:"Black glass, heavy base",sp4k:"Cap",sp4v:"Glossy black, gold collar",sp5k:"Spray",sp5v:"Gold pump, fine mist",
+ ri_k:"How to wear",ri_t:"A simple <em>ritual</em>",ri1:"Spray from 15 to 20 cm away.",ri2:"On pulse points: neck, wrists and behind the ears.",ri3:"Do not rub it in. Let it dry on its own.",
+ or_t:"Order <em>now</em>",or_p:"Order directly on WhatsApp.",wa:"Order on WhatsApp",foot_l:"Kuwait",
  alt_front:"The black NOIR EMERALD bottle with a glossy black cap",alt_detail:"Close-up of the cap and gold collar",alt_spray:"The bottle open, mist coming out",
  msg:"Hello, I would like to order NOIR EMERALD"}
 };
+
 var lang="ar";
 function render(){
   D.lang=lang;D.dir=lang==="ar"?"rtl":"ltr";
-  document.querySelectorAll("[data-i]").forEach(function(n){n.textContent=T[lang][n.getAttribute("data-i")]});
+  document.querySelectorAll("[data-i]").forEach(function(n){var v=T[lang][n.getAttribute("data-i")];if(n.hasAttribute("data-html"))n.innerHTML=v;else n.textContent=v});
   document.querySelectorAll("[data-alt]").forEach(function(n){n.alt=T[lang][n.getAttribute("data-alt")]});
   $("lAr").setAttribute("aria-pressed",lang==="ar");$("lEn").setAttribute("aria-pressed",lang==="en");
   $("wa").href="https://wa.me/96551704421?text="+encodeURIComponent(T[lang].msg);
@@ -283,8 +306,8 @@ NE.env=function(renderer,scene){
   var g=x.createLinearGradient(0,0,0,512);g.addColorStop(0,"#17161a");g.addColorStop(.5,"#09090a");g.addColorStop(1,"#040404");
   x.fillStyle=g;x.fillRect(0,0,1024,512);
   function box(px,py,w,h,col,blur){x.save();x.shadowColor=col;x.shadowBlur=blur;x.fillStyle=col;x.fillRect(px,py,w,h);x.restore()}
-  box(70,70,34,330,"#ffffff",20);
-  box(560,70,30,330,"#fff2d8",20);
+  box(70,70,34,330,"#e8e8e8",20);
+  box(560,70,30,330,"#a9b0ad",20);
   box(300,120,120,200,"#2e2e33",50);
   box(380,26,300,22,"#ffffff",22);
   box(820,140,90,160,"#6e6250",40);
@@ -292,21 +315,21 @@ NE.env=function(renderer,scene){
   var t=new THREE.CanvasTexture(c);t.mapping=THREE.EquirectangularReflectionMapping;t.encoding=THREE.sRGBEncoding;
   var p=new THREE.PMREMGenerator(renderer);scene.environment=p.fromEquirectangular(t).texture;t.dispose();p.dispose();
   var key=new THREE.DirectionalLight(0xfff1dc,.8);key.position.set(3,5,5);scene.add(key);
-  var rim=new THREE.DirectionalLight(0xffe2b0,1.0);rim.position.set(-5,3,-4);scene.add(rim);
+  var rim=new THREE.DirectionalLight(0x3d8a70,.45);rim.position.set(-5,3,-4);scene.add(rim);
   scene.add(new THREE.AmbientLight(0xffffff,.1));
 };
 NE.mats=function(){return{
-  glass:new THREE.MeshPhysicalMaterial({color:0x060607,metalness:0,roughness:.03,clearcoat:1,clearcoatRoughness:.02,envMapIntensity:1.25,transparent:true,opacity:.9,depthWrite:false}),
-  ink:new THREE.MeshStandardMaterial({color:0x020203,metalness:0,roughness:.25,envMapIntensity:.3}),
+  glass:new THREE.MeshPhysicalMaterial({color:0x040404,metalness:0,roughness:.03,clearcoat:1,clearcoatRoughness:.02,envMapIntensity:.85}),
+  ink:new THREE.MeshStandardMaterial({color:0x020202,metalness:0,roughness:.25,envMapIntensity:.3}),
   panel:new THREE.MeshStandardMaterial({color:0x060606,metalness:.05,roughness:.8,envMapIntensity:.25}),
   cap:new THREE.MeshPhysicalMaterial({color:0x050506,metalness:.3,roughness:.1,clearcoat:1,clearcoatRoughness:.04,envMapIntensity:1.6}),
-  gold:new THREE.MeshStandardMaterial({color:0xd2ab55,metalness:1,roughness:.16,envMapIntensity:1.7}),
-  goldSoft:new THREE.MeshStandardMaterial({color:0xb88f3a,metalness:1,roughness:.3,envMapIntensity:1.3}),
+  gold:new THREE.MeshStandardMaterial({color:0xcdb07a,metalness:1,roughness:.16,envMapIntensity:1.7}),
+  goldSoft:new THREE.MeshStandardMaterial({color:0xa98f5c,metalness:1,roughness:.3,envMapIntensity:1.3}),
   text:new THREE.MeshStandardMaterial({transparent:true,metalness:.85,roughness:.28,envMapIntensity:1.3,depthWrite:false})
 }};
 NE.label=function(){
   var c=document.createElement("canvas");c.width=1200;c.height=1500;var x=c.getContext("2d");x.scale(1.5,1.5);
-  var g=x.createLinearGradient(0,250,0,780);g.addColorStop(0,"#f3dc98");g.addColorStop(.5,"#d1a74c");g.addColorStop(1,"#9a7424");
+  var g=x.createLinearGradient(0,250,0,780);g.addColorStop(0,"#efe0b8");g.addColorStop(.5,"#cdb07a");g.addColorStop(1,"#957a48");
   x.fillStyle=g;x.strokeStyle=g;x.globalAlpha=.92;x.textAlign="center";x.textBaseline="middle";
   function ls(v){if("letterSpacing" in x)x.letterSpacing=v}
   x.font="600 150px 'Bodoni Moda',Georgia,serif";ls("10px");x.fillText("NOIR",400,400);
@@ -401,7 +424,7 @@ NE.mist=function(scene,pr){
 /*BOTTLE-END*/
 
 /* ---------- hero: scroll story inside one sticky stage ---------- */
-var hero=$("top"),stage=$("stage"),caps=[].slice.call(document.querySelectorAll(".hc")),bar=$("progbar"),big=$("bigword"),nav=$("nav"),drag=$("drag");
+var hero=$("top"),stage=$("stage"),caps=[].slice.call(document.querySelectorAll(".hc")),bar=$("progbar"),nav=$("nav");
 function heroP(){var r=hero.getBoundingClientRect(),span=Math.max(1,hero.offsetHeight-innerHeight);return{p:Math.min(1,Math.max(0,-r.top/span)),vis:r.bottom>0}}
 var gl=null;
 function start3D(){
@@ -426,7 +449,7 @@ function start3D(){
       still=matchMedia("(prefers-reduced-motion:reduce)").matches;
   stage.addEventListener("pointermove",function(e){var r=stage.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5;
     if(dragging){var dx=e.clientX-lx;lx=e.clientX;vel=dx/r.width*7;user+=vel}});
-  stage.addEventListener("pointerdown",function(e){if(e.target.closest("button"))return;dragging=true;lx=e.clientX;drag.style.opacity=0});
+  stage.addEventListener("pointerdown",function(e){if(e.target.closest("button"))return;dragging=true;lx=e.clientX});
   addEventListener("pointerup",function(){dragging=false});addEventListener("pointercancel",function(){dragging=false});
   function size(){var w=stage.clientWidth,h=stage.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix()}
   addEventListener("resize",size);size();
@@ -457,7 +480,6 @@ function tick(now){
   var h=heroP(),p=h.p;
   caps.forEach(function(c){var a=+c.getAttribute("data-from"),b=+c.getAttribute("data-to");c.classList.toggle("on",p>=a&&p<=b)});
   bar.style.width=(p*100).toFixed(2)+"%";
-  big.style.opacity=String(Math.max(0,1-p*4));
   nav.classList.toggle("solid",!h.vis||p>=.999);
   if(gl&&h.vis){try{gl.frame(p,dt,now)}catch(e){gl=null;$("status").textContent="3D: "+e.message}}
 }
