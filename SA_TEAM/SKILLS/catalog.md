@@ -1343,3 +1343,23 @@
 | MailerSend MCP | خادم MCP | إرسال بريد معاملات عبر MailerSend؛ يحتاج حساب | ٣ | https://developers.mailersend.com/mcp-server | مضاف، غير مفعّل |
 | Resend MCP | خادم MCP | إرسال بريد من المحرر عبر Resend API؛ يحتاج مفتاح | ٣ | https://www.mailtrap.io/blog/best-email-mcp-servers/ | مضاف، غير مفعّل |
 | SendGrid MCP (الرسمي) | خادم MCP | حسب مراجعة: أداتان لاكتشاف الوثائق فقط ولا يرسل؛ الإرسال يحتاج خوادم مجتمعية بلا دعم | ٢ | https://mailtrap.io/blog/best-email-mcp-servers/ | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ١٦:٣٦ (الكويت) · شحن وبيانات أسواق مالية وأدوبي
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| Shipi MCP Server | خادم MCP | الأشمل للشحن لا التتبع فقط: أسعار وملصقات وطلبات استلام عبر FedEx وDHL وAramex وغيرها؛ يحتاج مفتاح تكامل | ٦ | https://raw.githubusercontent.com/aarsiv-groups/shipi-mcp-server/main/README.md | مضاف، غير مفعّل |
+| AfterShip Tracking & Returns | خدمة MCP | تتبع للقراءة فقط عبر أكثر من ١٣٠٠ شركة شحن؛ تغطية Aramex غير محددة بالقوائم | ٤ | https://mcpservers.org/servers/aftership/tracking-and-returns-mcp | مضاف، غير مفعّل |
+| TrackMage MCP | خادم MCP | تتبع عبر أكثر من ١٦٠٠ شركة حسب الادعاء؛ مثال التثبيت يشير لرابط مؤقت فتحقق | ٢ | https://mcpservers.org/en/servers/trackmage/trackmage-mcp-server | مضاف، غير مفعّل |
+| multi-carrier-tracking-mcp | خادم MCP | يكتشف الناقل من رقم التتبع ويشمل Aramex وDHL وFedEx حسب القائمة؛ أدواته غير مكتملة وGlama يقول غير قابل للتثبيت | ٢ | https://mcp.so/servers/multi-carrier-tracking-mcp | مضاف، غير مفعّل |
+| findata-mcp-server | خادم MCP | أسعار أسهم عبر أداة getStockQuote | ٣ | https://github.com/fastmcp-me/findata-mcp-server | مضاف، غير مفعّل |
+| yahoo-stock-mcp (jamespud) | خادم MCP | بيانات أسهم من Yahoo وInvesting.com مع تخزين بـMySQL خارجي؛ بدون مفتاح | ٣ | https://raw.githubusercontent.com/jamespud/yahoo-stock-mcp/HEAD/README.md | مضاف، غير مفعّل |
+| FinMCP (steve-sy) | خادم MCP | ١٥ أداة بيانات مالية فوق Yahoo Finance | ٣ | https://mcpservers.org/servers/steve-sy/finmcp | مضاف، غير مفعّل |
+| Financial Data MCP Server (Samarth2001) | خادم MCP | أسعار حالية وتاريخية ومقاييس سوق | ٣ | https://mcpservers.org/id/servers/Samarth2001/Financial-Data-MCP-Server | مضاف، غير مفعّل |
+| adobe-mcp (VoidChecksum, PyPI) | خادم MCP | ٤٥ أداة عبر Photoshop وIllustrator وPremiere وAfter Effects بـCOM؛ Windows، رخصة MIT، وتحتاج برامج أدوبي مرخّصة | ٣ | https://pypi.org/project/adobe-mcp/ | مضاف، غير مفعّل |
+| adobe-mcp (@ajsmonty, npm) | خادم MCP | نسخة macOS لبرامج أدوبي الإبداعية؛ يحتاج برامج أدوبي | ٣ | https://socket.dev/npm/package/@ajsmonty/adobe-mcp | مضاف، غير مفعّل |
+| adb-mcp (mikechambers) | خادم MCP | إثبات مفهوم يربط Claude Desktop بعدة برامج أدوبي | ٢ | https://docsearch.algolia.com/mcp/docs/repo/mikechambers/adb-mcp | مضاف، غير مفعّل |
+| adobe-mcp-rs (Aodaruma) | خادم MCP | Rust؛ مسار After Effects الأكمل، وPhotoshop وIllustrator تجريبية؛ إثبات مفهوم غير مجرّب على البرنامج الحقيقي | ٢ | https://github.com/Aodaruma/adobe-mcp-rs | مضاف، غير مفعّل |
+| photoshop-python-api-mcp-server (loonghao) | خادم MCP | Photoshop فقط وعلى Windows لاعتماده على COM | ٢ | https://github.com/loonghao/photoshop-python-api-mcp-server | مضاف، غير مفعّل |
+| تكامل Adobe MCP المحلي (الرسمي، مُعلن) | إعلان | حسب TechCrunch (١٠ نوفمبر ٢٠٢٦) أدوبي أعلنت MCP محلي يسمح لـClaude وChatGPT بالعمل داخل Photoshop وIllustrator وPremiere وAfter Effects؛ ما فتحت التفاصيل ولا أعرف توفره الحالي | ٥ | https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/ | مضاف، غير مفعّل |
