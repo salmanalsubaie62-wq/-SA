@@ -1419,3 +1419,21 @@
 | Read AI MCP | خدمة MCP | MCP وREST لبيانات الاجتماعات، بيتا مفتوحة؛ يحتاج حساب | ٣ | https://sonix.ai/resources/transcription-mcp-servers-meeting-notes/ | مضاف، غير مفعّل |
 | Granola MCP | خدمة MCP | تسجيل من اللابتوب بدون بوت؛ سجّل أقل نتيجة بمقارنة tl;dv (٢٠ من ٣٤) وبلا ملاحظات حتى تضغط Generate | ٢ | https://tldv.io/blog/meeting-mcp-servers/ | مضاف، غير مفعّل |
 | Tactiq | خدمة | تفريغ اجتماعات Meet وZoom وTeams عبر إضافة متصفح بدون بوت ظاهر | ٣ | https://sonix.ai/resources/transcription-mcp-servers-meeting-notes/ | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ٢١:٣٦ (الكويت) · أنظمة ERP ونماذج محلية ورسائل SMS
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| tuanle96/mcp-odoo | خادم MCP | الأكثر نجوماً لـOdoo: مبيعات ومخزون ومشتريات ومحاسبة وCRUD عام عبر XML-RPC؛ رخصة MIT؛ يستهدف Odoo 16+؛ يكتب على بيانات حقيقية | ٥ | https://enterprisedna.co/directories/mcp/tuanle96-mcp-odoo | مضاف، غير مفعّل |
+| ivnvxd/mcp-server-odoo | خادم MCP | Odoo بتركيز على الأمان مع وضع تجربة (YOLO) ووحدة مؤسسية للإنتاج؛ pip | ٤ | https://dev.to/grove_chatforest/erp-business-management-mcp-servers-odoo-dynamics-365-netsuite-sap-and-more-5f41 | مضاف، غير مفعّل |
+| deeprunnerai/odoo-mcp-server | خادم MCP | TypeScript: مخزون وCRM ومبيعات وتصنيع ومشتريات | ٣ | https://github.com/deeprunnerai/odoo-mcp-server | مضاف، غير مفعّل |
+| sameeroz/odoo-mcp-server | خادم MCP | نسخة Python من Odoo MCP | ٢ | https://github.com/sameeroz/odoo-mcp-server | مضاف، غير مفعّل |
+| zavora-ai/mcp-erp | خادم MCP | Rust: ٣٤ أداة عبر SAP وNetSuite وOdoo وZoho Books وDynamics 365؛ Zoho بـOAuth ومعرّف مؤسسة | ٣ | https://docs.rs/crate/mcp-erp/latest/source/README.md | مضاف، غير مفعّل |
+| NightTrek/Ollama-mcp | خادم MCP | يلف واجهة Ollama بأدوات (دردشة وسحب وتشغيل نماذج) مع OLLAMA_HOST؛ يفيد لو نبي نموذج محلي يعالج بيانات حساسة | ٤ | https://mcpservers.org/servers/NightTrek/Ollama-mcp | مضاف، غير مفعّل |
+| jaspertvdm/mcp-server-ollama-bridge | خادم MCP | جسر MCP لخادم Ollama محلي بـPython ورخصة MIT مع خيار Docker | ٣ | https://mcpservers.org/servers/jaspertvdm/mcp-server-ollama-bridge | مضاف، غير مفعّل |
+| MCPHost (جسر) | أداة | عميل MCP بـGo يعمل مع نماذج محلية؛ Ollama نفسه ما يدعم MCP مباشرة | ٣ | https://dev.to/hola_gus/how-to-use-mcp-servers-with-ollama-and-local-llms-f3 | مضاف، غير مفعّل |
+| patruff/MCP-LLM Bridge | أداة | جسر TypeScript بين نماذج Ollama وMCP؛ مشاكل موثّقة بمسارات Windows وتحليل JSON مع النماذج الصغيرة | ٢ | https://www.augmentcode.com/mcp/mcp-llm-bridge | مضاف، غير مفعّل |
+| twilio-labs/mcp (@twilio-alpha/mcp) | خادم MCP | خادم رسمي (ألفا) لكل واجهات Twilio مع تصفية الواجهات؛ يرسل رسائل حقيقية ويكلّف فلوس | ٤ | https://raw.githubusercontent.com/twilio-labs/mcp/main/README.md | مضاف، غير مفعّل |
+| griffinlong twilio-mcp | خادم MCP | رسائل SMS بمحادثات؛ يحتاج SQLite وwebhook للرسائل الواردة | ٢ | https://lobehub.com/mcp/griffinlong-twilio-mcp | مضاف، غير مفعّل |
+| Vonage telephony MCP | خادم MCP | مكالمات صوتية وSMS عبر Vonage | ٣ | https://mcpservers.org/servers/YiyangLi/sms-mcp-server | مضاف، غير مفعّل |
