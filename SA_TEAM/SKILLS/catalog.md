@@ -1178,3 +1178,23 @@
 | Bitwarden MCP (رسمي، محلي) | خادم MCP | يشتغل محلياً وبياناتك تبقى على جهازك بتشفير بدون معرفة. تحذير أمني: أسرار تمر عبر نموذج ذكاء اصطناعي، للمؤسس فقط وبحذر | ٣ | https://bitwarden.com/blog/bitwarden-mcp-server/ | مضاف، غير مفعّل |
 | 1Password: مقال أمان MCP | مقال | موقف 1Password: ما نكشف أسرار خام عبر MCP، والأدوات تعمل على الأسرار بدون إرجاعها. اقرأه قبل أي ربط مدير كلمات مرور | ٤ | https://1password.com/blog/securing-mcp-servers-with-1password-stop-credential-exposure-in-your-agent | مضاف، غير مفعّل |
 | dkvdm onepassword-mcp-server (مجتمعي) | خادم MCP | يعرض عناصر خزنة 1Password كموارد. خطر عالي: يحتاج جلسة 1Password مفتوحة، ما أنصح فيه بدون مراجعة كود | ٢ | https://enterprisedna.co/directories/mcp/dkvdm-onepassword-mcp-server | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٧:٣٦ (الكويت) · صور مجانية وأيقونات وPenpot وألوان وتباين
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| joelio stocky | خادم MCP | بحث وتنزيل صور مجانية من Pexels وUnsplash. يحتاج مفاتيح مطوّر مجانية | ٤ | https://github.com/joelio/stocky | مضاف، غير مفعّل |
+| stock-image-mcp (PyPI) | خادم MCP | Unsplash وPexels وPixabay وFreepik وغيرها بـuvx. تأكد من رخصة كل صورة قبل الاستخدام التجاري | ٣ | https://socket.dev/pypi/package/stock-image-mcp | مضاف، غير مفعّل |
+| jeanpfs stock-images-mcp | خادم MCP | search_images وdownload_image لثلاث مزودين، بـnpx أو Docker | ٤ | https://lobehub.com/mcp/jeanpfs-stock-images-mcp | مضاف، غير مفعّل |
+| Image Search MCP (Glama) | خادم MCP | بحث متعدد المزودين بمفاتيح Pexels وUnsplash وPixabay | ٣ | https://glama.ai/mcp/servers/g4cyyn9j44 | مضاف، غير مفعّل |
+| icon-mcp (PyPI، MIT) | خادم MCP | بحث نحو ٢٠٠٠ أيقونة Lucide وتغيير سماكة الخط واللون والحجم وتوليد مجموعة متناسقة. uvx | ٥ | https://pypi.org/project/icon-mcp/ | مضاف، غير مفعّل |
+| SeeYangZhi lucide-icons-mcp | خادم MCP | أيقونات Lucide بأمثلة React/JSX | ٣ | https://mcpservers.org/servers/SeeYangZhi/lucide-icons-mcp | مضاف، غير مفعّل |
+| imjac0b iconify-mcp-server (GPL-3.0) | خادم MCP | أكثر من ٢٠٠ ألف أيقونة من ٢٠٠+ مجموعة. انتبه لرخصة GPL-3.0 | ٤ | https://lobehub.com/it/mcp/imjac0b-iconify-mcp-server | مضاف، غير مفعّل |
+| devstroop icons-mcp (Codeberg) | خادم MCP | بحث وجلب دفعة حتى ٥٠ أيقونة وإنشاء sprite وتحسين SVG | ٣ | https://codeberg.org/devstroop/icons-mcp | مضاف، غير مفعّل |
+| Penpot MCP الرسمي (داخل مستودع penpot) | خادم MCP رسمي | أداة تصميم مفتوحة المصدر بديل Figma. الخادم الرسمي بمجلد mcp ومفتاح من إعدادات التكاملات، أو محلي بـnpx @penpot/mcp@stable (Node 20/22) | ٥ | https://help.penpot.app/mcp/ | مضاف، غير مفعّل |
+| montevive penpot-mcp (MIT) | خادم MCP (Python) | Penpot مجتمعي يربط Claude بملفات التصميم | ٣ | https://github.com/montevive/penpot-mcp | مضاف، غير مفعّل |
+| zcube penpot-mcp-server | خادم MCP (TypeScript) | تعديل كامل لملفات Penpot | ٣ | https://lobehub.com/mcp/zcube-penpot-mcp-server | مضاف، غير مفعّل |
+| color-mcp-server (PyPI، MIT) | خادم MCP | لوحات ألوان بأنماط تناغم وفحص تباين WCAG AA/AAA. الشرح بالألماني | ٣ | https://pypi.org/project/color-mcp-server | مضاف، غير مفعّل |
+| Coolors MCP (npm @trishchuk) | خادم MCP | تصدير لوحة كـCSS وSCSS وTailwind وتوكنات W3C ومحاكاة عمى الألوان وتباين APCA | ٤ | https://socket.dev/npm/package/@trishchuk/coolors-mcp | مضاف، غير مفعّل |
+| Tokven MCP | خادم MCP | توليد نظام ألوان بتوكنات متوافقة مع WCAG من لون العلامة (hex) | ٤ | https://ai.g2.com/marketplace/tools/tokven-mcp | مضاف، غير مفعّل |
+| color-engine-mcp (npm) | خادم MCP | تباين WCAG وAPCA ودرجات tints/shades وتوكنات، مسجّل بسجل MCP الرسمي حسب وصفه | ٤ | https://socket.dev/npm/package/color-engine-mcp | مضاف، غير مفعّل |
+| Colors MCP Server (Glama) | خادم MCP | لوحات وفحص وصول، حساب فقط بدون شبكة ولا آثار جانبية | ٣ | https://glama.ai/mcp/servers/nkcjzdtfbb | مضاف، غير مفعّل |
