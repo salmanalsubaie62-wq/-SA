@@ -27,6 +27,8 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);
   font-size:clamp(64px,17vw,250px);color:transparent;-webkit-text-stroke:1px rgba(201,162,74,.35);
   padding-bottom:6vh}
 .bigword span{display:block}
+.fb{display:none;position:absolute;left:50%;top:34%;width:min(40vw,240px);transform:translate(-50%,-50%);z-index:1}
+.nogl .fb{display:block}
 #gl{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:1}
 .vig{position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(7,8,10,.5),transparent 30%,transparent 70%,rgba(7,8,10,.5))}
 .top{position:fixed;top:0;left:0;right:0;z-index:6;display:flex;justify-content:space-between;align-items:center;
@@ -80,6 +82,7 @@ input[type=file]{position:absolute;opacity:0;width:1px;height:1px}
 <div class="world" aria-hidden="true">
   <div class="bigword" id="bigword"><div><span>NOIR</span><span>EMERALD</span></div></div>
   <canvas id="gl"></canvas>
+  <svg class="fb" viewBox="0 0 200 320" aria-hidden="true"><rect x="52" y="14" width="96" height="62" rx="5" fill="#c9a24a"/><rect x="84" y="76" width="32" height="14" fill="#8a6a25"/><rect x="30" y="90" width="140" height="210" rx="10" fill="#050506" stroke="#2b2720"/><text x="100" y="188" text-anchor="middle" font-family="Georgia,serif" font-size="26" letter-spacing="3" fill="#c9a24a">NOIR</text><text x="100" y="212" text-anchor="middle" font-family="Georgia,serif" font-size="12" letter-spacing="6" fill="#c9a24a">EMERALD</text></svg>
   <div class="vig"></div>
 </div>
 
@@ -192,11 +195,21 @@ function render(){
   $("wa").href="https://wa.me/?text="+encodeURIComponent(T[lang].msg);
   $("status").textContent=custom?T[lang].loaded+custom:"";
 }
-$("spray").onclick=function(){burst(performance.now())};
+$("spray").onclick=function(){if(window.__burst)window.__burst(performance.now())};
 $("lAr").onclick=function(){lang="ar";render()};$("lEn").onclick=function(){lang="en";render()};
 render();
 
-/* ---------- 3D ---------- */
+/* ---------- reveal + count-up ---------- */
+function count(el){
+  var to=+el.getAttribute("data-count"),t=performance.now(),d=1100;
+  (function s(n){var k=Math.min(1,(n-t)/d);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(s)})(t);
+}
+if("IntersectionObserver" in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){
+    e.target.classList.add("in");e.target.querySelectorAll("[data-count]").forEach(function(c){if(!c.dataset.done){c.dataset.done=1;count(c)}})}})},{threshold:.2});
+  document.querySelectorAll(".reveal").forEach(function(n){io.observe(n)});
+}else document.querySelectorAll(".reveal").forEach(function(n){n.classList.add("in")});
+function start3D(){
 var cv=$("gl");
 var renderer=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});
 renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
@@ -270,9 +283,9 @@ function setModel(obj,norm){
 }
 setModel(buildBottle(),false);
 if(document.fonts&&document.fonts.load){document.fonts.load("700 100px 'Bodoni Moda'").then(function(){if(lblMat){lblMat.map=labelTexture();lblMat.needsUpdate=true}}).catch(function(){})}
-var loader=new THREE.GLTFLoader();
+var loader=THREE.GLTFLoader?new THREE.GLTFLoader():null;
 $("glb").addEventListener("change",function(e){
-  var f=e.target.files&&e.target.files[0];if(!f)return;var rd=new FileReader();
+  var f=e.target.files&&e.target.files[0];if(!f)return;if(!loader){$("status").textContent=T[lang].bad;return}var rd=new FileReader();
   rd.onload=function(){loader.parse(rd.result,"",function(gl){custom=f.name;setModel(gl.scene,true);render()},function(){$("status").textContent=T[lang].bad})};
   rd.readAsArrayBuffer(f);
 });
@@ -297,6 +310,7 @@ var mm=new THREE.ShaderMaterial({transparent:true,depthWrite:false,uniforms:{pr:
   fragmentShader:"varying float vA;void main(){float d=length(gl_PointCoord-.5)*2.0;float a=smoothstep(1.0,0.0,d);a*=a;gl_FragColor=vec4(.96,.9,.76,a*vA);}"});
 var mist=new THREE.Points(mg,mm);mist.frustumCulled=false;scene.add(mist);
 function burst(now){if(!parts)return;pend+=130;press=1;lastBurst=now}
+window.__burst=burst;
 function emit(mob){
   holder.updateMatrixWorld(true);nz.set(0,2.68,0);model.localToWorld(nz);
   var i=mi;mi=(mi+1)%N;
@@ -339,15 +353,14 @@ function frame(now){
 }
 requestAnimationFrame(frame);
 
-/* ---------- reveal + count-up ---------- */
-function count(el){
-  var to=+el.getAttribute("data-count"),t=performance.now(),d=1100;
-  (function s(n){var k=Math.min(1,(n-t)/d);el.textContent=Math.round(to*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(s)})(t);
 }
-if("IntersectionObserver" in window){
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){
-    e.target.classList.add("in");e.target.querySelectorAll("[data-count]").forEach(function(c){if(!c.dataset.done){c.dataset.done=1;count(c)}})}})},{threshold:.2});
-  document.querySelectorAll(".reveal").forEach(function(n){io.observe(n)});
-}else document.querySelectorAll(".reveal").forEach(function(n){n.classList.add("in")});
+try{
+  if(!window.THREE)throw new Error("three.js did not load");
+  start3D();
+}catch(err){
+  document.documentElement.classList.add("nogl");
+  var st=$("status");if(st)st.textContent="3D: "+(err&&err.message||err);
+}
+addEventListener("error",function(ev){var st=$("status");if(st&&!st.textContent)st.textContent="Error: "+ev.message});
 })();
 </script>
