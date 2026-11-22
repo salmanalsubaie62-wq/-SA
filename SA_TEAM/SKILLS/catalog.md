@@ -1458,3 +1458,21 @@
 | deploy.social | خدمة MCP | نشر مقاطع قصيرة على Shorts وReels وTikTok وFacebook وThreads وX وBluesky من أي عميل MCP؛ ينشر باسم المؤسسة فيحتاج موافقة | ٤ | https://mcpservers.org/servers/deploy-social-docs-mcp | مضاف، غير مفعّل |
 | PostPlanify (YouTube) | خدمة MCP | رفع وجدولة فيديوهات وShorts على يوتيوب مع تحليلات | ٣ | https://postplanify.com/youtube-mcp | مضاف، غير مفعّل |
 | PostPulse MCP | خادم MCP | نشر وجدولة على منصات متعددة | ٢ | https://glama.ai/mcp/servers/PostPulse/mcp-server-postpulse | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ٢٣:٣٦ (الكويت) · منصات تعليمية وفعاليات وERPNext
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| DMontgomery40/mcp-canvas-lms | خادم MCP | الأكثر نجوماً لـCanvas LMS (٥٠+ أداة)؛ يفيد لو المؤسسة بتقدّم دورات؛ يحتاج حساب Canvas | ٣ | https://dev.to/grove_chatforest/education-lms-mcp-servers-canvas-moodle-anki-leetcode-and-more-3n4p | مضاف، غير مفعّل |
+| bruchris Canvas LMS MCP | خادم MCP | ٤٢ أداة عبر ١٥ مجال في Canvas حسب قائمة | ٢ | https://chatforest.com/reviews/education-lms-mcp-servers/ | مضاف، غير مفعّل |
+| peancor/moodle-mcp-server | خادم MCP | وُصف بأنه الأكمل لـMoodle؛ يحتاج توكن Moodle | ٣ | https://dev.to/grove_chatforest/education-lms-mcp-servers-canvas-moodle-anki-leetcode-and-more-3n4p | مضاف، غير مفعّل |
+| csmediapro/moodle-mcp-server | خادم MCP | Moodle برخصة AGPL-3.0 (رخصة قوية تلزم بنشر التعديلات) | ٢ | https://enterprisedna.co/directories/mcp/csmediapro-moodle-mcp-server | مضاف، غير مفعّل |
+| Google Classroom MCP (رسمي، معاينة) | خادم MCP | خادم Google رسمي بمعاينة مطوّرين: إنشاء وتحديث واجبات؛ يحتاج برنامج المعاينة ومشروع Google Cloud | ٣ | https://www.teachfloor.com/blog/best-mcp-servers-for-lms | مضاف، غير مفعّل |
+| marek-knappe/EventbriteMCP | خادم MCP | ٧٣ أداة لـEventbrite: فعاليات وحضور وطلبات وتذاكر وخصومات وwebhooks؛ يحتاج مفتاح API؛ يكتب على بيانات حقيقية | ٣ | https://github.com/marek-knappe/EventbriteMCP | مضاف، غير مفعّل |
+| prmichaelsen/eventbrite-mcp | خادم MCP | ٤٢ أداة لـEventbrite API v3 على npm وGitHub | ٣ | https://cdn.jsdelivr.net/npm/@prmichaelsen/eventbrite-mcp@1.0.7/README.md | مضاف، غير مفعّل |
+| @chrischall/eventbrite-mcp | خادم MCP | قراءة فقط: تذاكرك وطلباتك وبيانات المنظّم؛ أأمن للتجربة الأولى | ٣ | https://socket.dev/npm/package/@chrischall/eventbrite-mcp | مضاف، غير مفعّل |
+| vyogotech/frappe-mcp-server | خادم MCP | لـERPNext وFrappe، يشتغل مع أي واجهة متوافقة مع OpenAI ومنها LM Studio بإعداد بسيط (base_url وapi_key وmodel) | ٤ | https://github.com/vyogotech/frappe-mcp-server | مضاف، غير مفعّل |
+| rakeshgangwar/erpnext-mcp-server | خادم MCP | TypeScript؛ يحتاج رابط النظام ومفتاح وسر API | ٣ | https://github.com/rakeshgangwar/erpnext-mcp-server | مضاف، غير مفعّل |
+| Casys-AI/mcp-erpnext | خادم MCP | يشتغل مع ERPNext المستضاف ذاتياً وfrappe.cloud | ٣ | https://github.com/Casys-AI/mcp-erpnext | مضاف، غير مفعّل |
+| muthanii/frappe_mcp | خادم MCP | Python عبر REST لموقع Frappe؛ PyPI وDocker | ٢ | https://socket.dev/pypi/package/frappe-mcp-server | مضاف، غير مفعّل |
