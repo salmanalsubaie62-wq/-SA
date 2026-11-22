@@ -1268,3 +1268,20 @@
 | cognyai/claude-code-marketing-skills | مجموعة مهارات | أكثر من ٢٠ مهارة تسويق لـClaude Code | ٤ | https://composio.dev/blog/best-marketing-skills | مضاف، غير مفعّل |
 | daymade/claude-code-skills | مجموعة مهارات | مجموعة مهارات مذكورة في مراجعة تسويق؛ تحتاج فحص محتواها | ٣ | https://composio.dev/blog/best-marketing-skills | مضاف، غير مفعّل |
 | Pipedream MCP | خادم MCP | وصول API مباشر لآلاف التطبيقات؛ عنوان الخادم متضارب بين المصادر فتأكد من وثائقهم | ٣ | https://chatforest.com/reviews/workflow-automation-mcp-servers/ | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ١٢:٣٦ (الكويت) · دعم العملاء وأنظمة التصميم وGA4
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| Intercom MCP (الرسمي) | خادم MCP مستضاف | سيرفر رسمي بـOAuth يرث صلاحيات المستخدم بإنتركم؛ يحتاج حساب Intercom | ٥ | https://dev.to/grove_chatforest/customer-support-helpdesk-mcp-servers-zendesk-intercom-freshdesk-servicenow-plain-and-more-31lh | مضاف، غير مفعّل |
+| Zammad MCP | خادم MCP | مركز دعم مفتوح المصدر بأكثر من ١٥ أداة، مشروع صغير (٢٢ نجمة) | ٣ | https://dev.to/grove_chatforest/customer-support-helpdesk-mcp-servers-zendesk-intercom-freshdesk-servicenow-plain-and-more-31lh | مضاف، غير مفعّل |
+| reminia/zendesk-mcp-server | خادم MCP | Zendesk بـPython ورخصة Apache-2.0؛ ما تأكدت إذا فيه خادم رسمي من Zendesk | ٣ | https://dev.to/grove_chatforest/customer-support-helpdesk-mcp-servers-zendesk-intercom-freshdesk-servicenow-plain-and-more-31lh | مضاف، غير مفعّل |
+| Framelink MCP for Figma | خادم MCP | بديل مجتمعي يحترم متغيرات Figma وتوكناته؛ الرسمي يحتاج مقعد Dev | ٦ | https://blog.logrocket.com/ux-design/design-to-code-with-figma-mcp/ | مضاف، غير مفعّل |
+| Figma Console MCP (southleft) | خادم MCP | استيراد tokens.json إلى متغيرات Figma ورحلة ذهاب وإياب مع الكود | ٥ | https://github.com/southleft/figma-console-mcp | مضاف، غير مفعّل |
+| MCP Design System Extractor | خادم MCP | يستخرج HTML وأنماط ومعلومات المكونات من Storybook | ٤ | https://mcpservers.org/servers/freema/mcp-design-system-extractor | مضاف، غير مفعّل |
+| storybook-figma-mcp | خادم MCP | يطابق شجرة تصميم Figma مع قائمة مكونات Storybook | ٣ | https://www.pkgstats.com/pkg:storybook-figma-mcp | مضاف، غير مفعّل |
+| DS MCP Sync Server | خادم MCP | مزامنة نظام التصميم في Figma مع كود النظام مع أمر لمزامنة التوكنات | ٣ | https://lobehub.com/ja/mcp/blumaa-ds-mcp-sync | مضاف، غير مفعّل |
+| mharnett/mcp-ga4 | خادم MCP | GA4 فقط بـ٩ أدوات (تقارير ولحظي وأبعاد مخصصة)؛ يحتاج OAuth | ٤ | https://raw.githubusercontent.com/mharnett/mcp-ga4/HEAD/README.md | مضاف، غير مفعّل |
+| twominutereports GA4 MCP | خادم MCP | خادم GA4 من أداة تقارير تسويق؛ يحتاج OAuth | ٣ | https://mcpservers.org/servers/twominutereports/google-analytics-4-mcp | مضاف، غير مفعّل |
+| pkidwell22 Google Analytics MCP | خادم MCP | GA4 وSearch Console؛ الإعداد يحتاج مشروع Google Cloud مع فوترة مفعّلة | ٣ | https://lobehub.com/en/mcp/pkidwell22-google-analytics-mcp | مضاف، غير مفعّل |
