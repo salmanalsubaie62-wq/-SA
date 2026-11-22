@@ -1162,3 +1162,19 @@
 | glittercowboy discord-mcp | خادم MCP | إدارة سيرفر Discord: دردشة وإشراف وإدارة وبناء. ١٦٠+ أداة وتأكيدات وتراجع. المؤسس فقط، جرّبه على سيرفر تجريبي | ٣ | https://lobehub.com/mcp/glittercowboy-discord-mcp | مضاف، غير مفعّل |
 | hardheadhackerhead Discord MCP (Quadslab) | خادم MCP | ١٣٤ أداة: إشراف وأدوار وقنوات وwebhooks. بتوكن بوت ومعرّف سيرفر | ٣ | https://mcpservers.org/servers/hardheadhackerhead/discord-mcp | مضاف، غير مفعّل |
 | ramsi-k discord-mcp | خادم MCP | Discord مجتمعي. تبنّي قليل حسب مصدر | ٢ | https://lobehub.com/pl/mcp/ramsi-k-discord-mcp | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٦:٣٦ (الكويت) · أدوات مطوّرين MCP وTodoist ومراقبة وأسرار
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| MCP Inspector (الرسمي) | أداة مطوّرين | فحص وتجربة وتصحيح خوادم MCP قبل أي ربط: عرض الأدوات والمدخلات والسجلات. تشتغل بـnpx. لا تكشف الوكيل المساعد لشبكة غير موثوقة لأنه يشغّل عمليات محلية | ٥ | https://modelcontextprotocol.io/docs/tools/inspector | مضاف، غير مفعّل |
+| MCPJam Inspector | أداة مطوّرين | بديل مجتمعي: مساحة اختبار مرئية وسجل JSON-RPC لحظي وتصحيح OAuth | ٣ | https://dev.to/theairabbit/testing-mcp-servers-like-a-pro-using-mcpjam-inspector-22ka | مضاف، غير مفعّل |
+| Doist todoist-mcp (الرسمي، مستضاف) | خادم MCP رسمي | مهام وقوائم Todoist بـOAuth من المتصفح، وإضافة Claude Code رسمية. التذكيرات تحتاج خطة Pro | ٥ | https://raw.githubusercontent.com/Doist/todoist-mcp/main/README.md | مضاف، غير مفعّل |
+| greirson mcp-todoist | خادم MCP | Todoist مجتمعي مع إدارة تذكيرات (Pro أو Business) | ٣ | https://mcpservers.org/servers/greirson/mcp-todoist | مضاف، غير مفعّل |
+| christulino todoist-v1-mcp-server | خادم MCP | Todoist بواجهة v1 الموحدة. التذكيرات والمهام المنجزة تحتاج Pro | ٢ | https://raw.githubusercontent.com/christulino/todoist-v1-mcp-server/main/README.md | مضاف، غير مفعّل |
+| hald things-mcp | خادم MCP | إدارة Things 3 (ماك فقط، لازم تفعيل Things URLs). يشتغل بـuvx | ٢ | https://github.com/hald/things-mcp | مضاف، غير مفعّل |
+| grafana mcp-grafana (الرسمي) | خادم MCP رسمي | لوحات Grafana وPrometheus وLoki وتنبيهات وOnCall، أكثر من ٤٠ أداة (Go، Apache 2.0). ابدأ بالقراءة فقط | ٤ | https://dev.to/grove_chatforest/the-grafana-mcp-server-your-entire-observability-stack-in-one-agent-interface-4l2l | مضاف، غير مفعّل |
+| getsentry sentry-mcp (الرسمي) | خادم MCP رسمي | تشخيص أخطاء وأداء Sentry، وإضافة Claude Code فيها وكيل فرعي. ما يغطي السجلات ولا مقاييس البنية | ٤ | https://github.com/mcp/getsentry/sentry-mcp | مضاف، غير مفعّل |
+| pab1it0 prometheus-mcp-server | خادم MCP | استعلام وتحليل مقاييس Prometheus (مجتمعي) | ٣ | https://dev.to/grove_chatforest/monitoring-observability-mcp-servers-from-grafana-to-datadog-vendor-led-observability-meets-mcp-5cgb | مضاف، غير مفعّل |
+| Bitwarden MCP (رسمي، محلي) | خادم MCP | يشتغل محلياً وبياناتك تبقى على جهازك بتشفير بدون معرفة. تحذير أمني: أسرار تمر عبر نموذج ذكاء اصطناعي، للمؤسس فقط وبحذر | ٣ | https://bitwarden.com/blog/bitwarden-mcp-server/ | مضاف، غير مفعّل |
+| 1Password: مقال أمان MCP | مقال | موقف 1Password: ما نكشف أسرار خام عبر MCP، والأدوات تعمل على الأسرار بدون إرجاعها. اقرأه قبل أي ربط مدير كلمات مرور | ٤ | https://1password.com/blog/securing-mcp-servers-with-1password-stop-credential-exposure-in-your-agent | مضاف، غير مفعّل |
+| dkvdm onepassword-mcp-server (مجتمعي) | خادم MCP | يعرض عناصر خزنة 1Password كموارد. خطر عالي: يحتاج جلسة 1Password مفتوحة، ما أنصح فيه بدون مراجعة كود | ٢ | https://enterprisedna.co/directories/mcp/dkvdm-onepassword-mcp-server | مضاف، غير مفعّل |
