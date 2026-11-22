@@ -1401,3 +1401,21 @@
 | chusri/claude-code-agents | مجموعة وكلاء | ٧٥ وكيل فرعي لكل واحد نموذج محدد | ٣ | https://github.com/chusri/claude-code-agents | مضاف، غير مفعّل |
 | hesreallyhim/a-list-of-claude-code-agents | قائمة | قائمة منسقة لوكلاء Claude Code؛ للاستكشاف | ٣ | https://github.com/hesreallyhim/a-list-of-claude-code-agents | مضاف، غير مفعّل |
 | rahulvrane/awesome-claude-agents | قائمة | قائمة وكلاء Claude؛ للاستكشاف | ٢ | https://github.com/rahulvrane/awesome-claude-agents | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ٢٠:٣٦ (الكويت) · تقييمات العملاء وAnki ونصوص الاجتماعات
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| ReputeMap MCP | خادم MCP | إدارة تقييمات Google Business Profile: صندوق تقييمات وإحصائيات لكل فرع وحملات طلب تقييم؛ رخصة MIT ومستضاف وفي سجل MCP الرسمي؛ يحتاج OAuth | ٥ | https://mcpservers.org/servers/reputemap/mcp | مضاف، غير مفعّل |
+| satheeshds/gbp-review-agent | خادم MCP | يجلب تقييمات Google Business ويحلّلها ويولّد ردوداً وينشرها؛ يحتاج OAuth، والنشر خارجي فيحتاج موافقة قبل كل رد | ٣ | https://github.com/satheeshds/gbp-review-agent | مضاف، غير مفعّل |
+| mcp-google-business (npm) | خادم MCP | مواقع وتقييمات ومنشورات محلية ومقاييس بصلاحية business.manage واحدة | ٣ | https://socket.dev/npm/package/mcp-google-business | مضاف، غير مفعّل |
+| Review & Reputation Intelligence (Apify) | خدمة MCP | تقييمات Google وYelp وTrustpilot مع تحليل مشاعر، ٥$ لكل ١٠٠٠ تقييم؛ سحب (scraping) فتأكد من شروط المنصات | ٢ | https://apify.com/onetapstudio/review-reputation-mcp | مضاف، غير مفعّل |
+| Multi-Platform Review Scraper MCP (Apify) | خدمة MCP | تقييمات Google وTrustpilot وYelp وTripAdvisor بلا مفاتيح؛ سحب فتأكد من الشروط | ٢ | https://apify.com/red.cars/multi-review-scraper-mcp | مضاف، غير مفعّل |
+| ankimcp/anki-mcp-server | خادم MCP | ٤٢ أداة لـAnki (بيتا)؛ يفيد تدريب الفريق وحفظ المصطلحات؛ يحتاج Anki شغّال | ٤ | https://github.com/ankimcp/anki-mcp-server | مضاف، غير مفعّل |
+| mcp-ankiconnect (samefarrar) | خادم MCP | «ساعدني أحفظ هذا» عبر AnkiConnect؛ Python؛ يحتاج Anki وAnkiConnect | ٣ | https://pypi.org/project/mcp-ankiconnect/ | مضاف، غير مفعّل |
+| anki-mcp (arielbk) | خادم MCP | يربط مجموعة Anki بالمساعد؛ يفشل إذا Anki مو شغّال | ٣ | https://unpkg.com/@arielbk/anki-mcp@0.5.0/README.md | مضاف، غير مفعّل |
+| Otter MCP (موصّل Claude) | خدمة MCP | بحث في نصوص الاجتماعات واستخراج رؤى؛ ضمن خطتهم المجانية حسب مقارنة tl;dv؛ يحتاج حساب | ٤ | https://claude.com/connectors/otter-ai | مضاف، غير مفعّل |
+| Read AI MCP | خدمة MCP | MCP وREST لبيانات الاجتماعات، بيتا مفتوحة؛ يحتاج حساب | ٣ | https://sonix.ai/resources/transcription-mcp-servers-meeting-notes/ | مضاف، غير مفعّل |
+| Granola MCP | خدمة MCP | تسجيل من اللابتوب بدون بوت؛ سجّل أقل نتيجة بمقارنة tl;dv (٢٠ من ٣٤) وبلا ملاحظات حتى تضغط Generate | ٢ | https://tldv.io/blog/meeting-mcp-servers/ | مضاف، غير مفعّل |
+| Tactiq | خدمة | تفريغ اجتماعات Meet وZoom وTeams عبر إضافة متصفح بدون بوت ظاهر | ٣ | https://sonix.ai/resources/transcription-mcp-servers-meeting-notes/ | مضاف، غير مفعّل |
