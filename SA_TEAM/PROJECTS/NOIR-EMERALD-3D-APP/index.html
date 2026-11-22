@@ -1,13 +1,13 @@
 <title>NOIR EMERALD</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@200;300;400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;600;700&family=El+Messiri:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap">
 <style>
 /* NOIR EMERALD: a 3D hero that holds only the bottle, then a quiet editorial page below it. */
 :root{
   --bg:#08090b; --bg2:#0d0e11; --fg:#efe9de; --muted:#9a9388; --line:#26231e;
   --gold:#c9a24a; --gold-hi:#e8cf8d; --gold-lo:#7d6127;
   --f-head:"Bodoni Moda",Georgia,serif;
-  --f-ar:"IBM Plex Sans Arabic","Segoe UI",system-ui,sans-serif;
+  --f-ar:"El Messiri","IBM Plex Sans Arabic",Georgia,serif;
   --f-body:"IBM Plex Sans Arabic","Segoe UI",system-ui,sans-serif;
   color-scheme:dark;
 }
@@ -33,7 +33,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .seg button[aria-pressed="true"]{background:var(--gold);color:#120e05}
 
 /* hero */
-.hero{position:relative;height:330vh}
+.hero{position:relative;height:220vh}
 .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;touch-action:pan-y;cursor:grab;
   background:radial-gradient(60% 55% at 50% 40%,#16161a 0%,var(--bg) 70%)}
 .stage:active{cursor:grabbing}
@@ -47,7 +47,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .hc.on{opacity:1;transform:none;pointer-events:auto}
 .hc .k{margin:0 0 8px;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
 .hc .t{margin:0;font-family:var(--f-head);font-size:clamp(26px,2.6vw,38px);line-height:1.15;color:var(--fg)}
-html[lang=ar] .hc .t{font-family:var(--f-ar);font-weight:300;line-height:1.45}
+html[lang=ar] .hc .t{font-family:var(--f-ar);font-weight:400;line-height:1.45}
 .c1{left:0;right:0;margin-inline:auto;bottom:4vh;text-align:center;max-width:none}
 .c1 .k{margin-bottom:16px}
 .c2{right:max(6vw,24px);bottom:16vh;text-align:right}
@@ -73,7 +73,7 @@ section.blk{padding-block:clamp(88px,12vw,170px)}
 .label b{font-weight:400;color:var(--muted)}
 .display{font-family:var(--f-head);font-weight:500;font-size:clamp(42px,6.2vw,96px);line-height:1.02;margin:22px 0 0;letter-spacing:-.01em;text-wrap:balance}
 .display.sm{font-size:clamp(34px,4.2vw,62px)}
-html[lang=ar] .display{font-family:var(--f-ar);font-weight:200;line-height:1.3;letter-spacing:0}
+html[lang=ar] .display{font-family:var(--f-ar);font-weight:400;line-height:1.35;letter-spacing:0}
 .lead{margin:0;font-size:clamp(16px,1.35vw,19px);line-height:1.95;color:var(--muted);max-width:50ch}
 .intro{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px 6vw;align-items:end}
 .intro .lead{padding-bottom:12px;border-top:1px solid var(--gold-lo);padding-top:22px}
@@ -87,7 +87,9 @@ html[lang=ar] .display{font-family:var(--f-ar);font-weight:200;line-height:1.3;l
 .pyr .n{font-family:"Bodoni Moda",Georgia,serif;font-size:15px;color:var(--gold)}
 .pyr h3{margin:18px 0 10px;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
 .pyr p{margin:0;font-family:var(--f-head);font-size:clamp(24px,2.3vw,34px);line-height:1.25}
-html[lang=ar] .pyr p{font-family:var(--f-ar);font-weight:300;line-height:1.55}
+html[lang=ar] .pyr p{font-family:var(--f-ar);font-weight:400;line-height:1.55}
+/* Arabic letters must stay joined: no tracking on Arabic text */
+html[lang=ar] .label,html[lang=ar] .hc .k,html[lang=ar] .cue,html[lang=ar] .drag,html[lang=ar] .nav-cta,html[lang=ar] .pyr h3,html[lang=ar] .spec dt,html[lang=ar] .shot figcaption span+span{letter-spacing:0;font-size:13px}
 .details{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px 7vw;align-items:center}
 .details img,.order img{width:100%;aspect-ratio:4/5;object-fit:cover;background:#050506}
 .spec{margin:44px 0 0;padding:0}
@@ -112,7 +114,7 @@ html[lang=ar] .pyr p{font-family:var(--f-ar);font-weight:300;line-height:1.55}
   .nav-in{height:56px}
   .logo{font-size:13px;letter-spacing:.26em}
   .nav-cta{font-size:12px}
-  .hero{height:300vh}
+  .hero{height:200vh}
   .c2,.c3{left:0;right:0;margin-inline:auto;bottom:9vh;text-align:center!important;max-width:86vw}
   .intro,.details,.order{grid-template-columns:minmax(0,1fr)}
   .pyr,.steps{grid-template-columns:minmax(0,1fr);gap:0}
@@ -375,13 +377,13 @@ NE.mist=function(scene,pr){
   g.setAttribute("position",new THREE.BufferAttribute(P,3));g.setAttribute("size",new THREE.BufferAttribute(S,1));g.setAttribute("alpha",new THREE.BufferAttribute(AL,1));
   var m=new THREE.ShaderMaterial({transparent:true,depthWrite:false,uniforms:{pr:{value:pr}},
     vertexShader:"attribute float size;attribute float alpha;varying float vA;uniform float pr;void main(){vA=alpha;vec4 m=modelViewMatrix*vec4(position,1.0);gl_PointSize=size*(420.0/-m.z)*pr;gl_Position=projectionMatrix*m;}",
-    fragmentShader:"varying float vA;void main(){float d=length(gl_PointCoord-.5)*2.0;float a=smoothstep(1.0,0.0,d);a*=a;gl_FragColor=vec4(.95,.92,.84,a*vA);}"});
+    fragmentShader:"varying float vA;void main(){float d=length(gl_PointCoord-.5)*2.0;float a=1.0-smoothstep(0.0,1.0,d);a*=a;gl_FragColor=vec4(.95,.92,.84,a*vA);}"});
   var pts=new THREE.Points(g,m);pts.frustumCulled=false;scene.add(pts);
   function emit(o,d){
     var i=i0;i0=(i0+1)%N;var sp=3.2+Math.random()*3.8,dx=d.x,dy=d.y,dz=d.z,l=1,cs=.16*sp;
     P[i*3]=o.x;P[i*3+1]=o.y;P[i*3+2]=o.z;
     V[i*3]=dx/l*sp+(Math.random()-.5)*cs;V[i*3+1]=dy/l*sp+(Math.random()-.5)*cs;V[i*3+2]=dz/l*sp+(Math.random()-.5)*cs;
-    A[i]=0;L[i]=.6+Math.random()*1.1;K[i]=Math.random()<.72?0:1;
+    A[i]=0;L[i]=.6+Math.random()*1.1;
   }
   return{
     burst:function(){pend+=1100},
@@ -391,7 +393,7 @@ NE.mist=function(scene,pr){
         a+=dt;A[q]=a;var f=a/L[q],dr=Math.pow(.1,dt);
         V[q*3]*=dr;V[q*3+1]=V[q*3+1]*dr+.3*dt;V[q*3+2]*=dr;
         P[q*3]+=V[q*3]*dt;P[q*3+1]+=V[q*3+1]*dt;P[q*3+2]+=V[q*3+2]*dt;
-        if(K[q]){S[q]=.22+f*.9;AL[q]=Math.pow(1-f,1.6)*.1}else{S[q]=.05+f*.12;AL[q]=Math.pow(1-f,1.2)*.75}}
+        S[q]=.05+f*.12;AL[q]=Math.pow(1-f,1.2)*.75}
       g.attributes.position.needsUpdate=true;g.attributes.size.needsUpdate=true;g.attributes.alpha.needsUpdate=true;
     }
   };
@@ -434,7 +436,7 @@ function start3D(){
     for(var n in tg)cur[n]+=(tg[n]-cur[n])*k;
     if(!dragging){user+=vel;vel*=.92}
     holder.rotation.y=cur.ry+user+(still?0:Math.sin((now-t0)/1700)*.05)+mx*.2;
-    var cz=cur.cz*(mob?1.6:Math.max(1,1.3/aspect)),drop=mob?-.9:0;
+    var cz=cur.cz*(mob?1.75:Math.max(1,1.3/aspect)),drop=mob?-1.15:0;
     camera.position.set(mx*.35,cur.ly+.55-my*.25+drop,cz);camera.lookAt(0,cur.ly+drop,0);
     var o=ease(Math.min(1,Math.max(0,cur.o)));
     press=Math.max(0,press-dt*5);NE.pose(model,o,press);NE.pose(refl,o,press);
