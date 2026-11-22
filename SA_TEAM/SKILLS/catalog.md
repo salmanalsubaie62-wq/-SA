@@ -1476,3 +1476,20 @@
 | rakeshgangwar/erpnext-mcp-server | خادم MCP | TypeScript؛ يحتاج رابط النظام ومفتاح وسر API | ٣ | https://github.com/rakeshgangwar/erpnext-mcp-server | مضاف، غير مفعّل |
 | Casys-AI/mcp-erpnext | خادم MCP | يشتغل مع ERPNext المستضاف ذاتياً وfrappe.cloud | ٣ | https://github.com/Casys-AI/mcp-erpnext | مضاف، غير مفعّل |
 | muthanii/frappe_mcp | خادم MCP | Python عبر REST لموقع Frappe؛ PyPI وDocker | ٢ | https://socket.dev/pypi/package/frappe-mcp-server | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٠:٣٦ (الكويت) · 3D بالتمرير وواتساب أعمال ونصوص عطور وأزياء
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| freshtechbro web3d-integration-patterns | مهارة | تجمع Three.js وGSAP ScrollTrigger وReact Three Fiber بنمط واحد؛ تفيد موقع العطر لو انتقل لإطار عمل | ٣ | https://www.skills.sh/freshtechbro/claudedesignskills/web3d-integration-patterns | مضاف، غير مفعّل |
+| MengTo build-threejs-scroll-worlds | مهارة | قصص 3D بالتمرير ورحلات كاميرا وقصص منتجات؛ تحذر من تمرير فيديو على إنه Three.js. قريبة جداً من اللي بنيناه | ٤ | https://tessl.io/registry/skills/github/MengTo/Skills/build-threejs-scroll-worlds | مضاف، غير مفعّل |
+| Scroll World Storytelling (mcpmarket) | مهارة | تحوّل مقالات ودراسات حالة وإطلاقات منتجات لصفحات تمرير سينمائية | ٣ | https://mcpmarket.com/tools/skills/scroll-world-storytelling | مضاف، غير مفعّل |
+| mrgoonie claudekit-skills threejs | مهارة | مهارة Three.js ضمن حزمة claudekit؛ مرجع إضافي للمجسمات والمشاهد | ٢ | https://www.skills.sh/mrgoonie/claudekit-skills/threejs | مضاف، غير مفعّل |
+| wsapi-chat/wsapi-mcp | خادم MCP | واتساب عبر GitHub؛ لازم نتأكد هل هو الرسمي أو غير رسمي قبل أي استخدام | ٢ | https://github.com/wsapi-chat/wsapi-mcp | مضاف، غير مفعّل |
+| Meta WhatsApp Business Tools MCP | خادم MCP | خادم Meta نفسه (معاينة بيتا): webhooks وإعداد المدفوعات وتوثيق النشاط؛ الأقرب للرسمي لو العميل يبي واتساب أعمال | ٣ | https://mcpservers.org/servers/whatsapp-business-tools-mcp | مضاف، غير مفعّل |
+| ampcome-mcps/whatsapp-mcp | خادم MCP | رسائل ووسائط وقوالب عبر WhatsApp Business API؛ يحتاج حساب API وتوكن | ٣ | https://lobehub.com/en/mcp/ampcome-mcps-whatsapp-mcp | مضاف، غير مفعّل |
+| YCloud whatsapp-mcp-server | خادم MCP | خادم WhatsApp من YCloud؛ آخر تحديث بالقائمة أبريل ٢٠٢٥ فاحتمال قديم | ٢ | https://enterprisedna.co/directories/mcp/ycloud-developers-ycloud-whatsapp-mcp-server | مضاف، غير مفعّل |
+| boraoztunc/skills | مجموعة مهارات | نصوص إعلانية وSEO audit وschema markup؛ مرشحة لوصف منتجات العطر | ٣ | https://github.com/boraoztunc/skills | مضاف، غير مفعّل |
+| fuww/skills (FashionUnited) | مجموعة مهارات | مهارات معدّلة لمنصة أزياء B2B: نصوص صفحات وتدقيق SEO؛ مو خاصة بالفخامة | ٢ | https://github.xiaohuzi123231346.workers.dev/fuww/skills | مضاف، غير مفعّل |
+| googlarz/fashion-skill | مهارة | مهارة أزياء بملف README على GitHub؛ ما تأكدت من تفاصيلها بالبحث | ٢ | https://raw.githubusercontent.com/googlarz/fashion-skill/main/README.md | مضاف، غير مفعّل |
+| eli-yu first-fashion-copywriter | مهارة | وصف منتجات أزياء بنبرة البراند وتفاصيل الخامة؛ نوعها prompt وعليها فحص أمني حسب القائمة | ٣ | https://www.skillsdirectory.com/skills/eli-yu-first-fashion-copywriter | مضاف، غير مفعّل |
