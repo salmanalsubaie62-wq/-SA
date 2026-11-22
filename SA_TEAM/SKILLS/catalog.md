@@ -1493,3 +1493,19 @@
 | fuww/skills (FashionUnited) | مجموعة مهارات | مهارات معدّلة لمنصة أزياء B2B: نصوص صفحات وتدقيق SEO؛ مو خاصة بالفخامة | ٢ | https://github.xiaohuzi123231346.workers.dev/fuww/skills | مضاف، غير مفعّل |
 | googlarz/fashion-skill | مهارة | مهارة أزياء بملف README على GitHub؛ ما تأكدت من تفاصيلها بالبحث | ٢ | https://raw.githubusercontent.com/googlarz/fashion-skill/main/README.md | مضاف، غير مفعّل |
 | eli-yu first-fashion-copywriter | مهارة | وصف منتجات أزياء بنبرة البراند وتفاصيل الخامة؛ نوعها prompt وعليها فحص أمني حسب القائمة | ٣ | https://www.skillsdirectory.com/skills/eli-yu-first-fashion-copywriter | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠١:٣٦ (الكويت) · تصميم فاخر وrender منتجات وخطوط وسرعة
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| bergside luxury (awesome-design-md-skills) | مهارة | نظام تصميم لبراندات فاخرة: داكن أحادي اللون وشبكة ٨ نقاط؛ مرجع لمشاريع مثل موقع العطر | ٣ | https://www.skills.sh/bergside/awesome-design-skills/luxury | مضاف، غير مفعّل |
+| luukalleman premium-design | مهارة | واجهات تحريرية فاخرة: صارمة بالطباعة والحركة والهدوء؛ الأقرب لمستوى موقع العطر الأخير | ٤ | https://claude-plugins.dev/skills/@luukalleman/premium-design-skill/premium-design | مضاف، غير مفعّل |
+| Luxury Editorial Website Design (findskill) | مهارة | تصميم مواقع تحريرية فاخرة؛ ما فتحت ملفها | ٢ | https://findskill.ai/skills/design-media/luxury-editorial-design | مضاف، غير مفعّل |
+| anubhavg-icpl luxury-design | مهارة | مهارة تصميم فاخر في Skills Directory؛ تحتاج مراجعة قبل الاستخدام | ٢ | https://www.skillsdirectory.com/skills/anubhavg-icpl-luxury-design | مضاف، غير مفعّل |
+| djeada blender-mcp-server | خادم MCP | تصدير glTF/GLB وrender بدون واجهة لو انربط ببرنامج Blender؛ يحل مشكلة صور المنتج الواقعية | ٣ | https://glama.ai/mcp/servers/djeada/blender-mcp-server | مضاف، غير مفعّل |
+| 3Dean Blender MCP Server | خادم MCP | إضاءة تصوير منتجات جاهزة (key وfill وrim) مع خلفية؛ مناسب لصور العطور | ٣ | https://lobehub.com/en/mcp/3dean-blender_mcp_server | مضاف، غير مفعّل |
+| KeyShot MCP | خادم MCP | render منتجات احترافي عبر KeyShot؛ يحتاج ترخيص KeyShot مدفوع | ٢ | https://glama.ai/mcp/servers/truman-t3/keyshot-mcp | مضاف، غير مفعّل |
+| easyrender MCP | خادم MCP | يحوّل صورة منتج لمجسم GLB/USDZ؛ خدمة مستضافة برصيد مدفوع | ٢ | https://mcpservers.org/servers/easyrender-ai-mcp | مضاف، غير مفعّل |
+| janction-render | خادم MCP | render سحابي بـGPU لمشاهد Blender وملفات GLB/FBX/USD؛ خدمة خارجية | ٢ | https://enterprisedna.co/directories/mcp/jasmylab-janction-janction-render | مضاف، غير مفعّل |
+| Performance Engineer MCP (PageSpeed) | خادم MCP | تدقيق Lighthouse محلي ونصائح للخطوط (preconnect وfont-display وWOFF2)؛ يفيد سرعة المواقع | ٣ | https://glama.ai/mcp/servers/rhamevangelista/PageSpeed-Performance-Engineer-MCP | مضاف، غير مفعّل |
+| google-fonts-mcp | خادم MCP + مهارة | يبحث في ١٩٢٣ خط ويقترح أزواج خطوط ويولّد CSS؛ ما تأكدت من دعمه للعربي | ٣ | https://pypi.org/project/google-fonts-mcp/ | مضاف، غير مفعّل |
