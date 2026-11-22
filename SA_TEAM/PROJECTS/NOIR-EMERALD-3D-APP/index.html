@@ -209,7 +209,7 @@ var camera=new THREE.PerspectiveCamera(30,1,.1,100);
   function box(px,py,w,h,col,blur){x.save();x.shadowColor=col;x.shadowBlur=blur;x.fillStyle=col;x.fillRect(px,py,w,h);x.restore()}
   box(130,120,90,190,"#ffffff",34);
   box(720,150,110,150,"#ffe7b0",36);
-  box(430,30,260,26,"#ffffff",24);
+  box(430,30,260,26,"#ffffff",24);box(40,70,26,330,"#ffffff",22);box(960,70,26,330,"#fff4dc",22);
   box(0,300,1024,10,"#6b5a33",18);
   var t=new THREE.CanvasTexture(c);t.mapping=THREE.EquirectangularReflectionMapping;t.encoding=THREE.sRGBEncoding;
   var p=new THREE.PMREMGenerator(renderer);scene.environment=p.fromEquirectangular(t).texture;t.dispose();p.dispose();
@@ -244,21 +244,33 @@ function block(w,d,r,h,bev,mat){
 var lblMat=null;
 function buildBottle(){
   var g=new THREE.Group();
-  var glass=new THREE.MeshPhysicalMaterial({color:0xdde8e8,metalness:0,roughness:.03,clearcoat:1,clearcoatRoughness:.03,envMapIntensity:2.0,transparent:true,opacity:.17,depthWrite:false});
-  var liquid=new THREE.MeshPhysicalMaterial({color:0x050302,metalness:0,roughness:.18,clearcoat:.6,envMapIntensity:.25});
-  var cap_m=new THREE.MeshStandardMaterial({color:0x0a0a0b,metalness:.25,roughness:.42,envMapIntensity:1.1});
-  var liq=block(1.26,.8,.1,1.42,.04,liquid);liq.position.y=.42;g.add(liq);
-  var body=block(1.6,1.1,.16,2.0,.08,glass);body.renderOrder=2;g.add(body);
-  var neck=new THREE.Mesh(new THREE.CylinderGeometry(.3,.3,.3,48),glass);neck.position.y=2.21;neck.renderOrder=2;g.add(neck);
-  var collar=new THREE.Mesh(new THREE.CylinderGeometry(.35,.35,.1,48),gold);collar.position.y=2.38;g.add(collar);
-  var stem=new THREE.Mesh(new THREE.CylinderGeometry(.06,.06,.3,32),goldSoft);stem.position.y=2.53;g.add(stem);
-  var btn=new THREE.Mesh(new THREE.CylinderGeometry(.15,.15,.08,40),gold);btn.position.y=2.72;g.add(btn);
-  var cap=new THREE.Mesh(new THREE.CylinderGeometry(.46,.46,.95,64),cap_m);cap.position.y=2.9;
-  var band=new THREE.Mesh(new THREE.CylinderGeometry(.465,.465,.06,64),gold);band.position.y=-.4;cap.add(band);g.add(cap);
+  var glass=new THREE.MeshPhysicalMaterial({color:0xe8f0f0,metalness:0,roughness:.02,clearcoat:1,clearcoatRoughness:.02,envMapIntensity:2.6,transparent:true,opacity:.1,depthWrite:false});
+  var amber=new THREE.MeshPhysicalMaterial({color:0x9a5a18,metalness:0,roughness:.1,clearcoat:1,envMapIntensity:.4,transparent:true,opacity:.6});
+  var ink=new THREE.MeshStandardMaterial({color:0x020202,metalness:0,roughness:.2,envMapIntensity:.15});
+  var capM=new THREE.MeshPhysicalMaterial({color:0x040405,metalness:.35,roughness:.1,clearcoat:1,clearcoatRoughness:.04,envMapIntensity:1.5});
+  var chrome=new THREE.MeshStandardMaterial({color:0xdde0e4,metalness:1,roughness:.1,envMapIntensity:1.7});
+  var sh=document.createElement("canvas");sh.width=sh.height=256;var sx=sh.getContext("2d"),sg=sx.createRadialGradient(128,128,10,128,128,128);
+  sg.addColorStop(0,"rgba(0,0,0,.85)");sg.addColorStop(1,"rgba(0,0,0,0)");sx.fillStyle=sg;sx.fillRect(0,0,256,256);
+  var shadow=new THREE.Mesh(new THREE.PlaneGeometry(4.6,3.4),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(sh),transparent:true,depthWrite:false}));
+  shadow.rotation.x=-Math.PI/2;shadow.position.y=-.07;g.add(shadow);
+  var liq=block(1.41,.78,.26,1.3,.04,amber);liq.position.y=.57;g.add(liq);
+  var core=block(1.36,.86,.22,1.26,.04,ink);core.position.y=.59;g.add(core);
+  var body=block(1.7,1.12,.12,2.0,.06,glass);body.renderOrder=2;g.add(body);
+  function ring(y){var pts=rr(1.82,1.24,.17).getPoints(28),v=pts.map(function(q){return new THREE.Vector3(q.x,y,-q.y)});
+    return new THREE.LineLoop(new THREE.BufferGeometry().setFromPoints(v),edge)}
+  var edge=new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:.38});
+  g.add(ring(-.06));g.add(ring(2.06));
+  [[.89,.6],[-.89,.6],[.89,-.6],[-.89,-.6]].forEach(function(c){
+    g.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(c[0],-.06,c[1]),new THREE.Vector3(c[0],2.06,c[1])]),edge))});
+  var neck=new THREE.Mesh(new THREE.CylinderGeometry(.26,.26,.3,48),ink);neck.position.y=2.2;g.add(neck);
+  var collar=new THREE.Mesh(new THREE.CylinderGeometry(.31,.31,.34,64),chrome);collar.position.y=2.47;g.add(collar);
+  var stem=new THREE.Mesh(new THREE.CylinderGeometry(.055,.055,.24,32),chrome);stem.position.y=2.7;g.add(stem);
+  var btn=new THREE.Mesh(new THREE.CylinderGeometry(.14,.14,.07,40),chrome);btn.position.y=2.82;g.add(btn);
+  var cap=block(.98,.74,.14,.55,.05,capM);cap.position.y=2.66;g.add(cap);
   lblMat=new THREE.MeshStandardMaterial({map:labelTexture(),transparent:true,metalness:.85,roughness:.3,envMapIntensity:1.2,depthWrite:false});
-  var lbl=new THREE.Mesh(new THREE.PlaneGeometry(1.25,1.25),lblMat);
-  lbl.position.set(0,1.05,.64);lbl.renderOrder=3;g.add(lbl);
-  g.userData.parts={cap:cap,btn:btn,capY:2.9};
+  var lbl=new THREE.Mesh(new THREE.PlaneGeometry(1.2,1.2),lblMat);
+  lbl.position.set(0,1.1,.66);lbl.renderOrder=3;g.add(lbl);
+  g.userData.parts={cap:cap,btn:btn,capY:2.66};
   return g;
 }
 var holder=new THREE.Group();scene.add(holder);
@@ -300,7 +312,7 @@ var mist=new THREE.Points(mg,mm);mist.frustumCulled=false;scene.add(mist);
 function burst(now){if(!parts)return;pend+=1100;press=1;lastBurst=now}
 window.__burst=burst;
 function emit(mob){
-  holder.updateMatrixWorld(true);nz.set(0,2.76,0);model.localToWorld(nz);
+  holder.updateMatrixWorld(true);nz.set(0,2.86,0);model.localToWorld(nz);
   var i=mi;mi=(mi+1)%N;
   var sp=3.2+Math.random()*3.8,dx=1,dy=.3,dz=.28,l=Math.hypot(dx,dy,dz);
   mPos[i*3]=nz.x;mPos[i*3+1]=nz.y+.05;mPos[i*3+2]=nz.z;
@@ -327,7 +339,7 @@ function frame(now){
   big.style.opacity=String(Math.max(0,1-cur.p*5));
   if(parts){var o=ease(Math.min(1,Math.max(0,cur.o)));
     parts.cap.position.set(-o*.55,parts.capY+o*.95,o*.1);parts.cap.rotation.set(0,o*.7,o*.32);
-    parts.btn.position.y=2.72-press*.05;press=Math.max(0,press-dt*5);
+    parts.btn.position.y=2.82-press*.05;press=Math.max(0,press-dt*5);
     if(o>.97&&!still&&now-lastBurst>3800&&!document.hidden)burst(now);
     var k2=Math.min(pend,dt*1900);for(var e=0;e<k2;e++)emit(mob);pend=Math.max(0,pend-dt*1900);
   }
