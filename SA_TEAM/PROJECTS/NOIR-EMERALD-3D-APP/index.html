@@ -64,13 +64,13 @@ html[lang=ar] .huge{font-family:var(--f-ar);font-weight:500;line-height:1.25;let
 .btn:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--gold-lo)}
 .foot{position:relative;z-index:3;padding:40px 0 calc(40px + env(safe-area-inset-bottom,0px));display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;
   color:var(--muted);font-size:12px;line-height:1.7;border-top:1px solid var(--line)}
-.foot label{cursor:pointer;color:var(--fg);border-bottom:1px dotted var(--muted)}
+.tel{margin:16px 0 0!important;font-size:15px!important;letter-spacing:.12em;color:var(--fg)!important;user-select:all}
 input[type=file]{position:absolute;opacity:0;width:1px;height:1px}
 .reveal{transition:opacity .7s,transform .7s}
 .js .reveal:not(.in){opacity:.001;transform:translateY(22px)}
 @media (max-width:820px){
   .sec{align-items:flex-end;padding-block:90px 7vh}
-  .copy,.copy.l,.copy.r{margin-inline:0;max-width:none;background:linear-gradient(0deg,rgba(7,8,10,.88) 55%,transparent);padding:30px 0 0}
+  .copy,.copy.l,.copy.r{margin-inline:0;max-width:none;width:100%;background:linear-gradient(0deg,rgba(7,8,10,.88) 55%,transparent);padding:30px 0 0}
   .copy.c{text-align:start}
   .huge{font-size:clamp(46px,14vw,80px)}
   .notes li{grid-template-columns:84px minmax(0,1fr)}
@@ -108,7 +108,6 @@ input[type=file]{position:absolute;opacity:0;width:1px;height:1px}
       <p class="eyebrow" data-i="g_eye"></p>
       <h2 class="huge" data-i="g_title"></h2>
       <p data-i="g_p"></p>
-      <div class="num"><b data-count="100">100</b><span data-i="g_unit"></span></div>
     </div>
   </section>
   <section class="sec">
@@ -135,29 +134,18 @@ input[type=file]{position:absolute;opacity:0;width:1px;height:1px}
   </section>
   <section class="sec">
     <div class="copy l reveal">
-      <p class="eyebrow" data-i="n_eye"></p>
-      <h2 class="huge"><span data-count="3">3</span> <span data-i="n_title"></span></h2>
-      <ul class="notes">
-        <li><span data-i="n_top"></span><div data-i="n_top_v"></div></li>
-        <li><span data-i="n_heart"></span><div data-i="n_heart_v"></div></li>
-        <li><span data-i="n_base"></span><div data-i="n_base_v"></div></li>
-      </ul>
-    </div>
-  </section>
-  <section class="sec">
-    <div class="copy r reveal">
       <p class="eyebrow" data-i="o_eye"></p>
       <h2 class="huge" data-i="o_title"></h2>
       <a class="btn" id="wa" href="#" target="_blank" rel="noopener" data-i="wa"></a>
+      <p class="tel" dir="ltr">+965 5170 4421</p>
     </div>
   </section>
 </main>
 
 <footer class="foot">
-  <span data-i="sample"></span>
-  <label for="glb" data-i="load"></label>
-  <input type="file" id="glb" accept=".glb,.gltf,model/gltf-binary">
+  <span>NOIR EMERALD · KUWAIT</span>
   <span id="status" role="status"></span>
+  <input type="file" id="glb" accept=".glb,.gltf,model/gltf-binary">
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -167,24 +155,20 @@ input[type=file]{position:absolute;opacity:0;width:1px;height:1px}
 document.documentElement.classList.add("js");
 /* copy is sample text until the real product text arrives */
 var T={
-ar:{h_eye:"عطر رجالي",h_title:"ليل. زمرد. ذهب.",h_p:"زجاجة سودة بكتابة ذهبية وغطاء ذهبي. مرّر للأسفل وشوف التصميم يتحرك.",cue:"مرّر للأسفل",
- g_eye:"الزجاجة",g_title:"أسود",g_p:"زجاج أسود لامع بحواف حادة. يعكس الضوء مثل مرآة سودة ويعطي العطر حضور ثقيل.",g_unit:"مل",
- c_eye:"الغطاء",c_title:"ذهب",c_p:"غطاء ذهبي مصقول بحواف مشطوفة، ثقيل بيدك ويلمع مع كل زاوية.",
- t_eye:"النقش",t_title:"حروف ذهبية",t_p:"نقش ذهبي شفاف شوي على الواجهة، يبان ويخف حسب الضوء اللي ينزل عليه.",
- s_eye:"الرشّة",s_title:"افتح",s_p:"ينفك الغطاء الذهبي ويبان الرشّاش. اضغط الزر وشوف الرذاذ يطلع.",s_btn:"رشّة",
- n_eye:"الرائحة",n_title:"طبقات",n_top:"افتتاحية",n_top_v:"برغموت، فلفل أسود",n_heart:"قلب",n_heart_v:"ورد، عود",n_base:"قاعدة",n_base_v:"عنبر، باتشولي",
- o_eye:"NOIR EMERALD",o_title:"جاهز لك",wa:"اطلب عبر واتساب",
- sample:"النصوص والمواصفات تجريبية وتنتظر بيانات المنتج الحقيقية.",load:"حمّل موديل .glb",
- loaded:"تم تحميل الموديل: ",bad:"ما قدرت أقرأ الملف. تأكد إنه .glb سليم.",msg:"السلام عليكم، أبي أطلب عطر NOIR EMERALD"},
-en:{h_eye:"Pour homme",h_title:"Night. Emerald. Gold.",h_p:"A black bottle with gold lettering and a gold cap. Scroll down and watch the design move.",cue:"Scroll down",
- g_eye:"The bottle",g_title:"Black",g_p:"Glossy black glass with sharp edges. It reflects light like a black mirror and gives the fragrance weight.",g_unit:"ml",
- c_eye:"The cap",c_title:"Gold",c_p:"A polished gold cap with chamfered edges. Heavy in the hand, bright from every angle.",
- t_eye:"The lettering",t_title:"Gold letters",t_p:"Slightly transparent gold lettering on the front. It shows and fades with the light that falls on it.",
- s_eye:"The spray",s_title:"Open",s_p:"The gold cap lifts off and the nozzle shows. Press the button and watch the mist come out.",s_btn:"Spray",
- n_eye:"The scent",n_title:"layers",n_top:"Top",n_top_v:"Bergamot, black pepper",n_heart:"Heart",n_heart_v:"Rose, oud",n_base:"Base",n_base_v:"Amber, patchouli",
- o_eye:"NOIR EMERALD",o_title:"Ready for you",wa:"Order on WhatsApp",
- sample:"Copy and specifications are sample text until the real product data arrives.",load:"Load a .glb model",
- loaded:"Model loaded: ",bad:"Could not read the file. Check that it is a valid .glb.",msg:"Hello, I would like to order NOIR EMERALD"}
+ar:{h_eye:"عطر رجالي",h_title:"ليل. زمرد. ذهب.",h_p:"زجاجة سودة، غطاء ذهبي، نقش ذهبي.",cue:"مرّر للأسفل",
+ g_eye:"الزجاجة",g_title:"أسود",g_p:"زجاج أسود لامع.",
+ c_eye:"الغطاء",c_title:"ذهب",c_p:"غطاء ذهبي مصقول.",
+ t_eye:"النقش",t_title:"حروف ذهبية",t_p:"نقش ذهبي شفاف شوي.",
+ s_eye:"الرشّة",s_title:"افتح",s_p:"اضغط وشوف الرذاذ.",s_btn:"رشّة",
+ o_eye:"NOIR EMERALD",o_title:"اطلبه الحين",wa:"اطلب عبر واتساب",
+ loaded:"",bad:"",msg:"السلام عليكم، أبي أطلب عطر NOIR EMERALD"},
+en:{h_eye:"Pour homme",h_title:"Night. Emerald. Gold.",h_p:"Black bottle, gold cap, gold lettering.",cue:"Scroll down",
+ g_eye:"The bottle",g_title:"Black",g_p:"Glossy black glass.",
+ c_eye:"The cap",c_title:"Gold",c_p:"A polished gold cap.",
+ t_eye:"The lettering",t_title:"Gold letters",t_p:"Slightly transparent gold lettering.",
+ s_eye:"The spray",s_title:"Open",s_p:"Press and watch the mist.",s_btn:"Spray",
+ o_eye:"NOIR EMERALD",o_title:"Order now",wa:"Order on WhatsApp",
+ loaded:"",bad:"",msg:"Hello, I would like to order NOIR EMERALD"}
 };
 var lang="ar",custom="";
 function $(i){return document.getElementById(i)}
@@ -192,7 +176,7 @@ function render(){
   document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";
   document.querySelectorAll("[data-i]").forEach(function(n){n.textContent=T[lang][n.getAttribute("data-i")]});
   $("lAr").setAttribute("aria-pressed",lang==="ar");$("lEn").setAttribute("aria-pressed",lang==="en");
-  $("wa").href="https://wa.me/?text="+encodeURIComponent(T[lang].msg);
+  $("wa").href="https://wa.me/96551704421?text="+encodeURIComponent(T[lang].msg);
   $("status").textContent=custom?T[lang].loaded+custom:"";
 }
 $("spray").onclick=function(){if(window.__burst)window.__burst(performance.now())};
@@ -292,7 +276,7 @@ $("glb").addEventListener("change",function(e){
 
 /* ---------- scroll story: one keyframe per section ---------- */
 var K=[{ry:.55,x:0,cz:8.6,ly:1.65,o:0},{ry:2.2,x:1.7,cz:8.2,ly:1.65,o:0},{ry:3.6,x:-1.7,cz:5.4,ly:2.75,o:0},
-       {ry:6.2832,x:1.6,cz:7.1,ly:1.55,o:0},{ry:6.75,x:-1.6,cz:7.4,ly:2.8,o:1},{ry:7.9,x:1.7,cz:8.4,ly:1.9,o:1},{ry:9.0,x:-1.7,cz:8.6,ly:1.65,o:0}];
+       {ry:6.2832,x:1.6,cz:7.1,ly:1.55,o:0},{ry:6.75,x:-1.6,cz:7.4,ly:2.8,o:1},{ry:8.2,x:1.7,cz:8.6,ly:1.65,o:0}];
 function ease(t){return t*t*(3-2*t)}
 function target(){
   var max=Math.max(1,document.documentElement.scrollHeight-innerHeight),p=Math.min(1,Math.max(0,scrollY/max));
@@ -301,7 +285,7 @@ function target(){
   return{ry:L("ry"),x:L("x"),cz:L("cz"),ly:L("ly"),o:L("o"),p:p};
 }
 /* ---------- spray mist: soft particles that leave the nozzle ---------- */
-var N=480,mPos=new Float32Array(N*3),mVel=new Float32Array(N*3),mAge=new Float32Array(N).fill(99),mLife=new Float32Array(N).fill(1),
+var N=2600,mK=new Float32Array(2600),mPos=new Float32Array(N*3),mVel=new Float32Array(N*3),mAge=new Float32Array(N).fill(99),mLife=new Float32Array(N).fill(1),
     mSize=new Float32Array(N),mAlpha=new Float32Array(N),mi=0,pend=0,press=0,lastBurst=-9999,nz=new THREE.Vector3();
 var mg=new THREE.BufferGeometry();
 mg.setAttribute("position",new THREE.BufferAttribute(mPos,3));mg.setAttribute("size",new THREE.BufferAttribute(mSize,1));mg.setAttribute("alpha",new THREE.BufferAttribute(mAlpha,1));
@@ -309,15 +293,15 @@ var mm=new THREE.ShaderMaterial({transparent:true,depthWrite:false,uniforms:{pr:
   vertexShader:"attribute float size;attribute float alpha;varying float vA;uniform float pr;void main(){vA=alpha;vec4 m=modelViewMatrix*vec4(position,1.0);gl_PointSize=size*(420.0/-m.z)*pr;gl_Position=projectionMatrix*m;}",
   fragmentShader:"varying float vA;void main(){float d=length(gl_PointCoord-.5)*2.0;float a=smoothstep(1.0,0.0,d);a*=a;gl_FragColor=vec4(.96,.9,.76,a*vA);}"});
 var mist=new THREE.Points(mg,mm);mist.frustumCulled=false;scene.add(mist);
-function burst(now){if(!parts)return;pend+=130;press=1;lastBurst=now}
+function burst(now){if(!parts)return;pend+=1100;press=1;lastBurst=now}
 window.__burst=burst;
 function emit(mob){
   holder.updateMatrixWorld(true);nz.set(0,2.68,0);model.localToWorld(nz);
   var i=mi;mi=(mi+1)%N;
-  var sp=2.4+Math.random()*1.6,dx=mob?.25:1,dy=.28,dz=.5,l=Math.hypot(dx,dy,dz);
+  var sp=3.2+Math.random()*3.8,dx=1,dy=.3,dz=.28,l=Math.hypot(dx,dy,dz);
   mPos[i*3]=nz.x;mPos[i*3+1]=nz.y+.05;mPos[i*3+2]=nz.z;
-  mVel[i*3]=dx/l*sp+(Math.random()-.5)*.9;mVel[i*3+1]=dy/l*sp+(Math.random()-.5)*.7;mVel[i*3+2]=dz/l*sp+(Math.random()-.5)*.9;
-  mAge[i]=0;mLife[i]=.9+Math.random()*1.1;
+  var cs=.16*sp;mVel[i*3]=dx/l*sp+(Math.random()-.5)*cs;mVel[i*3+1]=dy/l*sp+(Math.random()-.5)*cs;mVel[i*3+2]=dz/l*sp+(Math.random()-.5)*cs;
+  mAge[i]=0;mLife[i]=.6+Math.random()*1.1;mK[i]=Math.random()<.72?0:1;
 }
 var cur=target(),mx=0,my=0,t0=performance.now(),still=matchMedia("(prefers-reduced-motion:reduce)").matches;
 addEventListener("pointermove",function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
@@ -341,13 +325,13 @@ function frame(now){
     parts.cap.position.set(-o*.55,2.34+o*.9,o*.1);parts.cap.rotation.set(0,o*.7,o*.32);
     parts.btn.position.y=2.68-press*.05;press=Math.max(0,press-dt*5);
     if(o>.97&&!still&&now-lastBurst>3800&&!document.hidden)burst(now);
-    var k2=Math.min(pend,dt*320);for(var e=0;e<k2;e++)emit(mob);pend=Math.max(0,pend-dt*320);
+    var k2=Math.min(pend,dt*1900);for(var e=0;e<k2;e++)emit(mob);pend=Math.max(0,pend-dt*1900);
   }
   for(var q=0;q<N;q++){var a=mAge[q];if(a>=mLife[q]){mAlpha[q]=0;continue}
     a+=dt;mAge[q]=a;var f=a/mLife[q];
-    mVel[q*3]*=.965;mVel[q*3+1]=mVel[q*3+1]*.965+.35*dt;mVel[q*3+2]*=.965;
+    var dr=Math.pow(.1,dt);mVel[q*3]*=dr;mVel[q*3+1]=mVel[q*3+1]*dr+.3*dt;mVel[q*3+2]*=dr;
     mPos[q*3]+=mVel[q*3]*dt;mPos[q*3+1]+=mVel[q*3+1]*dt;mPos[q*3+2]+=mVel[q*3+2]*dt;
-    mSize[q]=.3+f*.75;mAlpha[q]=Math.pow(1-f,1.4)*.5}
+    if(mK[q]){mSize[q]=.22+f*.9;mAlpha[q]=Math.pow(1-f,1.6)*.1}else{mSize[q]=.05+f*.12;mAlpha[q]=Math.pow(1-f,1.2)*.75}}
   mg.attributes.position.needsUpdate=true;mg.attributes.size.needsUpdate=true;mg.attributes.alpha.needsUpdate=true;
   renderer.render(scene,camera);
 }
