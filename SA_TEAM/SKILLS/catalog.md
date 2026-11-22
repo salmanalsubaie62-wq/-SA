@@ -1146,3 +1146,19 @@
 | cahthuranag AllRatesToday MCP | خادم MCP | أسعار عملات، كل الأدوات تحتاج ALLRATES_API_KEY | ٣ | https://raw.githubusercontent.com/cahthuranag/mcp-server/main/README.md | مضاف، غير مفعّل |
 | isdaniel mcp_weather_server | خادم MCP | طقس عبر Open-Meteo بدون مفتاح، مع الوقت والتحويل بين المناطق الزمنية | ٤ | https://mcpservers.org/servers/isdaniel/mcp_weather_server | مضاف، غير مفعّل |
 | cmer81 open-meteo-mcp | خادم MCP | وصول كامل لواجهات Open-Meteo وتوقعات حتى ١٦ يوم | ٣ | https://github.com/cmer81/open-meteo-mcp | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٥:٣٦ (الكويت) · يوتيوب وfal.ai وHugging Face وDiscord
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| ZubeidHendricks youtube-mcp-server | خادم MCP | إدارة فيديوهات يوتيوب وإنشاء Shorts وتحليلات وتفريغ نصوص (١٠ أدوات). يحتاج مفتاح YouTube API | ٤ | https://github.com/ZubeidHendricks/youtube-mcp-server | مضاف، غير مفعّل |
+| hancengiz youtube-transcript-mcp | خادم MCP | تفريغ نص فيديو من رابط أو معرّف، بأمر claude mcp add واحد. خفيف | ٤ | https://github.com/hancengiz/youtube-transcript-mcp | مضاف، غير مفعّل |
+| yt-mcp-server (PyPI) | خادم MCP | بحث فيديوهات وتفريغ وتصفح قنوات والبحث في محتوى صانع كامل. بدون مفاتيح حسب الوصف | ٥ | https://pypi.org/project/yt-mcp-server/ | مضاف، غير مفعّل |
+| kirbah mcp-youtube | خادم MCP | تفريغ بدون مفتاح وتحليلات بعمق مع مفتاح YouTube. رفيقه CreatorLens مهارة تحوّل بيانات يوتيوب لتشخيص نمو | ٥ | https://raw.githubusercontent.com/kirbah/mcp-youtube/main/README.md | مضاف، غير مفعّل |
+| ZeroPointRepo youtube-mcp (TranscriptAPI، مستضاف) | خادم MCP | تفريغ وبحث فيديو وقنوات وقوائم تشغيل وتتبع رفع عبر RSS مجاني. خدمة مستضافة | ٣ | https://raw.githubusercontent.com/ZeroPointRepo/youtube-mcp/HEAD/README.md | مضاف، غير مفعّل |
+| fal.ai MCP (الرسمي، مستضاف) | خادم MCP رسمي | بحث أكثر من ١٠٠٠ نموذج وتشغيل استدلال ورفع ملفات وتصفح وثائق. مفتاح API للـClaude Code. موصلات Claude Desktop تحتاج OAuth 2.0 وكان غير مدعوم وقتها. يستهلك رصيد (للمؤسس فقط) | ٥ | https://fal.ai/docs/model-apis/mcp | مضاف، غير مفعّل |
+| am0y mcp-fal | خادم MCP | خادم fal مجتمعي (غير رسمي) | ٣ | https://raw.githubusercontent.com/am0y/mcp-fal/HEAD/README.md | مضاف، غير مفعّل |
+| evalstate mcp-hfspace | خادم MCP | الوصول لـHugging Face Spaces. المشروع نفسه يقول إنه استُبدل بخادم Hugging Face الرسمي على hf.co/mcp وGradio MCP Endpoints | ٢ | https://github.com/evalstate/mcp-hfspace | مضاف، غير مفعّل |
+| saseq discord-mcp | خادم MCP (Java) | ربط بوت Discord بالمساعد عبر JDA | ٣ | https://docsearch.algolia.com/mcp/docs/repo/saseq/discord-mcp | مضاف، غير مفعّل |
+| glittercowboy discord-mcp | خادم MCP | إدارة سيرفر Discord: دردشة وإشراف وإدارة وبناء. ١٦٠+ أداة وتأكيدات وتراجع. المؤسس فقط، جرّبه على سيرفر تجريبي | ٣ | https://lobehub.com/mcp/glittercowboy-discord-mcp | مضاف، غير مفعّل |
+| hardheadhackerhead Discord MCP (Quadslab) | خادم MCP | ١٣٤ أداة: إشراف وأدوار وقنوات وwebhooks. بتوكن بوت ومعرّف سيرفر | ٣ | https://mcpservers.org/servers/hardheadhackerhead/discord-mcp | مضاف، غير مفعّل |
+| ramsi-k discord-mcp | خادم MCP | Discord مجتمعي. تبنّي قليل حسب مصدر | ٢ | https://lobehub.com/pl/mcp/ramsi-k-discord-mcp | مضاف، غير مفعّل |
