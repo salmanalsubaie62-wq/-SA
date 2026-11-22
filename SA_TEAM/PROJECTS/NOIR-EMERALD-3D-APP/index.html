@@ -244,17 +244,21 @@ function block(w,d,r,h,bev,mat){
 var lblMat=null;
 function buildBottle(){
   var g=new THREE.Group();
-  g.add(block(1.7,.95,.14,2.0,.07,blackGlass));
-  var foot=block(1.62,.87,.12,.1,.03,goldSoft);foot.position.y=-.02;g.add(foot);
-  var collar=new THREE.Mesh(new THREE.CylinderGeometry(.36,.4,.26,48),gold);collar.position.y=2.26;g.add(collar);
-  var neck=new THREE.Mesh(new THREE.CylinderGeometry(.27,.27,.16,48),goldSoft);neck.position.y=2.1;g.add(neck);
-  var stem=new THREE.Mesh(new THREE.CylinderGeometry(.075,.075,.24,32),goldSoft);stem.position.y=2.51;g.add(stem);
-  var btn=new THREE.Mesh(new THREE.CylinderGeometry(.17,.17,.1,40),gold);btn.position.y=2.68;g.add(btn);
-  var cap=block(1.05,.72,.12,.8,.05,gold);cap.position.y=2.34;g.add(cap);
+  var glass=new THREE.MeshPhysicalMaterial({color:0xdde8e8,metalness:0,roughness:.03,clearcoat:1,clearcoatRoughness:.03,envMapIntensity:2.0,transparent:true,opacity:.17,depthWrite:false});
+  var liquid=new THREE.MeshPhysicalMaterial({color:0x050302,metalness:0,roughness:.18,clearcoat:.6,envMapIntensity:.25});
+  var cap_m=new THREE.MeshStandardMaterial({color:0x0a0a0b,metalness:.25,roughness:.42,envMapIntensity:1.1});
+  var liq=block(1.26,.8,.1,1.42,.04,liquid);liq.position.y=.42;g.add(liq);
+  var body=block(1.6,1.1,.16,2.0,.08,glass);body.renderOrder=2;g.add(body);
+  var neck=new THREE.Mesh(new THREE.CylinderGeometry(.3,.3,.3,48),glass);neck.position.y=2.21;neck.renderOrder=2;g.add(neck);
+  var collar=new THREE.Mesh(new THREE.CylinderGeometry(.35,.35,.1,48),gold);collar.position.y=2.38;g.add(collar);
+  var stem=new THREE.Mesh(new THREE.CylinderGeometry(.06,.06,.3,32),goldSoft);stem.position.y=2.53;g.add(stem);
+  var btn=new THREE.Mesh(new THREE.CylinderGeometry(.15,.15,.08,40),gold);btn.position.y=2.72;g.add(btn);
+  var cap=new THREE.Mesh(new THREE.CylinderGeometry(.46,.46,.95,64),cap_m);cap.position.y=2.9;
+  var band=new THREE.Mesh(new THREE.CylinderGeometry(.465,.465,.06,64),gold);band.position.y=-.4;cap.add(band);g.add(cap);
   lblMat=new THREE.MeshStandardMaterial({map:labelTexture(),transparent:true,metalness:.85,roughness:.3,envMapIntensity:1.2,depthWrite:false});
-  var lbl=new THREE.Mesh(new THREE.PlaneGeometry(1.3,1.3),lblMat);
-  lbl.position.set(0,1.05,.56);g.add(lbl);
-  g.userData.parts={cap:cap,btn:btn};
+  var lbl=new THREE.Mesh(new THREE.PlaneGeometry(1.25,1.25),lblMat);
+  lbl.position.set(0,1.05,.64);lbl.renderOrder=3;g.add(lbl);
+  g.userData.parts={cap:cap,btn:btn,capY:2.9};
   return g;
 }
 var holder=new THREE.Group();scene.add(holder);
@@ -296,7 +300,7 @@ var mist=new THREE.Points(mg,mm);mist.frustumCulled=false;scene.add(mist);
 function burst(now){if(!parts)return;pend+=1100;press=1;lastBurst=now}
 window.__burst=burst;
 function emit(mob){
-  holder.updateMatrixWorld(true);nz.set(0,2.68,0);model.localToWorld(nz);
+  holder.updateMatrixWorld(true);nz.set(0,2.76,0);model.localToWorld(nz);
   var i=mi;mi=(mi+1)%N;
   var sp=3.2+Math.random()*3.8,dx=1,dy=.3,dz=.28,l=Math.hypot(dx,dy,dz);
   mPos[i*3]=nz.x;mPos[i*3+1]=nz.y+.05;mPos[i*3+2]=nz.z;
@@ -322,8 +326,8 @@ function frame(now){
   camera.lookAt(0,cur.ly+drop,0);
   big.style.opacity=String(Math.max(0,1-cur.p*5));
   if(parts){var o=ease(Math.min(1,Math.max(0,cur.o)));
-    parts.cap.position.set(-o*.55,2.34+o*.9,o*.1);parts.cap.rotation.set(0,o*.7,o*.32);
-    parts.btn.position.y=2.68-press*.05;press=Math.max(0,press-dt*5);
+    parts.cap.position.set(-o*.55,parts.capY+o*.95,o*.1);parts.cap.rotation.set(0,o*.7,o*.32);
+    parts.btn.position.y=2.72-press*.05;press=Math.max(0,press-dt*5);
     if(o>.97&&!still&&now-lastBurst>3800&&!document.hidden)burst(now);
     var k2=Math.min(pend,dt*1900);for(var e=0;e<k2;e++)emit(mob);pend=Math.max(0,pend-dt*1900);
   }
