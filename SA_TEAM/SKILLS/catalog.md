@@ -1372,3 +1372,16 @@
 | vector-mcp (PyPI) | خادم MCP | RAG عبر قواعد متجهات (ChromaDB وPGVector وQdrant وMongoDB وCouchbase) بوضعي stdio وHTTP؛ ما لقيت رخصته ولا حالته، وPinecone وWeaviate غير مدعومة حسب القائمة | ٣ | https://pypi.org/project/vector-mcp/1.7.1/ | مضاف، غير مفعّل |
 | sanky369 product-photography | مهارة | تحوّل وصف المنتج إلى قائمة لقطات وأوامر صور تجارية؛ رخصة MIT (٢٩ نجمة حسب السجل) | ٤ | https://claudeskills.info/skills/sanky369/vibe-building-skills/product-photography/ | مضاف، غير مفعّل |
 | intrepidservicesllc lemonsqueezy-mcp-server | خادم MCP | استعلام مدفوعات واشتراكات Lemon Squeezy؛ يحتاج Node 18+ ومفتاح | ٣ | https://lobehub.com/en/mcp/intrepidservicesllc-lemonsqueezy-mcp-server | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ١٨:٣٦ (الكويت) · نقاط بيع واختبار أوامر وعقارات
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| Square MCP (الرسمي، بيتا) | خادم MCP | كتالوج وطلبات ومدفوعات وعملاء ومخزون وفواتير؛ مستضاف أو محلي (npx square-mcp-server start)؛ يحتاج حساب Square وما فيه أدوات مطاعم محددة | ٥ | https://developer.squareup.com/docs/mcp | مضاف، غير مفعّل |
+| StackOne Square connector | خدمة MCP | موصل تجاري لـSquare منفصل عن الرسمي؛ مدفوع | ٢ | https://stackone.com/connectors/square/mcp/ | مضاف، غير مفعّل |
+| Promptfoo | أداة | اختبار نماذج وتقييم وفحص ثغرات (red teaming) مفتوح المصدر، مع GitHub Action لمقارنة التعديلات؛ يفيد نختبر أوامر الموظفين قبل ما نعتمدها | ٦ | https://www.promptfoo.dev/docs/integrations/langfuse/ | مضاف، غير مفعّل |
+| Langfuse prompt-management MCP (Pokoion) | خادم MCP | نسخة مجتمعية تطبّق MCP Prompts لاكتشاف الأوامر وجلبها من Langfuse | ٣ | https://github.com/Pokoion/langfuse | مضاف، غير مفعّل |
+| HasData zillow-mcp | خادم MCP | قوائم عقار (بيع وإيجار ومباع) من Zillow بـJavaScript ورخصة MIT؛ يغطي أمريكا فقط فما يفيد سوق الكويت | ٢ | https://mcpservers.org/servers/hasdata/zillow-mcp | مضاف، غير مفعّل |
+| sap156/zillow-mcp-server | خادم MCP | Zillow بـPython وFastMCP، رخصة MIT؛ يحتاج مفتاح Zillow Bridge API؛ أمريكا فقط | ٢ | https://awesome.ecosyste.ms/projects/github.com%2Fsap156%2Fzillow-mcp-server | مضاف، غير مفعّل |
+| themineworks/real-estate-mcp (Apify) | خدمة MCP | Zillow وRedfin وRealtor وAirbnb بنقطة واحدة؛ مدفوعة بالنتيجة؛ أمريكا فقط | ٢ | https://apify.com/themineworks/real-estate-mcp.md | مضاف، غير مفعّل |
