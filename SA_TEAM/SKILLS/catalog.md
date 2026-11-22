@@ -1106,3 +1106,22 @@
 | Cheffromspace MCPControl | خادم MCP | ماوس وكيبورد ونوافذ وصور شاشة لويندوز فقط | ٣ | https://mcpservers.org/ja/servers/Cheffromspace/MCPControl | مضاف، غير مفعّل |
 | AB498 computer-control-mcp | خادم MCP | PyAutoGUI مع RapidOCR للماوس والكيبورد والتعرف على النص | ٣ | https://mcpservers.org/ja/servers/AB498/computer-control-mcp | مضاف، غير مفعّل |
 | k1ta141k mcp-desktop-tools | خادم MCP | تحكم بالمتصفح والحافظة والنوافذ على ويندوز ١٠/١١ بـNode 18+ | ٣ | https://lobehub.com/mcp/k1ta141k-mcp-desktop-tools | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٣:٣٦ (الكويت) · توليد صور وبحث ويب وتحويل مستندات وDevOps
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| GongRzhe Image-Generation-MCP-Server | خادم MCP | توليد صور بنموذج Flux عبر Replicate (flux-schnell افتراضي). MIT. يحتاج مفتاح Replicate بتكلفة لكل صورة | ٤ | https://github.com/GongRzhe/Image-Generation-MCP-Server | مضاف، غير مفعّل |
+| awkoy replicate-flux-mcp | خادم MCP | صور وSVG: نماذج Flux وImagen 4 وIdeogram v3، وrecraft-v3-svg للشعارات الـSVG | ٥ | https://raw.githubusercontent.com/awkoy/replicate-flux-mcp/master/README.md | مضاف، غير مفعّل |
+| gomcpgo replicate_image_ai | خادم MCP | Flux وSDXL وIdeogram. التكلفة التقريبية ٠.٠٠٣ دولار للصورة بـflux-schnell و٠.٠٢٠ بـSDXL | ٣ | https://lobehub.com/fr/mcp/gomcpgo-replicate_image_ai | مضاف، غير مفعّل |
+| ckz flux-img-mcp | خادم MCP | أداة generate_image وحيدة بـFlux Schnell على Replicate | ٢ | https://mcpservers.org/servers/ckz/flux-img-mcp | مضاف، غير مفعّل |
+| Brave Search MCP | خادم MCP | بحث ويب عام. أكثر خادم بحث مستخدم حسب Glama. يحتاج BRAVE_API_KEY | ٤ | https://lobehub.com/ar/mcp/brave-brave-search-mcp-server | مضاف، غير مفعّل |
+| ihor-sokoliuk SearXNG MCP | خادم MCP | بحث ويب خاص عبر نسخة SearXNG ذاتية الاستضافة. بدون مفتاح لكن تحتاج تشغّل SearXNG | ٣ | https://lobehub.com/ja/mcp/yourusername-searxng-mcp | مضاف، غير مفعّل |
+| spences10 mcp-omnisearch | خادم MCP | يجمع Tavily وPerplexity وKagi وJina وBrave وFirecrawl في خادم واحد (مفاتيح متعددة) | ٤ | https://lobehub.com/en/mcp/spences10-mcp-omnisearch | مضاف، غير مفعّل |
+| gabrimatic mcp-web-search-tool | خادم MCP | أداة بحث ويب مجتمعية | ٢ | https://mcpservers.org/de/servers/gabrimatic/mcp-web-search-tool | مضاف، غير مفعّل |
+| trsdn markitdown-mcp | خادم MCP | تحويل أكثر من ٢٩ صيغة (PDF وDOCX وHTML) لـMarkdown. مجتمعي مو الرسمي من مايكروسوفت. أنسب مع مستندات العملاء | ٥ | https://github.com/trsdn/markitdown-mcp | مضاف، غير مفعّل |
+| vivekVells mcp-pandoc | خادم MCP | تحويل Markdown لـDOCX وHTML وغيرها بـPandoc. لازم Pandoc، وPDF يحتاج TeX. ما يقرأ PDF | ٤ | https://mcpservers.org/servers/vivekVells/mcp-pandoc | مضاف، غير مفعّل |
+| jathinkolla pandoc-mcp | خادم MCP | نسخة Pandoc بديلة | ٢ | https://mcpservers.org/servers/jathinkolla/pandoc-mcp | مضاف، غير مفعّل |
+| blankcut kubernetes-mcp-server | خادم MCP (Go) | ربط Kubernetes وArgoCD وGitLab. مجتمعي رغم وسم 'رسمي' في بعض الأدلة. ابدأ بالقراءة فقط | ٢ | https://mcpservers.org/servers/blankcut/kubernetes-mcp-server | مضاف، غير مفعّل |
+| alexei-led k8s-mcp-server | خادم MCP | أوامر kubectl وhelm عبر Claude | ٢ | https://raw.githubusercontent.com/alexei-led/k8s-mcp-server/master/README.md | مضاف، غير مفعّل |
+| Octopus Deploy MCP | خادم MCP | نشر تطبيقات على Kubernetes من البداية للنهاية. حساب Octopus مطلوب | ٢ | https://octopus.com/blog/onboarding-with-octopus-deploy-mcp | مضاف، غير مفعّل |
+| GitHub MCP الرسمي (كتالوج Docker) | خادم MCP رسمي | مستودعات وقضايا وطلبات دمج وتشغيل GitHub Actions. تشغيله بـdocker. نبدأ بصلاحيات قراءة فقط | ٤ | https://hub.docker.com/mcp/server/github-official/manual | مضاف، غير مفعّل |
