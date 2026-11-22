@@ -1254,3 +1254,17 @@
 | MFYDev/ghost-mcp | خادم MCP | أكثر من ٥٠ أداة لمقالات وأعضاء ونشرات Ghost؛ يحتاج Admin API key | ٤ | https://lobehub.com/es/mcp/mfydev-ghost-mcp | مضاف، غير مفعّل |
 | damientilman/mailchimp-mcp-server | خادم MCP | الأكمل لـMailchimp Marketing API مع وضع قراءة فقط؛ مجتمعي (لا يوجد رسمي) | ٥ | https://mcpservers.org/de/servers/damientilman/mailchimp-mcp-server | مضاف، غير مفعّل |
 | agentx-ai/mailchimp-mcp | خادم MCP | وصول قراءة فقط لـMailchimp، أأمن للتجربة الأولى | ٣ | https://lobehub.com/mcp/agentx-ai-mailchimp-mcp | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ١١:٣٦ (الكويت) · متاجر وعربي ومحتوى وأتمتة
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| mcp-ecom-hub | خادم MCP | عمليات كتابة (write) على Shopify وStripe، مفتوح المصدر؛ يغيّر بيانات حقيقية فاحذر | ٤ | https://dev.to/davide_conte_12a899361ed1/i-built-an-mcp-server-for-shopify-and-stripe-write-operations-the-gap-nobody-filled-n6 | مضاف، غير مفعّل |
+| ecommerce-command-center-mcp (PyPI) | خادم MCP | لوحة تحكم متاجر إلكترونية عبر MCP؛ مشروع صغير وغير مفحوص | ٣ | https://pypi.org/project/ecommerce-command-center-mcp/ | مضاف، غير مفعّل |
+| مهارة كتابة الإعلانات العربية (awesome-claude-arabic) | مهارة | نسخ إعلانية بالعربية افتراضياً، تفيد فريق المحتوى والتسويق | ٦ | https://amjadshakhshir.github.io/awesome-claude-arabic/skills/arabic-ads-copywriting.html | مضاف، غير مفعّل |
+| مهارة إنشاء المحتوى العربي (awesome-claude-arabic) | مهارة | محتوى لأي منصة: خطاف وثلاث زوايا ونسخة نهائية وCTA بعربية طبيعية | ٦ | https://amjadshakhshir.github.io/awesome-claude-arabic/skills/arabic-content-creation.html | مضاف، غير مفعّل |
+| UX Writing Arabic (ClaudSkills) | مهارة | نبرة وإرشادات كتابة واجهات بالعربية؛ السجل مصنّف بشكل غير متسق فراجعها | ٤ | https://claudskills.com/skills/ux-writing-arabic/ | مضاف، غير مفعّل |
+| cognyai/claude-code-marketing-skills | مجموعة مهارات | أكثر من ٢٠ مهارة تسويق لـClaude Code | ٤ | https://composio.dev/blog/best-marketing-skills | مضاف، غير مفعّل |
+| daymade/claude-code-skills | مجموعة مهارات | مجموعة مهارات مذكورة في مراجعة تسويق؛ تحتاج فحص محتواها | ٣ | https://composio.dev/blog/best-marketing-skills | مضاف، غير مفعّل |
+| Pipedream MCP | خادم MCP | وصول API مباشر لآلاف التطبيقات؛ عنوان الخادم متضارب بين المصادر فتأكد من وثائقهم | ٣ | https://chatforest.com/reviews/workflow-automation-mcp-servers/ | مضاف، غير مفعّل |
