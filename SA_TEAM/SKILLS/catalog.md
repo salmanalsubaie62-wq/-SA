@@ -1308,3 +1308,21 @@
 | Spaceghost99/hrmcp-server | خادم MCP | تقييم المرشحين مقابل الوصف الوظيفي بأبعاد وجوانب قوة وفجوات؛ يحتاج Postgres | ٢ | https://www.producthunt.com/p/hrmcp-server | مضاف، غير مفعّل |
 | TalentFlow HR MCP | خادم MCP | تحليل سير ذاتية ومطابقة بنسخة Lite مفتوحة؛ موجّه للسوق الأوروبي | ٢ | https://lobehub.com/mcp/ia-business-booster-talentflow-hr-mcp | مضاف، غير مفعّل |
 | Workable MCP (الرسمي) | خادم MCP | ٩٤ أداة لدورة التوظيف الكاملة؛ لعملاء Workable فقط | ٢ | https://resources.workable.com/inside-hr/how-workables-mcp-server-grew-to-94-tools-and-why-that-matters-for-recruiting-and-hr-teams/ | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ١٤:٣٦ (الكويت) · تفريغ صوتي وبودكاست وسياسات خصوصية وتوقيع
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| arcaputo3/mcp-server-whisper | خادم MCP | تفريغ صوتي بـWhisper وGPT-4o (whisper-1 وgpt-4o-transcribe)؛ يحتاج مفتاح OpenAI مدفوع | ٥ | https://github.com/arcaputo3/mcp-server-whisper | مضاف، غير مفعّل |
+| whisper-transcribe-mcp | خادم MCP | تفريغ محلي بلا إنترنت عبر faster-whisper أو عبر OpenAI؛ الخيار المحلي مجاني وأخصّ بالخصوصية | ٦ | https://pypi.org/project/whisper-transcribe-mcp | مضاف، غير مفعّل |
+| Sanzaru | خادم MCP | موصوف كخليفة مُصانة لـMCP Server Whisper؛ تحقق من حالته | ٣ | https://sonix.ai/resources/transcription-mcp-server-podcasters/ | مضاف، غير مفعّل |
+| Podsidian | أداة | تفريغ وتلخيص بودكاست آبل بـMarkdown وObsidian، رخصة MIT، يدعم محلي | ٤ | https://sonix.ai/resources/transcription-mcp-servers-podcast-producers/ | مضاف، غير مفعّل |
+| Podcast Transcriber MCP | خادم MCP | تفريغ بودكاست من RSS عبر Whisper API، رخصة MIT | ٣ | https://sonix.ai/resources/transcription-mcp-servers-podcast-producers/ | مضاف، غير مفعّل |
+| Whisper plugin لـObsidian (nikdanilov) | إضافة Obsidian | تسجيل أو رفع صوت وتفريغه عبر OpenAI أو Groq أو محلي، مع تنقيح اختياري بنموذج | ٤ | https://raw.githubusercontent.com/nikdanilov/whisper-obsidian-plugin/main/README.md | مضاف، غير مفعّل |
+| Offline Whisper (Obsidian) | إضافة Obsidian | تفريغ كامل على الجهاز بـwhisper.cpp؛ الصوت ما يطلع من الجهاز | ٥ | https://community.obsidian.md/plugins/offline-whisper | مضاف، غير مفعّل |
+| PolicyForge MCP | خادم MCP | صياغة سياسات خصوصية وشروط وكوكيز؛ خطة Pro مدفوعة، والناتج يحتاج محامي | ٣ | https://unpkg.com/@policyforge/mcp@latest/README.md | مضاف، غير مفعّل |
+| LegalForge MCP | خادم MCP | سياسات خصوصية GDPR/CCPA مفتوحة المصدر؛ أداة واحدة فقط حسب Glama، والناتج يحتاج محامي | ٢ | https://glama.ai/mcp/servers/krgcpheehw | مضاف، غير مفعّل |
+| Open Agreements MCP | خادم MCP | تعبئة قوالب (NDA وSAFE) كملفات DOCX مع إرسال عبر DocuSign اختياري؛ ما فيه توقيع مدمج | ٣ | https://enterprisedna.co/directories/mcp/open-agreements-open-agreements | مضاف، غير مفعّل |
+| SignNow MCP (الرسمي) | خادم MCP | قوالب ودعوات وتوقيع إلكتروني، رخصة MIT؛ يحتاج حساب SignNow | ٣ | https://images.glama.ai/mcp/categories/legal-and-compliance | مضاف، غير مفعّل |
+| mcp-server-esignatures | خادم MCP | صياغة وإرسال عقود عبر خدمة eSignatures؛ يحتاج حساب | ٣ | https://mcpservers.org/servers/esignaturescom/mcp-server-esignatures | مضاف، غير مفعّل |
