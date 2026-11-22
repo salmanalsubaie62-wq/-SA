@@ -1125,3 +1125,24 @@
 | alexei-led k8s-mcp-server | خادم MCP | أوامر kubectl وhelm عبر Claude | ٢ | https://raw.githubusercontent.com/alexei-led/k8s-mcp-server/master/README.md | مضاف، غير مفعّل |
 | Octopus Deploy MCP | خادم MCP | نشر تطبيقات على Kubernetes من البداية للنهاية. حساب Octopus مطلوب | ٢ | https://octopus.com/blog/onboarding-with-octopus-deploy-mcp | مضاف، غير مفعّل |
 | GitHub MCP الرسمي (كتالوج Docker) | خادم MCP رسمي | مستودعات وقضايا وطلبات دمج وتشغيل GitHub Actions. تشغيله بـdocker. نبدأ بصلاحيات قراءة فقط | ٤ | https://hub.docker.com/mcp/server/github-official/manual | مضاف، غير مفعّل |
+
+## دفعة بحث الساعة ٠٤:٣٦ (الكويت) · أوقات الصلاة والهجري وخرائط وعملات وطقس
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| aladhan-mcp (PyPI) | خادم MCP | أوقات الصلاة اليومية والشهرية واتجاه القبلة وتحويل التاريخ بين الميلادي والهجري عبر Aladhan API. بدون حساب غالباً | ٦ | https://pypi.org/project/aladhan-mcp/ | مضاف، غير مفعّل |
+| Azan MCP | خادم MCP | أوقات صلاة بخوارزمية Meeus وأدعية وأذكار وحاسبة زكاة، ٣٧٩ نجمة حسب مصدر. ما تحققت من الرقم | ٥ | https://mcpmarket.com/server/azan | مضاف، غير مفعّل |
+| Wasilah MCP (بعيد) | خادم MCP | أوقات الصلاة والقبلة والتاريخ الهجري وصوت القرآن كموصل مخصص | ٤ | https://glama.ai/mcp/servers/lts0ngh1q9 | مضاف، غير مفعّل |
+| UmmahAPI MCP (مستضاف) | خادم MCP | مصادر إسلامية: قرآن وحديث وتفسير وأدعية وأوقات صلاة. ملاحظة: الدقة الدينية تحتاج مراجعة مختص | ٣ | https://mcp.so/servers/ummahapi | مضاف، غير مفعّل |
+| WideQuran MCP (PyPI) | خادم MCP | آيات وسور وحديث وتفسير. مراجعة النص الديني من مختص قبل أي نشر | ٣ | https://pypi.org/project/widequran-mcp/ | مضاف، غير مفعّل |
+| Prince77-7 quranMCP | خادم MCP | بحث بالكلمات في القرآن والحديث | ٢ | https://github.com/Prince77-7/quranMCP | مضاف، غير مفعّل |
+| Mapbox MCP (الرسمي) | خادم MCP رسمي | ترميز جغرافي وتوجيه ومناطق وصول وبحث أماكن. يحتاج توكن Mapbox. متاح كموصل Claude | ٥ | https://github.com/mapbox/mcp-server/wiki | مضاف، غير مفعّل |
+| cablate mcp-google-map | خادم MCP | خرائط Google: أماكن واتجاهات ومسافات وارتفاع ومناطق زمنية. يحتاج مفتاح Google (فلوس عند تجاوز المجاني) | ٤ | https://mcpservers.org/servers/cablate/mcp-google-map | مضاف، غير مفعّل |
+| renzojohnson Google Maps MCP | خادم MCP | نسخة Google Maps مجتمعية | ٢ | https://mcpservers.org/servers/renzojohnson-com-contributions-google-maps-mcp | مضاف، غير مفعّل |
+| ghassentn OpenStreetMap MCP | خادم MCP | خرائط مجانية بـOSM (Nominatim وOverpass)، بعض الميزات كانت مخططة فقط | ٣ | https://lobehub.com/bg/mcp/ghassentn-openstreetmap-mcpserver | مضاف، غير مفعّل |
+| mcp-maps (Rust) | خادم MCP | ترميز وتوجيه وارتفاع وبحث أماكن عبر OSM وOSRM بدون مفتاح | ٣ | https://docs.rs/crate/mcp-maps/latest/source/mcp-server.toml | مضاف، غير مفعّل |
+| maybe-finance synth-mcp | خادم MCP | أسعار صرف لحظية وتاريخية لكل العملات الرئيسية وأسهم. نفيد في الدينار الكويتي بشرط يغطيه المصدر | ٤ | https://mcpservers.org/hi/servers/maybe-finance/synth-mcp | مضاف، غير مفعّل |
+| mohelhamdani financial-mcp | خادم MCP | أسعار صرف وتحويل عملات وأسهم. الأسهم تحتاج مفتاح Alpha Vantage | ٣ | https://lobehub.com/en/mcp/mohelhamdani-financial-mcp | مضاف، غير مفعّل |
+| fastFOREX.io MCP (الرسمي) | خادم MCP | أسعار عملات لحظية وتاريخية وتحويل وسلاسل زمنية. يحتاج مفتاح، وما تحققت من تغطية KWD | ٤ | https://mcpservers.org/hi/servers/fastforex-readme-io-reference-fastforexio-mcp-server | مضاف، غير مفعّل |
+| cahthuranag AllRatesToday MCP | خادم MCP | أسعار عملات، كل الأدوات تحتاج ALLRATES_API_KEY | ٣ | https://raw.githubusercontent.com/cahthuranag/mcp-server/main/README.md | مضاف، غير مفعّل |
+| isdaniel mcp_weather_server | خادم MCP | طقس عبر Open-Meteo بدون مفتاح، مع الوقت والتحويل بين المناطق الزمنية | ٤ | https://mcpservers.org/servers/isdaniel/mcp_weather_server | مضاف، غير مفعّل |
+| cmer81 open-meteo-mcp | خادم MCP | وصول كامل لواجهات Open-Meteo وتوقعات حتى ١٦ يوم | ٣ | https://github.com/cmer81/open-meteo-mcp | مضاف، غير مفعّل |
