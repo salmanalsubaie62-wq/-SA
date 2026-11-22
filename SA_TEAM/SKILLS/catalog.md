@@ -1385,3 +1385,19 @@
 | HasData zillow-mcp | خادم MCP | قوائم عقار (بيع وإيجار ومباع) من Zillow بـJavaScript ورخصة MIT؛ يغطي أمريكا فقط فما يفيد سوق الكويت | ٢ | https://mcpservers.org/servers/hasdata/zillow-mcp | مضاف، غير مفعّل |
 | sap156/zillow-mcp-server | خادم MCP | Zillow بـPython وFastMCP، رخصة MIT؛ يحتاج مفتاح Zillow Bridge API؛ أمريكا فقط | ٢ | https://awesome.ecosyste.ms/projects/github.com%2Fsap156%2Fzillow-mcp-server | مضاف، غير مفعّل |
 | themineworks/real-estate-mcp (Apify) | خدمة MCP | Zillow وRedfin وRealtor وAirbnb بنقطة واحدة؛ مدفوعة بالنتيجة؛ أمريكا فقط | ٢ | https://apify.com/themineworks/real-estate-mcp.md | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ١٩:٣٦ (الكويت) · إعلانات مدفوعة ونشر مواقع ومجموعات وكلاء
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| RoyAzran/mcp-ads | خادم MCP | الأقرب لتغطية Google وMeta وTikTok وSnapchat بمستودع واحد (مع GA4 وSearch Console وLinkedIn)، رخصة MIT؛ تحتاج حسابات إعلانية وصلاحيات صرف فلوس، فتراجع قبل أي ربط | ٥ | https://zernio.com/blog/mcp-for-ads | مضاف، غير مفعّل |
+| markifact (google-ads-mcp وmeta-ads-mcp) | خدمة MCP | مستودعات منفصلة لـGoogle وMeta وحزمة تشمل Snapchat وPinterest وAmazon Ads؛ خدمة مستضافة مدفوعة | ٣ | https://mcpservers.org/servers/markifact/markifact-mcp | مضاف، غير مفعّل |
+| gomarble-ai/facebook-ads-mcp-server | خادم MCP | خادم مجتمعي لإعلانات فيسبوك وإنستغرام؛ يحتاج حساب إعلانات | ٣ | https://dev.to/grove_chatforest/advertising-ad-tech-mcp-servers-google-ads-meta-ads-tiktok-multi-platform-1793 | مضاف، غير مفعّل |
+| paidsync-mcp | خادم MCP | إدارة حملات مدفوعة متعددة المنصات؛ ما تحققت من تغطيته | ٢ | https://mcpservers.org/de/servers/paidsync/paidsync-mcp | مضاف، غير مفعّل |
+| OpZero (cli وMCP) | أداة | نشر مواقع (HTML وReact) على Cloudflare Pages أو Netlify أو Vercel بـ٢٦ أداة؛ يحتاج مفتاح أو دخول، والنشر يغيّر موقعاً حياً فيحتاج موافقة المؤسس | ٤ | https://mcpservers.org/servers/opzero-sh/cli | مضاف، غير مفعّل |
+| Netlify MCP (حسب دليل) | خادم MCP | إنشاء وبناء ونشر موارد Netlify بلغة طبيعية؛ ما تأكدت من مصدره الرسمي | ٢ | https://mcp.so/servers/cli-opzero-sh | مضاف، غير مفعّل |
+| 0xfurai/claude-code-subagents | مجموعة وكلاء | أكثر من ١٠٠ وكيل فرعي لـClaude Code | ٣ | https://awesome.ecosyste.ms/projects/github.com%2Fwshobson%2Fagents | مضاف، غير مفعّل |
+| chusri/claude-code-agents | مجموعة وكلاء | ٧٥ وكيل فرعي لكل واحد نموذج محدد | ٣ | https://github.com/chusri/claude-code-agents | مضاف، غير مفعّل |
+| hesreallyhim/a-list-of-claude-code-agents | قائمة | قائمة منسقة لوكلاء Claude Code؛ للاستكشاف | ٣ | https://github.com/hesreallyhim/a-list-of-claude-code-agents | مضاف، غير مفعّل |
+| rahulvrane/awesome-claude-agents | قائمة | قائمة وكلاء Claude؛ للاستكشاف | ٢ | https://github.com/rahulvrane/awesome-claude-agents | مضاف، غير مفعّل |
