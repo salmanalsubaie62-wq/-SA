@@ -330,8 +330,14 @@ NE.bottle=function(M){
   var body=NE.block(1.7,1.12,.12,2.0,.06,M.glass);body.renderOrder=2;g.add(body);
   var neck=new THREE.Mesh(new THREE.CylinderGeometry(.26,.26,.26,48),M.ink);neck.position.y=2.19;g.add(neck);
   var collar=new THREE.Mesh(new THREE.CylinderGeometry(.31,.31,.32,64),M.gold);collar.position.y=2.47;g.add(collar);
-  var stem=new THREE.Mesh(new THREE.CylinderGeometry(.055,.055,.24,32),M.goldSoft);stem.position.y=2.7;g.add(stem);
-  var btn=new THREE.Mesh(new THREE.CylinderGeometry(.14,.14,.07,40),M.gold);btn.position.y=2.82;btn.name="btn";g.add(btn);
+  var lip=new THREE.Mesh(new THREE.CylinderGeometry(.325,.325,.05,64),M.gold);lip.position.y=2.605;g.add(lip);
+  var btn=new THREE.Group();btn.name="btn";btn.position.y=2.76;g.add(btn);
+  var act=new THREE.Mesh(new THREE.CylinderGeometry(.235,.24,.25,64),M.gold);btn.add(act);
+  var top=new THREE.Mesh(new THREE.CylinderGeometry(.215,.235,.025,64),M.gold);top.position.y=.137;btn.add(top);
+  var na=-.7,nzl=new THREE.Mesh(new THREE.CylinderGeometry(.045,.045,.02,32),M.goldSoft);
+  nzl.rotation.z=Math.PI/2;nzl.rotation.y=na;nzl.position.set(Math.cos(na)*.24,.03,-Math.sin(na)*.24);btn.add(nzl);
+  var hole=new THREE.Mesh(new THREE.CylinderGeometry(.012,.012,.024,16),M.ink);hole.rotation.copy(nzl.rotation);hole.position.copy(nzl.position).multiplyScalar(1.02);hole.name="nozzle";btn.add(hole);
+  hole.userData.dir=new THREE.Vector3(Math.cos(na),.22,-Math.sin(na)).normalize();
   var cap=NE.block(.98,.74,.14,.55,.05,M.cap);cap.position.y=2.66;cap.name="cap";g.add(cap);
   var panel=new THREE.Mesh(new THREE.PlaneGeometry(1.0,1.25),M.panel);panel.position.set(0,1.12,.624);g.add(panel);
   M.text.map=NE.label();NE.labelMats.push(M.text);
@@ -358,8 +364,10 @@ NE.reflect=function(model){
 NE.pose=function(root,o,press){
   var u=root.userData;if(!u.cap){u.cap=root.getObjectByName("cap");u.btn=root.getObjectByName("btn")}
   u.cap.position.set(-o*.55,2.66+o*.95,o*.1);u.cap.rotation.set(0,o*.7,o*.3);
-  u.btn.position.y=2.82-press*.05;
+  u.btn.position.y=2.76-press*.05;
 };
+NE.nozzle=function(model,pos,dir){var n=model.userData.nz||(model.userData.nz=model.getObjectByName("nozzle"));
+  model.updateMatrixWorld(true);n.getWorldPosition(pos);dir.copy(n.userData.dir).transformDirection(model.matrixWorld)};
 NE.mist=function(scene,pr){
   var N=2600,P=new Float32Array(N*3),V=new Float32Array(N*3),A=new Float32Array(N).fill(99),L=new Float32Array(N).fill(1),K=new Float32Array(N),
       S=new Float32Array(N),AL=new Float32Array(N),i0=0,pend=0;
@@ -369,16 +377,16 @@ NE.mist=function(scene,pr){
     vertexShader:"attribute float size;attribute float alpha;varying float vA;uniform float pr;void main(){vA=alpha;vec4 m=modelViewMatrix*vec4(position,1.0);gl_PointSize=size*(420.0/-m.z)*pr;gl_Position=projectionMatrix*m;}",
     fragmentShader:"varying float vA;void main(){float d=length(gl_PointCoord-.5)*2.0;float a=smoothstep(1.0,0.0,d);a*=a;gl_FragColor=vec4(.95,.92,.84,a*vA);}"});
   var pts=new THREE.Points(g,m);pts.frustumCulled=false;scene.add(pts);
-  function emit(o){
-    var i=i0;i0=(i0+1)%N;var sp=3.2+Math.random()*3.8,dx=1,dy=.3,dz=.28,l=Math.hypot(dx,dy,dz),cs=.16*sp;
-    P[i*3]=o.x;P[i*3+1]=o.y+.05;P[i*3+2]=o.z;
+  function emit(o,d){
+    var i=i0;i0=(i0+1)%N;var sp=3.2+Math.random()*3.8,dx=d.x,dy=d.y,dz=d.z,l=1,cs=.16*sp;
+    P[i*3]=o.x;P[i*3+1]=o.y;P[i*3+2]=o.z;
     V[i*3]=dx/l*sp+(Math.random()-.5)*cs;V[i*3+1]=dy/l*sp+(Math.random()-.5)*cs;V[i*3+2]=dz/l*sp+(Math.random()-.5)*cs;
     A[i]=0;L[i]=.6+Math.random()*1.1;K[i]=Math.random()<.72?0:1;
   }
   return{
     burst:function(){pend+=1100},
-    update:function(dt,origin){
-      var k=Math.min(pend,dt*1900);for(var e=0;e<k;e++)emit(origin);pend=Math.max(0,pend-dt*1900);
+    update:function(dt,origin,dir){
+      var k=Math.min(pend,dt*1900);for(var e=0;e<k;e++)emit(origin,dir);pend=Math.max(0,pend-dt*1900);
       for(var q=0;q<N;q++){var a=A[q];if(a>=L[q]){AL[q]=0;continue}
         a+=dt;A[q]=a;var f=a/L[q],dr=Math.pow(.1,dt);
         V[q*3]*=dr;V[q*3+1]=V[q*3+1]*dr+.3*dt;V[q*3+2]*=dr;
@@ -404,7 +412,7 @@ function start3D(){
   NE.env(renderer,scene);
   var M=NE.mats(),model=NE.bottle(M),refl=NE.reflect(model),holder=new THREE.Group();
   holder.add(model);holder.add(refl);scene.add(holder);
-  var mist=NE.mist(scene,renderer.getPixelRatio()),nz=new THREE.Vector3();
+  var mist=NE.mist(scene,renderer.getPixelRatio()),nz=new THREE.Vector3(),nd=new THREE.Vector3();
   if(document.fonts&&document.fonts.load){document.fonts.load("600 100px 'Bodoni Moda'").then(function(){
     var t=NE.label();NE.labelMats.forEach(function(m){m.map=t;m.needsUpdate=true})}).catch(function(){})}
   var K=[{p:0,ry:.45,cz:10.6,ly:1.4,o:0},{p:.22,ry:2.9,cz:9.6,ly:1.6,o:0},{p:.42,ry:6.63,cz:7.4,ly:2.2,o:0},
@@ -431,7 +439,7 @@ function start3D(){
     var o=ease(Math.min(1,Math.max(0,cur.o)));
     press=Math.max(0,press-dt*5);NE.pose(model,o,press);NE.pose(refl,o,press);
     if(o>.97&&!sprayed){sprayed=true;burst()}if(o<.5)sprayed=false;
-    holder.updateMatrixWorld(true);nz.set(0,2.86,0);model.localToWorld(nz);mist.update(dt,nz);
+    NE.nozzle(model,nz,nd);mist.update(dt,nz,nd);
     renderer.render(scene,camera);
   }};
 }
