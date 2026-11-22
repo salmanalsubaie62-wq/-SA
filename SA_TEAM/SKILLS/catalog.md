@@ -1437,3 +1437,24 @@
 | twilio-labs/mcp (@twilio-alpha/mcp) | خادم MCP | خادم رسمي (ألفا) لكل واجهات Twilio مع تصفية الواجهات؛ يرسل رسائل حقيقية ويكلّف فلوس | ٤ | https://raw.githubusercontent.com/twilio-labs/mcp/main/README.md | مضاف، غير مفعّل |
 | griffinlong twilio-mcp | خادم MCP | رسائل SMS بمحادثات؛ يحتاج SQLite وwebhook للرسائل الواردة | ٢ | https://lobehub.com/mcp/griffinlong-twilio-mcp | مضاف، غير مفعّل |
 | Vonage telephony MCP | خادم MCP | مكالمات صوتية وSMS عبر Vonage | ٣ | https://mcpservers.org/servers/YiyangLi/sms-mcp-server | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ٢٢:٣٦ (الكويت) · تيك توك ومونتاج CapCut ونشر المقاطع القصيرة
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| TikTok Trends MCP (trendsmcp) | خادم MCP | حجم ونمو هاشتاقات تيك توك عبر الزمن، قراءة فقط؛ يحتاج bearer token؛ يفيد نعرف الترند قبل ما نسوي مقطع | ٥ | https://pypi.org/project/tiktok-trends-mcp/ | مضاف، غير مفعّل |
+| TokConnect (TikTok Research) | خادم MCP | الأوسع: طلب بحث واتجاهات وفجوات محتوى وفيديوهات ومنشئين وتعليقات وكابشنات، ٤٥ أداة، تثبيت بأمر واحد؛ خدمة تحتاج حساب | ٥ | https://mcpservers.org/servers/tokconnect-com-connect | مضاف، غير مفعّل |
+| Virlo TikTok MCP | خدمة MCP | أدوات منها واحدة تظهر القوالب اللي المنشئين يقلّدونها الحين؛ يحتاج حساب | ٤ | https://virlo.ai/mcp/tiktok | مضاف، غير مفعّل |
+| Gumloop TikTok MCP | خدمة MCP | بحث فيديوهات ومستخدمين وهاشتاقات وتفاعل وتعليقات؛ يحتاج حساب | ٣ | https://www.gumloop.com/mcp/tiktok | مضاف، غير مفعّل |
+| Social Expert TikTok MCP | خدمة MCP | مراجعة مسودة فيديو بملاحظات بالثواني؛ يحتاج حساب | ٣ | https://mcpservers.org/servers/socialexpert-app-tiktok-mcp | مضاف، غير مفعّل |
+| Viewlify (benjaminb10) | إضافة Claude Code | خادم مع ٣ مهارات مبنية عليه لبحث محتوى قصير | ٣ | https://claudemarketplaces.com/mcp/io.github.benjaminb10/viewlify | مضاف، غير مفعّل |
+| PostPlus tiktok-research | مهارة | بحث تيك توك كمهارة تتثبّت بأمر npx | ٤ | https://claudemarketplaces.com/skills/postplusai/postplus-skills/tiktok-research | مضاف، غير مفعّل |
+| KeyAPI TikTok Intelligence (echosell) | مهارة | معلومات لحظية عن الترند بتيك توك؛ يحتاج مفتاح KeyAPI | ٣ | https://skills.sh/echosell/keyapi-skills/keyapi-tiktok-intelligence | مضاف، غير مفعّل |
+| Atx-Guy/capcut-mcp-server | خادم MCP | ١١ أداة لإنتاج فيديو بـCapCut Pro لتيك توك وReels وShorts؛ غير رسمي ويحتاج VectCutAPI شغّال ومحلي وCapCut مثبّت | ٣ | https://github.com/Atx-Guy/capcut-mcp-server | مضاف، غير مفعّل |
+| sun-guannan/CapCutAPI (VectCutAPI) | أداة | الخلفية اللي تعتمد عليها أغلب خوادم CapCut؛ HTTP وMCP عبر stdio (create_draft وadd_video وadd_audio) | ٣ | https://lobehub.com/en/mcp/sun-guannan-capcutapi | مضاف، غير مفعّل |
+| MigueDuque/capcut-mcp-server-extended | خادم MCP | مبني لـClaude Code مع قوالب خط وحركة لمقاطع الوجه المتحدث؛ ٥ نجوم فقط | ٢ | https://github.com/MigueDuque/capcut-mcp-server-extended | مضاف، غير مفعّل |
+| LHenri88/capcut-mcp | خادم MCP | يقرأ الجدول الزمني ويعاين الإطارات بعكس أغلب أدوات CapCut اللي تبني مسودات بس؛ يحتاج ffmpeg | ٣ | https://glama.ai/mcp/servers/LHenri88/capcut-mcp | مضاف، غير مفعّل |
+| deploy.social | خدمة MCP | نشر مقاطع قصيرة على Shorts وReels وTikTok وFacebook وThreads وX وBluesky من أي عميل MCP؛ ينشر باسم المؤسسة فيحتاج موافقة | ٤ | https://mcpservers.org/servers/deploy-social-docs-mcp | مضاف، غير مفعّل |
+| PostPlanify (YouTube) | خدمة MCP | رفع وجدولة فيديوهات وShorts على يوتيوب مع تحليلات | ٣ | https://postplanify.com/youtube-mcp | مضاف، غير مفعّل |
+| PostPulse MCP | خادم MCP | نشر وجدولة على منصات متعددة | ٢ | https://glama.ai/mcp/servers/PostPulse/mcp-server-postpulse | مضاف، غير مفعّل |
