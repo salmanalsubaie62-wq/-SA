@@ -1285,3 +1285,26 @@
 | mharnett/mcp-ga4 | خادم MCP | GA4 فقط بـ٩ أدوات (تقارير ولحظي وأبعاد مخصصة)؛ يحتاج OAuth | ٤ | https://raw.githubusercontent.com/mharnett/mcp-ga4/HEAD/README.md | مضاف، غير مفعّل |
 | twominutereports GA4 MCP | خادم MCP | خادم GA4 من أداة تقارير تسويق؛ يحتاج OAuth | ٣ | https://mcpservers.org/servers/twominutereports/google-analytics-4-mcp | مضاف، غير مفعّل |
 | pkidwell22 Google Analytics MCP | خادم MCP | GA4 وSearch Console؛ الإعداد يحتاج مشروع Google Cloud مع فوترة مفعّلة | ٣ | https://lobehub.com/en/mcp/pkidwell22-google-analytics-mcp | مضاف، غير مفعّل |
+
+
+## دفعة بحث الساعة ١٣:٣٦ (الكويت) · رسوم بيانية وروابط وQR وتوظيف
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| antvis/mcp-server-chart | خادم MCP | الأنضج لتوليد رسوم بيانية وتحليل خفيف (~٣.٨–٤.٢ ألف نجمة حسب المصدر)؛ مفيد لأرقام الداشبورد | ٦ | https://docsearch.algolia.com/mcp/docs/repo/antvis/mcp-server-chart | مضاف، غير مفعّل |
+| hustcc/mcp-echarts | خادم MCP | رسوم ECharts ديناميكية عبر MCP | ٥ | https://enterprisedna.co/directories/mcp/hustcc-mcp-echarts | مضاف، غير مفعّل |
+| isaacwasserman/mcp-vegalite-server | خادم MCP | رسوم Vega-Lite تصريحية من بيانات؛ Python | ٥ | https://enterprisedna.co/directories/mcp/isaacwasserman-mcp-vegalite-server | مضاف، غير مفعّل |
+| standby mcp-visual-chart | خادم MCP | رسوم Chart.js وVega-Lite | ٣ | https://lobehub.com/mcp/standby-mcp-visual-chart | مضاف، غير مفعّل |
+| xoniks/mcp-visualization-duckdb | خادم MCP | استعلام DuckDB مع رسم Plotly بخادم واحد؛ مشروع مبكر | ٣ | https://dev.to/grove_chatforest/data-visualization-mcp-servers-antv-echarts-vega-lite-plotly-matplotlib-d3-and-more-7k7 | مضاف، غير مفعّل |
+| kesslerio/yourls-mcp | خادم MCP | ربط مختصر روابط YOURLS ذاتي الاستضافة مع UTM وQR (QR يحتاج إضافة) | ٥ | https://mcpservers.org/servers/kesslerio/yourls-mcp | مضاف، غير مفعّل |
+| QR for Agent (benswel) | خادم MCP | QR ديناميكي مع UTM، حزمة npm باسم qr-for-agent | ٤ | https://mcpservers.org/en/servers/benswel/qr-agent-core | مضاف، غير مفعّل |
+| QRcodly MCP | خادم MCP | إنشاء وإدارة QR وروابط قصيرة، رخصة MIT | ٤ | https://chat.mcp.so/server/qrcodly-mcp-server | مضاف، غير مفعّل |
+| shrtnr | خادم MCP | مختصر روابط ذاتي الاستضافة مع QR بصيغة SVG وتخزين UTM لكل نقرة | ٤ | https://glama.ai/mcp/servers/oddbit/shrtnr | مضاف، غير مفعّل |
+| Snipzr | خدمة MCP | روابط قصيرة وUTM وQR وتحليلات بدون كوكيز؛ مستضافة | ٣ | https://mcpmarket.com/server/snipzr | مضاف، غير مفعّل |
+| Bitly MCP (الرسمي) | خدمة MCP | ٢٧ أداة لإنشاء الروابط وتحليلاتها؛ خدمة تجارية تحتاج حساب | ٤ | https://bitly.com/pages/marketplace/bitly-model-context-protocol-mcp | مضاف، غير مفعّل |
+| Whooshly MCP | خدمة MCP | روابط قصيرة وQR وUTM؛ ما لقيت مستودعها فتحقق قبل الاعتماد | ٢ | https://mcp.so/servers/whooshly-mcp | مضاف، غير مفعّل |
+| AI HR Management Toolkit | خادم MCP | ٢١ أداة لتحليل السير الذاتية ونظام تتبع المتقدمين، أغلبها خوارزمي بدون مفاتيح إلزامية؛ بيانات شخصية حساسة | ٣ | https://glama.ai/mcp/servers/XJTLUmedia/AI-HR-Management-Toolkit | مضاف، غير مفعّل |
+| HireLayer MCP | خادم MCP | تحليل CV واستخراج معايير الوظيفة ومطابقة المرشحين؛ بيانات شخصية | ٣ | https://mcpservers.org/servers/hirelayer/hirelayer-mcp | مضاف، غير مفعّل |
+| Spaceghost99/hrmcp-server | خادم MCP | تقييم المرشحين مقابل الوصف الوظيفي بأبعاد وجوانب قوة وفجوات؛ يحتاج Postgres | ٢ | https://www.producthunt.com/p/hrmcp-server | مضاف، غير مفعّل |
+| TalentFlow HR MCP | خادم MCP | تحليل سير ذاتية ومطابقة بنسخة Lite مفتوحة؛ موجّه للسوق الأوروبي | ٢ | https://lobehub.com/mcp/ia-business-booster-talentflow-hr-mcp | مضاف، غير مفعّل |
+| Workable MCP (الرسمي) | خادم MCP | ٩٤ أداة لدورة التوظيف الكاملة؛ لعملاء Workable فقط | ٢ | https://resources.workable.com/inside-hr/how-workables-mcp-server-grew-to-94-tools-and-why-that-matters-for-recruiting-and-hr-teams/ | مضاف، غير مفعّل |
