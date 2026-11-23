@@ -1528,3 +1528,11 @@
 |---|---|---|---|---|---|
 | anthropics/skills · frontend-design | مهارة | إرشاد لتصميم واجهات مميزة مو قوالب جاهزة: خطوط وهوية وتخطيط وحركة وكتابة؛ يفيد هيا وعمر ووليد | ٤ | https://github.com/anthropics/skills/tree/e4bb5d960d87126ff3b3a8af1a104b7db67560ba/skills/frontend-design | مثبّت (موثوق): Anthropic الرسمي، Apache-2.0، commit e4bb5d960d87126ff3b3a8af1a104b7db67560ba، فُحصت ٢٠٢٦-١١-٢٣، مجلد SA_TEAM/SKILLS/installed/frontend-design |
 | anthropics/skills · webapp-testing | مهارة | اختبار تطبيقات الويب؛ نفس المصدر الرسمي | ٣ | https://github.com/anthropics/skills/tree/e4bb5d960d87126ff3b3a8af1a104b7db67560ba/skills/webapp-testing | مضاف، غير مثبّت: فيها سكربتات تشغيل، تحتاج موافقة المؤسس |
+
+## دفعة ٠٤:٣٦ (الكويت) · مصدر Vercel الرسمي (فحص بدون تثبيت)
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| vercel-labs/agent-skills · web-design-guidelines | مهارة | مراجعة كود الواجهة مقابل ١٠٠+ قاعدة (وصول، تركيز، نماذج، أداء)؛ القواعد مضمّنة بالمهارة ومثبّتة على commit بدون جلب من الشبكة؛ تفيد علي لفحص مواقعنا | ٤ | https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines | مضاف، غير مثبّت: ما لقيت ملف رخصة بالمستودع (LICENSE غير موجود)، وشرط الرخصة المفتوحة ما تحقق |
+| vercel-labs/agent-skills · react-best-practices | مهارة | ٤٠+ قاعدة أداء لـReact وNext.js | ٢ | https://github.com/vercel-labs/agent-skills | مضاف، غير مثبّت: نفس سبب الرخصة، وما نستخدم React كثير |
+| vercel-labs/agent-skills · vercel-optimize | مهارة | تدقيق تكلفة وأداء مشاريع Vercel | ١ | https://github.com/vercel-labs/agent-skills | مضاف، غير مثبّت: تحتاج حساب Vercel وربط دخول |

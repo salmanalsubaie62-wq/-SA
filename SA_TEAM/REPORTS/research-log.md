@@ -555,3 +555,10 @@
 - **webapp-testing: ما ثبّتها.** فيها سكربتات تشغيل، وشرط المؤسس مهارات نصية فقط.
 - ملاحظة: ما قدرت أتحقق من النجوم وتاريخ آخر تحديث (api.github.com محجوب)، فاعتمدت على إن الناشر رسمي.
 - باقي مهارات anthropics/skills (pdf وdocx وpptx وxlsx وskill-creator وmcp-builder وغيرها) موجودة عند المؤسس من قبل.
+
+## بحث الساعة · ٢٠٢٦-١١-٢٣ · ٠٤:٣٦ (الكويت) · مصدر Vercel الرسمي
+- أضفت ٣ للكتالوج، وما ثبّتّ شي.
+### تثبيتات
+- لا تثبيتات هالساعة.
+- web-design-guidelines: أقرب لتثبيت. قرأت SKILL.md؛ القواعد مضمّنة (references/command.md، SHA-256 يطابق المعلن d246b026...)، ومثبّتة على commit بمستودع web-interface-guidelines، وما فيها جلب من الشبكة. المشكلة الوحيدة: ما لقيت ملف رخصة بالمستودع ولا بالمهارة (طلبت LICENSE وLICENSE.md وLICENSE.txt بالجذر وبمجلد المهارة، كلها 404، وpackage.json بدون حقل license). شرط الرخصة المفتوحة ما تحقق فما ثبّتّها.
+- react-best-practices وvercel-optimize: ما ثبّتّهما (رخصة، وحساب Vercel).
