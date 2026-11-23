@@ -1521,3 +1521,10 @@
 | the-focus-ai google-skill (gmail) | مهارة | مهارة Gmail لـClaude Code؛ مفيدة لو انربط Gmail بالمؤسسة | ٢ | https://www.skills.sh/the-focus-ai/google-skill/gmail | مضاف، غير مفعّل |
 | indranilbanerjee digital-marketing-pro (content-engine) | مهارة | محرك محتوى تسويقي ضمن حزمة تسويق رقمي؛ ما فتحت ملفها | ٢ | https://skills.sh/indranilbanerjee/digital-marketing-pro/content-engine | مضاف، غير مفعّل |
 | milisp automatisch-mcp-server | خادم MCP | خادم MCP لمنصة Automatisch المفتوحة (بديل Zapier) برخصة MIT؛ أتمتة بدون اشتراك | ٣ | https://mcpservers.org/zh-CN/servers/milisp/automatisch-mcp-server | مضاف، غير مفعّل |
+
+## دفعة ٠٣:٣٦ (الكويت) · أول تثبيت بصلاحية المؤسس (مصدر رسمي)
+
+| الأداة | النوع | الفايدة | الدرجة | المصدر | الحالة |
+|---|---|---|---|---|---|
+| anthropics/skills · frontend-design | مهارة | إرشاد لتصميم واجهات مميزة مو قوالب جاهزة: خطوط وهوية وتخطيط وحركة وكتابة؛ يفيد هيا وعمر ووليد | ٤ | https://github.com/anthropics/skills/tree/e4bb5d960d87126ff3b3a8af1a104b7db67560ba/skills/frontend-design | مثبّت (موثوق): Anthropic الرسمي، Apache-2.0، commit e4bb5d960d87126ff3b3a8af1a104b7db67560ba، فُحصت ٢٠٢٦-١١-٢٣، مجلد SA_TEAM/SKILLS/installed/frontend-design |
+| anthropics/skills · webapp-testing | مهارة | اختبار تطبيقات الويب؛ نفس المصدر الرسمي | ٣ | https://github.com/anthropics/skills/tree/e4bb5d960d87126ff3b3a8af1a104b7db67560ba/skills/webapp-testing | مضاف، غير مثبّت: فيها سكربتات تشغيل، تحتاج موافقة المؤسس |

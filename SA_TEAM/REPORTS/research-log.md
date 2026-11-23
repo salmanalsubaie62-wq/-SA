@@ -547,3 +547,11 @@
 - أبرز اكتشاف: Automatisch MCP (أتمتة مفتوحة المصدر برخصة MIT) وخوادم Google Workspace الشاملة.
 - تحذيرات: خوادم Google تحتاج OAuth ولم أربط أي شي؛ ما فتحت ملفات المصادر بنفسي.
 - ما فُعّل شي، ولا انربط شي، ولا اشتريت شي.
+
+## بحث الساعة · ٢٠٢٦-١١-٢٣ · ٠٣:٣٦ (الكويت) · أول تثبيت
+- أضفت ٢ للكتالوج (frontend-design وwebapp-testing من مستودع Anthropic الرسمي).
+### تثبيتات
+- **frontend-design: مثبّتة.** الأدلة: الناشر Anthropic (anthropics/skills)، رخصة Apache-2.0 (قرأت LICENSE.txt)، commit e4bb5d960d87126ff3b3a8af1a104b7db67560ba من git ls-remote وتطابق SHA-256 للملفين مع نسخة الـcommit. قرأت SKILL.md كامل: نصية فقط، بدون سكربتات أو curl أو طلب مفاتيح أو إرسال بيانات. المسار SA_TEAM/SKILLS/installed/frontend-design.
+- **webapp-testing: ما ثبّتها.** فيها سكربتات تشغيل، وشرط المؤسس مهارات نصية فقط.
+- ملاحظة: ما قدرت أتحقق من النجوم وتاريخ آخر تحديث (api.github.com محجوب)، فاعتمدت على إن الناشر رسمي.
+- باقي مهارات anthropics/skills (pdf وdocx وpptx وxlsx وskill-creator وmcp-builder وغيرها) موجودة عند المؤسس من قبل.
